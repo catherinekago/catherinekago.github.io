@@ -72,9 +72,56 @@ text-align: left;
 color: #111111;
 }
 
+button {
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 600;
+padding: 0 0;
+line-height: 24px;
+/* identical to box height, or 150% */
+
+letter-spacing: 0.1px;
+color: #111111;
+height: 56px;
+border: none;
+background-color: transparent;
+cursor: pointer;
+box-shadow: 0 -2px 0 #111111 inset;
+transition: 100ms ease-out 100ms;
+}
+
+button:hover{
+    cursor: pointer;
+    box-shadow: 0 -8px 0 #111111 inset;
+}
+
+.button-large{
+    font-size: 16px;
+}
+
+.button-medium{
+    font-size: 14px;
+}
+
+.button-small{
+    font-size: 12px;
+}
+
 /* Extra large devices (extra large desktops, 1440px and up) */
 
 @media (min-width: 1440px) {
+
+    .button-large{
+        font-size: 20px;
+    }
+
+    .button-medium{
+        font-size: 18px;
+    }
+
+    .button-small{
+        font-size: 16px;
+    }
 
     .container {
         padding: 0px 0px;
