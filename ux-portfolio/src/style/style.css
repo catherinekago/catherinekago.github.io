@@ -1,0 +1,34 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface');
+@import url('https://fonts.googleapis.com/css2?family=Poppins');
+
+/* || GENERAL STYLES */
+
+body {
+    font-family: 'Poppins';
+    color: #111111;
+}
+
+h1 {
+    font-family: 'Abril Fatface';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 65px;
+    line-height: 64px;
+    /* identical to box height, or 98% */
+    letter-spacing: -0.25px;
+    color: #111111;
+}
+
+h3 {
+    /* Abril Fatface/H3 */
+    font-family: 'Abril Fatface';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 44px;
+    /* identical to box height, or 122% */
+    /* Text/Dark */
+
+    color: #111111;
+}
+
