@@ -2,15 +2,15 @@ import React from 'react'
 
 import { Route, Routes, Link} from "react-router-dom";
 import './Navbar.css';
-import About from './About';
-import Portfolio from './Portfolio';
-import Contact from './Contact';
-import Resume from './Resume';
+import About from '../pages/About';
+import Portfolio from '../pages/Portfolio';
+import Contact from '../pages/Contact';
+import Resume from '../pages/Resume';
 
 const Navbar = () => {
   return (
     <>
-      <nav>
+      <nav className='container'>
         <Link id ="nav-home" to="/">
             KS
           </Link>

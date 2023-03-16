@@ -9,7 +9,7 @@ gap: 40px;
 .nav-item {
     font-family: 'Poppins';
     font-style: normal;
-    font-weight: 500;
+    font-weight: 100;
     font-size: 14px;
     line-height: 45px;
     color: #111111;
@@ -48,17 +48,5 @@ nav {
     padding: 0px 120px;
     width: 90%;
     align-items: center;
-}
-
-
-/* Extra large devices (extra large desktops, 1440px and up) */
-
-@media (min-width: 1440px) {
-
-    nav {
-        padding: 0px 0px;
-        width: 1200px; 
-    }
-
 }
 
