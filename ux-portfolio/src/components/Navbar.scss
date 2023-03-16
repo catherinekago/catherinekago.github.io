@@ -1,0 +1,48 @@
+@import '../style/style.scss';
+
+nav {
+    height: 60px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 90%;
+    padding: 0px 120px;
+    width: 90%;
+    align-items: center;
+
+    @include xl {
+        padding: 0px 0px;
+        width: 1200px;
+
+    }
+
+    #nav-home {
+        /* Abril Fatface/H3 */
+        @extend %headline;
+        font-size: 36px;
+        line-height: 45px;
+        text-decoration: none;
+
+    }
+
+    #nav-items-container {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding: 0px;
+        gap: 40px;
+
+        .nav-item {
+            @extend %title;
+            font-size: 14px;
+            line-height: 45px;
+            transition: 100ms ease-out 100ms;
+            text-decoration: none;
+
+            &:hover {
+                color: $textLight;
+            }
+
+        }
+    }
+}

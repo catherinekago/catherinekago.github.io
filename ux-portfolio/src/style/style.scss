@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface');
+@import url('https://fonts.googleapis.com/css2?family=Poppins');
+
+/* || GENERAL STYLES */
+
+/* || COLORS */
+
+$textDark: #111111;
+$textMedium: #545454;
+$textLight: #9A9A9A;
+
+$primaryBackground: #E1E8DD;
+
+/* || BREAKPOINTS */
+
+$screen-xl-min: 1440px;
+
+// Extra large devices
+@mixin xl {
+    @media (min-width: #{$screen-xl-min}) {
+        @content;
+    }
+}
+
+
+
+html,
+body,
+.App,
+.App>div,
+#root {
+    height: 100%
+}
+
+body {
+    margin: 0px;
+}
+
+%headline {
+    font-family: 'Abril Fatface';
+    font-style: normal;
+    font-weight: 400;
+    color: $textDark;
+    margin: 0px;
+}
+
+h1 {
+    @extend %headline;
+    font-size: 56px;
+    line-height: 64px;
+
+    letter-spacing: -0.25px;
+
+    @include xl {
+        font-size: 65px;
+    }
+
+}
+
+h3 {
+    @extend %headline;
+    font-size: 36px;
+    line-height: 44px;
+}
+
+%title {
+    margin: 0px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 100;
+    text-align: left;
+    color: $textDark;
+}
+
+.title-large {
+    @extend %title;
+    font-size: 18px;
+    line-height: 36px;
+
+    @include xl {
+        font-size: 20px;
+        line-height: 40px;
+    }
+}
+
+.title-medium {
+    @extend %title;
+    font-size: 16px;
+    line-height: 32px;
+
+    @include xl {
+        font-size: 18px;
+        line-height: 36px;
+    }
+}
+
+.title-small {
+    @extend %title;
+    font-size: 14px;
+    line-height: 28px;
+
+    @include xl {
+        font-size: 16px;
+        line-height: 32px;
+    }
+}
+
+button {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    padding: 0 0;
+    line-height: 24px;
+
+    letter-spacing: 0.1px;
+    color: $textDark;
+    height: 56px;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    box-shadow: 0 -2px 0 $textDark inset;
+    transition: 100ms ease-out 100ms;
+
+    &:hover {
+        cursor: pointer;
+        box-shadow: 0 -8px 0 $textDark inset;
+    }
+}
+
+.button-large {
+    font-size: 16px;
+
+    @include xl {
+        font-size: 20px;
+    }
+}
+
+.button-medium {
+    font-size: 14px;
+
+    @include xl {
+        font-size: 18px;
+    }
+}
+
+.button-small {
+    font-size: 12px;
+
+    @include xl {
+        font-size: 16px;
+    }
+}
