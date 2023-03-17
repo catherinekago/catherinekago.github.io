@@ -53,6 +53,7 @@ body,
 
 body {
     margin: 0px;
+    overflow: scroll; /* Show scrollbars */
 }
 
 #root{
@@ -186,5 +187,37 @@ button {
 
     @include xl {
         font-size: 16px;
+    }
+}
+
+.hero {
+    background-color: $primaryBackground;
+    width: 100%;
+    height: fit-content !important;
+    padding-bottom: 80px;
+
+    display: flex;
+    flex-direction: column;
+
+
+
+    .hero-text-container{
+        align-self: center;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        align-self: center;
+        justify-content: flex-end;
+        padding: 100px 0px 0px;
+        gap: 24px;
+        width: 80%;
+
+        @include xl {
+            width: 1200px;
+        }
+
+        .hero-headline{
+            margin-bottom: 40px;
+        }
     }
 }
