@@ -1,9 +1,9 @@
 import React from 'react';
-import Hero from '../components/Hero';
-import Section from '../components/Section';
-import ProjectTeaser from '../components/ProjectTeaser';
+import Hero from '../components/portfolio/Hero';
+import Section from '../components/atoms/Section';
+import ProjectTeaser from '../components/portfolio/ProjectTeaser';
 import './Portfolio.scss'
-import Contact from '../components/Contact';
+import Contact from '../components/portfolio/Contact';
 
 const Portfolio = () => {
 

@@ -1,7 +1,7 @@
 import React from 'react'
 import './Contact.scss';
-import linkedin from '../assets/icons/linkedin.png'
-import github from '../assets/icons/github.png'
+import linkedin from '../../assets/icons/linkedin.png'
+import github from '../../assets/icons/github.png'
 
 const Contact = () => {
     return (

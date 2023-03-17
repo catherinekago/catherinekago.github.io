@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react'
 import './ProjectTeaser.scss';
-import Chip from './Chip';
+import Chip from '../atoms/Chip';
 
 const ProjectTeaser = (props) => {
     const className = 'project-teaser-container ' + props.teaserType;
