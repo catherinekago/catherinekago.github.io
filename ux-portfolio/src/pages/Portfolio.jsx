@@ -17,6 +17,8 @@ const Portfolio = () => {
                     <ProjectTeaser teaserType="project-featured" textPosition={index % 2 === 0 ? "text-left" : "text-right"} title={project.title} description={project.description} button={project.button} projectType={project.projectType} chips={project.chips} />
                 ))}
 
+            <Section text="Additional projects" />
+
             </div>
 
         </>

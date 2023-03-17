@@ -10,7 +10,7 @@ const Hero = () => {
       <div id="hero-text-container">
         <h1>Hi, I'm Kathrin.</h1>
         <p  class='title-large'>Designer and developer with a passion for inclusive and assistive technologies. Currently, I am facilitating climate action at <b>ClimatePartner</b>.</p>
-        <ScrollIntoView selector="#portfolio-main-container">
+        <ScrollIntoView behavior="smooth" selector="#portfolio-main-container">
         <button className="button-large">View my work</button>
         </ScrollIntoView>
         </div>

@@ -1,9 +1,18 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import './ProjectTeaser.scss';
 import Chip from './Chip';
 
 const ProjectTeaser = (props) => {
     const className = 'project-teaser-container ' + props.teaserType;
+
+    const [width, setWidth] = React.useState(window.innerWidth);
+    const breakpoint = 968;
+  
+    useEffect(() => {
+      window.addEventListener("resize", () => setWidth(window.innerWidth))
+    },[]);
+
+
 
     const textContainer = (
         <div class="project-teaser-text-container">
@@ -23,7 +32,7 @@ const ProjectTeaser = (props) => {
 
     const imageContainer = (<div class="project-teaser-image-container" />);
 
-    if (props.textPosition === "text-left") {
+    if (props.textPosition === "text-left" && width > breakpoint ) {
 
         return (
             <div className={className}>

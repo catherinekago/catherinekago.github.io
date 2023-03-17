@@ -11,6 +11,14 @@
     flex-grow: 1;
     flex-shrink: 0;
 
+    @include xl {
+        height: 75%;
+    }
+
+    @include m {
+        height: calc(100vw - 50vw);
+    }
+
 
     #hero-text-container {
         align-self: center;
@@ -38,20 +46,8 @@
     @include xl {
         width: 600px;
     }
-}
 
-@media (min-width: 968px) {
-    #hero-container {
-        height: calc(100vw - 50vw);
-
-        @include xl {
-            height: 75%;
-        }
-
-    }
-
-    #hero-text-container p,
-    #hero-text-container h1 {
+    @include m {
         width: 45%;
     }
 }
