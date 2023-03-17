@@ -1,15 +1,17 @@
 {
   "files": {
-    "main.css": "/static/css/main.ba788822.css",
-    "main.js": "/static/js/main.6371d6b1.js",
+    "main.css": "/static/css/main.64ba1a94.css",
+    "main.js": "/static/js/main.6fd0d49f.js",
     "static/js/787.2eb2047b.chunk.js": "/static/js/787.2eb2047b.chunk.js",
+    "static/media/Kathrin-Schnizer_CV_EN.pdf": "/static/media/Kathrin-Schnizer_CV_EN.aeb25dc518a48f515202.pdf",
+    "static/media/github.png": "/static/media/github.05f6c17b8cd04c28456f.png",
     "index.html": "/index.html",
-    "main.ba788822.css.map": "/static/css/main.ba788822.css.map",
-    "main.6371d6b1.js.map": "/static/js/main.6371d6b1.js.map",
+    "main.64ba1a94.css.map": "/static/css/main.64ba1a94.css.map",
+    "main.6fd0d49f.js.map": "/static/js/main.6fd0d49f.js.map",
     "787.2eb2047b.chunk.js.map": "/static/js/787.2eb2047b.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.ba788822.css",
-    "static/js/main.6371d6b1.js"
+    "static/css/main.64ba1a94.css",
+    "static/js/main.6fd0d49f.js"
   ]
 }
