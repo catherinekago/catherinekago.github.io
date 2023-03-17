@@ -23,6 +23,18 @@
                     "Concept",
                     "Design"
                 ]
+            },
+
+            {
+                "title": "Tactile Sliders",
+                "description": "Exploring the design of touchscreen sliders for visually impaired individuals.",
+                "button": "View Case Study",
+                "projectType": "Uni project",
+                "chips": [
+                    "Research",
+                    "Design",
+                    "Frontend"
+                ]
             }
         ]
     }

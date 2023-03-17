@@ -2,21 +2,25 @@ import React from 'react';
 import Hero from '../components/Hero';
 import Section from '../components/Section';
 import ProjectTeaser from '../components/ProjectTeaser';
+import './Portfolio.scss'
 
-class Portfolio extends React.Component {
-    render() {
-        return (
-            <>
-                <Hero />
-                <div class="main-container">
+const Portfolio = () => {
+
+    let featuredProjects = require('../content.json').portfolio.featuredProjects;
+
+    return (
+        <>
+            <Hero />
+            <div id="portfolio-main-container" class="main-container">
                 <Section text="Featured projects" />
-                <ProjectTeaser projectType="Uni project" chips={["Research", "Design", "Frontend"]} teaserType="project-featured" textPosition="text-left" title="This is a title" description="This is a description" button="View Case Study"/>
-                </div>
+                {featuredProjects.map((project, index) => (
+                    <ProjectTeaser teaserType="project-featured" textPosition={index % 2 === 0 ? "text-left" : "text-right"} title={project.title} description={project.description} button={project.button} projectType={project.projectType} chips={project.chips} />
+                ))}
 
-            </>
-        );
-    }
+            </div>
 
+        </>
+    );
 }
 
 export default Portfolio;

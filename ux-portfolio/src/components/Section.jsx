@@ -1,14 +1,18 @@
 import React from 'react'
 import './Section.scss';
 
-const Section = ({ text }) => {
-  return (
+class Section extends React.Component {
+    
+  render() {
+      return (
     <>
       <div class="section-container" >
         <div class="section-line"></div>
-        <p class="section-text">{text}</p>
+        <p class="section-text">{this.props.text}</p>
       </div>
     </>
   )
 }
+};
+
 export default Section
