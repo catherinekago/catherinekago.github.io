@@ -10,6 +10,7 @@ $textMedium: #545454;
 $textLight: #9A9A9A;
 
 $primaryBackground: #E1E8DD;
+$greyBackground: #F8F8F8;
 
 /* || BREAKPOINTS */
 
@@ -40,10 +41,11 @@ body {
 
 .main-container{
     display: flex;
-    width: 90%;
+    width: 80%;
     align-items: center;
     margin-top: 80px;
     flex-direction: column;
+    gap:100px;
 
     @include xl {
         padding: 0px 0px;

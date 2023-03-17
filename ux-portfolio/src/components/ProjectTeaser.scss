@@ -1,0 +1,78 @@
+@import '../style/style.scss';
+
+.project-teaser-container {
+    display: flex;
+    height: fit-content;
+
+    h3 {
+        text-align: left;
+        margin-bottom: 10px;
+    }
+
+    p {
+        color: $textLight;
+        text-align: left;
+        line-height: 28px;
+        letter-spacing: 0.1px;
+    }
+
+    .chip-row-container {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        padding: 0px;
+        gap: 10px;
+
+        @include xl {
+            padding: 0px 0px;
+            width: 560px;
+        }
+    }
+
+
+}
+
+.project-featured {
+    &.project-teaser-container {
+        width: 100%;
+        align-items: flex-start;
+        flex-direction: row;
+        justify-content: space-between;
+        gap: 100px;
+        margin-bottom: 100px;
+
+        @include xl {
+            padding: 0px 0px;
+            width: 1200px;
+        }
+
+
+        .project-teaser-text-container {
+            display: flex;
+            width: 50%;
+            align-items: flex-start;
+            flex-direction: column;
+            justify-content: space-between;
+            gap: 24px;
+        }
+
+        .project-teaser-image-container {
+            display: flex;
+            width: 50%;
+            height: 24vw;
+            align-items: flex-start;
+            flex-direction: column;
+            justify-content: space-between;
+            background-color: $primaryBackground;
+            gap: 24px;
+
+            @include xl {
+                padding: 0px 0px;
+                width: 560px;
+                height: 370px;
+            }
+        }
+
+    }
+
+}

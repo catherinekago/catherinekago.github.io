@@ -1,0 +1,29 @@
+{
+    "portfolio": {
+        "featuredProjects": [
+            {
+                "title": "SurvEye",
+                "description": "Exploring the design of user interfaces for gaze-based questionnaires for visually impaired individuals.",
+                "button": "View Case Study",
+                "projectType": "Uni project",
+                "chips": [
+                    "Research",
+                    "Design",
+                    "Frontend"
+                ]
+            },
+
+            {
+                "title": "ClimatePartner Network",
+                "description": "Designing a solution to gather and analyze climate data of your supply network.",
+                "button": "View Case Study",
+                "projectType": "Work experience",
+                "chips": [
+                    "Research",
+                    "Concept",
+                    "Design"
+                ]
+            }
+        ]
+    }
+}
