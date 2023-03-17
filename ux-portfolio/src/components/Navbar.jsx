@@ -4,8 +4,9 @@ import { Route, Routes, Link} from "react-router-dom";
 import './Navbar.scss';
 import About from '../pages/About';
 import Portfolio from '../pages/Portfolio';
-import Resume from '../pages/Resume';
 import ScrollIntoView from 'react-scroll-into-view'
+
+import resume from "../assets/pdfs/Kathrin-Schnizer_CV_EN.pdf";
 
 const Navbar = () => {
   return (
@@ -21,9 +22,9 @@ const Navbar = () => {
           <Link class ="nav-item" to="/about">
             About
             </Link>
-          <Link class ="nav-item" to="/resume">
+          <a href={resume} target="_blank" class ="nav-item" to="/">
             Resume
-          </Link>
+          </a>
           <ScrollIntoView behavior="smooth" selector="#contact-container">
           <Link class ="nav-item" to="">
             Contact
@@ -34,9 +35,7 @@ const Navbar = () => {
 
       <Routes>
       <Route path="/"  element={<Portfolio />} />
-      <Route path="/resume"  element={<Resume />} />
       <Route path="/about" element={<About />} />
-      {/* <Route path="/contact" element={<Contact />} /> */}
       </Routes>
     </>
   )
