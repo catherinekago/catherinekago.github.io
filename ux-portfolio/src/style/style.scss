@@ -22,8 +22,6 @@ $screen-xl-min: 1440px;
     }
 }
 
-
-
 html,
 body,
 .App,
@@ -34,6 +32,23 @@ body,
 
 body {
     margin: 0px;
+}
+
+#root{
+    display: flex;
+}
+
+.main-container{
+    display: flex;
+    width: 90%;
+    align-items: center;
+    flex-direction: column;
+
+    @include xl {
+        padding: 0px 0px;
+        width: 1200px;
+    }
+
 }
 
 %headline {

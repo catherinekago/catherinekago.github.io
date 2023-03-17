@@ -10,7 +10,7 @@ import Resume from '../pages/Resume';
 const Navbar = () => {
   return (
     <>
-      <nav className='container'>
+      <nav>
         <Link id ="nav-home" to="/">
             KS
           </Link>
