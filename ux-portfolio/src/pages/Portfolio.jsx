@@ -3,6 +3,7 @@ import Hero from '../components/Hero';
 import Section from '../components/Section';
 import ProjectTeaser from '../components/ProjectTeaser';
 import './Portfolio.scss'
+import Contact from '../components/Contact';
 
 const Portfolio = () => {
 
@@ -27,6 +28,10 @@ const Portfolio = () => {
                         </div>
                 
                 </div>
+
+                <Section text="Contact" />
+                <Contact />
+
             </div>
 
         </>
