@@ -12,7 +12,6 @@
                     "Frontend"
                 ]
             },
-
             {
                 "title": "ClimatePartner Network",
                 "description": "Designing a solution to gather and analyze climate data of your supply network.",
@@ -24,7 +23,6 @@
                     "Design"
                 ]
             },
-
             {
                 "title": "Tactile Sliders",
                 "description": "Exploring the design of touchscreen sliders for visually impaired individuals.",
@@ -36,6 +34,76 @@
                     "Frontend"
                 ]
             }
-        ]
+        ],
+        "additionalProjects": {
+            "pair1": [
+                {
+                    "title": "Focus Pocus",
+                    "description": "Conquer your social media rabbit holes",
+                    "button": "View Project",
+                    "projectType": "Uni project",
+                    "chips": [
+                        "Concept",
+                        "Frontend"
+                    ]
+                },
+                {
+                    "title": "PlanTeam",
+                    "description": "Collaboratively take care of plants",
+                    "button": "View Project",
+                    "projectType": "Uni project",
+                    "chips": [
+                        "Concept",
+                        "Design",
+                        "Frontend"
+                    ]
+                }
+            ],
+            "pair2": [
+                {
+                    "title": "Scientific Review",
+                    "description": "... of current assistive technologies",
+                    "button": "View Project",
+                    "projectType": "Uni project",
+                    "chips": [
+                        "Research"
+                    ]
+                },
+                {
+                    "title": "Drunk-o-meter",
+                    "description": "Cheers to a night of no regrets",
+                    "button": "View Project",
+                    "projectType": "Uni project",
+                    "chips": [
+                        "Concept",
+                        "Design",
+                        "Frontend"
+                    ]
+                }
+            ],
+            "pair3": [
+                {
+                    "title": "ESRA",
+                    "description": "An Emotional Support RObot Assistant",
+                    "button": "View Project",
+                    "projectType": "Uni project",
+                    "chips": [
+                        "Concept",
+                        "Design",
+                        "Frontend"
+                    ]
+                },
+                {
+                    "title": "Museums Buddy",
+                    "description": "Tangible, interactive experience for children",
+                    "button": "View Project",
+                    "projectType": "Uni project",
+                    "chips": [
+                        "Concept",
+                        "Frontend"
+                    ]
+                }
+            ]
+        }
     }
 }

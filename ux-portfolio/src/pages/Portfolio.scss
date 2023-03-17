@@ -1,5 +1,32 @@
+@import '../style/style.scss';
+
 #portfolio-main-container {
     height:fit-content;
     padding-top: 40px;
     padding-bottom: 80px;
+}
+
+.additional-teaser-container{
+    display:flex;
+    flex-direction: column;
+    width: 100%;
+
+    @include xl {
+        width: 1200px;
+     }
+}
+
+.project-pair-container{
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    
+     @include s {
+        flex-direction: row;
+     }
+
+     @include xl {
+        width: 1200px;
+     }
 }

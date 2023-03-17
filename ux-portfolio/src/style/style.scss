@@ -17,6 +17,7 @@ $greyBackground: #F8F8F8;
 $screen-xl-min: 1440px;
 
 $screen-m-min: 968px; 
+$screen-s-min: 700px; 
 
 // Extra large devices
 @mixin xl {
@@ -28,6 +29,13 @@ $screen-m-min: 968px;
 // Medium devices
 @mixin m {
     @media (min-width: #{$screen-m-min}) {
+        @content;
+    }
+}
+
+// Small devices
+@mixin s {
+    @media (min-width: #{$screen-s-min}) {
         @content;
     }
 }
