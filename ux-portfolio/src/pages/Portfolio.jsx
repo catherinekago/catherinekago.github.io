@@ -8,7 +8,7 @@ class Portfolio extends React.Component {
             <>
                 <Hero />
                 <div class="main-container">
-                <Section />
+                <Section text="Featured projects" />
                 </div>
 
             </>
