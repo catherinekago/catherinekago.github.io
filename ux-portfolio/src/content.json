@@ -1,5 +1,12 @@
 {
     "portfolio": {
+        "testimonials": [
+            {
+                "name": "Beth Thayne",
+                "occupation": "Product Owner @ ClimatePartner",
+                "quote": "Kathrin is awesome."
+            }
+        ],
         "featuredProjects": [
             {
                 "title": "SurvEye",

@@ -4,6 +4,7 @@ import Section from '../components/atoms/Section';
 import ProjectTeaser from '../components/portfolio/ProjectTeaser';
 import './Portfolio.scss'
 import Contact from '../components/portfolio/Contact';
+import Carousel from '../components/portfolio/Carousel';
 
 const Portfolio = () => {
 
@@ -13,6 +14,7 @@ const Portfolio = () => {
     return (
         <>
             <Hero />
+            <Carousel />
             <div id="portfolio-main-container" class="main-container">
                 <Section text="Featured projects" />
                 {featuredProjects.map((project, index) => (
