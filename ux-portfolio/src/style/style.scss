@@ -93,6 +93,16 @@ h1 {
 
 }
 
+h2 {
+    @extend %headline;
+    font-size: 40px;
+    line-height: 52px;
+
+    @include xl {
+        font-size: 48px !important;
+    }
+}
+
 h3 {
     @extend %headline;
     font-size: 36px;

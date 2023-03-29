@@ -2,10 +2,14 @@ import React, { useEffect } from 'react'
 import { Link } from "react-router-dom";
 import './ProjectTeaser.scss';
 import Chip from '../atoms/Chip';
+import SurveyeHero from '../../assets/images/SurvEye.svg'
 
 
 const ProjectTeaser = (props) => {
     const className = 'project-teaser-container ' + props.teaserType;
+    const images = {
+        "SurvEye": SurveyeHero}
+
 
     const [width, setWidth] = React.useState(window.innerWidth);
     const breakpoint = 968;
@@ -34,7 +38,8 @@ const ProjectTeaser = (props) => {
             </Link>
         </div>);
 
-    const imageContainer = (<Link to={props.link} class="project-teaser-image-container">
+    const imageContainer = (<Link to={props.link}>
+          <img class="project-teaser-image" src={images[props.title]} />
     </Link>);
 
     if (props.textPosition === "text-left" && width > breakpoint) {

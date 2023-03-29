@@ -1,0 +1,77 @@
+@import '../../style/style.scss';
+
+.project-hero-container {
+    background-color: $primaryBackground;
+    width: 100%;
+    height: fit-content !important;
+    padding-bottom: 100px;
+    padding-top: 100px;
+    padding-left: 10%;
+    padding-right: 10%;
+    justify-content: flex-start;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+
+    @include m {
+        width: 80%;
+        flex-direction: row;
+        gap: 56px;
+        align-items: flex-start;
+        justify-content: center;
+    }
+
+    @include xl {
+        width: 100%;
+    }
+
+
+    .project-hero-text-container {
+        align-self: center;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        align-self: center;
+        justify-content: flex-end;
+        width: 80%;
+        gap: 16px;
+
+        height: fit-content;
+
+        @include m {
+            width: 40%;
+            flex-grow: 0;
+            align-self: flex-start;
+        }
+
+        @include xl {
+            width: 545px;
+        }
+    }
+
+    img {
+        width: 80%;
+        -webkit-box-shadow: 5px 5px 15px 2px rgba(0, 0, 0, 0.1);
+        box-shadow: 5px 5px 15px 2px rgba(0, 0, 0, 0.1);
+        flex-grow: 0;
+
+        @include m {
+            width: 40%;
+            flex-grow: 1;
+        }
+
+        @include xl {
+            flex-grow: 0;
+            width: 600px;
+        }
+    }
+}
+
+
+.project-hero-text-container p,
+.project-hero-text-container h2 {
+    width: 100%;
+    text-align: left;
+
+}

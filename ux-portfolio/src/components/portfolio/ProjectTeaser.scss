@@ -43,9 +43,16 @@
         }
     }
 
-    .project-teaser-image-container {
+    .project-teaser-image {
         transition: box-shadow 400ms ease-out 50ms;
         cursor: pointer;
+            display: flex;
+            width: 100%;
+            align-items: flex-start;
+            flex-direction: column;
+            justify-content: space-between;
+            background-color: $primaryBackground;
+        
 
         &:hover {
             -webkit-box-shadow: 5px 5px 15px 2px rgba(0, 0, 0, 0.2);
@@ -53,8 +60,6 @@
 
         }
     }
-
-
 }
 
 .project-featured {
@@ -156,7 +161,7 @@
     }
 
 
-    .project-teaser-image-container {
+    .project-teaser-image {
         display: flex;
         width: 100%;
         aspect-ratio: 1 / 1;
@@ -164,7 +169,6 @@
         flex-direction: column;
         justify-content: space-between;
         background-color: $primaryBackground;
-        gap: 24px;
     }
 
     @include xl {
