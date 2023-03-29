@@ -12,6 +12,7 @@
                 "title": "SurvEye",
                 "description": "Exploring the design of user interfaces for gaze-based questionnaires for visually impaired individuals.",
                 "button": "View Case Study",
+                "link": "/surveye",
                 "projectType": "Uni project",
                 "chips": [
                     "Research",
@@ -23,6 +24,7 @@
                 "title": "ClimatePartner Network",
                 "description": "Designing a solution to gather and analyze climate data of your supply network.",
                 "button": "View Case Study",
+                "link": "/cp-network",
                 "projectType": "Work experience",
                 "chips": [
                     "Research",
@@ -34,6 +36,7 @@
                 "title": "Tactile Sliders",
                 "description": "Exploring the design of touchscreen sliders for visually impaired individuals.",
                 "button": "View Case Study",
+                "link": "/tactile-sliders",
                 "projectType": "Uni project",
                 "chips": [
                     "Research",
@@ -48,6 +51,7 @@
                     "title": "Focus Pocus",
                     "description": "Conquer your social media rabbit holes",
                     "button": "View Project",
+                    "link": "/focuspocus",
                     "projectType": "Uni project",
                     "chips": [
                         "Concept",
@@ -58,6 +62,7 @@
                     "title": "PlanTeam",
                     "description": "Collaboratively take care of plants",
                     "button": "View Project",
+                    "link": "/planteam",
                     "projectType": "Uni project",
                     "chips": [
                         "Concept",
@@ -71,6 +76,7 @@
                     "title": "Scientific Review",
                     "description": "... of current assistive technologies",
                     "button": "View Project",
+                    "link": "/scientific-review",
                     "projectType": "Uni project",
                     "chips": [
                         "Research"
@@ -80,6 +86,7 @@
                     "title": "Drunk-o-meter",
                     "description": "Cheers to a night of no regrets",
                     "button": "View Project",
+                    "link": "/drunk-o-meter",
                     "projectType": "Uni project",
                     "chips": [
                         "Concept",
@@ -94,6 +101,7 @@
                     "description": "An Emotional Support RObot Assistant",
                     "button": "View Project",
                     "projectType": "Uni project",
+                    "link": "/esra",
                     "chips": [
                         "Concept",
                         "Design",
@@ -104,6 +112,7 @@
                     "title": "Museums Buddy",
                     "description": "Tangible, interactive experience for children",
                     "button": "View Project",
+                    "link": "/museumsbuddy",
                     "projectType": "Uni project",
                     "chips": [
                         "Concept",

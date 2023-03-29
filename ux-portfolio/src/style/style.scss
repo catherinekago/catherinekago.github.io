@@ -147,6 +147,7 @@ button {
     font-weight: 600;
     padding: 0 0;
     line-height: 24px;
+    text-align: center;
 
     letter-spacing: 0.1px;
     color: $textDark;
@@ -164,6 +165,7 @@ button {
 }
 
 .button-large {
+    font-family: 'Poppins';
     font-size: 16px;
 
     @include xl {
@@ -172,6 +174,7 @@ button {
 }
 
 .button-medium {
+    font-family: 'Poppins';
     font-size: 14px;
 
     @include xl {
@@ -180,6 +183,7 @@ button {
 }
 
 .button-small {
+    font-family: 'Poppins';
     font-size: 12px;
 
     @include xl {

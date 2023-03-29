@@ -1,18 +1,18 @@
 import React, { useEffect } from 'react'
+import { Link } from "react-router-dom";
 import './ProjectTeaser.scss';
 import Chip from '../atoms/Chip';
+
 
 const ProjectTeaser = (props) => {
     const className = 'project-teaser-container ' + props.teaserType;
 
     const [width, setWidth] = React.useState(window.innerWidth);
     const breakpoint = 968;
-  
+
     useEffect(() => {
-      window.addEventListener("resize", () => setWidth(window.innerWidth))
-    },[]);
-
-
+        window.addEventListener("resize", () => setWidth(window.innerWidth))
+    }, []);
 
     const textContainer = (
         <div class="project-teaser-text-container">
@@ -27,12 +27,17 @@ const ProjectTeaser = (props) => {
 
             </div>
 
-            <button class="button-medium">{props.button}</button>
+
+            <Link class="button-medium" to={props.link}>
+                <button>{props.button}</button>
+
+            </Link>
         </div>);
 
-    const imageContainer = (<div class="project-teaser-image-container" />);
+    const imageContainer = (<Link to={props.link} class="project-teaser-image-container">
+    </Link>);
 
-    if (props.textPosition === "text-left" && width > breakpoint ) {
+    if (props.textPosition === "text-left" && width > breakpoint) {
 
         return (
             <div className={className}>
