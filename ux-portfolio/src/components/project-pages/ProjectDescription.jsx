@@ -5,7 +5,7 @@ const ProjectDescription = (props) => {
 
     return (
         <>
-      <div class="main-content-container">
+      <div class="main-container">
       <div class="project-description">
       <div class="project-details-container">
       <img src={props.typeIcon} alt="" />

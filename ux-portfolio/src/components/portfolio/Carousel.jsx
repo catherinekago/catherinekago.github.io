@@ -14,7 +14,7 @@ const Carousel = () => {
     ));
 
     return (
-        <div class="main-container" id="carousel-container" >
+        <div class="main-background-container" id="carousel-container" >
             <Section text="What others say about me" />
             <AliceCarousel autoPlay={true} autoPlayStrategy={"default"} infinite={true} autoPlayInterval={8000} controlsStrategy="alternate" mouseTracking items={items} />
         </div>
