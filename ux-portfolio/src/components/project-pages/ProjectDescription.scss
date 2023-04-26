@@ -1,0 +1,69 @@
+@import '../../style/style.scss';
+
+.project-description {
+    justify-self: center;
+    align-self: center;
+    background-color: white;
+    border: 1px solid $primaryMain;
+    padding: 10%;
+    width: 80%;
+    height: fit-content !important;
+    margin-bottom: 100px;
+    margin-top: 100px;
+
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+
+    @include m {
+        flex-direction: row;
+        gap: 40px;
+        align-items: flex-start;
+    }
+
+    @include xl {
+        gap:80px;
+    }
+
+    .project-detail-container{
+        background-color: $primaryMain;
+        flex: 0 0 0;
+        width: 100%;
+
+        @include m {
+        width: 0;
+        }
+
+        img {
+            height:80px;
+            width: 80px;
+        }
+    }
+
+}
+
+.project-description-title {
+    @extend %title;
+    margin-top: 16px;
+    font-size: 20px;
+    line-height: 20px;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    text-align: center;
+    color: $primaryMain;
+
+    @include m {
+    margin-top: 32px;
+    }
+}
+
+.project-description-text{
+    @extend %title;
+    margin-top: 8px;
+    font-weight: 100;
+    color: $textLight;
+    text-align: center;
+}

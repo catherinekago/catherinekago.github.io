@@ -72,6 +72,21 @@ body {
 
 }
 
+.main-content-container{
+    background-color: white;
+    width: 80%;  
+    margin-left: 10%;
+    margin-right: 10%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: fit-content !important;
+
+    @include xl {
+        width: 1200px;
+    }
+}
+
 %headline {
     font-family: 'Abril Fatface';
     font-style: normal;
