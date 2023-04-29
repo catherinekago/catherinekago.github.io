@@ -17,51 +17,49 @@
     flex-direction: column;
     gap: 40px;
 
-    @include m {
+    @include s {
         flex-direction: row;
-        gap: 40px;
         align-items: flex-start;
+        padding: 5% 5%;
+        width: 90%;
+        gap: 24px;
+     
     }
 
-    @include xl {
+    @include m {
         gap:80px;
+        padding: 5% 10%;
+        width: 80%;
     }
 
-    .project-detail-container{
-        background-color: $primaryMain;
-        flex: 0 0 0;
-        width: 100%;
 
-        @include m {
-        width: 0;
-        }
-
-        img {
-            height:80px;
-            width: 80px;
-        }
+    img {
+        height:64px !important;
+        width: 64px;
     }
 
 }
 
+
+
 .project-description-title {
     @extend %title;
-    margin-top: 16px;
-    font-size: 20px;
+    font-size: 16px;
     line-height: 20px;
-    font-weight: 700;
+    font-weight: 700 !important;
     letter-spacing: 0.05em;
     text-transform: uppercase;
     text-align: center;
     color: $primaryMain;
 
     @include m {
-    margin-top: 32px;
+    margin-top: 8px;
     }
 }
 
 .project-description-text{
     @extend %title;
+    font-size: 14px;
     margin-top: 8px;
     font-weight: 100;
     color: $textLight;

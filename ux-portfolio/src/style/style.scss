@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Abril+Fatface');
-@import url('https://fonts.googleapis.com/css2?family=Poppins');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap');
 
 /* || GENERAL STYLES */
 
@@ -51,6 +51,7 @@ body,
 body {
     margin: 0px;
     overflow: scroll;
+    font-family:'Poppins';
     /* Show scrollbars */
 }
 
@@ -69,7 +70,7 @@ body {
     align-items: center;
     display: flex;
     flex-direction: column;
-    gap: 80px;
+    gap: 40px;
 
     @include m {
         width: 80%;
@@ -81,6 +82,7 @@ body {
     @include xl {
         align-items: center;
         width: 100%;
+        align-items: center;
     }
 
 }
@@ -94,10 +96,10 @@ body {
 }
 
 .main-content {
-    width: 100%;
+    width: 100% !important;
 
     @include xl {
-        width: 1200px !important;
+        max-width: 1100px !important;
     }
 }
 
@@ -116,9 +118,11 @@ body {
     flex-direction: column;
     gap: 40px;
 
+
     @include m {
         flex-direction: row !important;
-        gap: 16px;
+        gap: 80px !important;
+        align-items: center;
     }
 }
 
@@ -133,7 +137,7 @@ body {
 
     @include xl {
         padding: 0px 0px;
-        width: 1200px !important;
+        width: 1100px !important;
     }
 }
 
@@ -322,6 +326,21 @@ button {
     }
 }
 
+.inline-link {
+    @extend %title;
+    font-size: 16px;
+    line-height: 32px;
+    text-decoration: underline !important;
+    transition: none;
+
+    @include xl {
+        font-size: 16px;
+        line-height: 36px;
+    }
+
+}
+
+
 .hero {
     background-color: $primaryBackground;
     width: 100%;
@@ -345,7 +364,7 @@ button {
         width: 80%;
 
         @include xl {
-            width: 1200px;
+            width: 1100px;
         }
 
         .hero-headline {

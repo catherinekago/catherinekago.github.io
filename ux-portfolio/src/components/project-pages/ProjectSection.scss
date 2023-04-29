@@ -1,0 +1,18 @@
+@import '../../style/style.scss';
+
+
+.text-block{
+gap: 16px !important;
+}
+
+.illustration {
+    max-width: 100%;
+    @include s {
+        max-width: 50%;
+    }
+
+    @include m {
+        max-width: 300px !important;
+    }
+
+}
