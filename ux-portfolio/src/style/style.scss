@@ -60,17 +60,17 @@ body {
 }
 
 .main-background-container {
-
+    transition: 100ms ease-out 100ms;
     height: fit-content !important;
-    padding-bottom: 100px;
-    padding-top: 100px;
+    padding-bottom: 120px;
+    padding-top: 120px;
     padding-left: 10%;
     padding-right: 10%;
     justify-content: flex-start;
     align-items: center;
     display: flex;
     flex-direction: column;
-    gap: 40px;
+    gap: 24px;
 
     @include m {
         width: 80%;
@@ -119,7 +119,7 @@ body {
     gap: 40px;
 
 
-    @include m {
+    @include s {
         flex-direction: row !important;
         gap: 80px !important;
         align-items: center;
@@ -141,45 +141,72 @@ body {
     }
 }
 
+.card-group{
+    display: flex;
+    gap: 16px;
+
+    @include s {
+        flex-direction: row !important;
+        gap: 40px !important;
+        align-items: center;
+    }
+}
+
 .card-container {
+    margin: 0px 0px;
     display: flex;
     flex-grow: 1;
     flex-direction: column;
-    align-items: center;
+    justify-content: flex-start;
+    align-items: flex-start;
     padding: 24px;
-    gap: 32px;
-    border: 1px solid $primaryMain;
-    /* Dropshadow Box */
-    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.25);
+    gap: 16px;
+
+    @include m {
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .card-icon-text-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        flex-wrap: wrap;
+        align-items: center;
+        gap: 8px;
+
+        @include m {
+            gap: 16px;
+        }
+    
+    }
 
 
     .card-content-container{
         display: flex;
         flex-direction: column;
         align-items: flex-start;
-        gap: 8px;
+        gap: 0px;
     }
 }
 
-.card-icon-text-container {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    gap: 16px;
-    width: 100%;
+.container-primary{
+    background-color: $primaryBackground;
+}
 
-    p {
-     text-align: center;
-
-    }
-
-
+.container-gray{
+    background-color: $greyBackground;
 }
 
 .icon-big{
     height:62px;
     width:62px;
+}
+
+.icon-medium{
+    height:40px;
+    width:40px;
 }
 
 .icon-small{
@@ -203,9 +230,6 @@ h1 {
 
     letter-spacing: -0.25px;
 
-    @include xl {
-        font-size: 65px;
-    }
 
 }
 
@@ -215,15 +239,18 @@ h2 {
     line-height: 56px;
     text-align: left;
 
-    @include xl {
-        font-size: 48px !important;
-    }
 }
 
 h3 {
     @extend %headline;
     font-size: 36px;
     line-height: 48px;
+}
+
+h4 {
+    @extend %headline;
+    font-size: 24px;
+    line-height: 32px;
 }
 
 %title {
@@ -245,12 +272,12 @@ h3 {
 
 .title-large {
     @extend %title;
-    font-size: 18px;
-    line-height: 36px;
+    font-size: 16px;
+    line-height: 32px;
 
-    @include xl {
+    @include m {
         font-size: 20px;
-        line-height: 40px;
+        line-height: 36px;
     }
 }
 
@@ -259,18 +286,18 @@ h3 {
     font-size: 16px;
     line-height: 32px;
 
-    @include xl {
+    @include m {
         font-size: 18px;
-        line-height: 36px;
+        line-height: 32px;
     }
 }
 
 .title-small {
     @extend %title;
-    font-size: 14px;
-    line-height: 28px;
+    font-size: 12px;
+    line-height: 24px;
 
-    @include xl {
+    @include m {
         font-size: 16px;
         line-height: 32px;
     }

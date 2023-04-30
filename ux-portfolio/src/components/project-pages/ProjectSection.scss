@@ -5,14 +5,35 @@
 gap: 16px !important;
 }
 
-.illustration {
+.visuals-block{
+    gap: 40px !important;
+    }
+
+.illustration-section {
+    transition: 100ms ease-out 100ms;
     max-width: 100%;
     @include s {
-        max-width: 50%;
+        max-width: 40%;
     }
 
     @include m {
         max-width: 300px !important;
     }
 
+}
+
+.illustration-hero{
+
+    transition: 100ms ease-out 100ms;
+    max-width: 100%;
+    -webkit-box-shadow: 5px 5px 15px 2px rgba(0, 0, 0, 0.1);
+    box-shadow: 5px 5px 15px 2px rgba(0, 0, 0, 0.1);
+    flex-grow: 0;
+    @include s {
+        max-width: 50%;
+    }
+
+    @include m {
+        max-width: 500px !important;
+    }
 }
