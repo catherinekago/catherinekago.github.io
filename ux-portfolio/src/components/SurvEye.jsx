@@ -45,6 +45,7 @@ import surveyeUserstudyFeedback from '../assets/images/surveye_userstudy-feedbac
 import Section from './atoms/Section';
 import ListGroup from './project-pages/ListGroup';
 import CardGroup from './project-pages/CardGroup';
+import NextProject from './project-pages/NextProject';
 
 const SurvEye = () => {
 
@@ -290,6 +291,11 @@ const SurvEye = () => {
         content3={<CardGroup items={cardGroupItemsOutcome}/>}
  />
 
+<NextProject 
+project="Climatepartner YOU"
+button="View Case Study"
+link="/cp-you"
+/>
 
 
     </>

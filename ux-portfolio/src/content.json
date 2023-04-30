@@ -21,6 +21,20 @@
                 ]
             },
             {
+                "title": "Climatepartner YOU",
+                "description": "Enabling you to calculate your carbon footprint and take climate action.",
+                "button": "View Case Study",
+                "link": "/cp-you",
+                "projectType": "Work experience",
+                "chips": [
+                    "Research",
+                    "Concept",
+                    "Design",
+                    "UI Testing"
+                ]
+            },
+
+            {
                 "title": "ClimatePartner Network",
                 "description": "Designing a solution to gather and analyze climate data of your supply network.",
                 "button": "View Case Study",
@@ -29,22 +43,13 @@
                 "chips": [
                     "Research",
                     "Concept",
-                    "Design"
-                ]
-            },
-            {
-                "title": "Tactile Sliders",
-                "description": "Exploring the design of touchscreen sliders for visually impaired individuals.",
-                "button": "View Case Study",
-                "link": "/tactile-sliders",
-                "projectType": "Uni project",
-                "chips": [
-                    "Research",
                     "Design",
-                    "Frontend"
+                    "UI Testing"
                 ]
             }
+
         ],
+
         "additionalProjects": {
             "pair1": [
                 {
