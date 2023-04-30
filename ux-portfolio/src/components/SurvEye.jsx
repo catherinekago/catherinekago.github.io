@@ -46,6 +46,7 @@ import Section from './atoms/Section';
 import ListGroup from './project-pages/ListGroup';
 import CardGroup from './project-pages/CardGroup';
 import NextProject from './project-pages/NextProject';
+import ProjectFooter from './project-pages/ProjectFooter';
 
 const SurvEye = () => {
 
@@ -89,23 +90,23 @@ const SurvEye = () => {
   const durationText = ["June 2021 - Dec 2021", "(6 mo. total)"]
 
   const listIemsRequirements = [
-    {icon: magnifierIcon, title:"Allow for initial inspection", text:"In gaze-based interaction, the eyes are used  for both inspecting and selecting elements, which can result in unintentional selection. Thus, enable the user to inspect their options prior to selecting."},
-    {icon: deblurIcon, title:"Consider varying accuracy of eye-tracking technology", text:"Maximize the size of interaction elements to ensure successful selection, and, additionally, identify the minimal sufficient size based on the eye-tracking technology's accuracy."},
-    {icon: invisibleIcon, title:"Provide robustness against blinking", text:"Blinking is a natural behavior that humans can only control to a specific extend. By setting the bottom border of interaction elements equal to the bottom border of the screen, you can ensure that blinking will not interrupt interaction that requires gaze fixation."},
-    {icon: feedbackIcon, title:"Provide visual feedback", text:"Support the user by indicating where the system estimates their gaze at, which interaction elements are currently being affected by the gaze, and how long the user has to remain fixating on an element in order to select it."}
+    { icon: magnifierIcon, title: "Allow for initial inspection", text: "In gaze-based interaction, the eyes are used  for both inspecting and selecting elements, which can result in unintentional selection. Thus, enable the user to inspect their options prior to selecting." },
+    { icon: deblurIcon, title: "Consider varying accuracy of eye-tracking technology", text: "Maximize the size of interaction elements to ensure successful selection, and, additionally, identify the minimal sufficient size based on the eye-tracking technology's accuracy." },
+    { icon: invisibleIcon, title: "Provide robustness against blinking", text: "Blinking is a natural behavior that humans can only control to a specific extend. By setting the bottom border of interaction elements equal to the bottom border of the screen, you can ensure that blinking will not interrupt interaction that requires gaze fixation." },
+    { icon: feedbackIcon, title: "Provide visual feedback", text: "Support the user by indicating where the system estimates their gaze at, which interaction elements are currently being affected by the gaze, and how long the user has to remain fixating on an element in order to select it." }
   ];
 
   const cardGroupItemsOutcome = [
-    {icon: magnifierIcon, text:<p class='title-medium'>Provide a gaze-insensitive <span style={{ fontWeight: '700' }}>inspection area</span></p>},
-    {icon: zoomIcon, text:<p class='title-medium'>Minimize required <span style={{ fontWeight: '700' }}>saccades</span></p>},
-    {icon: durationIcon, text:<p class='title-medium'>Acknowledge time for <span style={{ fontWeight: '700' }}>inspection</span></p>},
-    {icon: pauseIcon, text:<p class='title-medium'>Avoid prolonged <span style={{ fontWeight: '700' }}>gaze fixations</span></p>},
-    {icon: pathIcon, text:<p class='title-medium'>Exploit <span style={{ fontWeight: '700' }}>object-based attention</span></p>},
-    {icon: anchorIcon, text:<p class='title-medium'>Provide <span style={{ fontWeight: '700' }}>visual anchors</span></p>},
-    {icon: animationIcon, text:<p class='title-medium'>Avoid unnecessary <span style={{ fontWeight: '700' }}>movement</span></p>},
-    {icon: spaceIcon, text:<p class='title-medium'>Consider target sizes and <span style={{ fontWeight: '700' }}>visual spacings</span></p>}
+    { icon: magnifierIcon, text: <p class='title-medium'>Provide a gaze-insensitive <span style={{ fontWeight: '700' }}>inspection area</span></p> },
+    { icon: zoomIcon, text: <p class='title-medium'>Minimize required <span style={{ fontWeight: '700' }}>saccades</span></p> },
+    { icon: durationIcon, text: <p class='title-medium'>Acknowledge time for <span style={{ fontWeight: '700' }}>inspection</span></p> },
+    { icon: pauseIcon, text: <p class='title-medium'>Avoid prolonged <span style={{ fontWeight: '700' }}>gaze fixations</span></p> },
+    { icon: pathIcon, text: <p class='title-medium'>Exploit <span style={{ fontWeight: '700' }}>object-based attention</span></p> },
+    { icon: anchorIcon, text: <p class='title-medium'>Provide <span style={{ fontWeight: '700' }}>visual anchors</span></p> },
+    { icon: animationIcon, text: <p class='title-medium'>Avoid unnecessary <span style={{ fontWeight: '700' }}>movement</span></p> },
+    { icon: spaceIcon, text: <p class='title-medium'>Consider target sizes and <span style={{ fontWeight: '700' }}>visual spacings</span></p> }
   ]
-    
+
 
   const alternativesCardContainer = (
     <div class="main-content card-group">
@@ -176,7 +177,7 @@ const SurvEye = () => {
         isLast="true"
         content1={<p class='title-medium main-content'>I proceeded by investigating <span style={{ fontWeight: '700' }}>alternatives to manual input</span> and analyzed their suitability for my goal.</p>}
         content2={alternativesCardContainer}
-        />
+      />
 
       {/* Requirements */}
 
@@ -192,12 +193,12 @@ const SurvEye = () => {
         width={size.width}
       />
 
-<ProjectContent
+      <ProjectContent
         spacing="medium"
         isLast="true"
         content1={<p class='title-medium main-content'>I identified <span style={{ fontWeight: '700' }}>four key requirements</span>:</p>}
-        content2={<ListGroup items={listIemsRequirements}/>}
- />
+        content2={<ListGroup items={listIemsRequirements} />}
+      />
 
       {/* Ideation */}
 
@@ -213,18 +214,18 @@ const SurvEye = () => {
         width={size.width}
       />
 
-<ProjectContent
+      <ProjectContent
         spacing="small"
         isLast="false"
         content1={<img class="main-content" src={surveyeIdeation} alt={"Screenshot of the ideation workspace, showing different sketches for gaze-based interface design."} />}
- />
+      />
 
-<ProjectContent
+      <ProjectContent
         spacing="medium"
         isLast="true"
         content1={<p class='title-medium main-content'>I then continued with an exploration of the possible <span style={{ fontWeight: '700' }}>states and transitions</span>, as well as how to best provide <span style={{ fontWeight: '700' }}>visual feedback</span> to the user. The <span style={{ fontWeight: '700' }}>interaction flow</span> below showcases the outcome of my exploration of one of the four design variants.</p>}
         content2={<img class="main-content" src={surveyeInteractionFlow} alt={"Screenshot of the the interaction flow of one of the four selected variants, depitcting states and transitions and feedback provided to the user."} />}
- />
+      />
 
 
       {/* Implementation */}
@@ -241,21 +242,21 @@ const SurvEye = () => {
         width={size.width}
       />
 
-<ProjectContent
+      <ProjectContent
         spacing="medium"
         isLast="false"
         content1={<Section text={"Discrete scale interfaces"} />}
         content2={<p class='title-medium main-content'>The first two designs followed two different approaches to enable users <span style={{ fontWeight: '700' }}>to select one out of seven options</span> to respond to a given statement.</p>}
-        content3={<div class="content-horizontal"> <img class="img-two-columns" src={mockup_l1} alt={""}/> <img class="img-two-columns" src={mockup_l2} alt={""}/></div>}
-         />
+        content3={<div class="content-horizontal"> <img class="img-two-columns" src={mockup_l1} alt={""} /> <img class="img-two-columns" src={mockup_l2} alt={""} /></div>}
+      />
 
- <ProjectContent
+      <ProjectContent
         spacing="medium"
         isLast="true"
         content1={<Section text={"Continuous scale interfaces"} />}
         content2={<p class='title-medium main-content'>The other interface variations addressed the task of <span style={{ fontWeight: '700' }}>selecting a value on a continuous scale</span>. As for the previous designs, I asked the participants to select specific values during the testing and think aloud during the interaction.</p>}
-        content3={<div class="content-horizontal"> <img class="img-two-columns" src={mockup_s1} alt={""}/> <img  class="img-two-columns" src={mockup_s2} alt={""}/></div>}
- />
+        content3={<div class="content-horizontal"> <img class="img-two-columns" src={mockup_s1} alt={""} /> <img class="img-two-columns" src={mockup_s2} alt={""} /></div>}
+      />
 
 
       {/* User study */}
@@ -265,10 +266,10 @@ const SurvEye = () => {
         flexDirection={"horizontal"}
         section={"Evaluation"}
         headline={"I tested my designs with 16 individuals."}
-        text={<p class='title-medium main-content'> During my study, I asked the participants to select the options that were displayed at the top of the interface. 
-        I also encouraged them to <span style={{ fontWeight: '700' }}>think aloud</span> during the interaction so I could get deeper insights on their perceptions and thoughts. 
-        Additionally, I  evaluated <span style={{ fontWeight: '700' }}>usability</span> with the <a class="inline-link" href="https://www.usability.gov/how-to-and-tools/methods/system-usability-scale.html"><span style={{ fontWeight: '700' }}>SUS</span></a> and <span style={{ fontWeight: '700' }}>workload</span> with the <a class="inline-link" href="https://humansystems.arc.nasa.gov/groups/TLX/"><span style={{ fontWeight: '700' }}>NASA-TLX</span></a> questionnaires. 
-        My data collection algorithms further measured completion times and errors to back up the qualitative feedback.</p>}
+        text={<p class='title-medium main-content'> During my study, I asked the participants to select the options that were displayed at the top of the interface.
+          I also encouraged them to <span style={{ fontWeight: '700' }}>think aloud</span> during the interaction so I could get deeper insights on their perceptions and thoughts.
+          Additionally, I  evaluated <span style={{ fontWeight: '700' }}>usability</span> with the <a class="inline-link" href="https://www.usability.gov/how-to-and-tools/methods/system-usability-scale.html"><span style={{ fontWeight: '700' }}>SUS</span></a> and <span style={{ fontWeight: '700' }}>workload</span> with the <a class="inline-link" href="https://humansystems.arc.nasa.gov/groups/TLX/"><span style={{ fontWeight: '700' }}>NASA-TLX</span></a> questionnaires.
+          My data collection algorithms further measured completion times and errors to back up the qualitative feedback.</p>}
         image={userIllustration}
         imageAlt={"Illustration of six portrait shots."}
         secondImage={null}
@@ -281,21 +282,23 @@ const SurvEye = () => {
         content1={<Section text={"Raw data"} />}
         content2={<p class='title-medium main-content'>I transferred my transcripts to a Miro board and <span style={{ fontWeight: '700' }}>categorized</span> the qualitative feedback as “positive feedback”, “negative feedback”, and “requests and observations”. I then identified <span style={{ fontWeight: '700' }}>shared themes</span> among the feedback and further clustered the data within their categories.</p>}
         content3={<img class="main-content" src={surveyeUserstudyFeedback} alt={"Screenshot of the ideation user feedback workspace, showing digital sticky notes categorized and further clustered by common themes."} />}
- />
+      />
 
-<ProjectContent
+      <ProjectContent
         spacing="medium"
         isLast="true"
         content1={<Section text={"Making sense of it"} />}
         content2={<p class='title-medium main-content'>Based on the insights of the user testing, I was able to derive <span style={{ fontWeight: '700' }}>eight recommendations</span> for both the development of gaze-based interfaces as well as for further research on gaze-based questionnaire design for manually impaired individuals:</p>}
-        content3={<CardGroup items={cardGroupItemsOutcome}/>}
- />
+        content3={<CardGroup items={cardGroupItemsOutcome} />}
+      />
 
-<NextProject 
-project="Climatepartner YOU"
-button="View Case Study"
-link="/cp-you"
-/>
+      <NextProject
+        project="Climatepartner YOU"
+        button="View Case Study"
+        link="/cp-you"
+      />
+
+      <ProjectFooter />
 
 
     </>
