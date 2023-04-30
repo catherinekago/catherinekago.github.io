@@ -13,7 +13,7 @@ const Navbar = () => {
 
   return (
     <>
-      <nav>
+      <nav class="main-background-container">
         <Link id="nav-home" to="/">
           KS
         </Link>
