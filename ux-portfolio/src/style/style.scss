@@ -14,6 +14,7 @@ $greyBackground: #F8F8F8;
 
 $primaryMain: #6F8463;
 $primaryDark: #2F3C22;
+$primaryLight: #BDD1B2;
 
 /* || BREAKPOINTS */
 
@@ -124,6 +125,14 @@ body {
         gap: 80px !important;
         align-items: center;
     }
+
+    .img-two-columns{
+        width:100%;
+
+        @include s {
+            width: 45% !important;
+        }
+    }
 }
 
 .main-container {
@@ -163,8 +172,8 @@ body {
     gap: 16px;
 
     @include m {
-        flex-direction: row;
-        justify-content: space-around;
+        flex-direction: row !important;
+        justify-content: space-around !important;
         align-items: center;
     }
 

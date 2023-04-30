@@ -9,9 +9,13 @@ gap: 16px !important;
     gap: 40px !important;
     }
 
+.noBottomPadding{
+    padding-bottom: 0px !important;
+}
+
 .illustration-section {
     transition: 100ms ease-out 100ms;
-    max-width: 100%;
+    width: 100% !important;
     @include s {
         max-width: 40%;
     }

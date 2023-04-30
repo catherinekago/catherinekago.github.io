@@ -9,7 +9,7 @@ const ProjectSection = (props) => {
   const imageClass = determineImageClass();
 
   function determineImageClass() {
-    const basis = "main-content "
+    const basis = "";
 
     switch (props.type) {
       case "hero":
