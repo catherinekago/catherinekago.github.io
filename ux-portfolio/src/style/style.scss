@@ -292,13 +292,19 @@ h4 {
 
 .title-large {
     @extend %title;
-    font-size: 18px;
-    line-height: 32px;
+    font-size: 22px;
+    line-height: 36px;
 
-    @include m {
-        font-size: 22px;
-        line-height: 36px;
-    }
+    @media (max-width: 986px) {
+        font-size: 18px;
+        line-height: 32px;
+      }
+
+      @media (max-width: 700px) {
+        font-size: 16px;
+        line-height: 32px;
+      }
+
 }
 
 .title-medium {
