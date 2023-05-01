@@ -11,11 +11,11 @@
     margin-top: 0px;
 
     .section-container {
-        width: 80%;
+        width: 80% !important;
         padding-left: 20px;
 
         @include xl {
-            width: 1200px;
+            width: 100px;
             padding: 0px 0px;
         }
     }
@@ -24,7 +24,7 @@
         width: 80%;
 
         @include xl {
-            width: 1200px;
+            width: 1100px;
             padding: 0px 0px;
         }
 

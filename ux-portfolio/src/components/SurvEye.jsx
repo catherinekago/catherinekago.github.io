@@ -91,7 +91,7 @@ const SurvEye = () => {
   const listIemsRequirements = [
     { icon: magnifierIcon, title: "Allow for initial inspection", text: "In gaze-based interaction, the eyes are used  for both inspecting and selecting elements, which can result in unintentional selection. Thus, enable the user to inspect their options prior to selecting." },
     { icon: deblurIcon, title: "Consider varying accuracy of eye-tracking technology", text: "Maximize the size of interaction elements to ensure successful selection, and, additionally, identify the minimal sufficient size based on the eye-tracking technology's accuracy." },
-    { icon: invisibleIcon, title: "Provide robustness against blinking", text: "Blinking is a natural behavior that humans can only control to a specific extend. By setting the bottom border of interaction elements equal to the bottom border of the screen, you can ensure that blinking will not interrupt interaction that requires gaze fixation." },
+    { icon: invisibleIcon, title: "Provide robustness against blinking", text: "Blinking is a natural behavior that humans can only control to a certain extend. By setting the bottom border of interaction elements equal to the bottom border of the screen, you can ensure that blinking will not interrupt interaction that requires gaze fixation." },
     { icon: feedbackIcon, title: "Provide visual feedback", text: "Support the user by indicating where the system estimates their gaze at, which interaction elements are currently being affected by the gaze, and how long the user has to remain fixating on an element in order to select it." }
   ];
 
@@ -141,7 +141,7 @@ const SurvEye = () => {
         type="hero"
         flexDirection={"horizontal"}
         headline={heroTitle}
-        text={<p class='title-medium main-content'>My bachelor thesis project for my studies in Human-Computer-Interaction. <br/> <br/> Exploring <span style={{ fontWeight: '700' }}>gaze-based questionnaire design</span> to make questionnaires accessible to individuals with manual impairment.</p>}
+        text={<p class='title-medium main-content'><span style={{ fontWeight: '700' }}>A genuine project of the heart</span>, which happened to coincide my bachelor thesis for my studies in Human-Computer-Interaction. <br/> <br/> Exploring <span style={{ fontWeight: '700' }}>gaze-based questionnaire design</span> to make questionnaires accessible to individuals with manual impairment.</p>}
         image={SurvEyeHero}
         imageAlt={"A mockup of the surveye interface: it shows a likert item with the statement 'Snape was a good guy' and options ranging from 'strongly disagree' to 'strongly agree' to select."}
         secondImage={null}
@@ -157,7 +157,7 @@ const SurvEye = () => {
         flexDirection={"vertical"}
         section={"Setting the scene"}
         headline={"What's the issue?"}
-        text={<p class='title-medium main-content'>I did a first investigation of existing research on how manually impaired individuals interact with paper-based or digital questionnaires and <span style={{ fontWeight: '700' }}>translated my findings into a task flow</span>:</p>}
+        text={<p class='title-medium main-content'>I mapped out my initial investigation of existing research on how manually impaired individuals interact with paper-based or digital questionnaires <span style={{ fontWeight: '700' }}>into a task flow</span>:</p>}
         image={surveyeTaskFlowHorizontal}
         imageAlt={"Task flow for SurvEye: manually impaired user participates in research, has to fill out a paper-based or digital prototype. If there is assistance available, user might provide biased answers. Without assistance the user fails to fill out the questionnaire. Either way, current questionnaire design lead sto an underrepresentation of manually impaired users in research."}
         secondImage={surveyeTaskFlowVertical}
@@ -174,7 +174,7 @@ const SurvEye = () => {
       <ProjectContent
         spacing="medium"
         isLast="true"
-        content1={<p class='title-medium main-content'>I proceeded by investigating <span style={{ fontWeight: '700' }}>alternatives to manual input</span> and analyzed their suitability for my goal.</p>}
+        content1={<p class='title-medium main-content'>What <span style={{ fontWeight: '700' }}>alternatives to manual input</span> are there? I identified voice and gaze as potential alternatives and analyzed their suitability to achieve my goal.</p>}
         content2={alternativesCardContainer}
       />
 
@@ -195,7 +195,7 @@ const SurvEye = () => {
       <ProjectContent
         spacing="medium"
         isLast="true"
-        content1={<p class='title-medium main-content'>I identified <span style={{ fontWeight: '700' }}>four key requirements</span>:</p>}
+        content1={<p class='title-medium main-content'>I summarized the outcome of my investigation in <span style={{ fontWeight: '700' }}>four key requirements</span>:</p>}
         content2={<ListGroup items={listIemsRequirements} />}
       />
 
@@ -205,7 +205,7 @@ const SurvEye = () => {
         type="section"
         flexDirection={"horizontal"}
         section={"Ideation"}
-        headline={"Next up: exploring the solution space."}
+        headline={"Next up: exploring the solution space"}
         text={<p class='title-medium main-content'>With the requirements in mind, I explored different gaze-based interface designs for likert items covering either a discrete or a continuous scale. Together with my supervisor I evaluated the designs and selected the <span style={{ fontWeight: '700' }}>four designs variants with the biggest potential</span>.</p>}
         image={ideationIllustration}
         imageAlt={"An illustration of an astronaut standing on a spaceship, surving past planets."}
@@ -233,7 +233,7 @@ const SurvEye = () => {
         type="section"
         flexDirection={"horizontal"}
         section={"Prototypical Implementation"}
-        headline={"A React web app for gaze input."}
+        headline={"A React web app for gaze input"}
         text={<p class='title-medium main-content'> I translated my designs into <a class="inline-link" href="https://github.com/catherinekago/surv-eye"><span style={{ fontWeight: '700' }}>concrete interface implementations</span></a> and set up <span style={{ fontWeight: '700' }}>data collection algorithms</span> in the background to collect quantitative data during my user testings. To capture gaze input in real-time I used the eye-tracking library <a class="inline-link" href="https://webgazer.cs.brown.edu/"><span style={{ fontWeight: '700' }}>Webgazer</span></a> and adjusted the library to better suit my use case.</p>}
         image={implementationIllustration}
         imageAlt={"A laptop, surrounded by a cup of coffee, a light bulb, color schemes, glasses, and a sketch pad."}
@@ -264,7 +264,7 @@ const SurvEye = () => {
         type="section"
         flexDirection={"horizontal"}
         section={"Evaluation"}
-        headline={"I tested my designs with 16 individuals."}
+        headline={"I tested my designs with 16 individuals"}
         text={<p class='title-medium main-content'> During my study, I asked the participants to select the options that were displayed at the top of the interface.
           I also encouraged them to <span style={{ fontWeight: '700' }}>think aloud</span> during the interaction so I could get deeper insights on their perceptions and thoughts.
           Additionally, I  evaluated <span style={{ fontWeight: '700' }}>usability</span> with the <a class="inline-link" href="https://www.usability.gov/how-to-and-tools/methods/system-usability-scale.html"><span style={{ fontWeight: '700' }}>SUS</span></a> and <span style={{ fontWeight: '700' }}>workload</span> with the <a class="inline-link" href="https://humansystems.arc.nasa.gov/groups/TLX/"><span style={{ fontWeight: '700' }}>NASA-TLX</span></a> questionnaires.

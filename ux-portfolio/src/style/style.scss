@@ -236,9 +236,14 @@ h1 {
     @extend %headline;
     font-size: 56px;
     line-height: 68px;
-
+    text-align: left;
     letter-spacing: -0.25px;
+    margin-bottom: 16px;
 
+    @media (max-width: 986px) {
+        font-size: 48px;
+        line-height: 58px;
+      }
 
 }
 
@@ -247,6 +252,12 @@ h2 {
     font-size: 40px;
     line-height: 56px;
     text-align: left;
+
+
+    @media (max-width: 986px) {
+        font-size: 38px;
+        line-height: 44px;
+      }
 
 }
 
@@ -281,24 +292,25 @@ h4 {
 
 .title-large {
     @extend %title;
-    font-size: 16px;
+    font-size: 18px;
     line-height: 32px;
 
     @include m {
-        font-size: 20px;
+        font-size: 22px;
         line-height: 36px;
     }
 }
 
 .title-medium {
     @extend %title;
-    font-size: 16px;
-    line-height: 32px;
+    font-size: 18px;
+    line-height: 36px;
 
-    @include m {
-        font-size: 18px;
+    @media (max-width: 986px) {
+        font-size: 16px;
         line-height: 32px;
-    }
+      }
+
 }
 
 .title-small {
@@ -369,13 +381,41 @@ button {
     text-decoration: underline !important;
     transition: none;
 
-    @include xl {
-        font-size: 16px;
-        line-height: 36px;
-    }
+    @media (max-width: 986px) {
+        font-size: 14px;
+        line-height: 28px;
+      }
+
 
 }
 
+.hero-background-container {
+    transition: 100ms ease-out 100ms;
+    height: fit-content !important;
+    padding-bottom: 120px;
+    padding-top: 40px;
+    padding-left: 10%;
+    padding-right: 10%;
+    justify-content: flex-start;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+
+    @include m {
+        width: 80%;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    @include xl {
+        align-items: center;
+        width: 100%;
+        align-items: center;
+    }
+
+}
 
 .hero {
     background-color: $primaryBackground;

@@ -4,7 +4,8 @@ import Section from '../atoms/Section';
 
 const ProjectSection = (props) => {
 
-  const containerClass = props.flexDirection === "vertical" ? "main-content content-vertical" : "main-content content-horizontal";
+  var containerClass = props.flexDirection === "vertical" ? "main-content content-vertical" : "main-content content-horizontal";
+  containerClass = props.type === "hero" ? "main-content hero-container" : containerClass;
 
   const imageClass = determineImageClass();
 
@@ -24,7 +25,7 @@ const ProjectSection = (props) => {
   }
 
   const determineTopHeadline = () => {
-    if (props.width < 968) {
+    if (props.width < 968 && props.type !== "hero") {
       return <h2 class="main-content">{props.headline}</h2>;
     } else {
       return null
@@ -32,7 +33,9 @@ const ProjectSection = (props) => {
   }
 
   const determineBottomHeadline = () => {
-    if (props.width > 968) {
+    if (props.type === "hero") {
+      return <h1 class="main-content">{props.headline}</h1>;
+    } else if (props.width > 968) {
       return <h2 class="main-content">{props.headline}</h2>;
     } else {
       return null
@@ -42,30 +45,27 @@ const ProjectSection = (props) => {
   const determineTopImage = () => {
     if (props.secondImage === null && props.width < 700) {
       return <img class={imageClass} src={props.image} alt={props.imageAlt} />;
-    } else {
-      return null;
+    } else if (props.type === "hero" && props.width < 986) {
+      return <img class={imageClass} src={props.image} alt={props.imageAlt} />;
     }
   }
 
   const determineBottomImage = () => {
-    if (props.type !== "content") {
-      if (props.secondImage !== null) {
-        if (props.width < 700) {
-          return <img class="main-content" src={props.secondImage} alt={props.imageAlt} />;
-        } else {
-          return <img class={imageClass} src={props.image} alt={props.imageAlt} />;
-        }
-      } else if (props.width > 700){
+    if (props.secondImage !== null) {
+      if (props.width < 700) {
+        return <img class="main-content" src={props.secondImage} alt={props.imageAlt} />;
+      } else {
         return <img class={imageClass} src={props.image} alt={props.imageAlt} />;
       }
-
-    } else {
-      return null;
+    } else if (props.type === "section" && props.width > 700) {
+      return <img class={imageClass} src={props.image} alt={props.imageAlt} />;
+    } else if (props.type === "hero" && props.width > 986) {
+      return <img class={imageClass} src={props.image} alt={props.imageAlt} />;
     }
   }
 
   return (
-    <div class="main-background-container background-primary">
+    <div class={props.type === "section" ? "main-background-container background-primary" : "hero-background-container background-primary"} >
       {props.type === "section" ? <Section text={props.section} /> : null}
       {determineTopHeadline()}
       {determineTopImage()}
