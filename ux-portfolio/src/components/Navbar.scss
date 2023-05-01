@@ -1,24 +1,37 @@
 @import '../style/style.scss';
 
 
-nav {
+.nav-container{
     background-color: white;
+    padding-top: 0px !important;
+    padding-bottom: 0px !important;
+    display:flex;
+    width:80% !important;
+    align-items: center;
+    position:sticky;
+    z-index: 2;
+    top: 0px;
+    margin:0px;
+
+    @include xl{
+        width:100% !important;
+    }
+}
+nav {
+
     padding-top: 8px !important;
     padding-bottom: 8px !important;
-    width: 80% !important;
+    width: 100% !important;
     height: 45px;
     align-self: center;
     display: flex;
     flex-direction: row !important;
     align-items: flex-start;
     justify-content: space-between !important;
-    position:sticky;
-    z-index: 2;
-    top: 0px;
+
 
     @include xl {
         width: 1100px !important;
-        padding: 0px 0px;
     }
 
     #nav-home {
@@ -27,6 +40,11 @@ nav {
         font-size: 36px;
         line-height: 45px;
         text-decoration: none;
+        transition: 100ms ease-out 100ms;
+
+        &:hover {
+            color: $primaryMain !important;
+        }
   
   }
 

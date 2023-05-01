@@ -13,20 +13,18 @@ const ProjectSection = (props) => {
 
     switch (props.type) {
       case "hero":
-        console.log(basis + "illustration-hero")
         return basis + "illustration-hero";
       case "section":
         if (props.flexDirection === "vertical") {
-          return basis;
+          return "main-content";
         } else {
-          console.log(basis + " illustration-hero")
           return basis + "illustration-section";
         }
     }
   }
 
   const determineTopHeadline = () => {
-    if (props.secondImage === null && props.width < 968) {
+    if (props.width < 968) {
       return <h2 class="main-content">{props.headline}</h2>;
     } else {
       return null
@@ -34,7 +32,7 @@ const ProjectSection = (props) => {
   }
 
   const determineBottomHeadline = () => {
-    if (props.secondImage === null && props.width > 968) {
+    if (props.width > 968) {
       return <h2 class="main-content">{props.headline}</h2>;
     } else {
       return null

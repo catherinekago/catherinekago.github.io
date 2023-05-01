@@ -13,7 +13,8 @@ const Navbar = () => {
 
   return (
     <>
-      <nav class="main-background-container">
+      <div class="main-background-container nav-container">
+      <nav>
         <Link id="nav-home" to="/">
           KS
         </Link>
@@ -23,23 +24,24 @@ const Navbar = () => {
           </Link>
           <Link class="nav-item" to="/about">
             About
-          </Link> 
+          </Link>
           {/* eslint-disable-next-line */}
           <a href={resume} target="_blank" class="nav-item" to="/">
             Resume
           </a>
           <Link class="nav-item" to="/contact">
-        Contact
-      </Link>
+            Contact
+          </Link>
         </div>
       </nav>
-
+      </div >
       <Routes>
         <Route path="/" element={<Portfolio />} />
         <Route path="/about" element={<About />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/surveye" element={<SurvEye />} />
       </Routes>
+
     </>
   )
 

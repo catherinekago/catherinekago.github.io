@@ -174,7 +174,7 @@ body {
     @include m {
         flex-direction: row !important;
         justify-content: space-around !important;
-        align-items: center;
+        align-items: center !important;
     }
 
     .card-icon-text-container {
