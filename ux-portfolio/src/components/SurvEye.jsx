@@ -83,7 +83,6 @@ const SurvEye = () => {
   }
 
   const heroTitle = "SurvEye";
-  const heroText = "TODO, some text about what this project is about."
 
   const typeText = ["Bachelor Thesis (solo)"];
   const stagesText = ["User research", "Wireframes, UI Design", "Frontend", "User testing"];
@@ -142,7 +141,7 @@ const SurvEye = () => {
         type="hero"
         flexDirection={"horizontal"}
         headline={heroTitle}
-        text={<p class='title-medium main-content'>{heroText}</p>}
+        text={<p class='title-medium main-content'>My bachelor thesis project for my studies in Human-Computer-Interaction. <br/> <br/> Exploring <span style={{ fontWeight: '700' }}>gaze-based questionnaire design</span> to make questionnaires accessible to individuals with manual impairment.</p>}
         image={SurvEyeHero}
         imageAlt={"A mockup of the surveye interface: it shows a likert item with the statement 'Snape was a good guy' and options ranging from 'strongly disagree' to 'strongly agree' to select."}
         secondImage={null}
@@ -158,7 +157,7 @@ const SurvEye = () => {
         flexDirection={"vertical"}
         section={"Setting the scene"}
         headline={"What's the issue?"}
-        text={<p class='title-medium main-content'>I did a first investigation of existing research on how manually impaired individuals interact with paper-based or digital questionnaires and translated my findings into a <span style={{ fontWeight: '700' }}>task flow</span>:</p>}
+        text={<p class='title-medium main-content'>I did a first investigation of existing research on how manually impaired individuals interact with paper-based or digital questionnaires and <span style={{ fontWeight: '700' }}>translated my findings into a task flow</span>:</p>}
         image={surveyeTaskFlowHorizontal}
         imageAlt={"Task flow for SurvEye: manually impaired user participates in research, has to fill out a paper-based or digital prototype. If there is assistance available, user might provide biased answers. Without assistance the user fails to fill out the questionnaire. Either way, current questionnaire design lead sto an underrepresentation of manually impaired users in research."}
         secondImage={surveyeTaskFlowVertical}
@@ -186,7 +185,7 @@ const SurvEye = () => {
         flexDirection={"horizontal"}
         section={"Identifying the Requirements"}
         headline={"How to design for gaze input?"}
-        text={<p class='title-medium main-content'>With gaze defined as a suitable alternative input, I proceeded by gathering insights from existing research on how to design gaze interfaces and <span style={{ fontWeight: '700' }}>aggregated</span> them into <span style={{ fontWeight: '700' }}>requirements</span> for my subsequent design exploration.</p>}
+        text={<p class='title-medium main-content'>With gaze defined as a suitable alternative input, I proceeded by gathering insights from existing research on how to design gaze interfaces and <span style={{ fontWeight: '700' }}>aggregated them into requirements for my subsequent design exploration</span>.</p>}
         image={eyeIllustration}
         imageAlt={"An illustration of an open eye."}
         secondImage={null}
@@ -280,7 +279,7 @@ const SurvEye = () => {
         spacing="medium"
         isLast="false"
         content1={<Section text={"Raw data"} />}
-        content2={<p class='title-medium main-content'>I transferred my transcripts to a Miro board and <span style={{ fontWeight: '700' }}>categorized</span> the qualitative feedback as “positive feedback”, “negative feedback”, and “requests and observations”. I then identified <span style={{ fontWeight: '700' }}>shared themes</span> among the feedback and further clustered the data within their categories.</p>}
+        content2={<p class='title-medium main-content'>I transferred my transcripts to a Miro board and <span style={{ fontWeight: '700' }}>categorized the qualitative feedback</span> as “positive feedback”, “negative feedback”, and “requests and observations”. <span style={{ fontWeight: '700' }}>I then identified clusters</span> among the feedback and grouped the data accordingly.</p>}
         content3={<img class="main-content" src={surveyeUserstudyFeedback} alt={"Screenshot of the ideation user feedback workspace, showing digital sticky notes categorized and further clustered by common themes."} />}
       />
 
@@ -288,7 +287,7 @@ const SurvEye = () => {
         spacing="medium"
         isLast="true"
         content1={<Section text={"Making sense of it"} />}
-        content2={<p class='title-medium main-content'>Based on the insights of the user testing, I was able to derive <span style={{ fontWeight: '700' }}>eight recommendations</span> for both the development of gaze-based interfaces as well as for further research on gaze-based questionnaire design for manually impaired individuals:</p>}
+        content2={<p class='title-medium main-content'>Based on the insights of the user testing, I was able to derive <span style={{ fontWeight: '700' }}>eight recommendations for the design of gaze-based interfaces</span> for manually impaired individuals:</p>}
         content3={<CardGroup items={cardGroupItemsOutcome} />}
       />
 
