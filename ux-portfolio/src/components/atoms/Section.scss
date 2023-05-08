@@ -8,24 +8,38 @@
     padding: 0px !important;
     gap: 10px;
     margin-bottom: 16px;
+
     @include xl {
         padding: 0px 0px;
         width: 1200px;
     }
 
-    .section-line {
+    .section-line-dark {
         width: 72px;
-        border: 1px solid $textDark;
+        border: 1px solid $primaryDark;
     }
 
-    .section-text {
-        @extend %title;
+    .section-line-light {
+        width: 72px;
+        border: 1px solid $textLight;
+    }
+
+    .section-text-dark {
+        @extend %text;
         font-size: 20px;
-        line-height: 20px;
+        font-weight: 400 !important;
         letter-spacing: 0.05em;
         text-transform: uppercase;
+        color: $primaryDark;
     }
 
-
+    .section-text-light {
+        @extend %text;
+        font-size: 20px;
+        font-weight: 400 !important;
+        letter-spacing: 0.05em;
+        text-transform: uppercase;
+        color: $textLight !important;
+    }
 
 }

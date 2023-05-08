@@ -1,27 +1,48 @@
 @import url('https://fonts.googleapis.com/css2?family=Abril+Fatface');
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
 
 /* || GENERAL STYLES */
 
 /* || COLORS */
 
+$white: #FDFDFD;
+
+$greyBackground: #E7EBF0;
+
+$primaryMain: #252B33;
+
+$boxShadow: 0px 4px 32px rgba(0, 0, 0, 0.05), -4px -4px 32px rgba(37, 43, 51, 0.05);
+
 $textDark: #111111;
+
+.text-dark {
+    color: $textDark !important;
+}
+
 $textMedium: #545454;
-$textLight: #9A9A9A;
+
+.text-medium {
+    color: $textMedium !important;
+}
+
+$textLight: #aeaeae;
+
+.text-light {
+    color: $textLight !important;
+}
 
 $primaryBackground: #E1E8DD;
 $greyBackground: #F8F8F8;
 
-$primaryMain: #6F8463;
 $primaryDark: #2F3C22;
 $primaryLight: #BDD1B2;
 
 /* || BREAKPOINTS */
 
 $screen-xl-min: 1440px;
-
-$screen-m-min: 968px;
-$screen-s-min: 700px;
+$screen-l-min: 1240px;
+$screen-m-min: 800px;
+$screen-s-min: 600px;
 
 @mixin xl {
     @media (min-width: #{$screen-xl-min}) {
@@ -41,6 +62,181 @@ $screen-s-min: 700px;
     }
 }
 
+$transition: 100ms ease-out 100ms;
+
+/* || TEXT */
+
+%headline {
+    transition: $transition;
+    font-family: 'Abril Fatface';
+    font-style: normal;
+    font-weight: 400;
+    color: $textDark;
+    margin: 0px;
+    line-height: 125%;
+    text-align: left;
+    letter-spacing: -0.25px;
+}
+
+h1 {
+    @extend %headline;
+    font-size: 36px;
+
+    @media (min-width: $screen-s-min) {
+        font-size: 48px !important;
+    }
+
+    @media (min-width: $screen-xl-min) {
+        font-size: 56px !important;
+    }
+}
+
+h2 {
+    @extend %headline;
+    font-size: 32px;
+
+    @media (min-width: $screen-s-min) {
+        font-size: 36px !important;
+    }
+
+    @media (min-width: $screen-xl-min) {
+        font-size: 48px !important;
+    }
+}
+
+h3 {
+    @extend %headline;
+    font-size: 28px;
+
+    @media (min-width: $screen-s-min) {
+        font-size: 32px !important;
+    }
+
+    @media (min-width: $screen-xl-min) {
+        font-size: 36px !important;
+    }
+}
+
+h4 {
+    @extend %headline;
+    font-size: 24px;
+
+    @media (min-width: $screen-s-min) {
+        font-size: 28px !important;
+    }
+
+    @media (min-width: $screen-xl-min) {
+        font-size: 32px !important;
+    }
+}
+
+%text {
+    transition: $transition;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 200 !important;
+    line-height: 175%;
+    text-align: left;
+    margin: 0px;
+}
+
+.text-title {
+    font-weight: 700 !important;
+}
+
+
+.text-xl {
+    @extend %text;
+    font-size: 16px !important;
+    color: $primaryDark;
+
+    @media (min-width: $screen-s-min) {
+        font-size: 18px !important;
+    }
+
+    @media (min-width: $screen-l-min) {
+        font-size: 22px !important;
+    }
+}
+
+.text-l {
+    @extend %text;
+    font-size: 14px;
+
+    @media (min-width: $screen-s-min) {
+        font-size: 16px !important;
+    }
+
+    @media (min-width: $screen-l-min) {
+        font-size: 18px !important;
+    }
+
+}
+
+.text-m {
+    @extend %text;
+    font-size: 12px;
+
+    @media (min-width: $screen-s-min) {
+        font-size: 14px !important;
+    }
+
+    @media (min-width: $screen-xl-min) {
+        font-size: 16px !important;
+    }
+
+}
+
+.text-s {
+    @extend %text;
+    font-size: 12px;
+
+    @media (min-width: $screen-s-min) {
+        font-size: 14px !important;
+    }
+
+    @media (min-width: $screen-xl-min) {
+        font-size: 16px !important;
+    }
+}
+
+.main-content-container {
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+    padding: 0px;
+    gap: 56px;
+
+    @media (min-width: $screen-l-min) {
+        gap: 80px !important;
+    }
+    @media (min-width: $screen-xl-min) {
+        width:1200px !important;
+    }
+
+}
+
+.two-columns-container {
+    transition: $transition;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;        
+    gap: 56px;
+
+    @media (min-width: $screen-m-min) {
+        flex-direction: row !important;
+        gap: 80px !important;
+    }
+
+    @media (min-width: $screen-l-min) {
+        gap: 120px !important;
+    }
+}
+
+
 html,
 body,
 .App,
@@ -52,7 +248,7 @@ body,
 body {
     margin: 0px;
     overflow: scroll;
-    font-family:'Poppins';
+    font-family: 'Poppins';
     /* Show scrollbars */
 }
 
@@ -61,39 +257,58 @@ body {
 }
 
 .main-background-container {
+    transition: $transition;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
     transition: 100ms ease-out 100ms;
     height: fit-content !important;
-    padding-bottom: 120px;
-    padding-top: 120px;
-    padding-left: 10%;
-    padding-right: 10%;
-    justify-content: flex-start;
-    align-items: center;
-    display: flex;
-    flex-direction: column;
-    gap: 24px;
+    padding: 120px 10%;
+    width: 80%;
 
-    @include m {
-        width: 80%;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
+    @media (min-width: $screen-l-min) {
+        gap: 80px !important;
     }
-
-    @include xl {
-        align-items: center;
+    @media (min-width: $screen-xl-min) {
         width: 100%;
-        align-items: center;
     }
 
 }
 
-.background-white {
-    background-color: white;
+.container-dark{
+    background-color: $primaryMain;
+
+    h1, h2, h3, h4{
+        color: $white;
+    }
+
+    p {
+        color: $textLight !important;
+    }
 }
 
-.background-primary {
-    background-color: $primaryBackground;
+.container-white {
+    background-color: $white;
+    h1, h2, h3, h4{
+        color: $primaryMain;
+    }
+
+    p {
+        color: $textMedium !important;
+    }
+}
+
+.container-grey {
+    background-color: $greyBackground;
+
+    h1, h2, h3, h4{
+        color: $primaryMain;
+    }
+
+    p {
+        color: $textMedium !important;
+    }
 }
 
 .main-content {
@@ -105,19 +320,32 @@ body {
 }
 
 .content-vertical {
+    width: 100%;
     display: flex;
     flex-direction: column;
-    gap: 40px;
+    align-items: flex-start;
+    gap: 16px;
 
-    @include m {
-        gap: 16px;
+    @media (min-width: $screen-s-min) {
+        gap: 24px !important;
+    }
+    
+
+    @media (min-width: $screen-l-min) {
+        gap: 40px !important;
     }
 }
 
 .content-horizontal {
     display: flex;
     flex-direction: column;
+    align-items: flex-start;
     gap: 40px;
+    
+
+    @media (min-width: $screen-l-min) {
+        gap: 40px;
+    }
 
 
     @include s {
@@ -126,8 +354,8 @@ body {
         align-items: center;
     }
 
-    .img-two-columns{
-        width:100%;
+    .img-two-columns {
+        width: 100%;
 
         @include s {
             width: 45% !important;
@@ -150,7 +378,7 @@ body {
     }
 }
 
-.card-group{
+.card-group {
     display: flex;
     gap: 16px;
 
@@ -188,11 +416,11 @@ body {
         @include m {
             gap: 16px;
         }
-    
+
     }
 
 
-    .card-content-container{
+    .card-content-container {
         display: flex;
         flex-direction: column;
         align-items: flex-start;
@@ -200,135 +428,36 @@ body {
     }
 }
 
-.container-primary{
+.container-primary {
     background-color: $primaryBackground;
 }
 
-.container-gray{
+.container-gray {
     background-color: $greyBackground;
 }
 
-.icon-big{
-    height:62px;
-    width:62px;
-}
+.icon-big {
+    height: 40px;
+    width: 40px;
 
-.icon-medium{
-    height:40px;
-    width:40px;
-}
-
-.icon-small{
-    height:32px;
-    width:32px;
-}
-
-
-%headline {
-    font-family: 'Abril Fatface';
-    font-style: normal;
-    font-weight: 400;
-    color: $textDark;
-    margin: 0px;
-}
-
-h1 {
-    @extend %headline;
-    font-size: 56px;
-    line-height: 68px;
-    text-align: left;
-    letter-spacing: -0.25px;
-    margin-bottom: 16px;
-
-    @media (max-width: 986px) {
-        font-size: 48px;
-        line-height: 58px;
-      }
-
-}
-
-h2 {
-    @extend %headline;
-    font-size: 40px;
-    line-height: 56px;
-    text-align: left;
-
-
-    @media (max-width: 986px) {
-        font-size: 38px;
-        line-height: 44px;
-      }
-
-}
-
-h3 {
-    @extend %headline;
-    font-size: 36px;
-    line-height: 48px;
-}
-
-h4 {
-    @extend %headline;
-    font-size: 24px;
-    line-height: 32px;
-}
-
-%title {
-    margin: 0px;
-    font-family: 'Poppins';
-    font-style: normal;
-    font-weight: 100 !important;
-    text-align: left;
-    color: $textDark;
-}
-
-.title-extralarge {
-    @extend %title;
-    font-size: 30px !important;
-    line-height: 54px;
-    font-weight: 100;
-    color: $textDark;
-}
-
-.title-large {
-    @extend %title;
-    font-size: 22px;
-    line-height: 36px;
-
-    @media (max-width: 986px) {
-        font-size: 18px;
-        line-height: 32px;
-      }
-
-      @media (max-width: 700px) {
-        font-size: 16px;
-        line-height: 32px;
-      }
-
-}
-
-.title-medium {
-    @extend %title;
-    font-size: 18px;
-    line-height: 36px;
-
-    @media (max-width: 986px) {
-        font-size: 16px;
-        line-height: 32px;
-      }
-
-}
-
-.title-small {
-    @extend %title;
-    font-size: 12px;
-    line-height: 24px;
-
-    @include m {
-        font-size: 16px;
-        line-height: 32px;
+    @media (min-width: $screen-l-min) {
+        height: 48px !important;
+        width: 48px !important;
     }
 }
+
+.icon-medium {
+    height: 40px;
+    width: 40px;
+}
+
+.icon-small {
+    height: 32px;
+    width: 32px;
+}
+
+
+
 
 button {
     font-family: 'Poppins';
@@ -381,18 +510,9 @@ button {
 }
 
 .inline-link {
-    @extend %title;
-    font-size: 16px;
-    line-height: 32px;
+    @extend %text;
     text-decoration: underline !important;
     transition: none;
-
-    @media (max-width: 986px) {
-        font-size: 14px;
-        line-height: 28px;
-      }
-
-
 }
 
 .hero-background-container {

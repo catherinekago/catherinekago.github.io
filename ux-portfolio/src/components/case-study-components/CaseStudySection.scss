@@ -1,0 +1,73 @@
+@import '../../style/style.scss';
+
+.section-headline {
+    transition: $transition;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 16px;
+
+}
+
+.content-horizontal-section{
+    display: flex;
+    flex-direction: row !important;
+    gap: 56px;
+    align-items: center !important;
+
+    .img-horizontal {
+        transition: $transition;
+        display:none;
+    }
+
+    .img-vertical {
+        transition: $transition;
+        display: block;
+        max-width: 300px;
+        margin-top: 16px;
+    }
+
+    @media (min-width: $screen-m-min) {
+        gap: 80px;
+
+        .img-horizontal {
+            display: block;
+            max-width: 300px;
+        }
+
+        .img-vertical {
+            display:none;
+        }
+
+    }
+    
+
+    @media (min-width: $screen-l-min) {
+        gap: 80px;
+        
+        .img-horizontal {
+            display: block;
+            max-width: 400px;
+        }
+
+        .img-vertical {
+            display:none;
+        }
+    }
+
+}
+
+.illustration-section {
+    transition: 100ms ease-out 100ms;
+    width: 100% !important;
+
+    @include s {
+        max-width: 40%;
+    }
+
+    @include m {
+        max-width: 300px !important;
+    }
+
+}

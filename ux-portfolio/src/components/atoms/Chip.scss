@@ -14,7 +14,7 @@
     }
 
     .chip-label {
-        @extend %title;
+        @extend %text;
         white-space: nowrap;
         font-size: 14px;
         line-height: 14px;

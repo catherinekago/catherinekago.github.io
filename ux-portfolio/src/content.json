@@ -21,16 +21,16 @@
                 ]
             },
             {
-                "title": "Climatepartner YOU",
-                "description": "Enabling you to calculate your carbon footprint and take climate action.",
+                "title": "Design System",
+                "description": "TODO.",
                 "button": "View Case Study",
-                "link": "/cp-you",
+                "link": "/design-system",
                 "projectType": "Work experience",
                 "chips": [
                     "Research",
                     "Concept",
                     "Design",
-                    "UI Testing"
+                    "Implementation"
                 ]
             },
 

@@ -8,6 +8,7 @@ import Portfolio from '../pages/Portfolio';
 import resume from "../assets/pdfs/Kathrin-Schnizer_CV_EN.pdf";
 import Contact from '../pages/Contact';
 import SurvEye from './SurvEye';
+import DesignSystem from './case-study-components/DesignSystem';
 
 const Navbar = () => {
 
@@ -40,6 +41,7 @@ const Navbar = () => {
         <Route path="/about" element={<About />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/surveye" element={<SurvEye />} />
+        <Route path="/design-system" element={<DesignSystem/>} />
       </Routes>
 
     </>

@@ -56,7 +56,7 @@ nav {
         gap: 40px;
 
         .nav-item {
-            @extend %title;
+            @extend %text;
             font-size: 14px;
             line-height: 45px;
             transition: 100ms ease-out 100ms;

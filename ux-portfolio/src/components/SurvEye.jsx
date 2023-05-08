@@ -2,7 +2,7 @@ import React from 'react';
 import { useState, useEffect } from "react";
 import './../style/style.scss'
 
-import ProjectDescription from './project-pages/ProjectDescription';
+import ProjectDescription from './case-study-components/CaseStudyDescription';
 import SurvEyeHero from '../assets/images/SurvEye.svg';
 
 
