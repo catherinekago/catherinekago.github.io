@@ -18,7 +18,7 @@ const CaseStudyDescription = (props) => {
           <div class="project-details-container">
             <img class="icon-big" src={props.toolsIcon} alt="" />
             <div class="description-text-container">
-              <p class="text-l text-title text-medium">Tools</p>
+              <p class="text-l text-title text-dark">Tools</p>
               {props.toolsText.map((text) => (
                 <p class="text-l text-dark">{text}</p>
               ))}
@@ -27,7 +27,7 @@ const CaseStudyDescription = (props) => {
           <div class="project-details-container">
             <img class="icon-big" src={props.durationIcon} alt="" />
             <div class="description-text-container">
-              <p class="text-l text-medium text-title">Duration</p>
+              <p class="text-l text-dark text-title">Duration</p>
 
               {props.durationText.map((text) => (
                 <p class="text-l text-dark">{text}</p>

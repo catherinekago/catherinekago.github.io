@@ -11,15 +11,19 @@ $greyBackground: #E7EBF0;
 
 $primaryMain: #252B33;
 
+.text-primary {
+    color: $primaryMain !important;
+}
+
 $boxShadow: 0px 4px 32px rgba(0, 0, 0, 0.05), -4px -4px 32px rgba(37, 43, 51, 0.05);
 
-$textDark: #111111;
+$textDark: #727272;
 
 .text-dark {
     color: $textDark !important;
 }
 
-$textMedium: #545454;
+$textMedium: #959595;
 
 .text-medium {
     color: $textMedium !important;
@@ -32,7 +36,6 @@ $textLight: #aeaeae;
 }
 
 $primaryBackground: #E1E8DD;
-$greyBackground: #F8F8F8;
 
 $primaryDark: #2F3C22;
 $primaryLight: #BDD1B2;
@@ -134,7 +137,7 @@ h4 {
     transition: $transition;
     font-family: 'Poppins';
     font-style: normal;
-    font-weight: 200 !important;
+    font-weight: 300 !important;
     line-height: 175%;
     text-align: left;
     margin: 0px;
@@ -218,6 +221,14 @@ h4 {
 
 }
 
+.content-blocks{
+    gap: 80px !important;
+
+    @media (min-width: $screen-xl-min) {
+        width:1200px !important;
+    }
+}
+
 .two-columns-container {
     transition: $transition;
     display: flex;
@@ -290,25 +301,18 @@ body {
 
 .container-white {
     background-color: $white;
-    h1, h2, h3, h4{
+    h1, h2, h3, h4 {
         color: $primaryMain;
-    }
-
-    p {
-        color: $textMedium !important;
     }
 }
 
 .container-grey {
-    background-color: $greyBackground;
+    background-color: $greyBackground !important;
 
     h1, h2, h3, h4{
         color: $primaryMain;
     }
 
-    p {
-        color: $textMedium !important;
-    }
 }
 
 .main-content {
