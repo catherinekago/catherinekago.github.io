@@ -23,13 +23,13 @@ $textDark: #727272;
     color: $textDark !important;
 }
 
-$textMedium: #959595;
+$textMedium: #838383;
 
 .text-medium {
     color: $textMedium !important;
 }
 
-$textLight: #aeaeae;
+$textLight: #c2c2c2;
 
 .text-light {
     color: $textLight !important;
@@ -222,7 +222,7 @@ h4 {
 }
 
 .content-blocks{
-    gap: 80px !important;
+    gap: 120px !important;
 
     @media (min-width: $screen-xl-min) {
         width:1200px !important;
@@ -236,6 +236,8 @@ h4 {
     align-items: flex-start;
     padding: 0px;        
     gap: 56px;
+    flex: 1 1 0px;
+
 
     @media (min-width: $screen-m-min) {
         flex-direction: row !important;
@@ -245,6 +247,35 @@ h4 {
     @media (min-width: $screen-l-min) {
         gap: 120px !important;
     }
+
+    .img-two-columns{
+            width: 100%;
+
+        @media (min-width: $screen-m-min) {
+            width: 33% !important;
+        }
+
+
+    }
+
+    .hide-on-xs-s{
+        display:none;
+        @media (min-width: $screen-m-min) {
+            display:block !important;
+        }
+
+    }
+    
+    .hide-on-m-l-xl{
+        display:block;
+        @media (min-width: $screen-m-min) {
+            display:none !important;
+        }
+    }
+}
+
+.flex-center{
+    align-items: center;
 }
 
 

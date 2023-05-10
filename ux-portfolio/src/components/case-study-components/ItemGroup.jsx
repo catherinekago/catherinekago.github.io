@@ -14,7 +14,7 @@ const ItemGroup = (props) => {
               <p class="text-l text-title text-primary">{item.headline}</p>
               <div class="item-group-header-underline" />
             </div>
-            <p class="text-l text-dark">{item.text}</p>
+            <p class="text-l text-medium">{item.text}</p>
           </div>
         ))}
       </div>);
