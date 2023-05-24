@@ -1,112 +1,102 @@
-@import '../../style/style.scss';
+@import "../../style/style.scss";
 @import "react-alice-carousel/lib/scss/alice-carousel.scss";
 
 #carousel-container {
-    background-color: $primaryBackground;
-    width: 100% !important;
-    height: fit-content;
-    padding-top: 100px;
-    padding-bottom: 50px;
-    gap: 56px;
-    margin-top: 0px;
+  background-color: $primaryMain;
+  width: 100% !important;
+  height: fit-content;
+  padding-top: 100px;
+  padding-bottom: 50px;
+  gap: 56px;
+  margin-top: 0px;
 
-    .section-container {
-        width: 80% !important;
-        padding-left: 20px;
+  .section-container {
+    width: 80% !important;
+    padding-left: 20px;
 
-        @include xl {
-            width: 100px;
-            padding: 0px 0px;
-        }
+    @include xl {
+      width: 100px;
+      padding: 0px 0px;
+    }
+  }
+
+  .alice-carousel {
+    width: 80%;
+
+    @include xl {
+      width: 1100px;
+      padding: 0px 0px;
     }
 
-    .alice-carousel {
-        width: 80%;
+    .alice-carousel__dots-item {
+      background-color: white;
 
-        @include xl {
-            width: 1100px;
-            padding: 0px 0px;
-        }
-
-        .alice-carousel__dots-item {
-            background-color: white;
-
-            &.__active {
-                background-color: $primaryMain;
-            }
-        }
-
-        .alice-carousel__prev-btn {
-            padding-right: 16px;
-        }
-
-        .alice-carousel__next-btn {
-            padding-left: 16px;
-            text-align: left;
-        }
-
-        .alice-carousel__prev-btn-item,
-        alice-carousel__next-btn-item {
-            color: $primaryMain;
-        }
-
-
+      &.__active {
+        background-color: $textLight;
+      }
     }
 
-    .carousel-item-container {
-        background-color: white;
+    .alice-carousel__prev-btn {
+      padding-right: 16px;
+    }
+
+    .alice-carousel__next-btn {
+      padding-left: 16px;
+      text-align: left;
+    }
+
+    .alice-carousel__prev-btn-item,
+    .alice-carousel__next-btn-item {
+      color: $textLight;
+    }
+  }
+
+  .carousel-item-container {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 40px;
+    gap: 40px;
+    height: fit-content !important;
+
+    .carousel-item-person-container {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      padding: 0px;
+      gap: 40px;
+      width: 100%;
+      height: fit-content;
+
+      @include s {
+        flex-direction: row;
+        align-items: center;
+        height: 50%;
+      }
+
+      .carousel-item-person-img {
+        width: 150px;
+        height: 150px;
+        background-color: $textLight;
+      }
+
+      .carousel-item-person-info {
         display: flex;
         flex-direction: column;
         align-items: flex-start;
-        padding: 40px;
-        gap: 40px;
-        height: fit-content;
+        padding: 0px;
+        gap: 4px;
 
-        @include s {
-            height: 300px;
+        h3 {
+          @extend %headline;
+          font-size: 28px;
         }
-
-        .carousel-item-person-container {
-            display: flex;
-            flex-direction: column;
-            align-items: flex-start;
-            padding: 0px;
-            gap: 40px;
-            width: 100%;
-            height: fit-content;
-
-            @include s {
-                flex-direction: row;
-                align-items: center;
-                height: 50%;
-            }
-
-            .carousel-item-person-img {
-                width: 150px;
-                height: 150px;
-                background-color: $primaryBackground;
-            }
-
-            .carousel-item-person-info {
-        
-                display: flex;
-                flex-direction: column;
-                align-items: flex-start;
-                padding: 0px;
-                gap: 4px;
-
-                h3{
-                    @extend %headline;
-                    font-size: 28px;
-                }
-
-            }
-        }
-
-        p {
-            color: $textMedium;
-        }
+      }
     }
 
-
+    p {
+      color: $textMedium;
+    }
+  }
 }

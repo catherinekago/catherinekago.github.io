@@ -4,12 +4,13 @@
             {
                 "name": "Beth Thayne",
                 "occupation": "Product Owner @ ClimatePartner",
-                "quote": "Kathrin is awesome."
+                "quote": "I’ve had the pleasure of working with Kathrin at most stages of the product and design development cycle. In early stage discovery, Kathrin’s greatest strength is asking the right questions at the right time, to bring focus and a clear scope to the task at hand. In prototyping, I have always been impressed by her creativity and out-the-box thinking when tackling problems. In execution, she is unmatched. Kathrin designs with both speed and quality, and throughout every stage clearly communicates her intentions, her process and her decisions. It is truly a pleasure to work with Kathrin and on top of being a talented designer, she is just an all round wonderful person who empathises and looks out for team members and works hard to create a positive and enjoyable working environment."
             }
         ],
         "featuredProjects": [
             {
                 "title": "SurvEye",
+                "slug": "SurvEye",
                 "description": "Exploring the design of user interfaces for gaze-based questionnaires for manually impaired individuals.",
                 "button": "View Case Study",
                 "link": "/surveye",
@@ -22,14 +23,15 @@
             },
             {
                 "title": "Design System",
-                "description": "TODO.",
+                "slug": "DesignSystem",
+                "description": "Adapting our design system and associated processes to the needs of a growing team.",
                 "button": "View Case Study",
                 "link": "/design-system",
                 "projectType": "Work experience",
                 "chips": [
                     "Research",
                     "Concept",
-                    "Design",
+                    "Workshop",
                     "Implementation"
                 ]
             },

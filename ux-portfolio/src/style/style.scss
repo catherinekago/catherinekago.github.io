@@ -213,7 +213,7 @@ h4 {
     gap: 56px;
 
     @media (min-width: $screen-l-min) {
-        gap: 80px !important;
+        gap: 56px !important;
     }
     @media (min-width: $screen-xl-min) {
         width:1200px !important;
@@ -222,7 +222,7 @@ h4 {
 }
 
 .content-blocks{
-    gap: 120px !important;
+    gap: 160px !important;
 
     @media (min-width: $screen-xl-min) {
         width:1200px !important;
@@ -240,37 +240,23 @@ h4 {
 
 
     @media (min-width: $screen-m-min) {
-        flex-direction: row !important;
+flex-direction: column;
         gap: 80px !important;
     }
 
     @media (min-width: $screen-l-min) {
+                flex-direction: row !important;
         gap: 120px !important;
     }
 
     .img-two-columns{
-            width: 100%;
+  
 
-        @media (min-width: $screen-m-min) {
+        @media (min-width: $screen-l-min) {
             width: 33% !important;
         }
 
 
-    }
-
-    .hide-on-xs-s{
-        display:none;
-        @media (min-width: $screen-m-min) {
-            display:block !important;
-        }
-
-    }
-    
-    .hide-on-m-l-xl{
-        display:block;
-        @media (min-width: $screen-m-min) {
-            display:none !important;
-        }
     }
 }
 
@@ -359,16 +345,22 @@ body {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    gap: 16px;
+    gap: 24px;
 
     @media (min-width: $screen-s-min) {
-        gap: 24px !important;
+        gap: 40px !important;
     }
     
 
     @media (min-width: $screen-l-min) {
-        gap: 40px !important;
+        gap: 56px !important;
     }
+}
+
+.content-vertical-small{
+    display:flex;
+    flex-direction:column;
+    gap: 24px;
 }
 
 .content-horizontal {
@@ -376,24 +368,24 @@ body {
     flex-direction: column;
     align-items: flex-start;
     gap: 40px;
+
+     @media (min-width: 1000px) {
+            align-items: center;
+                flex-direction: row !important;
+                gap: 80px;
+            }
     
 
     @media (min-width: $screen-l-min) {
-        gap: 40px;
-    }
-
-
-    @include s {
-        flex-direction: row !important;
         gap: 80px !important;
-        align-items: center;
     }
+
 
     .img-two-columns {
         width: 100%;
 
-        @include s {
-            width: 45% !important;
+    @media (min-width: 1000px) {
+            width: 40% !important;
         }
     }
 }
@@ -503,17 +495,17 @@ button {
     text-align: center;
 
     letter-spacing: 0.1px;
-    color: $textDark;
+    color: $primaryMain;
     height: 56px;
     border: none;
     background-color: transparent;
     cursor: pointer;
-    box-shadow: 0 -2px 0 $textDark inset;
+    box-shadow: 0 -2px 0 $primaryMain inset;
     transition: 100ms ease-out 100ms;
 
     &:hover {
         cursor: pointer;
-        box-shadow: 0 -8px 0 $textDark inset;
+        box-shadow: 0 -8px 0 $primaryMain inset;
     }
 }
 

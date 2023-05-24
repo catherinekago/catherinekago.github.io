@@ -1,19 +1,12 @@
-import React from 'react'
+import React from "react";
 
 const CaseStudyContent = (props) => {
-
-   return (
-    <div class="main-background-container container-white" >
-
+  return (
+    <div class="main-background-container container-white">
       <div class={"main-content-container content-blocks"}>
-        {props.content1}
-        {props.content2}
-        {props.content3}
-        {props.content4}
+        {props.content.map((item) => item)}
       </div>
-
     </div>
-  )
-
-}
+  );
+};
 export default CaseStudyContent;

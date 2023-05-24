@@ -3,29 +3,30 @@
 
 .item-group-container-underline {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: flex-start;
+    justify-content: flex-start;
+    align-items: stretch;
+    flex-wrap: wrap;
     padding: 0px;
-    gap: 24px;
+    gap: 40px;
 
-    @media (min-width: $screen-m-min) {
-        flex-direction: row !important;
-        gap: 80px;
-
-    }
-
-    @media (min-width: $screen-l-min) {
-        gap: 120px;
-    }
 
     .item-group-item-underline {
         display: flex;
+        gap: 8px;
         flex-direction: column;
-        align-items: flex-start;
-        padding: 0px;
-        gap: 16px;
-        flex-grow: 1;
         width: 100%;
+
+        @media (min-width: $screen-s-min) {
+            flex: 1 0 40%;
+            /* explanation below */
+        }
+
+        @media (min-width: $screen-l-min) {
+            flex: 1 0 35%;
+            /* explanation below */
+        }
 
         .item-group-header {
             display: flex;
@@ -42,6 +43,13 @@
                 order: 1;
                 align-self: stretch;
                 flex-grow: 0;
+
+            }
+
+            .item-group-headline {
+                display: flex;
+                flex-direction: row;
+                gap: 8px;
             }
 
         }
@@ -56,7 +64,7 @@
     align-items: flex-start;
     justify-content: flex-start;
     align-items: stretch;
-    flex-wrap:wrap;
+    flex-wrap: wrap;
     padding: 0px;
     gap: 24px;
 
@@ -74,19 +82,24 @@
 
 }
 
-.item-group-item-box-small{
+.item-group-item-box-small {
     width: 100%;
+
     @media (min-width: $screen-s-min) {
-        flex: 1 0 30%; /* explanation below */
+        flex: 1 0 30%;
+        /* explanation below */
     }
+
     @media (min-width: $screen-l-min) {
-        flex: 1 0 5%; /* explanation below */
+        flex: 1 0 5%;
+        /* explanation below */
     }
 }
 
-.item-group-item-box-large{
+.item-group-item-box-large {
 
     @media (min-width: $screen-m-min) {
-        flex: 1 0 30%; /* explanation below */
+        flex: 1 0 30%;
+        /* explanation below */
     }
 }

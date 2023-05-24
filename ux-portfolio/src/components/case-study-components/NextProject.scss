@@ -1,0 +1,27 @@
+@import '../../style/style.scss';
+
+.next-project-container{
+        transition: $transition;
+            display: flex;
+            align-items: flex-end;
+            justify-content: flex-start;
+            flex-direction: column;
+            transition: 100ms ease-out 100ms;
+            height: fit-content !important;
+            padding: 120px 10%;
+            width: 80%;
+            gap: 40px;
+    padding-bottom: 40px !important;
+        
+            @media (min-width: $screen-xl-min) {
+                width: 1200px;
+            }
+}
+
+.next-text {
+    @extend %text;
+    font-size: 20px;
+    line-height: 20px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+  }

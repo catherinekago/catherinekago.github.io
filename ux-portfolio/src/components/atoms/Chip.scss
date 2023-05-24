@@ -1,24 +1,30 @@
-@import '../../style/style.scss';
+@import "../../style/style.scss";
 
 .chip-container {
-    display: block;
-    padding: 8px 12px;
-    border-radius: 24px;
+  display: block;
+  padding: 8px 12px;
+  border-radius: 24px;
 
-    &.chip-primary {
-        background-color: $primaryBackground;
-    }
-
-    &.chip-secondary {
-        background-color: $greyBackground;
-    }
-
+  &.chip-primary {
+    background-color: $primaryMain;
     .chip-label {
-        @extend %text;
-        white-space: nowrap;
-        font-size: 14px;
-        line-height: 14px;
-        letter-spacing: 0.1px;
+      color: $white;
     }
+  }
 
+  &.chip-secondary {
+    background-color: $greyBackground;
+    .chip-label {
+      color: $primaryDark;
+    }
+  }
+
+  .chip-label {
+    @extend %text;
+
+    white-space: nowrap;
+    font-size: 14px;
+    line-height: 14px;
+    letter-spacing: 0.1px;
+  }
 }
