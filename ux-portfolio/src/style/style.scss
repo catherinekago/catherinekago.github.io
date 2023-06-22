@@ -1,44 +1,45 @@
-@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface');
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Abril+Fatface");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap");
 
 /* || GENERAL STYLES */
 
 /* || COLORS */
 
-$white: #FDFDFD;
+$white: #fdfdfd;
 
-$greyBackground: #E7EBF0;
+$greyBackground: #e7ebf0;
 
-$primaryMain: #252B33;
+$primaryMain: #252b33;
 
 .text-primary {
-    color: $primaryMain !important;
+  color: $primaryMain !important;
 }
 
-$boxShadow: 0px 4px 32px rgba(0, 0, 0, 0.05), -4px -4px 32px rgba(37, 43, 51, 0.05);
+$boxShadow: 0px 4px 32px rgba(0, 0, 0, 0.05),
+  -4px -4px 32px rgba(37, 43, 51, 0.05);
 
 $textDark: #727272;
 
 .text-dark {
-    color: $textDark !important;
+  color: $textDark !important;
 }
 
 $textMedium: #838383;
 
 .text-medium {
-    color: $textMedium !important;
+  color: $textMedium !important;
 }
 
 $textLight: #c2c2c2;
 
 .text-light {
-    color: $textLight !important;
+  color: $textLight !important;
 }
 
-$primaryBackground: #E1E8DD;
+$primaryBackground: #e1e8dd;
 
-$primaryDark: #2F3C22;
-$primaryLight: #BDD1B2;
+$primaryDark: #2f3c22;
+$primaryLight: #bdd1b2;
 
 /* || BREAKPOINTS */
 
@@ -48,21 +49,21 @@ $screen-m-min: 800px;
 $screen-s-min: 600px;
 
 @mixin xl {
-    @media (min-width: #{$screen-xl-min}) {
-        @content;
-    }
+  @media (min-width: #{$screen-xl-min}) {
+    @content;
+  }
 }
 
 @mixin m {
-    @media (min-width: #{$screen-m-min}) {
-        @content;
-    }
+  @media (min-width: #{$screen-m-min}) {
+    @content;
+  }
 }
 
 @mixin s {
-    @media (min-width: #{$screen-s-min}) {
-        @content;
-    }
+  @media (min-width: #{$screen-s-min}) {
+    @content;
+  }
 }
 
 $transition: 100ms ease-out 100ms;
@@ -70,534 +71,530 @@ $transition: 100ms ease-out 100ms;
 /* || TEXT */
 
 %headline {
-    transition: $transition;
-    font-family: 'Abril Fatface';
-    font-style: normal;
-    font-weight: 400;
-    color: $textDark;
-    margin: 0px;
-    line-height: 125%;
-    text-align: left;
-    letter-spacing: -0.25px;
+  transition: $transition;
+  font-family: "Abril Fatface";
+  font-style: normal;
+  font-weight: 400;
+  color: $textDark;
+  margin: 0px;
+  line-height: 125%;
+  text-align: left;
+  letter-spacing: -0.25px;
 }
 
 h1 {
-    @extend %headline;
-    font-size: 36px;
+  @extend %headline;
+  font-size: 36px;
 
-    @media (min-width: $screen-s-min) {
-        font-size: 48px !important;
-    }
+  @media (min-width: $screen-s-min) {
+    font-size: 48px !important;
+  }
 
-    @media (min-width: $screen-xl-min) {
-        font-size: 56px !important;
-    }
+  @media (min-width: $screen-xl-min) {
+    font-size: 56px !important;
+  }
 }
 
 h2 {
-    @extend %headline;
-    font-size: 32px;
+  @extend %headline;
+  font-size: 32px;
 
-    @media (min-width: $screen-s-min) {
-        font-size: 36px !important;
-    }
+  @media (min-width: $screen-s-min) {
+    font-size: 36px !important;
+  }
 
-    @media (min-width: $screen-xl-min) {
-        font-size: 48px !important;
-    }
+  @media (min-width: $screen-xl-min) {
+    font-size: 48px !important;
+  }
 }
 
 h3 {
-    @extend %headline;
-    font-size: 28px;
+  @extend %headline;
+  font-size: 28px;
 
-    @media (min-width: $screen-s-min) {
-        font-size: 32px !important;
-    }
+  @media (min-width: $screen-s-min) {
+    font-size: 32px !important;
+  }
 
-    @media (min-width: $screen-xl-min) {
-        font-size: 36px !important;
-    }
+  @media (min-width: $screen-xl-min) {
+    font-size: 36px !important;
+  }
 }
 
 h4 {
-    @extend %headline;
-    font-size: 24px;
+  @extend %headline;
+  font-size: 24px;
 
-    @media (min-width: $screen-s-min) {
-        font-size: 28px !important;
-    }
+  @media (min-width: $screen-s-min) {
+    font-size: 28px !important;
+  }
 
-    @media (min-width: $screen-xl-min) {
-        font-size: 32px !important;
-    }
+  @media (min-width: $screen-xl-min) {
+    font-size: 32px !important;
+  }
 }
 
 %text {
-    transition: $transition;
-    font-family: 'Poppins';
-    font-style: normal;
-    font-weight: 300 !important;
-    line-height: 175%;
-    text-align: left;
-    margin: 0px;
+  transition: $transition;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 300 !important;
+  line-height: 175%;
+  text-align: left;
+  margin: 0px;
 }
 
 .text-title {
-    font-weight: 700 !important;
+  font-weight: 700 !important;
 }
 
-
 .text-xl {
-    @extend %text;
-    font-size: 16px !important;
-    color: $primaryDark;
+  @extend %text;
+  font-size: 16px !important;
+  color: $primaryDark;
 
-    @media (min-width: $screen-s-min) {
-        font-size: 18px !important;
-    }
+  @media (min-width: $screen-s-min) {
+    font-size: 18px !important;
+  }
 
-    @media (min-width: $screen-l-min) {
-        font-size: 22px !important;
-    }
+  @media (min-width: $screen-l-min) {
+    font-size: 22px !important;
+  }
 }
 
 .text-l {
-    @extend %text;
-    font-size: 14px;
+  @extend %text;
+  font-size: 14px;
 
-    @media (min-width: $screen-s-min) {
-        font-size: 16px !important;
-    }
+  @media (min-width: $screen-s-min) {
+    font-size: 16px !important;
+  }
 
-    @media (min-width: $screen-l-min) {
-        font-size: 18px !important;
-    }
-
+  @media (min-width: $screen-l-min) {
+    font-size: 18px !important;
+  }
 }
 
 .text-m {
-    @extend %text;
-    font-size: 12px;
+  @extend %text;
+  font-size: 12px;
 
-    @media (min-width: $screen-s-min) {
-        font-size: 14px !important;
-    }
+  @media (min-width: $screen-s-min) {
+    font-size: 14px !important;
+  }
 
-    @media (min-width: $screen-xl-min) {
-        font-size: 16px !important;
-    }
-
+  @media (min-width: $screen-xl-min) {
+    font-size: 16px !important;
+  }
 }
 
 .text-s {
-    @extend %text;
-    font-size: 12px;
+  @extend %text;
+  font-size: 12px;
 
-    @media (min-width: $screen-s-min) {
-        font-size: 14px !important;
-    }
+  @media (min-width: $screen-s-min) {
+    font-size: 14px !important;
+  }
 
-    @media (min-width: $screen-xl-min) {
-        font-size: 16px !important;
-    }
+  @media (min-width: $screen-xl-min) {
+    font-size: 16px !important;
+  }
 }
 
 .main-content-container {
-    width: 100%;
-    display: flex;
-    align-items: flex-start;
-    justify-content: flex-start;
-    flex-direction: column;
-    padding: 0px;
-    gap: 56px;
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+  padding: 0px;
+  gap: 56px;
 
-    @media (min-width: $screen-l-min) {
-        gap: 56px !important;
-    }
-    @media (min-width: $screen-xl-min) {
-        width:1200px !important;
-    }
-
+  @media (min-width: $screen-l-min) {
+    gap: 56px !important;
+  }
+  @media (min-width: $screen-xl-min) {
+    width: 1200px !important;
+  }
 }
 
-.content-blocks{
-    gap: 160px !important;
+.content-blocks {
+  gap: 160px !important;
 
-    @media (min-width: $screen-xl-min) {
-        width:1200px !important;
-    }
+  @media (min-width: $screen-xl-min) {
+    width: 1200px !important;
+  }
 }
 
 .two-columns-container {
-    transition: $transition;
-    display: flex;
+  transition: $transition;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 56px;
+  flex: 1 1 0px;
+
+  @media (min-width: $screen-m-min) {
     flex-direction: column;
-    align-items: flex-start;
-    padding: 0px;        
-    gap: 56px;
-    flex: 1 1 0px;
+    gap: 80px !important;
+  }
 
+  @media (min-width: $screen-l-min) {
+    flex-direction: row !important;
+    gap: 120px !important;
+  }
 
-    @media (min-width: $screen-m-min) {
-flex-direction: column;
-        gap: 80px !important;
-    }
-
+  .img-two-columns {
     @media (min-width: $screen-l-min) {
-                flex-direction: row !important;
-        gap: 120px !important;
+      width: 33% !important;
     }
-
-    .img-two-columns{
-  
-
-        @media (min-width: $screen-l-min) {
-            width: 33% !important;
-        }
-
-
-    }
+  }
 }
 
-.flex-center{
-    align-items: center;
+.flex-center {
+  align-items: center;
 }
-
 
 html,
 body,
 .App,
-.App>div,
+.App > div,
 #root {
-    height: 100%
+  height: 100%;
 }
 
 body {
-    margin: 0px;
-    overflow: scroll;
-    font-family: 'Poppins';
-    /* Show scrollbars */
+  margin: 0px;
+  overflow: scroll;
+  font-family: "Poppins";
+  /* Show scrollbars */
 }
 
 #root {
-    display: flex;
+  display: flex;
 }
 
 .main-background-container {
-    transition: $transition;
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    flex-direction: column;
-    transition: 100ms ease-out 100ms;
-    height: fit-content !important;
-    padding: 120px 10%;
-    width: 80%;
+  transition: $transition;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: column;
+  transition: 100ms ease-out 100ms;
+  height: fit-content !important;
+  padding: 120px 10%;
+  width: 80%;
 
-    @media (min-width: $screen-l-min) {
-        gap: 80px !important;
-    }
-    @media (min-width: $screen-xl-min) {
-        width: 100%;
-    }
-
+  @media (min-width: $screen-l-min) {
+    gap: 80px !important;
+  }
+  @media (min-width: $screen-xl-min) {
+    width: 100%;
+  }
 }
 
-.container-dark{
-    background-color: $primaryMain;
+.container-dark {
+  background-color: $primaryMain;
 
-    h1, h2, h3, h4{
-        color: $white;
-    }
+  h1,
+  h2,
+  h3,
+  h4 {
+    color: $white;
+  }
 
-    p {
-        color: $textLight !important;
-    }
+  p {
+    color: $textLight !important;
+  }
 }
 
 .container-white {
-    background-color: $white;
-    h1, h2, h3, h4 {
-        color: $primaryMain;
-    }
+  background-color: $white;
+  h1,
+  h2,
+  h3,
+  h4 {
+    color: $primaryMain;
+  }
 }
 
 .container-grey {
-    background-color: $greyBackground !important;
+  background-color: $greyBackground !important;
 
-    h1, h2, h3, h4{
-        color: $primaryMain;
-    }
-
+  h1,
+  h2,
+  h3,
+  h4 {
+    color: $primaryMain;
+  }
 }
 
 .main-content {
-    width: 100% !important;
+  width: 100% !important;
 
-    @include xl {
-        max-width: 1100px !important;
-    }
+  @include xl {
+    max-width: 1100px !important;
+  }
 }
 
 .content-vertical {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 24px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 24px;
 
-    @media (min-width: $screen-s-min) {
-        gap: 40px !important;
-    }
-    
+  @media (min-width: $screen-s-min) {
+    gap: 40px !important;
+  }
 
-    @media (min-width: $screen-l-min) {
-        gap: 56px !important;
-    }
+  @media (min-width: $screen-l-min) {
+    gap: 56px !important;
+  }
 }
 
-.content-vertical-small{
-    display:flex;
-    flex-direction:column;
-    gap: 24px;
+.content-vertical-small {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
 }
 
 .content-horizontal {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 40px;
 
-     @media (min-width: 1000px) {
-            align-items: center;
-                flex-direction: row !important;
-                gap: 80px;
-            }
-    
+  @media (min-width: 1000px) {
+    align-items: center;
+    flex-direction: row !important;
+    gap: 80px;
+  }
 
-    @media (min-width: $screen-l-min) {
-        gap: 80px !important;
-    }
+  @media (min-width: $screen-l-min) {
+    gap: 80px !important;
+  }
 
-
-    .img-two-columns {
-        width: 100%;
+  .img-two-columns {
+    width: 100%;
 
     @media (min-width: 1000px) {
-            width: 40% !important;
-        }
+      width: 40% !important;
     }
+  }
+
+  .img-small {
+    width: 230px;
+    @media (min-width: $screen-m-min) {
+      width: 25%;
+    }
+    @media (min-width: $screen-l-min) {
+      width: 300px !important;
+    }
+  }
 }
 
 .main-container {
-    background-color: white;
-    display: flex;
-    width: 80%;
-    align-items: flex-start;
-    flex-direction: column;
-    height: fit-content !important;
-    gap: 100px;
+  background-color: white;
+  display: flex;
+  width: 80%;
+  align-items: flex-start;
+  flex-direction: column;
+  height: fit-content !important;
+  gap: 100px;
 
-    @include xl {
-        padding: 0px 0px;
-        width: 1100px !important;
-    }
+  @include xl {
+    padding: 0px 0px;
+    width: 1100px !important;
+  }
 }
 
 .card-group {
-    display: flex;
-    gap: 16px;
+  display: flex;
+  gap: 16px;
 
-    @include s {
-        flex-direction: row !important;
-        gap: 40px !important;
-        align-items: center;
-    }
+  @include s {
+    flex-direction: row !important;
+    gap: 40px !important;
+    align-items: center;
+  }
 }
 
 .card-container {
-    margin: 0px 0px;
+  margin: 0px 0px;
+  display: flex;
+  flex-grow: 1;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 24px;
+  gap: 16px;
+
+  @include m {
+    flex-direction: row !important;
+    justify-content: space-around !important;
+    align-items: center !important;
+  }
+
+  .card-icon-text-container {
     display: flex;
-    flex-grow: 1;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: flex-start;
-    align-items: flex-start;
-    padding: 24px;
-    gap: 16px;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 8px;
 
     @include m {
-        flex-direction: row !important;
-        justify-content: space-around !important;
-        align-items: center !important;
+      gap: 16px;
     }
+  }
 
-    .card-icon-text-container {
-        display: flex;
-        flex-direction: row;
-        justify-content: flex-start;
-        flex-wrap: wrap;
-        align-items: center;
-        gap: 8px;
-
-        @include m {
-            gap: 16px;
-        }
-
-    }
-
-
-    .card-content-container {
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 0px;
-    }
+  .card-content-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0px;
+  }
 }
 
 .container-primary {
-    background-color: $primaryBackground;
+  background-color: $primaryBackground;
 }
 
 .container-gray {
-    background-color: $greyBackground;
+  background-color: $greyBackground;
 }
 
 .icon-big {
-    height: 40px;
-    width: 40px;
+  height: 40px;
+  width: 40px;
 
-    @media (min-width: $screen-l-min) {
-        height: 48px !important;
-        width: 48px !important;
-    }
+  @media (min-width: $screen-l-min) {
+    height: 48px !important;
+    width: 48px !important;
+  }
 }
 
 .icon-medium {
-    height: 40px;
-    width: 40px;
+  height: 40px;
+  width: 40px;
 }
 
 .icon-small {
-    height: 32px;
-    width: 32px;
+  height: 32px;
+  width: 32px;
 }
 
-
-
-
 button {
-    font-family: 'Poppins';
-    font-style: normal;
-    font-weight: 600;
-    padding: 0 0;
-    line-height: 24px;
-    text-align: center;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  padding: 0 0;
+  line-height: 24px;
+  text-align: center;
 
-    letter-spacing: 0.1px;
-    color: $primaryMain;
-    height: 56px;
-    border: none;
-    background-color: transparent;
+  letter-spacing: 0.1px;
+  color: $primaryMain;
+  height: 56px;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  box-shadow: 0 -2px 0 $primaryMain inset;
+  transition: 100ms ease-out 100ms;
+
+  &:hover {
     cursor: pointer;
-    box-shadow: 0 -2px 0 $primaryMain inset;
-    transition: 100ms ease-out 100ms;
-
-    &:hover {
-        cursor: pointer;
-        box-shadow: 0 -8px 0 $primaryMain inset;
-    }
+    box-shadow: 0 -8px 0 $primaryMain inset;
+  }
 }
 
 .button-large {
-    font-family: 'Poppins';
-    font-size: 16px;
+  font-family: "Poppins";
+  font-size: 16px;
 
-    @include xl {
-        font-size: 20px;
-    }
+  @include xl {
+    font-size: 20px;
+  }
 }
 
 .button-medium {
-    font-family: 'Poppins';
-    font-size: 14px;
+  font-family: "Poppins";
+  font-size: 14px;
 
-    @include xl {
-        font-size: 18px;
-    }
+  @include xl {
+    font-size: 18px;
+  }
 }
 
 .button-small {
-    font-family: 'Poppins';
-    font-size: 12px;
+  font-family: "Poppins";
+  font-size: 12px;
 
-    @include xl {
-        font-size: 16px;
-    }
+  @include xl {
+    font-size: 16px;
+  }
 }
 
 .inline-link {
-    @extend %text;
-    text-decoration: underline !important;
-    transition: none;
+  @extend %text;
+  text-decoration: underline !important;
+  transition: none;
 }
 
 .hero-background-container {
-    transition: 100ms ease-out 100ms;
-    height: fit-content !important;
-    padding-bottom: 120px;
-    padding-top: 40px;
-    padding-left: 10%;
-    padding-right: 10%;
-    justify-content: flex-start;
-    align-items: center;
-    display: flex;
+  transition: 100ms ease-out 100ms;
+  height: fit-content !important;
+  padding-bottom: 120px;
+  padding-top: 40px;
+  padding-left: 10%;
+  padding-right: 10%;
+  justify-content: flex-start;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+
+  @include m {
+    width: 80%;
     flex-direction: column;
-    gap: 24px;
+    align-items: center;
+    justify-content: center;
+  }
 
-    @include m {
-        width: 80%;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-    }
-
-    @include xl {
-        align-items: center;
-        width: 100%;
-        align-items: center;
-    }
-
+  @include xl {
+    align-items: center;
+    width: 100%;
+    align-items: center;
+  }
 }
 
 .hero {
-    background-color: $primaryBackground;
-    width: 100%;
-    height: fit-content !important;
-    padding-bottom: 80px;
+  background-color: $primaryBackground;
+  width: 100%;
+  height: fit-content !important;
+  padding-bottom: 80px;
 
+  display: flex;
+  flex-direction: column;
+
+  .hero-text-container {
+    align-self: center;
     display: flex;
     flex-direction: column;
+    align-items: flex-start;
+    align-self: center;
+    justify-content: flex-end;
+    padding: 100px 0px 0px;
+    gap: 24px;
+    width: 80%;
 
-
-
-    .hero-text-container {
-        align-self: center;
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-        align-self: center;
-        justify-content: flex-end;
-        padding: 100px 0px 0px;
-        gap: 24px;
-        width: 80%;
-
-        @include xl {
-            width: 1100px;
-        }
-
-        .hero-headline {
-            margin-bottom: 40px;
-        }
+    @include xl {
+      width: 1100px;
     }
+
+    .hero-headline {
+      margin-bottom: 40px;
+    }
+  }
 }

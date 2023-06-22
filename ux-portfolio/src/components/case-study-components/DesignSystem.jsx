@@ -440,7 +440,7 @@ const DesignSystem = () => {
       }
       content={
         <img
-          class="img-two-columns"
+          class="img-horizontal"
           src={ds_outcome_documentation}
           alt={
             "A screenshot of the documentation template in Figma that I created for our design system. In the header of the template, the designer can add the name of the component and some details. Also, the designer can provide links to a shared components demo, refer to a documentation in Material UI, and link to the archive in case some related component has been moved there. They can indicate the origin of use, which also refers to the creator of the component. Underneath the header, the designer can add information on the component's behavior. In this screenshot, the template is about a notification banner component, and the behavior section shows how the component's animation works."
