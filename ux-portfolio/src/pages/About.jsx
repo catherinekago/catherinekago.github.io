@@ -14,6 +14,7 @@ import food from "../assets/icons/food.svg";
 
 import linkedin from "../assets/icons/linkedin-mark-white.svg";
 import github from "../assets/icons/github-mark-white.svg";
+import Contact from "./Contact";
 
 const About = () => {
   const size = useWindowSize();
@@ -277,31 +278,7 @@ const About = () => {
           </div>
         </div>
       </div>
-      <div class="main-background-container container-dark">
-        <div class="content-vertical-small main-content-container contact-container">
-          <a class="link-light" href="mailto:kathrin.schnizer@gmail.com">
-            kathrin.schnizer@gmail.com
-          </a>
-          <p class="text-l text-light">
-            Are you passionate about empowering and improving the lives of
-            others, too? Or perhaps you're seeking a skilled rogue/shadow
-            sorcerer wood elf for your next DND campaign? Either way, reach out
-            and let's have a chat! 🙌
-          </p>
-          <div class="contact-icons-container">
-            <a
-              href="https://linkedin.com/in/kathrin-schnizer-892a82193.com"
-              target="_blank"
-              rel="noreferrer"
-            >
-              <img src={linkedin} alt="LinkedIn" />
-            </a>
-            <a href="github.com/catherinekago" target="_blank" rel="noreferrer">
-              <img src={github} alt="GitHub" />
-            </a>
-          </div>
-        </div>
-      </div>
+      <Contact section="false" />
     </>
   );
 };

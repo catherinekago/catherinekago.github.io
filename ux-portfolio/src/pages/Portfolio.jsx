@@ -3,7 +3,7 @@ import Hero from "../components/portfolio/Hero";
 import Section from "../components/atoms/Section";
 import ProjectTeaser from "../components/portfolio/ProjectTeaser";
 import "./Portfolio.scss";
-import Contact from "../components/portfolio/Contact";
+import Contact from "./Contact";
 import Carousel from "../components/portfolio/Carousel";
 import { useState, useEffect } from "react";
 import ProjectFooter from "../components/case-study-components/ProjectFooter";
@@ -94,8 +94,7 @@ const Portfolio = () => {
           </div>
         </div>
 
-        <Section text="Contact" />
-        <Contact />
+        <Contact section="true" />
         <ProjectFooter />
       </div>
     </>

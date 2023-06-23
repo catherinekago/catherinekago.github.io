@@ -1,5 +1,11 @@
 @import "../style/style.scss";
 
+.section-block {
+  display: flex;
+  flex-direction: column;
+  gap: 100px;
+}
+
 #contact-container {
   width: 100%;
   display: flex;
