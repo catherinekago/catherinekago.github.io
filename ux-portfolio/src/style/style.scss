@@ -75,7 +75,7 @@ $transition: 100ms ease-out 100ms;
   font-family: "Abril Fatface";
   font-style: normal;
   font-weight: 400;
-  color: $textDark;
+  color: $primaryMain;
   margin: 0px;
   line-height: 125%;
   text-align: left;
@@ -85,6 +85,7 @@ $transition: 100ms ease-out 100ms;
 h1 {
   @extend %headline;
   font-size: 36px;
+  line-height: 125%;
 
   @media (min-width: $screen-s-min) {
     font-size: 48px !important;
@@ -134,7 +135,8 @@ h4 {
   }
 }
 
-%text {
+%text,
+li {
   transition: $transition;
   font-family: "Poppins";
   font-style: normal;
@@ -148,9 +150,23 @@ h4 {
   font-weight: 700 !important;
 }
 
+.text-xxl {
+  @extend %text;
+  font-size: 20px;
+  color: $primaryDark;
+
+  @media (min-width: $screen-s-min) {
+    font-size: 22px !important;
+  }
+
+  @media (min-width: $screen-l-min) {
+    font-size: 24px !important;
+  }
+}
+
 .text-xl {
   @extend %text;
-  font-size: 16px !important;
+  font-size: 16px;
   color: $primaryDark;
 
   @media (min-width: $screen-s-min) {
@@ -300,12 +316,17 @@ body {
   h1,
   h2,
   h3,
-  h4 {
+  h4,
+  a {
     color: $white;
   }
 
   p {
     color: $textLight !important;
+  }
+
+  a:hover {
+    opacity: 70% !important;
   }
 }
 
@@ -345,6 +366,10 @@ body {
   align-items: flex-start;
   gap: 24px;
 
+  &.item-icons-container {
+    gap: 80px;
+  }
+
   @media (min-width: $screen-s-min) {
     gap: 40px !important;
   }
@@ -374,6 +399,35 @@ body {
 
   @media (min-width: $screen-l-min) {
     gap: 80px !important;
+  }
+
+  &.no-group {
+    width: 100%;
+    gap: 160px;
+
+    @media (min-width: 1000px) {
+      align-items: flex-start;
+      flex-direction: row !important;
+      gap: 120px;
+    }
+
+    @media (min-width: $screen-l-min) {
+      gap: 120px !important;
+    }
+  }
+
+  &.item-icons {
+    gap: 16px;
+
+    @media (min-width: $screen-s-min) {
+      align-items: flex-start;
+      flex-direction: row !important;
+      gap: 24px !important;
+    }
+
+    @media (min-width: $screen-l-min) {
+      gap: 40px !important;
+    }
   }
 
   .img-two-columns {
@@ -466,6 +520,16 @@ body {
   background-color: $greyBackground;
 }
 
+icon-extrabig {
+  height: 48px;
+  width: 48px;
+
+  @media (min-width: $screen-l-min) {
+    height: 56px !important;
+    width: 56px !important;
+  }
+}
+
 .icon-big {
   height: 40px;
   width: 40px;
@@ -542,6 +606,20 @@ button {
   transition: none;
 }
 
+.chip-row-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 10px;
+
+  @include xl {
+    padding: 0px 0px;
+    width: 560px;
+  }
+}
+
 .hero-background-container {
   transition: 100ms ease-out 100ms;
   height: fit-content !important;
@@ -597,4 +675,10 @@ button {
       margin-bottom: 40px;
     }
   }
+}
+
+.contact-container {
+  gap: 24px !important;
+  max-width: 800px;
+  align-self: flex-start;
 }

@@ -3,7 +3,10 @@ import "./ProjectFooter.scss";
 
 const ProjectFooter = (props) => {
   return (
-    <div class="main-background-container project-footer">
+    <div class="content-vertical-small project-footer">
+      <p class="text-small">
+        This site is carefully hand-crafted, it comes from my soul.
+      </p>
       <p class="text-small">
         Illustrations courtesy of{" "}
         <a class="inline-link" href="http://www.freepik.com/">
@@ -11,7 +14,7 @@ const ProjectFooter = (props) => {
         </a>{" "}
         and{" "}
         <a class="inline-link" href="http://www.storyset.com/">
-          Storyset
+          Storyset.
         </a>
       </p>
     </div>

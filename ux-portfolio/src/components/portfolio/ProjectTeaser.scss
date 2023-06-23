@@ -30,20 +30,6 @@
     }
   }
 
-  .chip-row-container {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    align-items: flex-start;
-    padding: 0px;
-    gap: 10px;
-
-    @include xl {
-      padding: 0px 0px;
-      width: 560px;
-    }
-  }
-
   .project-teaser-image {
     transition: box-shadow 400ms ease-out 50ms;
     cursor: pointer;

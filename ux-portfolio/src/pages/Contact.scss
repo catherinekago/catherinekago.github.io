@@ -1,55 +1,49 @@
-@import '../style/style.scss';
+@import "../style/style.scss";
 
 #contact-container {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 0px;
-    gap: 40px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 40px;
 
-    @include xl {
-        padding: 0px 0px;
-        width: 1200px;
-    }
+  @include xl {
+    padding: 0px 0px;
+    width: 1200px;
+  }
 }
 
 a {
-    @extend h3;
-    font-size: 28px;
-    transition: 100ms ease-out 100ms;
-    text-decoration: none;
+  @extend h3;
+  font-size: 28px;
+  transition: 100ms ease-out 100ms;
+  text-decoration: none;
 
-    &:hover {
-        color: $primaryMain;
-    }
+  &:hover {
+    color: $primaryMain;
+  }
 
-    @include m {
-        font-size: 40px;
-    }
+  @include m {
+    font-size: 40px;
+  }
 }
 
 .contact-icons-container {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 16px;
 
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    padding: 0px;
-    gap: 16px;
+  img {
+    height: 40px;
+    cursor: pointer;
+    transition: 100ms ease-out 100ms;
 
-    img {
-        height: 40px;
-        cursor: pointer;
-        transition: 100ms ease-out 100ms;
-        border-radius: 20px;
-
-        &:hover {
-            background-color: $primaryMain;
-        }
+    &:hover {
+      opacity: 80%;
     }
-
-
+  }
 }
-
-

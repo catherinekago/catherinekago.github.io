@@ -6,6 +6,7 @@ import "./Portfolio.scss";
 import Contact from "../components/portfolio/Contact";
 import Carousel from "../components/portfolio/Carousel";
 import { useState, useEffect } from "react";
+import ProjectFooter from "../components/case-study-components/ProjectFooter";
 
 const Portfolio = () => {
   let featuredProjects = require("../content.json").portfolio.featuredProjects;
@@ -95,6 +96,7 @@ const Portfolio = () => {
 
         <Section text="Contact" />
         <Contact />
+        <ProjectFooter />
       </div>
     </>
   );

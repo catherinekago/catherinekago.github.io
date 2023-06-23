@@ -600,8 +600,6 @@ const DesignSystem = () => {
       />
 
       <NextProject project="TODO" button="View Case Study" link="/cp-you" />
-
-      <ProjectFooter />
     </>
   );
 };
