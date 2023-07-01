@@ -10,11 +10,11 @@ const CaseStudyOverview = (props) => {
         <div class="two-columns-container">
           <div class="content-vertical-small">
             <h3>The challenge</h3>
-            <p class="text-l text-dark">{props.challenge}</p>
+            <p class="text-l primaryMain">{props.challenge}</p>
           </div>
           <div class="content-vertical-small">
             <h3>The solution</h3>
-            <p class="text-l text-dark">{props.solution}</p>
+            <p class="text-l primaryMain">{props.solution}</p>
           </div>
         </div>
 

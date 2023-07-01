@@ -1,22 +1,19 @@
 import React from "react";
 import { useState, useEffect } from "react";
-import "./CaseStudyStyles.scss";
+import "../../components/case-study-components/CaseStudyStyles.scss";
 import "../../style/style.scss";
-import bgDark from "./../../assets/backgrounds/bg-black.jpg";
 
-import CaseStudyHeader from "./CaseStudyHeader";
-import CaseStudyHero from "./CaseStudyHero";
-import CaseStudyOverview from "./CaseStudyOverview";
-import CaseStudyDescription from "./CaseStudyDescription";
-import CaseStudySection from "./CaseStudySection";
-import CaseStudyContent from "./CaseStudyContent";
-import ContentBlock from "./ContentBlock";
-import NextProject from "./NextProject";
-import ProjectFooter from "./ProjectFooter";
+import CaseStudyHeader from "../../components/case-study-components/CaseStudyHeader";
+import CaseStudyOverview from "../../components/case-study-components/CaseStudyOverview";
+import CaseStudyDescription from "../../components/case-study-components/CaseStudyDescription";
+import CaseStudySection from "../../components/case-study-components/CaseStudySection";
+import CaseStudyContent from "../../components/case-study-components/CaseStudyContent";
+import ContentBlock from "../../components/case-study-components/ContentBlock";
+import NextProject from "../../components/case-study-components/NextProject";
 
 import icon_role from "../../assets/icons/quotes.svg";
 import icon_tools from "../../assets/icons/tools.svg";
-import icon_duration from "../../assets/icons/schedule.svg";
+import icon_duration from "../../assets/icons/duration.svg";
 import icon_inventory from "../../assets/icons/inventory.svg";
 import icon_rocket from "../../assets/icons/rocket.svg";
 import icon_structure from "../../assets/icons/structure.svg";
@@ -27,9 +24,9 @@ import icon_child from "../../assets/icons/child.svg";
 import image_discovery from "../../assets/illustrations/image_discovery.svg";
 import image_design from "../../assets/illustrations/image_design.svg";
 import image_outcome from "../../assets/illustrations/image_outcome.svg";
-import ItemGroup from "./ItemGroup";
+import ItemGroup from "../../components/groups/ItemGroup";
 
-import ds_hero from "./../../assets/images/DesignSystem/ds_hero.svg";
+import ds_hero from "../../assets/images/DesignSystem/ds_hero.svg";
 import ds_discovery_process_horizontal from "../../assets/images/DesignSystem/ds_discovery_process_horizontal.png";
 import ds_discovery_research from "../../assets/images/DesignSystem/ds_discovery_research.png";
 import ds_design_documentation_brainstorming from "../../assets/images/DesignSystem/ds_design_documentation_brainstorming.jpg";
@@ -99,7 +96,7 @@ const DesignSystem = () => {
       size={size}
       headline={<h3>Talking to the user</h3>}
       text={
-        <p class="text-l text-medium">
+        <p class="text-l primaryMain">
           I talked to my design colleagues to gather their perspective on the
           design system and the processes to maintain and extend it. I
           identified the following
@@ -138,7 +135,7 @@ const DesignSystem = () => {
       size={size}
       headline={<h3>Status quo</h3>}
       text={
-        <p class="text-l text-medium">
+        <p class="text-l primaryMain">
           Together with my design mentor,
           <span class="text-l text-title">
             {" "}
@@ -164,7 +161,7 @@ const DesignSystem = () => {
     <ContentBlock
       size={size}
       text={
-        <p class="text-l text-medium">
+        <p class="text-l primaryMain">
           I then continued my investigation by analyzing the current structure
           of our design system and collecting good examples from design systems
           of other companies.
@@ -187,7 +184,7 @@ const DesignSystem = () => {
       size={size}
       headline={<h3>Workshop agenda</h3>}
       text={
-        <p class="text-l text-medium">
+        <p class="text-l primaryMain">
           My design mentor and I translated the previous findings into agenda
           points for our upcoming workshop which resulted in the following
           structure:
@@ -246,7 +243,7 @@ const DesignSystem = () => {
         />
       }
       text2={
-        <p class="text-l text-medium">
+        <p class="text-l primaryMain">
           I further prepared the contents for the defined agenda points and put
           them together in a dedicated Miro board which we then used as a
           workspace for our workshop.
@@ -260,7 +257,7 @@ const DesignSystem = () => {
       size={size}
       headline={<h3>Component release process</h3>}
       text={
-        <p class="text-l text-medium">
+        <p class="text-l primaryMain">
           Based on the weaknesses that my design mentor and I discovered in our
           current component release process, we proposed an adaptation of the
           process so it incorporates early highlighting of needs for new
@@ -299,7 +296,7 @@ const DesignSystem = () => {
         />
       }
       text2={
-        <p class="text-l text-medium">
+        <p class="text-l primaryMain">
           We gathered feedback from our design team on the additions which we
           took with us for a final revision of the proposal in a workshop
           debrief.
@@ -314,7 +311,7 @@ const DesignSystem = () => {
       alignment="horizontal"
       headline={<h3>Design system structure</h3>}
       text={
-        <p class="text-l text-medium">
+        <p class="text-l primaryMain">
           During the preparation of the workshop, I examined common design
           system approaches and how other companies set up their design systems.
           Based on the inspiration that I found, I identified three possible
@@ -338,7 +335,7 @@ const DesignSystem = () => {
       imgPos="left"
       headline={<h3>Documentation</h3>}
       text={
-        <p class="text-l text-medium">
+        <p class="text-l primaryMain">
           We used the workshop to establish a shared understanding of what needs
           the documentation of our components should address.
           <span class="text-l text-title">
@@ -368,7 +365,7 @@ const DesignSystem = () => {
       alignment="horizontal"
       headline={<h3>Design system structure</h3>}
       text={
-        <p class="text-l text-medium">
+        <p class="text-l primaryMain">
           Based on the design team’s feedback, I drafted a 
           <span class="text-l text-title">
             {" "}
@@ -397,7 +394,7 @@ const DesignSystem = () => {
       alignment="horizontal"
       imgPos="left"
       text={
-        <p class="text-l text-medium">
+        <p class="text-l primaryMain">
           I created a
           <span class="text-l text-title">
             {" "}
@@ -426,9 +423,10 @@ const DesignSystem = () => {
     <ContentBlock
       size={size}
       alignment="horizontal"
+      imgPos="right"
       headline={<h3>Documentation</h3>}
       text={
-        <p class="text-l text-medium">
+        <p class="text-l primaryMain">
           I rearranged and extended our design system to follow the approved
           structure. Additionally, I introduced a
           <span class="text-l text-title"> documentation template </span>
@@ -438,9 +436,10 @@ const DesignSystem = () => {
           and the reasoning behind them.
         </p>
       }
+      // MUCHO LOVE <3
       content={
         <img
-          class="img-horizontal"
+          class="img-two-columns"
           src={ds_outcome_documentation}
           alt={
             "A screenshot of the documentation template in Figma that I created for our design system. In the header of the template, the designer can add the name of the component and some details. Also, the designer can provide links to a shared components demo, refer to a documentation in Material UI, and link to the archive in case some related component has been moved there. They can indicate the origin of use, which also refers to the creator of the component. Underneath the header, the designer can add information on the component's behavior. In this screenshot, the template is about a notification banner component, and the behavior section shows how the component's animation works."
@@ -456,7 +455,7 @@ const DesignSystem = () => {
       alignment="vertical"
       headline={<h3>Component release process</h3>}
       text={
-        <p class="text-l text-medium">
+        <p class="text-l primaryMain">
           Together with my design mentor I finalized the component release
           process. I set up the component kindergarden section in our design
           system and introduced it to the team in the next design system

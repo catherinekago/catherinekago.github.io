@@ -1,10 +1,10 @@
 import React from "react";
-import Hero from "../components/portfolio/Hero";
+import Hero from "../components/landingpage/Hero";
 import Section from "../components/atoms/Section";
-import ProjectTeaser from "../components/portfolio/ProjectTeaser";
-import "./Portfolio.scss";
+import ProjectTeaser from "../components/landingpage/ProjectTeaser";
+import "./Landingpage.scss";
 import Contact from "./Contact";
-import Carousel from "../components/portfolio/Carousel";
+import Carousel from "../components/landingpage/Carousel";
 import { useState, useEffect } from "react";
 import ProjectFooter from "../components/case-study-components/ProjectFooter";
 

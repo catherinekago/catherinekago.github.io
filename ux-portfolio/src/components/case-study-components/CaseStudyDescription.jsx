@@ -1,7 +1,6 @@
-import React from 'react'
+import React from "react";
 
 const CaseStudyDescription = (props) => {
-
   return (
     <>
       <div class="main-content-container">
@@ -9,34 +8,34 @@ const CaseStudyDescription = (props) => {
           <div class="project-details-container">
             <img class="icon-big" src={props.roleIcon} alt="" />
             <div class="description-text-container">
-              <p class="text-l text-dark text-title">Role</p>
+              <p class="text-l primaryMain text-title">Role</p>
               {props.roleText.map((text) => (
-                <p class="text-l text-dark">{text}</p>
+                <p class="text-l primaryMain">{text}</p>
               ))}
             </div>
           </div>
           <div class="project-details-container">
             <img class="icon-big" src={props.toolsIcon} alt="" />
             <div class="description-text-container">
-              <p class="text-l text-title text-dark">Tools</p>
+              <p class="text-l text-title primaryMain">Tools</p>
               {props.toolsText.map((text) => (
-                <p class="text-l text-dark">{text}</p>
+                <p class="text-l primaryMain">{text}</p>
               ))}
             </div>
           </div>
           <div class="project-details-container">
             <img class="icon-big" src={props.durationIcon} alt="" />
             <div class="description-text-container">
-              <p class="text-l text-dark text-title">Duration</p>
+              <p class="text-l primaryMain text-title">Duration</p>
 
               {props.durationText.map((text) => (
-                <p class="text-l text-dark">{text}</p>
+                <p class="text-l primaryMain">{text}</p>
               ))}
             </div>
           </div>
         </div>
       </div>
     </>
-  )
-}
-export default CaseStudyDescription
+  );
+};
+export default CaseStudyDescription;

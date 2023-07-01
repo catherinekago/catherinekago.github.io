@@ -1,76 +1,80 @@
-@import '../style/style.scss';
+@import "../style/style.scss";
 
+.nav-container {
+  padding-top: 0px !important;
+  padding-bottom: 0px !important;
+  display: flex;
+  width: 80% !important;
+  align-items: center;
+  position: sticky;
+  z-index: 2;
+  top: 0px;
+  margin: 0px;
 
-.nav-container{
-    background-color: white;
-    padding-top: 0px !important;
-    padding-bottom: 0px !important;
-    display:flex;
-    width:80% !important;
-    align-items: center;
-    position:sticky;
-    z-index: 2;
-    top: 0px;
-    margin:0px;
-
-    @include xl{
-        width:100% !important;
-    }
-}
-nav {
-
-    padding-top: 8px !important;
-    padding-bottom: 8px !important;
+  @include xl {
     width: 100% !important;
-    height: 45px;
-    align-self: center;
-    display: flex;
-    flex-direction: row !important;
-    align-items: flex-start;
-    justify-content: space-between !important;
-
-
-    @include xl {
-        width: 1100px !important;
-    }
-
-    #nav-home {
-        /* Abril Fatface/H3 */
-        @extend %headline;
-        font-size: 36px;
-        line-height: 45px;
-        text-decoration: none;
-        transition: 100ms ease-out 100ms;
-
-        &:hover {
-            color: $primaryMain !important;
-        }
-  
   }
 
-    #nav-items-container{
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        padding: 0px;
-        gap: 40px;
+  &.dark {
+    background-color: $primaryMain !important;
+    #nav-home,
+    a {
+      color: white !important;
+      &:hover {
+        color: $textLight !important;
+      }
+    }
+  }
 
-        .nav-item {
-            @extend %text;
-            font-size: 14px;
-            line-height: 45px;
-            transition: 100ms ease-out 100ms;
-            text-decoration: none;
-        
-            &:hover {
-                color: $primaryMain;
-            }
-        
-        }
-        
-        
+  &.light {
+    background-color: white;
 
-
-        }
+    #nav-home,
+    a {
+      color: $primaryMain;
+      &:hover {
+        color: $textMedium;
+      }
+    }
+  }
 }
+nav {
+  padding-top: 8px !important;
+  padding-bottom: 8px !important;
+  width: 100% !important;
+  height: 45px;
+  align-self: center;
+  display: flex;
+  flex-direction: row !important;
+  align-items: flex-start;
+  justify-content: space-between !important;
 
+  @include xl {
+    width: 1200px !important;
+  }
+
+  #nav-home {
+    /* Abril Fatface/H3 */
+    @extend %headline;
+    font-size: 36px;
+    line-height: 45px;
+    text-decoration: none;
+    transition: 100ms ease-out 100ms;
+  }
+
+  #nav-items-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px;
+    gap: 40px;
+
+    .nav-item {
+      @extend %text;
+      font-size: 14px;
+      line-height: 45px;
+      transition: 100ms ease-out 100ms;
+      text-decoration: none;
+    }
+  }
+}

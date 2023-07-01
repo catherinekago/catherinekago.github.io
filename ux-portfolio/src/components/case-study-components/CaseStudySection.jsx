@@ -18,7 +18,7 @@ const CaseStudySection = (props) => {
               alt={props.imageAlt}
             />
           ) : null}
-          <p class="text-l text-medium">{props.text}</p>
+          <p class="text-l primaryMain">{props.text}</p>
         </div>
         {props.image !== null ? (
           <img

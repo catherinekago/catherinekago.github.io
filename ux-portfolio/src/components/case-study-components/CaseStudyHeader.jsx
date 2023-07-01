@@ -13,7 +13,7 @@ const CaseStudyHeader = (props) => {
             src={props.image}
             alt={props.imageAlt}
           />
-          <p class="text-l text-medium">{props.text}</p>
+          <p class="text-l primaryMain">{props.text}</p>
         </div>
         <img
           class={"img-horizontal img-hero"}

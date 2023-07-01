@@ -8,6 +8,7 @@
 $white: #fdfdfd;
 
 $greyBackground: #e7ebf0;
+$greyBackgroundLight: #e7ebf06c;
 
 $primaryMain: #252b33;
 
@@ -96,7 +97,8 @@ h1 {
   }
 }
 
-h2 {
+h2,
+.text-h2 {
   @extend %headline;
   font-size: 32px;
 
@@ -109,7 +111,8 @@ h2 {
   }
 }
 
-h3 {
+h3,
+.text-h3 {
   @extend %headline;
   font-size: 28px;
 
@@ -153,7 +156,7 @@ li {
 .text-xxl {
   @extend %text;
   font-size: 20px;
-  color: $primaryDark;
+  color: $primaryMain;
 
   @media (min-width: $screen-s-min) {
     font-size: 22px !important;
@@ -167,7 +170,7 @@ li {
 .text-xl {
   @extend %text;
   font-size: 16px;
-  color: $primaryDark;
+  color: $primaryMain;
 
   @media (min-width: $screen-s-min) {
     font-size: 18px !important;
@@ -281,6 +284,7 @@ body,
 }
 
 body {
+  background-color: $primaryMain;
   margin: 0px;
   overflow: scroll;
   font-family: "Poppins";
@@ -316,12 +320,11 @@ body {
   h1,
   h2,
   h3,
-  h4,
-  a {
-    color: $white;
+  h4 {
+    color: white;
   }
-
-  p {
+  p,
+  a {
     color: $textLight !important;
   }
 
@@ -351,11 +354,22 @@ body {
   }
 }
 
+.container-grey-light {
+  background-color: $greyBackgroundLight !important;
+
+  h1,
+  h2,
+  h3,
+  h4 {
+    color: $primaryMain;
+  }
+}
+
 .main-content {
   width: 100% !important;
 
   @include xl {
-    max-width: 1100px !important;
+    max-width: 1200px !important;
   }
 }
 
@@ -434,7 +448,7 @@ body {
     width: 100%;
 
     @media (min-width: 1000px) {
-      width: 40% !important;
+      width: 50% !important;
     }
   }
 
@@ -484,6 +498,7 @@ body {
   align-items: flex-start;
   padding: 24px;
   gap: 16px;
+  box-shadow: $boxShadow;
 
   @include m {
     flex-direction: row !important;

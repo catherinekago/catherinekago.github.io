@@ -15,7 +15,7 @@ const ItemGroup = (props) => {
                 </div>
                 <div class="item-group-header-underline" />
               </div>
-              <p class="text-l text-medium">{item.text}</p>
+              <p class="text-l primaryMain">{item.text}</p>
             </div>
           ))}
         </div>
@@ -34,7 +34,7 @@ const ItemGroup = (props) => {
           {props.items.map((item) => (
             <div class={itemGroupClass}>
               <p class="text-l text-title text-primary">{item.headline}</p>
-              <p class="text-l text-dark">{item.text}</p>
+              <p class="text-l primaryMain">{item.text}</p>
             </div>
           ))}
         </div>

@@ -1,49 +1,46 @@
-@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface');
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Abril+Fatface");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap");
 
+@import "../../style/style.scss";
 
-@import '../../style/style.scss';
-
-.case-study-hero-container{
-    padding: 80px 10%;
+.case-study-hero-container {
+  padding: 80px 10%;
 }
 
 .project-description {
-    background-color: $greyBackground;
-    border: 2px solid $textMedium;
-    padding: 8% 8%;
-    height: fit-content !important;
-    width: 84%;
+  background-color: $greyBackground;
+  border: 2px solid $primaryMain;
+  padding: 8% 8%;
+  height: fit-content !important;
+  width: 84%;
 
-    justify-content: space-between;
-    align-items: stretch;
+  justify-content: space-between;
+  align-items: stretch;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+
+  @media (min-width: $screen-m-min) {
+    padding: 3% 5%;
+    flex-direction: row;
+    align-items: flex-start;
+    width: 90%;
+  }
+
+  .project-details-container {
     display: flex;
-    flex-direction: column;
-    gap: 24px;
 
-    @media (min-width: $screen-m-min) {
-        padding: 3% 5%;
-        flex-direction: row;
-        align-items: flex-start;
-        width: 90%;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 16px;
+
+    .description-text-container {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      padding: 0px;
+      gap: 0px;
     }
-
-    .project-details-container{
-        display: flex;
-
-        flex-direction: row;
-        align-items: flex-start;
-        padding: 0px;
-        gap: 16px; 
-
-        .description-text-container{
-            display: flex;
-            flex-direction: column;
-            align-items: flex-start;
-            padding: 0px;
-            gap: 0px;  
-        }
-    }
-
+  }
 }
-
