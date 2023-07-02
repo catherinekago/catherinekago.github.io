@@ -3,7 +3,7 @@ import "./ProjectFooter.scss";
 
 const ProjectFooter = (props) => {
   return (
-    <div class="content-vertical-small project-footer">
+    <div class="container-dark project-footer">
       <p class="text-small">
         This site is carefully hand-crafted, it comes from my soul.
       </p>

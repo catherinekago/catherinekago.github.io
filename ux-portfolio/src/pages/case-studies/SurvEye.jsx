@@ -3,7 +3,7 @@ import { useState, useEffect } from "react";
 import "./../../style/style.scss";
 
 import CaseStudyDescription from "../../components/case-study-components/CaseStudyDescription";
-import SurvEyeHero from "../../assets/images/SurvEye.svg";
+import SurvEyeHero from "../../assets/images/surveye_hero.png";
 
 import durationIcon from "../../assets/icons/schedule.svg";
 import surveyeTaskFlowHorizontal from "../../assets/images/surveye_task_flow_horizontal.svg";
@@ -610,10 +610,7 @@ const SurvEye = () => {
             and set up data collection algorithms in the background to collect
             quantitative data during my user testings. To capture gaze input in
             real-time I used the eye-tracking library{" "}
-            <a
-              class="inline-link text-l text-light"
-              href="https://webgazer.cs.brown.edu/"
-            >
+            <a class="inline-link text-l" href="https://webgazer.cs.brown.edu/">
               Webgazer
             </a>{" "}
             and adjusted the library to better suit my use case.

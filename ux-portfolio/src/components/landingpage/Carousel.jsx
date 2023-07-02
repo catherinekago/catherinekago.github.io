@@ -3,6 +3,7 @@ import AliceCarousel from "react-alice-carousel";
 import Section from "../atoms/Section";
 import "./Carousel.scss";
 
+import linkedin from "../../assets/icons/linkedin-mark-light.svg";
 import bethThayne from "../../assets/images/testimonial-portraits/bethThayne.png";
 
 const Carousel = () => {
@@ -12,6 +13,7 @@ const Carousel = () => {
     <CarouselItem
       name={testimonial.name}
       occupation={testimonial.occupation}
+      linkedin={testimonial.linkedin}
       quote={testimonial.quote}
       img={portraits[index]}
     />
@@ -42,12 +44,15 @@ const CarouselItem = (props) => {
           alt="portrait picture of the person behind the statement"
           class="carousel-item-person-img"
         />
-        <div class="carousel-item-person-info">
-          <h3 class="text-primary">{props.name}</h3>
-          <p class="text-l text-primary">{props.occupation}</p>
+        <div class="carousel-item-person-info container-white">
+          <h3 class="primaryMain">{props.name}</h3>{" "}
+          <p class="text-l primaryMain">{props.occupation}</p>
+          <a href={props.linkedin} target="_blank" rel="noreferrer">
+            <img class="icon-extrasmall" src={linkedin} alt="LinkedIn" />
+          </a>
         </div>
       </div>
-      <p class="text-l text-dark">"{props.quote}"</p>
+      <p class="text-l primaryMain">"{props.quote}"</p>
     </div>
   );
 };

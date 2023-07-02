@@ -49,54 +49,58 @@ const Portfolio = () => {
     <>
       <Hero width={size.width} />
       <Carousel />
-      <div id="portfolio-main-container" class="main-container">
-        <Section text="Featured projects" />
-        {featuredProjects.map((project, index) => (
-          <ProjectTeaser
-            teaserType="project-featured"
-            textPosition={index % 2 === 0 ? "text-left" : "text-right"}
-            title={project.title}
-            slug={project.slug}
-            description={project.description}
-            button={project.button}
-            link={project.link}
-            componentKey={project.componentKey}
-            projectType={project.projectType}
-            chips={project.chips}
-          />
-        ))}
+      <div
+        id="portfolio-main-container"
+        class="main-background-container container-white"
+      >
+        <div class="main-content-container">
+          <Section text="Featured projects" />
+          {featuredProjects.map((project, index) => (
+            <ProjectTeaser
+              teaserType="project-featured"
+              textPosition={index % 2 === 0 ? "text-left" : "text-right"}
+              title={project.title}
+              slug={project.slug}
+              description={project.description}
+              button={project.button}
+              link={project.link}
+              componentKey={project.componentKey}
+              projectType={project.projectType}
+              chips={project.chips}
+            />
+          ))}
 
-        <Section text="Additional projects" />
-        <div className="additional-teaser-container">
-          <div class="project-pair-container">
-            <ProjectTeaser
-              teaserType="project-additional"
-              textPosition={"text-right"}
-              title={additionalProjects.pair1[0].title}
-              description={additionalProjects.pair1[0].description}
-              button={additionalProjects.pair1[0].button}
-              link={additionalProjects.pair1[0].link}
-              componentKey={"SurvEye"}
-              projectType={additionalProjects.pair1[0].projectType}
-              chips={additionalProjects.pair1[0].chips}
-            />
-            <ProjectTeaser
-              teaserType="project-additional"
-              textPosition={"text-right"}
-              title={additionalProjects.pair1[1].title}
-              description={additionalProjects.pair1[1].description}
-              button={additionalProjects.pair1[1].button}
-              link={additionalProjects.pair1[0].link}
-              componentKey={"SurvEye"}
-              projectType={additionalProjects.pair1[1].projectType}
-              chips={additionalProjects.pair1[1].chips}
-            />
+          <Section text="Additional projects" />
+          <div className="additional-teaser-container">
+            <div class="project-pair-container">
+              <ProjectTeaser
+                teaserType="project-additional"
+                textPosition={"text-right"}
+                title={additionalProjects.pair1[0].title}
+                description={additionalProjects.pair1[0].description}
+                button={additionalProjects.pair1[0].button}
+                link={additionalProjects.pair1[0].link}
+                componentKey={"SurvEye"}
+                projectType={additionalProjects.pair1[0].projectType}
+                chips={additionalProjects.pair1[0].chips}
+              />
+              <ProjectTeaser
+                teaserType="project-additional"
+                textPosition={"text-right"}
+                title={additionalProjects.pair1[1].title}
+                description={additionalProjects.pair1[1].description}
+                button={additionalProjects.pair1[1].button}
+                link={additionalProjects.pair1[0].link}
+                componentKey={"SurvEye"}
+                projectType={additionalProjects.pair1[1].projectType}
+                chips={additionalProjects.pair1[1].chips}
+              />
+            </div>
           </div>
         </div>
-
-        <Contact section="true" />
-        <ProjectFooter />
       </div>
+      <Contact section="true" />
+      <ProjectFooter />
     </>
   );
 };

@@ -13,7 +13,7 @@ const Contact = (props) => {
           <Section variant="section-light" text="Contact" />
         ) : null}
         <div class="content-vertical-small main-content-container contact-container">
-          <a class="link-light" href="mailto:kathrin.schnizer@gmail.com">
+          <a class="link-white" href="mailto:kathrin.schnizer@gmail.com">
             kathrin.schnizer@gmail.com
           </a>
           <p class="text-l text-light">
@@ -24,7 +24,7 @@ const Contact = (props) => {
           </p>
           <div class="contact-icons-container">
             <a
-              href="https://linkedin.com/in/kathrin-schnizer-892a82193.com"
+              href="https://www.linkedin.com/in/kathrin-schnizer-892a82193/"
               target="_blank"
               rel="noreferrer"
             >

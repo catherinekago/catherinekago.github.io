@@ -1,11 +1,5 @@
 @import "../style/style.scss";
 
-#portfolio-main-container {
-  height: fit-content;
-  padding-top: 40px;
-  padding-bottom: 0px;
-}
-
 .additional-teaser-container {
   display: flex;
   flex-direction: column;
@@ -27,6 +21,6 @@
   }
 
   @include xl {
-    width: 1100px;
+    width: 1200px;
   }
 }

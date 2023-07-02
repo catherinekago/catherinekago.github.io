@@ -320,11 +320,11 @@ body {
   h1,
   h2,
   h3,
-  h4 {
+  h4,
+  a {
     color: white;
   }
-  p,
-  a {
+  p {
     color: $textLight !important;
   }
 
@@ -340,6 +340,10 @@ body {
   h3,
   h4 {
     color: $primaryMain;
+  }
+
+  a:hover {
+    opacity: 70% !important;
   }
 }
 
@@ -565,6 +569,11 @@ icon-extrabig {
   width: 32px;
 }
 
+.icon-extrasmall {
+  height: 24px;
+  width: 24px;
+}
+
 button {
   font-family: "Poppins";
   font-style: normal;
@@ -618,7 +627,6 @@ button {
 .inline-link {
   @extend %text;
   text-decoration: underline !important;
-  transition: none;
 }
 
 .chip-row-container {

@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
 import "./ProjectTeaser.scss";
 import Chip from "../atoms/Chip";
-import SurveyeHero from "../../assets/images/SurvEye.svg";
+import SurveyeHero from "../../assets/images/surveye_hero_shadow.png";
 import DesignSystem from "../../assets/images//DesignSystem/ds_hero.svg";
 
 const ProjectTeaser = (props) => {
@@ -13,7 +13,7 @@ const ProjectTeaser = (props) => {
   };
 
   const [width, setWidth] = React.useState(window.innerWidth);
-  const breakpoint = 968;
+  const breakpoint = 800;
 
   useEffect(() => {
     window.addEventListener("resize", () => setWidth(window.innerWidth));
@@ -22,7 +22,7 @@ const ProjectTeaser = (props) => {
   const textContainer = (
     <div class="project-teaser-text-container">
       <h3>{props.title}</h3>
-      <p class="text-l text-dark">{props.description}</p>
+      <p class="text-l primaryMain">{props.description}</p>
       <div class="chip-row-container">
         <Chip chipType="chip-primary" label={props.projectType} />
 
@@ -38,8 +38,8 @@ const ProjectTeaser = (props) => {
   );
 
   const imageContainer = (
-    <Link to={props.link}>
-      <img class="project-teaser-image" src={images[props.slug]} />
+    <Link class="project-teaser-image" to={props.link}>
+      <img src={images[props.slug]} />
     </Link>
   );
 
