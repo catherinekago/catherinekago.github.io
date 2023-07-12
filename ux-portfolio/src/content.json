@@ -9,6 +9,20 @@
             }
         ],
         "featuredProjects": [
+                      {
+                "title": "Building an MVP",
+                "description": "Facilitating streamlined data collection and collaboration within an organization's network.",
+                "button": "View Case Study",
+                "link": "/mvp",
+                "projectType": "Work experience",
+                "chips": [
+                    "Research",
+                    "Concept",
+                    "Design",
+                    "Prototyping",
+                    "Delivery Prep"
+                ]
+            },
             {
                 "title": "SurvEye",
                 "slug": "SurvEye",
@@ -36,21 +50,9 @@
                     "Workshop",
                     "Implementation"
                 ]
-            },
-
-            {
-                "title": "ClimatePartner Network",
-                "description": "Designing a solution to gather and analyze climate data of your supply network.",
-                "button": "View Case Study",
-                "link": "/cp-network",
-                "projectType": "Work experience",
-                "chips": [
-                    "Research",
-                    "Concept",
-                    "Design",
-                    "UI Testing"
-                ]
             }
+
+  
 
         ],
 

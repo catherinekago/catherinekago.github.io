@@ -10,6 +10,7 @@ import resume from "../assets/pdfs/Kathrin-Schnizer_CV_EN.pdf";
 import Contact from "../pages/Contact";
 import SurvEye from "../pages/case-studies/SurvEye";
 import DesignSystem from "../pages/case-studies/DesignSystem";
+import MVP from "../pages/case-studies/MVP";
 
 const Navbar = () => {
   const { pathname } = useLocation();
@@ -20,6 +21,7 @@ const Navbar = () => {
       ["/contact"]: "main-background-container nav-container dark",
       ["/design-system"]: "main-background-container nav-container light",
       ["/surveye"]: "main-background-container nav-container light",
+      ["/mvp"]: "main-background-container nav-container light",
       ["/about"]: "main-background-container nav-container light",
       ["/"]: "main-background-container nav-container light",
     },
@@ -55,6 +57,7 @@ const Navbar = () => {
         <Route path="/contact" element={<Contact />} />
         <Route path="/surveye" element={<SurvEye />} />
         <Route path="/design-system" element={<DesignSystem />} />
+        <Route path="/mvp" element={<MVP />} />
       </Routes>
     </>
   );
