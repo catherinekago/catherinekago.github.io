@@ -15,15 +15,27 @@
     gap: 8px;
     flex-direction: column;
     width: 100%;
+    &.even {
+      @media (min-width: $screen-s-min) {
+        flex: 1 0 40%;
+        /* explanation below */
+      }
 
-    @media (min-width: $screen-s-min) {
-      flex: 1 0 40%;
-      /* explanation below */
+      @media (min-width: $screen-l-min) {
+        flex: 1 0 35%;
+        /* explanation below */
+      }
     }
+    &.uneven {
+      @media (min-width: $screen-s-min) {
+        flex: 1 0 60%;
+        /* explanation below */
+      }
 
-    @media (min-width: $screen-l-min) {
-      flex: 1 0 35%;
-      /* explanation below */
+      @media (min-width: $screen-m-min) {
+        flex: 1 0 25%;
+        /* explanation below */
+      }
     }
 
     .item-group-header {

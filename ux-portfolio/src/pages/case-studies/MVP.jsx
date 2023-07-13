@@ -5,11 +5,27 @@ import "./../../style/style.scss";
 import CaseStudyHeader from "../../components/case-study-components/CaseStudyHeader";
 import CaseStudyOverview from "../../components/case-study-components/CaseStudyOverview";
 import CaseStudyDescription from "../../components/case-study-components/CaseStudyDescription";
-
+import ItemGroup from "../../components/groups/ItemGroup";
+import ContentBlock from "../../components/case-study-components/ContentBlock";
+import CaseStudySection from "../../components/case-study-components/CaseStudySection";
 import SurvEyeHero from "../../assets/images/surveye_hero.png"; // TODO REPLACE
+import CaseStudyContent from "../../components/case-study-components/CaseStudyContent";
+
+import image_discovery from "../../assets/illustrations/image_discovery.svg";
+import image_design from "../../assets/illustrations/image_design.svg";
+import image_outcome from "../../assets/illustrations/image_outcome.svg";
+
+import mvp_discovery_personas from "../../assets/images/MVP/mvp_discovery_personas.svg";
+import mvp_discovery_empathy from "../../assets/images/MVP/mvp_discovery_empathy.svg";
+import mvp_design_userflow from "../../assets/images/MVP/mvp_design_userflow.svg";
+
 import icon_role from "../../assets/icons/quotes.svg";
 import icon_tools from "../../assets/icons/tools.svg";
 import icon_duration from "../../assets/icons/duration.svg";
+
+import icon_support from "../../assets/icons/support.svg";
+import icon_company from "../../assets/icons/company.svg";
+import icon_partner from "../../assets/icons/partner.svg";
 
 const MVP = () => {
   const size = useWindowSize();
@@ -66,6 +82,158 @@ const MVP = () => {
     />
   );
 
+  const discovery_contentblock_1 = (
+    <ContentBlock
+      size={size}
+      headline={<h3>Persona interviews</h3>}
+      text={
+        <p class="text-l primaryMain">
+          We conducted
+          <span class="text-l text-title"> persona interviews </span>
+          with three of our own consultants, as well as two customers and five
+          partner companies. We tagged key insights from the protocols that I
+          created during the interviews, and through the aggregation of insights
+          we highlighted in our debriefs we were able to uncover the primary
+          unmet needs that our solution should address:
+        </p>
+      }
+      content={
+        <ItemGroup
+          type="underline"
+          size="small"
+          items={[
+            {
+              headline: "Consultants",
+              icon: (
+                <img
+                  class="icon-small"
+                  src={icon_support}
+                  alt="An icon showing an individual wearing a headset"
+                />
+              ),
+              text: "... need a standardized process that support them in handling multiple customers’ request to collect data from their partner organizations to reduce administrative work and be able to serve more customers.",
+            },
+            {
+              headline: "Customers",
+              icon: (
+                <img
+                  class="icon-small"
+                  src={icon_company}
+                  alt="An icon showing two stylistic buildings"
+                />
+              ),
+              text: "... need to access to their partner organizations’ firsthand data to be able to make informed strategic decisions.",
+            },
+            {
+              headline: "Partner organizations",
+              icon: (
+                <img
+                  class="icon-small"
+                  src={icon_partner}
+                  alt="An icon showing two individuals shaking hands"
+                />
+              ),
+              text: "... need an easy way to fulfill the customers’ data requests because they want to maintain their partnerships.",
+            },
+          ]}
+        />
+      }
+    />
+  );
+  const discovery_contentblock_2 = (
+    <ContentBlock
+      imgType="confidential"
+      size={size}
+      headline={<h3>Understand the user</h3>}
+      text={
+        <p class="text-l primaryMain">
+          Based on the information we derived from the persona interviews, we
+          created
+          <span class="text-l text-title"> personas </span>
+          to clearly understand their perspective and communicate it our
+          stakeholders.
+        </p>
+      }
+      content={
+        <img
+          class="main-content-container"
+          src={mvp_discovery_personas}
+          alt={
+            "The image shows the three personas of our stakeholders. The persona displays information on their demographics, values, role description, challenges, needs and opportunities. However, it is an altered version containing less information and more placeholders to maintain confidentiality."
+          }
+        />
+      }
+    />
+  );
+
+  const discovery_contentblock_3 = (
+    <ContentBlock
+      imgType="confidential"
+      size={size}
+      text={
+        <p class="text-l primaryMain">
+          We further analyzed our interviews to create
+          <span class="text-l text-title"> empathy maps </span> to gain
+          additional insights on emotions, challenges and needs of our target
+          groups and derive first implications for our solution.
+        </p>
+      }
+      content={
+        <img
+          class="main-content-container"
+          src={mvp_discovery_empathy}
+          alt={
+            "The image shows Three empathy maps, one for each stakeholder. It is a square that is divided into four quadrants, one for 'say', 'think', 'do' and 'feel', to clearly capture the users internal and external matters. Each quadrant is filled with stickies that hold information relevant to the quadrant. However, it is an altered version containing less information and more placeholders to maintain confidentiality."
+          }
+        />
+      }
+      text2={
+        <p class="text-l primaryMain">
+          The aggregation of our user research led us to a set of
+          <span class="text-l text-title"> value prepositions </span> which
+          guided us within the next phase of our design process.
+        </p>
+      }
+    />
+  );
+
+  const design_contentblock_1 = (
+    <ContentBlock
+      imgType="confidential"
+      size={size}
+      headline={<h3>User flows</h3>}
+      text={
+        <p class="text-l primaryMain">
+          We drafted
+          <span class="text-l text-title"> user flows </span>
+          for each stakeholder and obtained early feedback from our consultants.
+          During the process of refining these flows, we recognized that a
+          Software-as-a-Service application would provide the
+          <span class="text-l text-title"> most efficient solution, </span>
+          reducing the workload on our consultants. As a result, we decided
+          against integrating a consultant interface and proposed a consolidated
+          user flow for our MVP, encompassing our customers and their partner
+          organizations only.
+        </p>
+      }
+      content={
+        <img
+          class="main-content-container"
+          src={mvp_design_userflow}
+          alt={
+            "The image visualizes the user flows of the customer and the partner organization. We combined both flows on one horizontal pathway to highlight how the two flows relate to each other, and what steps of one flow preceed subsequent steps of the other flow. The steps are portrayed by sticky notes along a horizontal arrow. However, it is an altered version containing less information and more placeholders to maintain confidentiality."
+          }
+        />
+      }
+    />
+  );
+
+  // const design_contentblock_2 = ();
+
+  // const design_contentblock_3 = ();
+
+  // const design_contentblock_4 = ();
+
   return (
     <>
       {/* Hero */}
@@ -74,6 +242,65 @@ const MVP = () => {
         challenge={challenge}
         solution={solution}
         description={description}
+      />
+      <CaseStudySection
+        flexDirection={"horizontal"}
+        section={"Discovery"}
+        headline={"Diving into the problem space"}
+        text={
+          <p class="text-l">
+            Through persona interviews with our consultants, customers and their
+            partner organizations, we extracted key insights and identified
+            primary unmet needs. Creating personas and empathy maps provided a
+            deeper understanding of their perspectives, guiding us in shaping
+            our solution. The aggregation of our user research led us to
+            valuable value propositions for the next phase of our design
+            process.
+          </p>
+        }
+        image={image_discovery}
+        imageAlt={
+          "An illustration of a female diver surrounded by several fish and a turtle. The diver is reaching with her hand for the turtle. Anemones are covering the ground."
+        }
+      />
+
+      <CaseStudyContent
+        content={[
+          discovery_contentblock_1,
+          discovery_contentblock_2,
+          discovery_contentblock_3,
+        ]}
+      />
+
+      <CaseStudySection
+        flexDirection={"horizontal"}
+        section={"Design"}
+        headline={"Exploring the solution space"}
+        text={
+          <p class="text-l">
+            Through an iterative process, we collaborated with our consultants
+            and target groups to refine user flows, identify key opportunities,
+            and explore different aspects of the user journey, including
+            onboarding, progress tracking, registration, data entry, and
+            knowledge sourcing. To validate our proposal, we conducted a trial
+            run with one of our customers, integrating insights from both the
+            customer and their partner organizations, and iterated on the
+            designs based on their valuable feedback.
+          </p>
+        }
+        image={image_design}
+        imageAlt={
+          "An illustration of an astronaut surfing on a space ship, passing clouds and different planets."
+        }
+      />
+
+      <CaseStudyContent
+        content={[
+          design_contentblock_1,
+          // design_contentblock_2,
+          // design_contentblock_3,
+          // design_contentblock_4,
+        ]}
       />
     </>
   );

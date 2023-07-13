@@ -3,11 +3,16 @@ import "./ItemGroup.scss";
 
 const ItemGroup = (props) => {
   const buildGroup = (type, size) => {
+    const containerCountDependentClass =
+      props.items.length === (2 || 4)
+        ? "item-group-item-underline even"
+        : "item-group-item-underline uneven";
+
     if (type === "underline") {
       return (
         <div class="item-group-container-underline">
           {props.items.map((item, index) => (
-            <div class="item-group-item-underline">
+            <div class={containerCountDependentClass}>
               <div class="item-group-header">
                 <div class="item-group-headline">
                   {item.icon !== null ? item.icon : null}
