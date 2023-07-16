@@ -10,6 +10,7 @@ import ContentBlock from "../../components/case-study-components/ContentBlock";
 import CaseStudySection from "../../components/case-study-components/CaseStudySection";
 import SurvEyeHero from "../../assets/images/surveye_hero.png"; // TODO REPLACE
 import CaseStudyContent from "../../components/case-study-components/CaseStudyContent";
+import NextProject from "../../components/case-study-components/NextProject";
 
 import image_discovery from "../../assets/illustrations/image_discovery.svg";
 import image_design from "../../assets/illustrations/image_design.svg";
@@ -19,6 +20,8 @@ import mvp_discovery_personas from "../../assets/images/MVP/mvp_discovery_person
 import mvp_discovery_empathy from "../../assets/images/MVP/mvp_discovery_empathy.svg";
 import mvp_design_userflow from "../../assets/images/MVP/mvp_design_userflow.svg";
 import mvp_trialRun from "../../assets/images/MVP/mvp_trialRun.png";
+import mvp_deliveryprep from "../../assets/images/MVP/mvp_deliveryprep.png";
+import mvp_vision from "../../assets/images/MVP/mvp_vision.png";
 
 import icon_role from "../../assets/icons/quotes.svg";
 import icon_tools from "../../assets/icons/tools.svg";
@@ -328,6 +331,7 @@ const MVP = () => {
   const design_contentblock_3 = (
     <ContentBlock
       imgType="confidential"
+      imgPos="right"
       size={size}
       headline={<h3>Trial run</h3>}
       text={
@@ -359,6 +363,7 @@ const MVP = () => {
   const design_contentblock_4 = (
     <ContentBlock
       imgType="confidential"
+      imgPos="right"
       alignment="horizontal"
       size={size}
       headline={<h3>Reality check</h3>}
@@ -378,6 +383,88 @@ const MVP = () => {
         </p>
       }
       content={<img class="img-two-columns" src={mvp_trialRun} alt={"todo"} />}
+    />
+  );
+
+  const delivery_contentblock_1 = (
+    <ContentBlock
+      imgType="confidential"
+      imgPos="right"
+      alignment="vertical"
+      size={size}
+      headline={<h3>Delivery preparation</h3>}
+      text={
+        <p class="text-l text-primary">
+          We prepared the designs for our development team. I was responsible
+          for preparing frames that communicate the
+          <span class="text-l text-title text-primary">
+            {" "}
+            responsive behavior{" "}
+          </span>
+          of our components, and in that course I further supplemented the
+          design files with additional{" "}
+          <span class="text-l text-title text-primary"> documentation </span>
+          to speed up the definition of acceptance criteria from UI perspective.
+        </p>
+      }
+      content={
+        <img
+          class="main-content-container"
+          src={mvp_deliveryprep}
+          alt={
+            "A screenshot of my delivery preparation space in Figma, where I provided different screen sizes for our dashboard design, ranging from 500px to 1536px."
+          }
+        />
+      }
+      text2={
+        <p class="text-l text-primary">
+          And now... it's
+          <span class="text-l text-title text-primary"> live! 🎉 </span>
+        </p>
+      }
+    />
+  );
+
+  const delivery_contentblock_2 = (
+    <ContentBlock
+      imgType="confidential"
+      imgPos="right"
+      alignment="vertical"
+      size={size}
+      headline={<h3>Vision</h3>}
+      text={
+        <p class="text-l text-primary">
+          Building upon feedback from testing the prototype and valuable input
+          from customers and their partner organizations using our launched
+          Minimum Viable Product (MVP), we have identified
+          <span class="text-l text-title text-primary">
+            {" "}
+            opportunities to enhance our MVP{" "}
+          </span>
+          into a more advanced tool. This evolution entails
+          <span class="text-l text-title text-primary">
+            {" "}
+            integrating existing data from other tools,{" "}
+          </span>
+          thereby minimizing the user's manual workload. In the long run, we
+          strive to evolve our solution to be able to assist both our customers
+          and their partner organizations in{" "}
+          <span class="text-l text-title text-primary">
+            {" "}
+            analyzing their data, actively improving its quality, and achieving
+            strategic goals.{" "}
+          </span>
+        </p>
+      }
+      content={
+        <img
+          class="main-content-container"
+          src={mvp_vision}
+          alt={
+            "A screenshot of the stylized extended user flow that I provided in the section about our discovery. The extended version shows additional steps that indicate where we identified potential actions, and opportunities for integrations with external tools within the journey."
+          }
+        />
+      }
     />
   );
 
@@ -468,6 +555,34 @@ const MVP = () => {
           "An illustration showing four individuals that carry a puzzle piece towards a puzzle frame of the size of 3 times 3 to complete it alltoegher."
         }
       />
+
+      <CaseStudyContent
+        content={[delivery_contentblock_1, delivery_contentblock_2]}
+      />
+
+      <CaseStudySection
+        flexDirection={"horizontal"}
+        section={"Reflection"}
+        headline={"How does our MVP support our stakeholders?"}
+        image={null}
+        text={
+          <p class="text-l">
+            It provides a{" "}
+            <span class="text-l text-title">streamlined process</span> for all
+            customers that need to collect their partner organizations' data,
+            reducing repetitiv manual workload of our consultants.
+            <br></br> <br></br>
+            Status as of July 2023,{" "}
+            <span class="text-l text-title">
+              our main customers requested 1000+ of their partner organizations
+              to use our service
+            </span>{" "}
+            to request their data.
+          </p>
+        }
+      />
+
+      <NextProject project="TODO" button="View Case Study" link="/todo" />
     </>
   );
 };

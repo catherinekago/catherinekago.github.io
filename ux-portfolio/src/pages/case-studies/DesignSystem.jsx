@@ -323,7 +323,13 @@ const DesignSystem = () => {
         </p>
       }
       content={
-        <img class="img-two-columns" src={ds_design_process} alt={"TODO"} />
+        <img
+          class="img-two-columns"
+          src={ds_design_process}
+          alt={
+            "A screenshot of the information I aggregated to present during the workshop on the topic of the design system structure. It shows three frames, one for the atomic design, one for design systems by alphabet, and one for design systems by purpose. "
+          }
+        />
       }
     />
   );

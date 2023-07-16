@@ -235,11 +235,6 @@ li {
   @media (min-width: $screen-xl-min) {
     width: 1200px !important;
   }
-
-  p,
-  span {
-    color: $primaryMain;
-  }
 }
 
 .content-blocks {
@@ -350,6 +345,10 @@ body {
   a:hover {
     opacity: 70% !important;
   }
+  p,
+  span {
+    color: $primaryMain;
+  }
 }
 
 .container-grey {
@@ -404,6 +403,7 @@ body {
 
 .content-vertical-small {
   display: flex;
+  width: 100%;
   flex-direction: column;
   gap: 24px;
 }
@@ -418,8 +418,12 @@ body {
     align-items: center;
     flex-direction: row !important;
     gap: 80px;
-    .confidentiality-note {
+    .confidentiality-container {
       width: 50% !important;
+
+      .img-two-columns {
+        width: 100% !important;
+      }
     }
   }
 
@@ -514,14 +518,12 @@ body {
 
   @include m {
     flex-direction: row !important;
-    justify-content: space-around !important;
     align-items: center !important;
   }
 
   .card-icon-text-container {
     display: flex;
     flex-direction: row;
-    justify-content: flex-start;
     flex-wrap: wrap;
     align-items: center;
     gap: 8px;
