@@ -18,14 +18,22 @@ import image_outcome from "../../assets/illustrations/image_outcome.svg";
 import mvp_discovery_personas from "../../assets/images/MVP/mvp_discovery_personas.svg";
 import mvp_discovery_empathy from "../../assets/images/MVP/mvp_discovery_empathy.svg";
 import mvp_design_userflow from "../../assets/images/MVP/mvp_design_userflow.svg";
+import mvp_trialRun from "../../assets/images/MVP/mvp_trialRun.png";
 
 import icon_role from "../../assets/icons/quotes.svg";
 import icon_tools from "../../assets/icons/tools.svg";
 import icon_duration from "../../assets/icons/duration.svg";
 
+import icon_onboarding from "../../assets/icons/onboarding.svg";
+import icon_progress from "../../assets/icons/track_progress.svg";
+import icon_registration from "../../assets/icons/registration.svg";
+import icon_dataEntry from "../../assets/icons/data_entry.svg";
+import icon_knowledge from "../../assets/icons/knowledge.svg";
+
 import icon_support from "../../assets/icons/support.svg";
 import icon_company from "../../assets/icons/company.svg";
 import icon_partner from "../../assets/icons/partner.svg";
+import CardGroup from "../../components/groups/CardGroup";
 
 const MVP = () => {
   const size = useWindowSize();
@@ -203,13 +211,16 @@ const MVP = () => {
       size={size}
       headline={<h3>User flows</h3>}
       text={
-        <p class="text-l primaryMain">
+        <p class="text-l text-primary">
           We drafted
-          <span class="text-l text-title"> user flows </span>
+          <span class="text-l text-title text-primary"> user flows </span>
           for each stakeholder and obtained early feedback from our consultants.
           During the process of refining these flows, we recognized that a
           Software-as-a-Service application would provide the
-          <span class="text-l text-title"> most efficient solution, </span>
+          <span class="text-l text-title text-primary">
+            {" "}
+            most efficient solution,{" "}
+          </span>
           reducing the workload on our consultants. As a result, we decided
           against integrating a consultant interface and proposed a consolidated
           user flow for our MVP, encompassing our customers and their partner
@@ -225,14 +236,150 @@ const MVP = () => {
           }
         />
       }
+      text2={
+        <p class="text-l text-primary">
+          We enhanced our collaboration with our consultants to determine an
+          <span class="text-l text-title text-primary">
+            {" "}
+            effective way to incorporate their expertise{" "}
+          </span>
+          into our MVP solution. Through this collaboration, we further
+          identified two key opportunities to
+          <span class="text-l text-title text-primary">
+            {" "}
+            leverage our consultants' insights{" "}
+          </span>
+          and support partner organizations in achieving better data quality
+          while streamlining their data collection processes.
+        </p>
+      }
     />
   );
 
-  // const design_contentblock_2 = ();
+  const keyConcepts = [
+    {
+      icon: icon_onboarding,
+      text: (
+        <p class="text-l text-primary">
+          <span class="text-l text-title text-primary">Onboarding</span> <br />
+          Enabling our customers to invite their partner organizations to share
+          their data
+        </p>
+      ),
+    },
+    {
+      icon: icon_progress,
+      text: (
+        <p class="text-l text-primary">
+          <span class="text-l text-title text-primary">Progress</span> <br />
+          Providing an overview of the submitted data to our customers
+        </p>
+      ),
+    },
+    {
+      icon: icon_registration,
+      text: (
+        <p class="text-l text-primary">
+          <span class="text-l text-title text-primary">Registration</span>{" "}
+          <br />
+          Enabling invited partner organizations to register
+        </p>
+      ),
+    },
+    {
+      icon: icon_dataEntry,
+      text: (
+        <p class="text-l text-primary">
+          <span class="text-l text-title text-primary">Data Entry</span> <br />
+          Providing data collection forms to collect required information from
+          the partner organizations
+        </p>
+      ),
+    },
+    {
+      icon: icon_knowledge,
+      text: (
+        <p class="text-l text-primary">
+          <span class="text-l text-title text-primary">Knowledge</span> <br />
+          Integrating video and recommendation materials to share our
+          consultants‘ domain knowledge
+        </p>
+      ),
+    },
+  ];
 
-  // const design_contentblock_3 = ();
+  const design_contentblock_2 = (
+    <ContentBlock
+      size={size}
+      headline={<h3>Iterating over ideas</h3>}
+      text={
+        <p class="text-l primaryMain">
+          Based on our stakeholders’ feedback we generated ideas on solutions
+          that address the identified needs. Key concepts we addressed within
+          our ideation included:
+        </p>
+      }
+      content={
+        <CardGroup items={keyConcepts} textAlign="center" maxPerRow="three" />
+      }
+    />
+  );
 
-  // const design_contentblock_4 = ();
+  const design_contentblock_3 = (
+    <ContentBlock
+      imgType="confidential"
+      size={size}
+      headline={<h3>Trial run</h3>}
+      text={
+        <p class="text-l text-primary">
+          Once we felt confident with our proposal, backed up by several rounds
+          of user testing of our prototype to test parts of the journey, we
+          <span class="text-l text-title text-primary">
+            {" "}
+            collaborated with one of our customers to do a trial to test our MVP
+            Figma prototype{" "}
+          </span>
+          holistically. Within this trial, we received insights from our
+          customer as well as from three of their partner organizations which we
+          integrated in another iteration over the designs.
+        </p>
+      }
+      content={
+        <img
+          class="main-content-container"
+          src={mvp_trialRun}
+          alt={
+            "The image visualizes the timeline for our trial run. We started out with a persona interview of the customer, followed by persona interviews of three of their partner organizations. We then continued to evaluate the interviews and the example data we received from them and finalized the prototypes. We conducted testing of the customer facing interface, followed by testing the prototypes for the partner organization facing interface with the three partners. We then implemented their feedback and prepared our designs for delivery."
+          }
+        />
+      }
+    />
+  );
+
+  const design_contentblock_4 = (
+    <ContentBlock
+      imgType="confidential"
+      alignment="horizontal"
+      size={size}
+      headline={<h3>Reality check</h3>}
+      text={
+        <p class="text-l text-primary">
+          We further
+          <span class="text-l text-title text-primary">
+            {" "}
+            validated our designs with real data.{" "}
+          </span>
+          So we reached out to a customer that had 20+ data sets already
+          available from their partner organizations. We tested our proposed
+          partner organization flow with three data sets to test its
+          applicability to real world data. We further performed a data analysis
+          on all data sets to validate our concept for the data overview on
+          customer side.
+        </p>
+      }
+      content={<img class="img-two-columns" src={mvp_trialRun} alt={"todo"} />}
+    />
+  );
 
   return (
     <>
@@ -297,10 +444,29 @@ const MVP = () => {
       <CaseStudyContent
         content={[
           design_contentblock_1,
-          // design_contentblock_2,
-          // design_contentblock_3,
-          // design_contentblock_4,
+          design_contentblock_2,
+          design_contentblock_3,
+          design_contentblock_4,
         ]}
+      />
+
+      <CaseStudySection
+        flexDirection={"horizontal"}
+        section={"Outcome"}
+        headline={"Launching an MVP"}
+        text={
+          <p class="text-l">
+            I prepared frames and documentation for delivery, incorporating
+            valuable feedback from customers and partners. Based on insights
+            from user interviews, usability testing, and feedback on the live
+            solution, we have identified opportunities to further evolve our
+            MVP.
+          </p>
+        }
+        image={image_outcome}
+        imageAlt={
+          "An illustration showing four individuals that carry a puzzle piece towards a puzzle frame of the size of 3 times 3 to complete it alltoegher."
+        }
       />
     </>
   );

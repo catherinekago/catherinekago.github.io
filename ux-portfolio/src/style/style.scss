@@ -235,6 +235,11 @@ li {
   @media (min-width: $screen-xl-min) {
     width: 1200px !important;
   }
+
+  p,
+  span {
+    color: $primaryMain;
+  }
 }
 
 .content-blocks {
@@ -413,6 +418,9 @@ body {
     align-items: center;
     flex-direction: row !important;
     gap: 80px;
+    .confidentiality-note {
+      width: 50% !important;
+    }
   }
 
   @media (min-width: $screen-l-min) {

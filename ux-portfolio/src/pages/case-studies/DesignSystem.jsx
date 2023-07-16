@@ -563,7 +563,9 @@ const DesignSystem = () => {
           </p>
         }
         image={image_outcome}
-        imageAlt={"TODO."}
+        imageAlt={
+          "An illustration showing four individuals that carry a puzzle piece towards a puzzle frame of the size of 3 times 3 to complete it alltoegher."
+        }
       />
 
       <CaseStudyContent

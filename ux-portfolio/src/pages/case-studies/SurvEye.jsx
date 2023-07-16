@@ -431,7 +431,7 @@ const SurvEye = () => {
         <div class="content-horizontal">
           {" "}
           <img
-            class="img-two-columns"
+            class="img-two-columnsf"
             src={mockup_l1}
             alt={
               "A mockup of the first interface design, where the likert scale is divided into seven blocks that cover about half of the screen's height. Once the user's gaze is identified to touch one of the blocks, the selection process begins."
@@ -523,7 +523,13 @@ const SurvEye = () => {
           design of gaze-based interfaces for manually impaired individuals:
         </p>
       }
-      content={<CardGroup items={cardGroupItemsOutcome} />}
+      content={
+        <CardGroup
+          items={cardGroupItemsOutcome}
+          maxPerRow="four"
+          textAlign="center"
+        />
+      }
     />
   );
 
