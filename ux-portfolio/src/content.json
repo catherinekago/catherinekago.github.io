@@ -11,6 +11,7 @@
         "featuredProjects": [
                       {
                 "title": "Building an MVP",
+                "slug": "MVP",
                 "description": "Facilitating streamlined data collection and collaboration within an organization's network.",
                 "button": "View Case Study",
                 "link": "/mvp",

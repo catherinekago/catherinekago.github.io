@@ -16,12 +16,14 @@ import image_discovery from "../../assets/illustrations/image_discovery.svg";
 import image_design from "../../assets/illustrations/image_design.svg";
 import image_outcome from "../../assets/illustrations/image_outcome.svg";
 
+import mvp_teaser from "../../assets/images/MVP/mvp_teaser.png";
 import mvp_discovery_personas from "../../assets/images/MVP/mvp_discovery_personas.svg";
 import mvp_discovery_empathy from "../../assets/images/MVP/mvp_discovery_empathy.svg";
 import mvp_design_userflow from "../../assets/images/MVP/mvp_design_userflow.svg";
-import mvp_trialRun from "../../assets/images/MVP/mvp_trialRun.png";
-import mvp_deliveryprep from "../../assets/images/MVP/mvp_deliveryprep.png";
+import mvp_trialRun from "../../assets/images/MVP/mvp_design_trial.png";
+import mvp_deliveryprep from "../../assets/images/MVP/mvp_partner_product.png";
 import mvp_vision from "../../assets/images/MVP/mvp_vision.png";
+import mvp_realData from "../../assets/images/MVP/image002.png";
 
 import icon_role from "../../assets/icons/quotes.svg";
 import icon_tools from "../../assets/icons/tools.svg";
@@ -71,9 +73,9 @@ const MVP = () => {
     return windowSize;
   }
 
-  const roleText = ["Designer (support)"];
+  const roleText = ["Designer (team of two)"];
   const toolsText = ["Figma, Dovetail"];
-  const durationText = ["October 2021 - June 2022", "(TODO mo. total)"];
+  const durationText = ["October 2021 - June 2022", "(8 mo. total)"];
 
   const title = "Building an MVP";
   const overview =
@@ -382,7 +384,7 @@ const MVP = () => {
           customer side.
         </p>
       }
-      content={<img class="img-two-columns" src={mvp_trialRun} alt={"todo"} />}
+      content={<img class="img-two-columns" src={mvp_realData} alt={"todo"} />}
     />
   );
 
@@ -405,6 +407,8 @@ const MVP = () => {
           design files with additional{" "}
           <span class="text-l text-title text-primary"> documentation </span>
           to speed up the definition of acceptance criteria from UI perspective.
+          And now... it's
+          <span class="text-l text-title text-primary"> live! 🎉 </span>
         </p>
       }
       content={
@@ -412,15 +416,9 @@ const MVP = () => {
           class="main-content-container"
           src={mvp_deliveryprep}
           alt={
-            "A screenshot of my delivery preparation space in Figma, where I provided different screen sizes for our dashboard design, ranging from 500px to 1536px."
+            "A screenshot of the main screens of the partner organization flow in Figma, including with a registration page, a dashboard overview, a data entry form, and a section with graphs for comparing oneself with different organizations."
           }
         />
-      }
-      text2={
-        <p class="text-l text-primary">
-          And now... it's
-          <span class="text-l text-title text-primary"> live! 🎉 </span>
-        </p>
       }
     />
   );
@@ -471,7 +469,7 @@ const MVP = () => {
   return (
     <>
       {/* Hero */}
-      <CaseStudyHeader title={title} text={overview} image={SurvEyeHero} />
+      <CaseStudyHeader title={title} text={overview} image={mvp_teaser} />
       <CaseStudyOverview
         challenge={challenge}
         solution={solution}

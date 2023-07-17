@@ -4,10 +4,12 @@ import "./ProjectTeaser.scss";
 import Chip from "../atoms/Chip";
 import SurveyeHero from "../../assets/images/surveye_hero_shadow.png";
 import DesignSystem from "../../assets/images//DesignSystem/ds_hero.svg";
+import MVP from "../../assets/images/MVP/mvp_teaser.png";
 
 const ProjectTeaser = (props) => {
   const className = "project-teaser-container " + props.teaserType;
   const images = {
+    MVP: MVP,
     SurvEye: SurveyeHero,
     DesignSystem: DesignSystem,
   };
