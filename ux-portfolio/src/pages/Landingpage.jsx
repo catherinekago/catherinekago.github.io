@@ -77,10 +77,10 @@ const Portfolio = () => {
                 teaserType="project-additional"
                 textPosition={"text-right"}
                 title={additionalProjects.pair1[0].title}
+                slug={additionalProjects.pair1[0].slug}
                 description={additionalProjects.pair1[0].description}
                 button={additionalProjects.pair1[0].button}
                 link={additionalProjects.pair1[0].link}
-                componentKey={"SurvEye"}
                 projectType={additionalProjects.pair1[0].projectType}
                 chips={additionalProjects.pair1[0].chips}
               />
@@ -88,10 +88,10 @@ const Portfolio = () => {
                 teaserType="project-additional"
                 textPosition={"text-right"}
                 title={additionalProjects.pair1[1].title}
+                slug={additionalProjects.pair1[1].slug}
                 description={additionalProjects.pair1[1].description}
                 button={additionalProjects.pair1[1].button}
-                link={additionalProjects.pair1[0].link}
-                componentKey={"SurvEye"}
+                link={additionalProjects.pair1[1].link}
                 projectType={additionalProjects.pair1[1].projectType}
                 chips={additionalProjects.pair1[1].chips}
               />

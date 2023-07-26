@@ -19,8 +19,9 @@ const Hero = (props) => {
             <h1>Hi, I'm Kathrin.</h1>
             <p class="text-xl">
               Designer with a passion for inclusive and assistive technologies.
-              Currently, I am facilitating climate action at{" "}
-              <span class="text-xl text-title">ClimatePartner</span>.
+              Currently, I am facilitating{" "}
+              <span class="text-xl text-title">data collection processes</span>{" "}
+              between partner organizations.
             </p>
             <ScrollIntoView
               behavior="smooth"

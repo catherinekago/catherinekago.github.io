@@ -23,26 +23,12 @@
                     "User Testing"
                 ]
             },
-            {
-                "title": "Design System",
-                "slug": "DesignSystem",
-                "description": "Adapting our design system and associated processes to the needs of a growing team.",
-                "button": "View Case Study",
-                "link": "/design-system",
-                "projectType": "Work experience",
-                "chips": [
-                    "Research",
-                    "Concept",
-                    "Workshop",
-                    "Implementation"
-                ]
-            },
 
             {
-                "title": "ClimatePartner Network",
-                "description": "Designing a solution to gather and analyze climate data of your supply network.",
+                "title": "Building an MVP - coming soon",
+                "description": "",
                 "button": "View Case Study",
-                "link": "/cp-network",
+                "link": "",
                 "projectType": "Work experience",
                 "chips": [
                     "Research",
@@ -57,16 +43,20 @@
         "additionalProjects": {
             "pair1": [
                 {
-                    "title": "Focus Pocus",
-                    "description": "Conquer your social media rabbit holes",
-                    "button": "View Project",
-                    "link": "/focuspocus",
-                    "projectType": "Uni project",
-                    "chips": [
-                        "Concept",
-                        "Frontend"
-                    ]
-                },
+        
+                "title": "Design System",
+                "slug": "DesignSystem",
+                "description": "Adapting our design system and associated processes to the needs of a growing team.",
+                "button": "View Case Study",
+                "link": "/design-system",
+                "projectType": "Work experience",
+                "chips": [
+                    "Research",
+                    "Concept",
+                    "Workshop",
+                    "Implementation"
+                ]
+            },
                 {
                     "title": "PlanTeam",
                     "description": "Collaboratively take care of plants",
