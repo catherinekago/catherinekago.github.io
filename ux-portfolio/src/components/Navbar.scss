@@ -1,15 +1,14 @@
 @import "../style/style.scss";
 
 .nav-container {
-  padding-top: 0px !important;
-  padding-bottom: 0px !important;
+  padding: 0px !important;
   display: flex;
   width: 80% !important;
   align-items: center;
   position: sticky;
   z-index: 2;
   top: 0px;
-  margin: 0px;
+  margin: 0px !important;
 
   @include xl {
     width: 100% !important;
