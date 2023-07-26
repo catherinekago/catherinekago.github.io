@@ -92,9 +92,9 @@ const SurvEye = () => {
   const overview =
     "A genuine project of the heart, which happened to coincide my bachelor thesis for my studies in Human-Computer-Interaction. Exploring gaze-based questionnaire design to make questionnaires accessible to individuals with manual impairment.";
   const challenge =
-    "Individuals with manual impairments encounter formidable challenges when it comes to tasks requiring manual precision, like using a pen or a computer mouse. Unfortunately, this means that both paper-based and digital questionnaires remain out of reach for this target group, leading to a substantial underrepresentation of manually impaired individuals in research. Moreover, it negatively affects their independence in handling paperwork. Empowering these individuals to overcome these obstacles is essential for fostering inclusivity and equality.";
+    "Individuals with manual impairments encounter formidable challenges when it comes to tasks requiring manual precision, like filling out paper-based and digital questionnaires. This leads to a substantial underrepresentation of manually impaired individuals in research and negatively affects their independence in handling paperwork.";
   const solution =
-    "During my bachelor thesis in human-computer interaction, I conducted a thorough investigation into the design of gaze-based digital questionnaires. My primary goal was to derive practical design guidelines that could shape future advancements in this field. I began by analyzing the specific requirements for gaze-based interaction design, considering the unique needs and challenges involved. Through a process of iteration and refinement, I developed four distinct designs and translated them into actual implementations. These prototypes formed the basis for a series of evaluations, which I conducted in collaboration with individuals with manual impairments. Together, we worked towards enhancing accessibility and paving the way for improved user experiences in the realm of questionnaires.";
+    "I conducted a thorough exploration of the design of gaze-based digital questionnaires. Through a user-centric process based on research, iterations, and user testing, I identified a set of guidelines for the development of gaze-based questionnaire design.";
   const description = (
     <CaseStudyDescription
       roleIcon={icon_role}
@@ -636,7 +636,7 @@ const SurvEye = () => {
           <p class="text-l">
             During my study, I asked the participants to select the options that
             were displayed at the top of the interface. I also encouraged them
-            to think aloudduring the interaction so I could get deeper insights
+            to think aloud during the interaction so I could get deeper insights
             on their perceptions and thoughts. Additionally, I evaluated
             usability with the{" "}
             <a
