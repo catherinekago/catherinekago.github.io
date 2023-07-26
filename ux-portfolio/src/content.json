@@ -44,7 +44,7 @@
             "pair1": [
                 {
         
-                "title": "Design System",
+                "title": "Design System Rework",
                 "slug": "DesignSystem",
                 "description": "Adapting our design system and associated processes to the needs of a growing team.",
                 "button": "View Case Study",
@@ -58,15 +58,13 @@
                 ]
             },
                 {
-                    "title": "PlanTeam",
-                    "description": "Collaboratively take care of plants",
+                    "title": "Coming soon...",
+                    "description": "",
                     "button": "View Project",
-                    "link": "/planteam",
-                    "projectType": "Uni project",
+                    "link": "",
+                    "projectType": "",
                     "chips": [
-                        "Concept",
-                        "Design",
-                        "Frontend"
+
                     ]
                 }
             ],
