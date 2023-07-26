@@ -51,18 +51,19 @@ const About = () => {
 
   const introText = (
     <p class="text-l primaryMain">
-      In university, I found that the structure and layout of the supplementary
-      material provided by my professors were extremely challenging for my
-      brain. Determined to improve my study experience, I analyzed the
-      underlying structure and reorganized the content in a way that would
-      enhance memorization. I condensed the content from 1200 slides to less
-      than 30 full pages and cleverly printed four pages on a single sheet,
-      creating the illusion of less information to process. Employing
-      color-coded sections and highlighted keywords, I leveraged my visual
-      memory, while supplementing the theory with practical sample solutions to
-      facilitate comprehension and application of knowledge. Looking back, I
-      realize that this experience unknowingly marked
-      <span class="text-l text-title"> my debut in the field of UX/UI.</span>
+      "Hey Kathrin, I am simply blown away by your study notes. I could never do
+      that. They are so well-structured. Your version is way easier to digest,
+      understand, and memorize than the original set of material provided by the
+      lecturer. And on top of that it just looks so good, with that color coding
+      and the visualizations that you included. Would you mind sharing them with
+      me?" <br />
+      This is how I was commonly approached during my time at university, and it
+      made me realize{" "}
+      <span class="text-l text-title">
+        {" "}
+        that my making sense of information has the potential ease people's
+        lives.
+      </span>
     </p>
   );
 
@@ -107,8 +108,8 @@ const About = () => {
           <a class="text-l primaryDark inline-link" href="url">
             visual impairments
           </a>
-          , conducting user-centered investigations and evaluations of suitable
-          cue design for assistive technologies.
+          , conducting user-centered evaluations of suitable assisitve
+          technology design.
         </p>
       ),
     },
@@ -125,11 +126,10 @@ const About = () => {
           >
             ClimatePartner
           </a>
-          , where I have been involved in the design of two digital products
-          focused on promoting climate action for private individuals, retail
-          businesses, and their supply chains. In my role, I participate in user
-          research, product ideation, design, testing, MVP preparation and
-          launch, as well as ongoing product improvement and development.
+          , where I am involved in the design of two digital products. In my
+          role, I do user research, product ideation, design, testing, MVP
+          preparation and launch, as well as ongoing product improvement and
+          development.
         </p>
       ),
     },
@@ -139,8 +139,9 @@ const About = () => {
       text: (
         <p class="text-l primaryMain">
           Apart from design, I find joy in creating and savoring delicious food
-          with great company. Additionally, I cherish the quiet mornings spent
-          in the park.
+          with great company. When visiting a foreign country, I get all excited
+          to explore local supermarkets to discover country-specific products.
+          Additionally, I cherish the quiet mornings spent in the park.
         </p>
       ),
     },
@@ -165,7 +166,8 @@ const About = () => {
       <div class={"main-background-container container-white"}>
         <div class="content-horizontal main-content-container">
           <h1>
-            Hi, I am Kathrin. <br /> Junior UX/UI designer living in Munich.{" "}
+            Hi, I am Kathrin. <br />
+            UX/UI designer living in Munich.{" "}
           </h1>
         </div>
       </div>
@@ -239,7 +241,7 @@ const About = () => {
                 <p class="text-xxl primaryMain">ClimatePartner</p>
 
                 <p class="text-l primaryMain">
-                  Junior UX/UI Designer (Working Student) · May 2020 - Present
+                  UX/UI Designer (Working Student) · May 2020 - Present
                 </p>
               </div>
               <div
