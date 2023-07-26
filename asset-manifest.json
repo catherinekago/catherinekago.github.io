@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.ebf0e217.css",
-    "main.js": "/static/js/main.459fb61c.js",
+    "main.css": "/static/css/main.1fdb8eb6.css",
+    "main.js": "/static/js/main.85233f89.js",
     "static/js/787.2eb2047b.chunk.js": "/static/js/787.2eb2047b.chunk.js",
     "static/media/portrait.svg": "/static/media/portrait.4e9fb1e87716a7cd6df29ec7514a3c26.svg",
     "static/media/Kathrin-Schnizer_CV_EN.pdf": "/static/media/Kathrin-Schnizer_CV_EN.3b18aab5d068b0d289a7.pdf",
@@ -61,12 +61,12 @@
     "static/media/structure.svg": "/static/media/structure.b2bb31911f26bc6f7bf7b99215f1240e.svg",
     "static/media/pause.svg": "/static/media/pause.5ab3a5e278bd1f8805b5555a9aeef088.svg",
     "static/media/quotes.svg": "/static/media/quotes.5520643d3e83ceb42a9122d868222e51.svg",
-    "main.ebf0e217.css.map": "/static/css/main.ebf0e217.css.map",
-    "main.459fb61c.js.map": "/static/js/main.459fb61c.js.map",
+    "main.1fdb8eb6.css.map": "/static/css/main.1fdb8eb6.css.map",
+    "main.85233f89.js.map": "/static/js/main.85233f89.js.map",
     "787.2eb2047b.chunk.js.map": "/static/js/787.2eb2047b.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.ebf0e217.css",
-    "static/js/main.459fb61c.js"
+    "static/css/main.1fdb8eb6.css",
+    "static/js/main.85233f89.js"
   ]
 }
