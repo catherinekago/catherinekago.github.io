@@ -2,10 +2,14 @@
 @import "react-alice-carousel/lib/scss/alice-carousel.scss";
 
 #carousel-container {
+  padding-top: 64px !important;
+  padding-bottom: 40px !important;
+  gap: 24px !important;
   height: fit-content;
 
   .alice-carousel {
     width: 100%;
+
     @include xl {
       width: 1200px;
       padding: 0px 0px;

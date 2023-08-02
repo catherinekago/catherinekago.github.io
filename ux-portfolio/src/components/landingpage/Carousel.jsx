@@ -52,7 +52,7 @@ const CarouselItem = (props) => {
           </a>
         </div>
       </div>
-      <p class="text-l primaryMain">"{props.quote}"</p>
+      <p class="text-l primaryMain italic">"{props.quote}"</p>
     </div>
   );
 };
