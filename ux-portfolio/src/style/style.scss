@@ -8,7 +8,7 @@
 $white: #fdfdfd;
 
 $greyBackground: #e7ebf0;
-$greyBackgroundLight: #e7ebf06c;
+$greyBackgroundLight: #e7ebf0;
 
 $primaryMain: #252b33;
 $primaryLight: #37414d;
@@ -241,7 +241,7 @@ li {
 }
 
 .content-blocks {
-  gap: 140px !important;
+  gap: 120px !important;
 
   @media (min-width: $screen-xl-min) {
     width: 1200px !important;

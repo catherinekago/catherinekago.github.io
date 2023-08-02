@@ -206,12 +206,13 @@ const SurvEye = () => {
   const discovery_contentblock_1 = (
     <ContentBlock
       size={size}
+      headline={<h3>Understanding the problem</h3>}
       text={
         <p class="text-l primaryMain">
-          I mapped out my initial investigation of existing research on how
-          manually impaired individuals interact with paper-based or digital
-          questionnaires <span class="text-l text-title">into a task flow</span>
-          :
+          I embarked on my journey by digging into the underlying reasons behind
+          the inaccessibility of questionnaires for individuals with manual
+          impairments and aggregated my insights{" "}
+          <span class="text-l text-title">into a task flow</span>:
         </p>
       }
       content={
@@ -232,11 +233,8 @@ const SurvEye = () => {
       text={
         <p class="text-l primaryMain">
           The task flow helped me to define the{" "}
-          <span class="text-l text-title">goal</span> of my solution:
-        </p>
-      }
-      content={
-        <p class="text-l primaryMain">
+          <span class="text-l text-title">goal</span> of my solution: <br></br>{" "}
+          <br></br>
           Enable manually impaired individuals to{" "}
           <span
             class="primaryMain text-h3"
@@ -260,6 +258,7 @@ const SurvEye = () => {
   const design_contentblock_1 = (
     <ContentBlock
       size={size}
+      headline={<h3>Exploring the solution space</h3>}
       text={
         <p class="text-l primaryMain">
           What
@@ -417,10 +416,29 @@ const SurvEye = () => {
   const implementation_contentblock_1 = (
     <ContentBlock
       size={size}
+      headline={<h3>A gaze-based web application</h3>}
       text={
         <p class="text-l primaryMain">
-          The first two designs followed two different approaches to enable
-          users{" "}
+          I translated my designs into{" "}
+          <a
+            class="inline-link text-l inverted"
+            target="_blank"
+            href="https://github.com/catherinekago/surv-eye"
+          >
+            concrete interface implementations
+          </a>{" "}
+          and set up data collection algorithms in the background to collect
+          quantitative data during my user testings. To capture gaze input in
+          real-time I used the eye-tracking library{" "}
+          <a
+            class="inline-link text-l"
+            target="_blank"
+            href="https://webgazer.cs.brown.edu/"
+          >
+            Webgazer
+          </a>{" "}
+          and adjusted the library to better suit my use case. The first two
+          designs followed two different approaches to enable users{" "}
           <span class="text-l text-title">
             to select one out of seven options
           </span>{" "}
@@ -488,9 +506,14 @@ const SurvEye = () => {
   const evaluation_contentblock_1 = (
     <ContentBlock
       size={size}
+      headline={<h3>Collecting feedback</h3>}
       text={
         <p class="text-l primaryMain">
-          I transferred my transcripts to a Miro board and{" "}
+          <span class="text-l text-title">
+            I tested my designs with 16 individuals.
+          </span>{" "}
+          During my study I collected quantiative and qualitative feedback. I
+          transferred my transcripts to a Miro board and{" "}
           <span class="text-l text-title">
             categorized the qualitative feedback
           </span>{" "}
@@ -539,50 +562,17 @@ const SurvEye = () => {
 
       {/* Setting the scene */}
 
-      <CaseStudySection
-        flexDirection={"horizontal"}
-        section={"Discovery"}
-        headline={"Diving into the problem space"}
-        text={
-          <p class="text-l main-content">
-            I embarked on my journey by digging into the underlying reasons
-            behind the inaccessibility of questionnaires for individuals with
-            manual impairments. I aggregated insights from existing user-centric
-            research around this topic to better understand the target group,
-            their challenges and needs.
-          </p>
-        }
-        image={image_discovery}
-        imageAlt={
-          "An illustration of a female diver surrounded by several fish and a turtle. The diver is reaching with her hand for the turtle. Anemones are covering the ground."
-        }
-      />
       <CaseStudyContent
+        color="white"
+        section="Discovery"
         content={[discovery_contentblock_1, discovery_contentblock_2]}
       />
 
       {/* Design */}
 
-      <CaseStudySection
-        flexDirection={"horizontal"}
-        section={"Design"}
-        headline={"Exploring the solution space"}
-        text={
-          <p class="text-l main-content">
-            I compared eligible input modalities and selected the most suitable
-            one to proceed with. Before diving into the actual design process, I
-            systematically researched existing approaches to gain insights into
-            the human and technical limitations that needed to be taken into
-            account. This aggregated knowledge then supported me in narrowing
-            down the solution space, laying the foundation for a set of
-            promising approaches.
-          </p>
-        }
-        image={eyeIllustration}
-        imageAlt={"An illustration of an open eye."}
-      />
-
       <CaseStudyContent
+        color="grey"
+        section="Design"
         content={[
           design_contentblock_1,
           design_contentblock_2,
@@ -593,90 +583,24 @@ const SurvEye = () => {
 
       {/* Implementation */}
 
-      <CaseStudySection
-        flexDirection={"horizontal"}
-        section={"Prototypical implementation"}
-        headline={"A React web app for gaze input"}
-        text={
-          <p class="text-l">
-            {" "}
-            I translated my designs into{" "}
-            <a
-              class="inline-link text-l inverted"
-              target="_blank"
-              href="https://github.com/catherinekago/surv-eye"
-            >
-              concrete interface implementations
-            </a>{" "}
-            and set up data collection algorithms in the background to collect
-            quantitative data during my user testings. To capture gaze input in
-            real-time I used the eye-tracking library{" "}
-            <a
-              class="inline-link text-l"
-              target="_blank"
-              href="https://webgazer.cs.brown.edu/"
-            >
-              Webgazer
-            </a>{" "}
-            and adjusted the library to better suit my use case.
-          </p>
-        }
-        image={implementationIllustration}
-        imageAlt={
-          "A laptop, surrounded by a cup of coffee, a light bulb, color schemes, glasses, and a sketch pad."
-        }
-      />
-
       <CaseStudyContent
+        color="white"
+        section="Prototypical Implementation"
         content={[implementation_contentblock_1, implementation_contentblock_2]}
       />
 
       {/* User study */}
 
-      <CaseStudySection
-        flexDirection={"horizontal"}
-        section={"Evaluation"}
-        headline={"I tested my designs with 16 individuals"}
-        text={
-          <p class="text-l">
-            During my study, I asked the participants to select the options that
-            were displayed at the top of the interface. I also encouraged them
-            to think aloud during the interaction so I could get deeper insights
-            on their perceptions and thoughts. Additionally, I evaluated
-            usability with the{" "}
-            <a
-              class="inline-link text-l"
-              target="_blank"
-              href="https://www.usability.gov/how-to-and-tools/methods/system-usability-scale.html"
-            >
-              SUS
-            </a>{" "}
-            and workload with the{" "}
-            <a
-              class="inline-link text-l"
-              target="_blank"
-              href="https://humansystems.arc.nasa.gov/groups/TLX/"
-            >
-              NASA-TLX
-            </a>{" "}
-            questionnaires. My data collection algorithms further measured
-            completion times and errors to back up the qualitative feedback.
-          </p>
-        }
-        image={userIllustration}
-        imageAlt={
-          "An illustration showing six faces, differing in age, gender, and ethical background."
-        }
-      />
-
       <CaseStudyContent
+        section="Evaluation"
+        color="grey"
         content={[evaluation_contentblock_1, evaluation_contentblock_2]}
       />
 
       <CaseStudySection
         flexDirection={"horizontal"}
         section={"Reflection"}
-        headline={"Three reaons why..."}
+        headline={"Three reasons why..."}
         image={null}
         text={
           <p class="text-l">
