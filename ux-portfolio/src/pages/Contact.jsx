@@ -17,10 +17,9 @@ const Contact = (props) => {
             kathrin.schnizer@gmail.com
           </a>
           <p class="text-l text-light">
-            Are you passionate about empowering and improving the lives through
-            design, too? Or perhaps you're seeking a skilled rogue/shadow
-            sorcerer wood elf for your next DND campaign? Either way, reach out
-            and let's have a chat! 🙌
+            Are you passionate about empowering and improving lives through
+            design? Or perhaps you're seeking a skilled rogue wood elf for your
+            next DND campaign? Either way, reach out and let's have a chat! 🙌
           </p>
           <div class="contact-icons-container">
             <a

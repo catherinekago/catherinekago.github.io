@@ -69,9 +69,9 @@ const DesignSystem = () => {
     return windowSize;
   }
 
-  const title = "Design System";
+  const title = "Design System Rework";
   const overview =
-    "In 2021, my employer at the time expanded their product teams for their digital solutions portfolio. Within a short period of time, the number of our designers also increased, and it soon became clear that existing structures had to be adapted to the requirements of the growing design team. In addition to my role as UX designer for a specific digital product, I took on the task of identifying the design team’s requirements for our design system and associated processes, exploring possible solutions collectively in the course of a workshop, and implementing the approach that we identified to address our needs best.";
+    "Closing the gaps within existing processes and structures to meet the evolving needs of a growing design team.";
 
   const challenge =
     "With a growing digital product landscape, our design team faced the challenge of maintaining consistency between the different products. We saw the need to improve our current workflow to keep each other in the loop early on in the process of evolving existing components and introducing new ones. On top of that, the structure of our existing design system was not prepared for the anticipated increase of complexity and amount of components.";
@@ -242,13 +242,6 @@ const DesignSystem = () => {
           ]}
         />
       }
-      text2={
-        <p class="text-l primaryMain">
-          I further prepared the contents for the defined agenda points and put
-          them together in a dedicated Miro board which we then used as a
-          workspace for our workshop.
-        </p>
-      }
     />
   );
 
@@ -312,14 +305,10 @@ const DesignSystem = () => {
       headline={<h3>Design system structure</h3>}
       text={
         <p class="text-l primaryMain">
-          During the preparation of the workshop, I examined common design
-          system approaches and how other companies set up their design systems.
-          Based on the inspiration that I found, I identified three possible
-          approaches to structure our own design system for which I prepared
-          pro’s and con’s in advance. During the workshop, I presented our
-          current structure, explained the three approaches and gathered further
-          feedback on the suitability of the approaches for our specific use
-          case.
+          Within the workshop, I presented our current structure, and proposed
+          three approaches to improve them based on the research I performed and
+          led a discussion with the design team to evaluate the suitability of
+          the appraoches for our use cases.
         </p>
       }
       content={
@@ -342,15 +331,10 @@ const DesignSystem = () => {
       headline={<h3>Documentation</h3>}
       text={
         <p class="text-l primaryMain">
-          We used the workshop to establish a shared understanding of what needs
-          the documentation of our components should address.
-          <span class="text-l text-title">
-            {" "}
-            Together with the design team we discussed location, creator, target
-            audience, and content of our documentation,{" "}
-          </span>
-          which served me as a starting point to propose a template for
-          component documentation.
+          We further used the workshop to establish a shared understanding of
+          what needs the documentation of our components should address, which
+          served me as a starting point to propose a template for component
+          documentation.
         </p>
       }
       content={
@@ -409,9 +393,7 @@ const DesignSystem = () => {
           to showcase the proposed design system structure with a small
           selection of our actual components. I scheduled another feedback
           session with the design team to gather feedback on the refined
-          proposal. The team found the new structure easy to understand and
-          maintain and we decided to give it a shot and apply it to our design
-          system.
+          proposal.
         </p>
       }
       content={
@@ -463,12 +445,9 @@ const DesignSystem = () => {
       text={
         <p class="text-l primaryMain">
           Together with my design mentor I finalized the component release
-          process. I set up the component kindergarden section in our design
-          system and introduced it to the team in the next design system
-          meeting. We further promoted the new process in the design system
-          meeting and I added it to our design system’s documentation. The flow
-          underneath showcases how the new process supports us in identifying
-          shared needs for components in early stages and enables us to
+          process. The flow underneath showcases how the new process supports us
+          in identifying shared needs for components in early stages and enables
+          us to
           <span class="text-l text-title">
             {" "}
             release new components in a more efficient and transparent way.
@@ -534,9 +513,9 @@ const DesignSystem = () => {
             design system and associated processes to improve transparency and
             alignment on existing and emerging UI components. With the goal
             defined, it was now time to explore possible approaches to achieve
-            it. My design mentor and I decided to continue by preparing a
-            workshop for the whole design team to collectively refine the
-            requirements and evaluate first solution approaches.
+            it. My design mentor and I decided to conduct a workshop for the
+            whole design team to collectively refine the requirements and
+            evaluate first solution approaches.
           </p>
         }
         image={image_design}
@@ -560,7 +539,6 @@ const DesignSystem = () => {
         headline={"Implementing structures and processes"}
         text={
           <p class="text-l">
-            We did a debrief on our workshop and revised our follow-up tasks.
             Our next steps included a refined proposal for the new design system
             structure and its implementation, providing a documentation template
             for custom components and introduce the finalized component release

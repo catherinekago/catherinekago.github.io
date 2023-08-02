@@ -92,9 +92,9 @@ const SurvEye = () => {
   const overview =
     "A genuine project of the heart, which happened to coincide my bachelor thesis for my studies in Human-Computer-Interaction. Exploring gaze-based questionnaire design to make questionnaires accessible to individuals with manual impairment.";
   const challenge =
-    "Individuals with manual impairments encounter formidable challenges when it comes to tasks requiring manual precision, like using a pen or a computer mouse. Unfortunately, this means that both paper-based and digital questionnaires remain out of reach for this target group, leading to a substantial underrepresentation of manually impaired individuals in research. Moreover, it negatively affects their independence in handling paperwork. Empowering these individuals to overcome these obstacles is essential for fostering inclusivity and equality.";
+    "Individuals with manual impairments encounter formidable challenges when it comes to tasks requiring manual precision, like filling out paper-based and digital questionnaires. This leads to a substantial underrepresentation of manually impaired individuals in research and negatively affects their independence in handling paperwork.";
   const solution =
-    "During my bachelor thesis in human-computer interaction, I conducted a thorough investigation into the design of gaze-based digital questionnaires. My primary goal was to derive practical design guidelines that could shape future advancements in this field. I began by analyzing the specific requirements for gaze-based interaction design, considering the unique needs and challenges involved. Through a process of iteration and refinement, I developed four distinct designs and translated them into actual implementations. These prototypes formed the basis for a series of evaluations, which I conducted in collaboration with individuals with manual impairments. Together, we worked towards enhancing accessibility and paving the way for improved user experiences in the realm of questionnaires.";
+    "I conducted a thorough exploration of the design of gaze-based digital questionnaires. Through a user-centric process based on research, iterations, and user testing, I identified a set of guidelines for the development of gaze-based questionnaire design.";
   const description = (
     <CaseStudyDescription
       roleIcon={icon_role}
@@ -609,6 +609,7 @@ const SurvEye = () => {
             I translated my designs into{" "}
             <a
               class="inline-link text-l inverted"
+              target="_blank"
               href="https://github.com/catherinekago/surv-eye"
             >
               concrete interface implementations
@@ -616,7 +617,11 @@ const SurvEye = () => {
             and set up data collection algorithms in the background to collect
             quantitative data during my user testings. To capture gaze input in
             real-time I used the eye-tracking library{" "}
-            <a class="inline-link text-l" href="https://webgazer.cs.brown.edu/">
+            <a
+              class="inline-link text-l"
+              target="_blank"
+              href="https://webgazer.cs.brown.edu/"
+            >
               Webgazer
             </a>{" "}
             and adjusted the library to better suit my use case.
@@ -642,11 +647,12 @@ const SurvEye = () => {
           <p class="text-l">
             During my study, I asked the participants to select the options that
             were displayed at the top of the interface. I also encouraged them
-            to think aloudduring the interaction so I could get deeper insights
+            to think aloud during the interaction so I could get deeper insights
             on their perceptions and thoughts. Additionally, I evaluated
             usability with the{" "}
             <a
               class="inline-link text-l"
+              target="_blank"
               href="https://www.usability.gov/how-to-and-tools/methods/system-usability-scale.html"
             >
               SUS
@@ -654,6 +660,7 @@ const SurvEye = () => {
             and workload with the{" "}
             <a
               class="inline-link text-l"
+              target="_blank"
               href="https://humansystems.arc.nasa.gov/groups/TLX/"
             >
               NASA-TLX
@@ -686,27 +693,19 @@ const SurvEye = () => {
               truly understanding how humans interact
             </span>{" "}
             with digital interfaces in the context of gaze-based design.
-            Balancing the inspection and selection of elements within the same
-            modality pushed me to meticulously analyze and plan interaction to
-            design a usable interface. <br></br> <br></br> Secondly, being able
-            to work on something that had a{" "}
+            <br></br> <br></br> Secondly, working on something that{" "}
             <span class="text-l text-title">
-              tangible impact on real people
+              contributes towards shaping a more accessible and inclusive
+              digital world
             </span>{" "}
-            was incredibly fulfilling. It allowed me to contribute towards
-            shaping a more accessible and inclusive world, where individuals of
-            all abilities can engage with digital content. <br></br> <br></br>{" "}
-            Lastly, this project provided me with the opportunity{" "}
+            was incredibly fulfilling. <br></br> <br></br> Lastly, this project
+            provided me with the opportunity{" "}
             <span class="text-l text-title">
-              to see a project through from start to finish
+              to see a project through from the research and design stages to
+              the implementation and evaluation phases.
             </span>{" "}
-            , within the limited scope of a bachelor thesis. I was involved in
-            every aspect, from the research and design stages to the
-            implementation and evaluation phases. This comprehensive experience
-            has left me feeling excited, proud, and genuinely confident in the
-            value of my work. Overall, this project has been a truly enriching
-            journey that has further ignited my passion for designing meaningful
-            and inclusive user experiences.
+            This comprehensive experience has left me feeling excited, proud,
+            and genuinely confident in the value of my work.
           </p>
         }
       />

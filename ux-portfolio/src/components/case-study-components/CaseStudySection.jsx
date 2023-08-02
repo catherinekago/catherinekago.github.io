@@ -4,7 +4,7 @@ import Section from "../atoms/Section";
 
 const CaseStudySection = (props) => {
   return (
-    <div class="main-background-container container-dark">
+    <div class="main-background-container container-secondary">
       <div class={"main-content-container content-horizontal-section"}>
         <div class="content-vertical">
           <div class="section-headline">
