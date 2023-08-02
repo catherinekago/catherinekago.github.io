@@ -603,6 +603,7 @@ const SurvEye = () => {
             I translated my designs into{" "}
             <a
               class="inline-link text-l inverted"
+              target="_blank"
               href="https://github.com/catherinekago/surv-eye"
             >
               concrete interface implementations
@@ -610,7 +611,11 @@ const SurvEye = () => {
             and set up data collection algorithms in the background to collect
             quantitative data during my user testings. To capture gaze input in
             real-time I used the eye-tracking library{" "}
-            <a class="inline-link text-l" href="https://webgazer.cs.brown.edu/">
+            <a
+              class="inline-link text-l"
+              target="_blank"
+              href="https://webgazer.cs.brown.edu/"
+            >
               Webgazer
             </a>{" "}
             and adjusted the library to better suit my use case.
@@ -641,6 +646,7 @@ const SurvEye = () => {
             usability with the{" "}
             <a
               class="inline-link text-l"
+              target="_blank"
               href="https://www.usability.gov/how-to-and-tools/methods/system-usability-scale.html"
             >
               SUS
@@ -648,6 +654,7 @@ const SurvEye = () => {
             and workload with the{" "}
             <a
               class="inline-link text-l"
+              target="_blank"
               href="https://humansystems.arc.nasa.gov/groups/TLX/"
             >
               NASA-TLX

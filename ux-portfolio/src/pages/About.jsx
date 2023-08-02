@@ -2,9 +2,8 @@ import React from "react";
 import { useState, useEffect } from "react";
 import "../components/case-study-components/CaseStudyStyles.scss";
 import "../style/style.scss";
+import { Link } from "react-router-dom";
 
-import ContentBlock from "../components/case-study-components/ContentBlock";
-import CaseStudyContent from "../components/case-study-components/CaseStudyContent";
 import Chip from "../components/atoms/Chip";
 import portrait from "../assets/images/portrait.svg";
 import volunteer from "../assets/icons/volunteer.svg";
@@ -50,21 +49,26 @@ const About = () => {
   }
 
   const introText = (
-    <p class="text-l primaryMain">
-      "Hey Kathrin, I am simply blown away by your study notes. I could never do
-      that. They are so well-structured. Your version is way easier to digest,
-      understand, and memorize than the original set of material provided by the
-      lecturer. And on top of that it just looks so good, with that color coding
-      and the visualizations that you included. Would you mind sharing them with
-      me?" <br />
-      This is how I was commonly approached during my time at university, and it
-      made me realize{" "}
-      <span class="text-l text-title">
-        {" "}
-        that my making sense of information has the potential ease people's
-        lives.
-      </span>
-    </p>
+    <>
+      {" "}
+      <p class="text-l primaryMain italic">
+        "Hey Kathrin, I am simply blown away by your study notes. I could never
+        do that. They are so well-structured. Your version is way easier to
+        digest, understand, and memorize than the original set of material
+        provided by the lecturer. And on top of that it just looks so good, with
+        that color coding and the visualizations that you included. Would you
+        mind sharing them with me?"
+      </p>
+      <p class="text-l primaryMain">
+        This is how I was commonly approached during my time at university, and
+        it made me realize{" "}
+        <span class="text-l text-title">
+          {" "}
+          that my making sense of information has the potential ease people's
+          lives.
+        </span>
+      </p>
+    </>
   );
 
   const aboutMeFacts = [
@@ -101,13 +105,21 @@ const About = () => {
           (B. Sc. and M. Sc.), I directed my attention towards two specific
           areas: user experience and assistive technologies. In my final theses,
           I had the opportunity to collaborate with individuals who had{" "}
-          <a class="text-l primaryDark inline-link" href="url">
+          <Link
+            class="text-l primaryDark inline-link"
+            target="_blank"
+            to={"/surveye"}
+          >
             manual impairments
-          </a>{" "}
+          </Link>{" "}
           and{" "}
-          <a class="text-l primaryDark inline-link" href="url">
+          <Link
+            class="text-l primaryDark inline-link"
+            target="_blank"
+            to={"/surveye"}
+          >
             visual impairments
-          </a>
+          </Link>
           , conducting user-centered evaluations of suitable assisitve
           technology design.
         </p>
@@ -176,11 +188,9 @@ const About = () => {
           <img
             class="img-small"
             src={portrait}
-            alt={
-              "A screenshot of the workspace of our workshop where we collectively gathered information on what the documentation of a component should provide. We gathere information around where to document components, who is writing the documentation, for whom it is written, e.g. who is the target group, and finally, what exactly we want to document."
-            }
+            alt={"A back and white portrait of me, Kathrin Schnizer."}
           />
-          <div class={"content-vertical"}>{introText}</div>
+          <div class={"content-vertical-small"}>{introText}</div>
         </div>
       </div>
 
