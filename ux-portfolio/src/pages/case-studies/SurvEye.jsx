@@ -687,27 +687,19 @@ const SurvEye = () => {
               truly understanding how humans interact
             </span>{" "}
             with digital interfaces in the context of gaze-based design.
-            Balancing the inspection and selection of elements within the same
-            modality pushed me to meticulously analyze and plan interaction to
-            design a usable interface. <br></br> <br></br> Secondly, being able
-            to work on something that had a{" "}
+            <br></br> <br></br> Secondly, working on something that{" "}
             <span class="text-l text-title">
-              tangible impact on real people
+              contributes towards shaping a more accessible and inclusive
+              digital world
             </span>{" "}
-            was incredibly fulfilling. It allowed me to contribute towards
-            shaping a more accessible and inclusive world, where individuals of
-            all abilities can engage with digital content. <br></br> <br></br>{" "}
-            Lastly, this project provided me with the opportunity{" "}
+            was incredibly fulfilling. <br></br> <br></br> Lastly, this project
+            provided me with the opportunity{" "}
             <span class="text-l text-title">
-              to see a project through from start to finish
+              to see a project through from the research and design stages to
+              the implementation and evaluation phases.
             </span>{" "}
-            , within the limited scope of a bachelor thesis. I was involved in
-            every aspect, from the research and design stages to the
-            implementation and evaluation phases. This comprehensive experience
-            has left me feeling excited, proud, and genuinely confident in the
-            value of my work. Overall, this project has been a truly enriching
-            journey that has further ignited my passion for designing meaningful
-            and inclusive user experiences.
+            This comprehensive experience has left me feeling excited, proud,
+            and genuinely confident in the value of my work.
           </p>
         }
       />

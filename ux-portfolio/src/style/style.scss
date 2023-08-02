@@ -11,6 +11,7 @@ $greyBackground: #e7ebf0;
 $greyBackgroundLight: #e7ebf06c;
 
 $primaryMain: #252b33;
+$primaryLight: #37414d;
 
 .text-primary {
   color: $primaryMain !important;
@@ -40,7 +41,6 @@ $textLight: #c2c2c2;
 $primaryBackground: #e1e8dd;
 
 $primaryDark: #2f3c22;
-$primaryLight: #bdd1b2;
 
 /* || BREAKPOINTS */
 
@@ -241,7 +241,7 @@ li {
 }
 
 .content-blocks {
-  gap: 160px !important;
+  gap: 140px !important;
 
   @media (min-width: $screen-xl-min) {
     width: 1200px !important;
@@ -306,7 +306,7 @@ body {
   flex-direction: column;
   transition: 100ms ease-out 100ms;
   height: fit-content !important;
-  padding: 120px 10%;
+  padding: 80px 10%;
   width: 80%;
 
   @media (min-width: $screen-l-min) {
@@ -319,6 +319,29 @@ body {
 
 .container-dark {
   background-color: $primaryMain;
+
+  h1,
+  h2,
+  h3,
+  h4,
+  a {
+    color: white;
+  }
+  p {
+    color: $textLight !important;
+  }
+
+  a:hover {
+    opacity: 70% !important;
+
+    &.project-teaser-image {
+      opacity: 100% !important;
+    }
+  }
+}
+
+.container-secondary {
+  background-color: $primaryLight;
 
   h1,
   h2,
