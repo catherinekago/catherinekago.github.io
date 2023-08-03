@@ -8,9 +8,14 @@ const CaseStudyContent = (props) => {
 
   return (
     <div class={divClass}>
-      <Section variant="section-dark" text={props.section} />
-      <div class={"main-content-container content-blocks"}>
-        {props.content.map((item) => item)}
+      <div class={"main-content-container"}>
+        <Section
+          variant={props.color === "dark" ? "section-light" : "section-dark"}
+          text={props.section}
+        />
+        <div class={"main-content-container content-blocks"}>
+          {props.content.map((item) => item)}
+        </div>
       </div>
     </div>
   );

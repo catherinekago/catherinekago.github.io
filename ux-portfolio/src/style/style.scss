@@ -8,7 +8,7 @@
 $white: #fdfdfd;
 
 $greyBackground: #e7ebf0;
-$greyBackgroundLight: #e7ebf0;
+$greyBackgroundLight: #f3f5f7;
 
 $primaryMain: #252b33;
 $primaryLight: #37414d;
@@ -325,7 +325,7 @@ body {
   h3,
   h4,
   a {
-    color: white;
+    color: white !important;
   }
   p {
     color: $textLight !important;

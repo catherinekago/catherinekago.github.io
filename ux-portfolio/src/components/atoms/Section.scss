@@ -1,45 +1,48 @@
-@import '../../style/style.scss';
+@import "../../style/style.scss";
 
 .section-container {
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    padding: 0px !important;
-    gap: 10px;
-    margin-bottom: 16px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0px !important;
+  gap: 10px;
+  margin-bottom: 16px;
 
-    @include xl {
-        padding: 0px 0px;
-        width: 1200px;
-    }
+  @include xl {
+    padding: 0px 0px;
+    width: 1200px;
+  }
 
-    .section-line-dark {
-        width: 72px;
-        border: 1px solid $primaryDark;
-    }
+  .section-line-dark {
+    width: 72px;
+    border: 1px solid $primaryDark;
+  }
 
-    .section-line-light {
-        width: 72px;
-        border: 1px solid $textLight;
-    }
+  .section-line-light {
+    width: 72px;
+    border: 1px solid $textLight;
+  }
 
-    .section-text-dark {
-        @extend %text;
-        font-size: 20px;
-        font-weight: 400 !important;
-        letter-spacing: 0.05em;
-        text-transform: uppercase;
-        color: $primaryDark;
-    }
+  .section-text {
+    @extend %text;
+    font-weight: 400 !important;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+  }
 
-    .section-text-light {
-        @extend %text;
-        font-size: 20px;
-        font-weight: 400 !important;
-        letter-spacing: 0.05em;
-        text-transform: uppercase;
-        color: $textLight !important;
-    }
+  .section-text-dark {
+    font-size: 20px;
 
+    color: $primaryDark;
+  }
+
+  .section-text-light {
+    @extend %text;
+    font-size: 20px;
+    font-weight: 400 !important;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: $textLight !important;
+  }
 }
