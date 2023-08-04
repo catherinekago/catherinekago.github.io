@@ -42,11 +42,13 @@ const Item = (props) => {
           </div>
 
           {!props.expandable ? (
-            <p class="text-l primaryMain">{props.item.text}</p>
+            <p class="text-l primaryMain itemText">{props.item.text}</p>
           ) : (
             <p
               class={
-                expanded ? "text-l primaryMain" : "text-l primaryMain hidden"
+                expanded
+                  ? "text-l primaryMain itemText"
+                  : "text-l primaryMain itemText hiddenItem"
               }
             >
               {props.item.text}
