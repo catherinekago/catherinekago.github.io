@@ -57,12 +57,21 @@ const Item = (props) => {
         </div>
       );
     } else {
-      <div class="item-group-container-box">
-        <div class={props.itemGroupClass}>
+      let itemGroupClass;
+      const containerClass = "container-" + props.background;
+      if (props.size === "small") {
+        itemGroupClass =
+          "item-group-item-box item-group-item-box-small " + containerClass;
+      } else if (props.size === "large") {
+        itemGroupClass =
+          "item-group-item-box item-group-item-box-large " + containerClass;
+      }
+      return (
+        <div class={itemGroupClass}>
           <p class="text-l text-title text-primary">{props.item.headline}</p>
           <p class="text-l primaryMain">{props.item.text}</p>
         </div>
-      </div>;
+      );
     }
   };
 

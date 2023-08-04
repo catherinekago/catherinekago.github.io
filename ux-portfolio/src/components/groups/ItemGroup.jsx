@@ -13,21 +13,15 @@ const ItemGroup = (props) => {
         </div>
       );
     } else {
-      let itemGroupClass;
-      if (size === "small") {
-        itemGroupClass = "item-group-item-box item-group-item-box-small";
-      } else if (size === "large") {
-        itemGroupClass = "item-group-item-box item-group-item-box-large";
-      }
-
       return (
         <div class="item-group-container-box">
-          {props.items.map((item) => (
+          {props.items.map((item, index) => (
             <Item
-              itemGroupClass={itemGroupClass}
+              size={size}
               type={type}
               item={item}
-              expandable={props.expandable}
+              expandable={false}
+              background={props.background}
             />
           ))}
         </div>
