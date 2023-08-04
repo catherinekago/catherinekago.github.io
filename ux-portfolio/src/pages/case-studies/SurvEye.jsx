@@ -284,7 +284,7 @@ const SurvEye = () => {
         <ItemGroup
           type="underline"
           size="small"
-          expandable="true"
+          expandable={true}
           items={listIemsRequirements}
         />
       }
