@@ -12,10 +12,6 @@ import SurvEyeHero from "../../assets/images/surveye_hero.png"; // TODO REPLACE
 import CaseStudyContent from "../../components/case-study-components/CaseStudyContent";
 import NextProject from "../../components/case-study-components/NextProject";
 
-import image_discovery from "../../assets/illustrations/image_discovery.svg";
-import image_design from "../../assets/illustrations/image_design.svg";
-import image_outcome from "../../assets/illustrations/image_outcome.svg";
-
 import mvp_teaser from "../../assets/images/MVP/mvp_teaser.png";
 import mvp_discovery_personas from "../../assets/images/MVP/mvp_discovery_personas.svg";
 import mvp_discovery_empathy from "../../assets/images/MVP/mvp_discovery_empathy.svg";
@@ -38,6 +34,11 @@ import icon_knowledge from "../../assets/icons/knowledge.svg";
 import icon_support from "../../assets/icons/support.svg";
 import icon_company from "../../assets/icons/company.svg";
 import icon_partner from "../../assets/icons/partner.svg";
+
+import icon_support_light from "../../assets/icons/icon_support_light.svg";
+import icon_company_light from "../../assets/icons/icon_company_light.svg";
+import icon_partner_light from "../../assets/icons/icon_partner_light.svg";
+
 import CardGroup from "../../components/groups/CardGroup";
 
 const MVP = () => {
@@ -81,9 +82,9 @@ const MVP = () => {
   const overview =
     "Facilitating streamlined data collection and collaboration within an organization's network, empowering them to make well-informed strategic decisions.";
   const challenge =
-    "Companies strive to obtain crucial firsthand data from their partner organizations, which is essential for  making well-informed strategic decisions. However, engaging partner organizations in data collection proves difficult due to various factors. These organizations are facing requests from numerous companies seeking their data, for which they struggle to determine where to begin, what specific data to provide, and how to navigate multiple platforms and formats through which data is requested. This obstacle limits effective data sharing and collaboration, hindering companies from gaining access to the valuable insights they require.";
+    "Companies strive to obtain crucial firsthand data from their partner organizations, which is essential for making well-informed strategic decisions. However, the partners oftentimes don't know where to begin, how to acquire the requested data, and have to navigate multiple platforms and formats through which data is requested. This obstacle limits effective data sharing and collaboration, hindering companies from gaining access to the valuable insights they require.";
   const solution =
-    "A scalable and user-friendly software platform. Partner organizations can conveniently input their data once and effortlessly share it with multiple companies. To simplify the process, they receive guidance and educational support, ensuring they understand the requirements for reporting the necessary data accurately. Additionally, the software provides recommendations to help partner organizations enhance the quality of their data based on the information they have provided. By streamlining data sharing and offering valuable insights, our solution empowers partner organizations to efficiently collaborate with companies, fostering better decision-making.";
+    "We created a scalable platform that streamlines data sharing between partner organizations and multiple companies. It offers a simplified input process with guidance for accurate reporting and provides recommendations to improve data quality based on an analysis of the provided data..";
   const description = (
     <CaseStudyDescription
       roleIcon={icon_role}
@@ -106,8 +107,9 @@ const MVP = () => {
           with three of our own consultants, as well as two customers and five
           partner companies. We tagged key insights from the protocols that I
           created during the interviews, and through the aggregation of insights
-          we highlighted in our debriefs we were able to uncover the primary
-          unmet needs that our solution should address:
+          we highlighted in our debriefs we were able to uncover{" "}
+          <span class="text-l text-title"> the primary unmet needs </span> that
+          our solution should address:
         </p>
       }
       content={
@@ -397,8 +399,9 @@ const MVP = () => {
       headline={<h3>Delivery preparation</h3>}
       text={
         <p class="text-l text-primary">
-          We prepared the designs for our development team. I was responsible
-          for preparing frames that communicate the
+          I prepared the frames and documentation for delivery, incorporating
+          the valuable feedback we have received from customers and partners. I
+          was responsible for preparing frames that communicate the
           <span class="text-l text-title text-primary">
             {" "}
             responsive behavior{" "}
@@ -432,9 +435,7 @@ const MVP = () => {
       headline={<h3>Vision</h3>}
       text={
         <p class="text-l text-primary">
-          Building upon feedback from testing the prototype and valuable input
-          from customers and their partner organizations using our launched
-          Minimum Viable Product (MVP), we have identified
+          We have further identified
           <span class="text-l text-title text-primary">
             {" "}
             opportunities to enhance our MVP{" "}
@@ -449,8 +450,8 @@ const MVP = () => {
           and their partner organizations in{" "}
           <span class="text-l text-title text-primary">
             {" "}
-            analyzing their data, actively improving its quality, and achieving
-            strategic goals.{" "}
+            analyzing their data, offer them guidance in improving data quality,
+            and achieving strategic goals.{" "}
           </span>
         </p>
       }
@@ -466,6 +467,57 @@ const MVP = () => {
     />
   );
 
+  const threeReasonsWhy = [
+    {
+      icon: icon_support_light,
+      alt: "An icon showing an individual wearing a headset.",
+      text: (
+        <p class="text-l text-light">
+          Our MVP{" "}
+          <span class="text-l text-title">
+            {" "}
+            reduces the manual work of our consultants to a single action,
+          </span>{" "}
+          which is to click a single button to grant the customer access to the
+          platform.
+        </p>
+      ),
+    },
+    {
+      icon: icon_company_light,
+      alt: "An icon showing two stylistic buildings.",
+      text: (
+        <p class="text-l text-light">
+          Status as of July 2023, our MVP{" "}
+          <span class="text-l text-title">
+            enabled our main customers to request 1000+ of their partner
+            organizations to provide their data
+          </span>{" "}
+          through our service. They further plan to start a new data collection
+          round beginning in September 2023.
+        </p>
+      ),
+    },
+    {
+      icon: icon_partner_light,
+      alt: "An icon showing two individuals shaking hands.",
+      text: (
+        <p class="text-l text-light">
+          The partner organizations of our main customers{" "}
+          <span class="text-l text-title text-light">
+            can provide a set of data once and share it with multiple companies
+          </span>{" "}
+          using our platform. The firsthand data that we obtained from the
+          partners further enables us to{" "}
+          <span class="text-l text-title text-light">
+            systematically adapt our solution
+          </span>{" "}
+          to better match their level of expertise.
+        </p>
+      ),
+    },
+  ];
+
   return (
     <>
       {/* Hero */}
@@ -475,28 +527,10 @@ const MVP = () => {
         solution={solution}
         description={description}
       />
-      <CaseStudySection
-        flexDirection={"horizontal"}
-        section={"Discovery"}
-        headline={"Diving into the problem space"}
-        text={
-          <p class="text-l">
-            Through persona interviews with our consultants, customers and their
-            partner organizations, we extracted key insights and identified
-            primary unmet needs. Creating personas and empathy maps provided a
-            deeper understanding of their perspectives, guiding us in shaping
-            our solution. The aggregation of our user research led us to
-            valuable value propositions for the next phase of our design
-            process.
-          </p>
-        }
-        image={image_discovery}
-        imageAlt={
-          "An illustration of a female diver surrounded by several fish and a turtle. The diver is reaching with her hand for the turtle. Anemones are covering the ground."
-        }
-      />
 
       <CaseStudyContent
+        color="white"
+        section="Discovery"
         content={[
           discovery_contentblock_1,
           discovery_contentblock_2,
@@ -504,29 +538,9 @@ const MVP = () => {
         ]}
       />
 
-      <CaseStudySection
-        flexDirection={"horizontal"}
-        section={"Design"}
-        headline={"Exploring the solution space"}
-        text={
-          <p class="text-l">
-            Through an iterative process, we collaborated with our consultants
-            and target groups to refine user flows, identify key opportunities,
-            and explore different aspects of the user journey, including
-            onboarding, progress tracking, registration, data entry, and
-            knowledge sourcing. To validate our proposal, we conducted a trial
-            run with one of our customers, integrating insights from both the
-            customer and their partner organizations, and iterated on the
-            designs based on their valuable feedback.
-          </p>
-        }
-        image={image_design}
-        imageAlt={
-          "An illustration of an astronaut surfing on a space ship, passing clouds and different planets."
-        }
-      />
-
       <CaseStudyContent
+        color="grey-light"
+        section="Design"
         content={[
           design_contentblock_1,
           design_contentblock_2,
@@ -535,49 +549,32 @@ const MVP = () => {
         ]}
       />
 
-      <CaseStudySection
-        flexDirection={"horizontal"}
-        section={"Outcome"}
-        headline={"Launching an MVP"}
-        text={
-          <p class="text-l">
-            I prepared frames and documentation for delivery, incorporating
-            valuable feedback from customers and partners. Based on insights
-            from user interviews, usability testing, and feedback on the live
-            solution, we have identified opportunities to further evolve our
-            MVP.
-          </p>
-        }
-        image={image_outcome}
-        imageAlt={
-          "An illustration showing four individuals that carry a puzzle piece towards a puzzle frame of the size of 3 times 3 to complete it alltoegher."
-        }
-      />
-
       <CaseStudyContent
+        color="white"
+        section="Outcome"
         content={[delivery_contentblock_1, delivery_contentblock_2]}
       />
 
-      <CaseStudySection
-        flexDirection={"horizontal"}
-        section={"Reflection"}
-        headline={"How does our MVP support our stakeholders?"}
-        image={null}
-        text={
-          <p class="text-l">
-            It provides a{" "}
-            <span class="text-l text-title">streamlined process</span> for all
-            customers that need to collect their partner organizations' data,
-            reducing repetitiv manual workload of our consultants.
-            <br></br> <br></br>
-            Status as of July 2023,{" "}
-            <span class="text-l text-title">
-              our main customers requested 1000+ of their partner organizations
-              to use our service
-            </span>{" "}
-            to request their data.
-          </p>
-        }
+      <CaseStudyContent
+        section="Reflection"
+        color="dark"
+        content={[
+          <ContentBlock
+            size={size}
+            headline={<h3>Three reasons why...</h3>}
+            text={
+              <p class="text-l text-light">
+                ... our MVP addresses the identified user needs:
+              </p>
+            }
+            content={threeReasonsWhy.map((item) => (
+              <div class={"content-horizontal item-icons"}>
+                <img class="icon-extrabig" src={item.icon} alt={item.alt} />
+                {item.text}
+              </div>
+            ))}
+          />,
+        ]}
       />
 
       <NextProject project="TODO" button="View Case Study" link="/todo" />

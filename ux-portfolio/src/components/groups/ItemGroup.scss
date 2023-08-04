@@ -1,6 +1,9 @@
 @import "../../style/style.scss";
 
 .item-group-container-underline {
+  transition: all 0.3s ease;
+  height: fit-content;
+  transition: 0.5s;
   display: flex;
   flex-direction: row;
   align-items: flex-start;
@@ -9,6 +12,16 @@
   flex-wrap: wrap;
   padding: 0px;
   gap: 40px;
+
+  .itemText {
+    max-height: 400px;
+    transition: max-height 0.3s ease;
+
+    &.hiddenItem {
+      max-height: 0;
+      overflow: hidden;
+    }
+  }
 
   .item-group-item-underline {
     display: flex;
@@ -40,26 +53,28 @@
 
     .item-group-header {
       display: flex;
-      flex-direction: column;
-      justify-content: center;
+      flex-direction: row;
+      justify-content: space-between;
       width: 100%;
       align-items: flex-start;
       padding: 0px;
       gap: 4px;
 
-      .item-group-header-underline {
-        border: 1px solid $primaryMain;
-        flex: none;
-        order: 1;
-        align-self: stretch;
-        flex-grow: 0;
-      }
-
       .item-group-headline {
         display: flex;
         flex-direction: row;
+        align-items: center;
         gap: 8px;
       }
+    }
+
+    .item-group-header-underline {
+      border: 1px solid $primaryMain !important;
+      flex: none;
+      order: 1;
+      align-self: stretch;
+      flex-grow: 0;
+      margin-top: 4px;
     }
   }
 }
@@ -80,7 +95,6 @@
     align-items: flex-start;
     padding: 32px;
     gap: 8px;
-    background: $greyBackground;
     box-shadow: $boxShadow;
     align-self: stretch;
   }

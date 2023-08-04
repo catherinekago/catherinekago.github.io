@@ -8,7 +8,7 @@
 $white: #fdfdfd;
 
 $greyBackground: #e7ebf0;
-$greyBackgroundLight: #e7ebf06c;
+$greyBackgroundLight: #f3f5f7;
 
 $primaryMain: #252b33;
 $primaryLight: #37414d;
@@ -241,7 +241,7 @@ li {
 }
 
 .content-blocks {
-  gap: 140px !important;
+  gap: 120px !important;
 
   @media (min-width: $screen-xl-min) {
     width: 1200px !important;
@@ -325,7 +325,7 @@ body {
   h3,
   h4,
   a {
-    color: white;
+    color: white !important;
   }
   p {
     color: $textLight !important;
@@ -762,7 +762,6 @@ button {
     gap: 10px;
 
     align-self: flex-start;
-    background-color: white;
 
     img {
       padding: 10px 0px 10px 0px;

@@ -6,7 +6,6 @@ import "../../style/style.scss";
 import CaseStudyHeader from "../../components/case-study-components/CaseStudyHeader";
 import CaseStudyOverview from "../../components/case-study-components/CaseStudyOverview";
 import CaseStudyDescription from "../../components/case-study-components/CaseStudyDescription";
-import CaseStudySection from "../../components/case-study-components/CaseStudySection";
 import CaseStudyContent from "../../components/case-study-components/CaseStudyContent";
 import ContentBlock from "../../components/case-study-components/ContentBlock";
 import NextProject from "../../components/case-study-components/NextProject";
@@ -21,9 +20,10 @@ import icon_description from "../../assets/icons/description.svg";
 import icon_communication from "../../assets/icons/communication.svg";
 import icon_child from "../../assets/icons/child.svg";
 
-import image_discovery from "../../assets/illustrations/image_discovery.svg";
-import image_design from "../../assets/illustrations/image_design.svg";
-import image_outcome from "../../assets/illustrations/image_outcome.svg";
+import icon_locked from "../../assets/icons/locked.svg";
+import icon_code from "../../assets/icons/code.svg";
+import icon_evaluation from "../../assets/icons/evaluation.svg";
+
 import ItemGroup from "../../components/groups/ItemGroup";
 
 import ds_hero from "../../assets/images/DesignSystem/ds_hero.svg";
@@ -97,9 +97,9 @@ const DesignSystem = () => {
       headline={<h3>Talking to the user</h3>}
       text={
         <p class="text-l primaryMain">
-          I talked to my design colleagues to gather their perspective on the
-          design system and the processes to maintain and extend it. I
-          identified the following
+          To understand the challenges of our current structures, I gathered
+          insights from the users of our design system, namely my design
+          colleagues. I identified the following
           <span class="text-l text-title"> pain points:</span>:
         </p>
       }
@@ -107,6 +107,7 @@ const DesignSystem = () => {
         <ItemGroup
           type="box"
           size="large"
+          background="white"
           items={[
             {
               headline: "Long search time",
@@ -182,12 +183,15 @@ const DesignSystem = () => {
   const design_contentblock_1 = (
     <ContentBlock
       size={size}
-      headline={<h3>Workshop agenda</h3>}
+      headline={<h3>Workshop preparation</h3>}
       text={
         <p class="text-l primaryMain">
-          My design mentor and I translated the previous findings into agenda
-          points for our upcoming workshop which resulted in the following
-          structure:
+          The outcome of my initial research was a clear goal: to enhance the
+          design system and associated processes to improve transparency and
+          alignment on existing and emerging UI components. My design mentor and
+          I decided to conduct a workshop for the whole design team to
+          collectively refine the requirements and evaluate first solution
+          approaches. We defined our workshop agenda as follows:
         </p>
       }
       content={
@@ -466,6 +470,58 @@ const DesignSystem = () => {
     />
   );
 
+  const threeReasonsWhy = [
+    {
+      icon: icon_evaluation,
+      alt: "An icon displaying a check mark surrounded by circling arrows that indicate an ongoing process.",
+      text: (
+        <p class="text-l text-light">
+          When I introduced the design system and our component release process
+          to new design team members, they were consistently surprised by{" "}
+          <span class="text-l text-title text-light">
+            the simplicity and the self-explanatory structure and process.
+          </span>{" "}
+          Nevertheless, we were{" "}
+          <span class="text-l text-title text-light">
+            lacking the role of a design system lead
+          </span>{" "}
+          who was responsible for the evaluation of new component requests to
+          speed up the process and maintain the design system.
+        </p>
+      ),
+    },
+    {
+      icon: icon_code,
+      alt: "An icon displaying a programming terminal with a prompt command.",
+      text: (
+        <p class="text-l text-light">
+          Also, our process proposal did not cover the actual implementation,
+          which means that{" "}
+          <span class="text-l text-title text-light">
+            misalignment and double-work were still likely to happen within the
+            implementation{" "}
+          </span>{" "}
+          of components.{" "}
+        </p>
+      ),
+    },
+    {
+      icon: icon_locked,
+      alt: "An icon displaying a lock.",
+      text: (
+        <p class="text-l text-light">
+          Lastly, we realized that we were oftentimes working in{" "}
+          <span class="text-l text-title text-light">
+            silos, resulting in isolated local components that never made it
+            into the design system.
+          </span>{" "}
+          To create a holistic, unified experience within our product landscape,
+          we focused on exchange and transparency within the design team.
+        </p>
+      ),
+    },
+  ];
+
   return (
     <>
       <CaseStudyHeader title={title} text={overview} image={ds_hero} />
@@ -474,28 +530,10 @@ const DesignSystem = () => {
         solution={solution}
         description={description}
       />
-      <CaseStudySection
-        flexDirection={"horizontal"}
-        section={"Discovery"}
-        headline={"Diving into the problem space"}
-        text={
-          <p class="text-l">
-            To understand the challenges of our current structures, I gathered
-            insights from the users of our design system, namely my design
-            colleagues. I further mapped out the current component release
-            process and design system structure and did research on existing
-            design systems to build a solid understanding for further
-            exploration of possible solutions to address the design team’s
-            needs.
-          </p>
-        }
-        image={image_discovery}
-        imageAlt={
-          "An illustration of a female diver surrounded by several fish and a turtle. The diver is reaching with her hand for the turtle. Anemones are covering the ground."
-        }
-      />
 
       <CaseStudyContent
+        color="white"
+        section="Discovery"
         content={[
           discovery_contentblock_1,
           discovery_contentblock_2,
@@ -503,28 +541,9 @@ const DesignSystem = () => {
         ]}
       />
 
-      <CaseStudySection
-        flexDirection={"horizontal"}
-        section={"Design"}
-        headline={"Exploring the solution space"}
-        text={
-          <p class="text-l">
-            The outcome of my initial research was a clear goal: to enhance the
-            design system and associated processes to improve transparency and
-            alignment on existing and emerging UI components. With the goal
-            defined, it was now time to explore possible approaches to achieve
-            it. My design mentor and I decided to conduct a workshop for the
-            whole design team to collectively refine the requirements and
-            evaluate first solution approaches.
-          </p>
-        }
-        image={image_design}
-        imageAlt={
-          "An illustration of an astronaut surfing on a space ship, passing clouds and different planets."
-        }
-      />
-
       <CaseStudyContent
+        color="grey-light"
+        section="Design"
         content={[
           design_contentblock_1,
           design_contentblock_2,
@@ -533,26 +552,9 @@ const DesignSystem = () => {
         ]}
       />
 
-      <CaseStudySection
-        flexDirection={"horizontal"}
-        section={"Outcome"}
-        headline={"Implementing structures and processes"}
-        text={
-          <p class="text-l">
-            Our next steps included a refined proposal for the new design system
-            structure and its implementation, providing a documentation template
-            for custom components and introduce the finalized component release
-            process to the team and promote it within our weekly design system
-            meeting.
-          </p>
-        }
-        image={image_outcome}
-        imageAlt={
-          "An illustration showing four individuals that carry a puzzle piece towards a puzzle frame of the size of 3 times 3 to complete it alltoegher."
-        }
-      />
-
       <CaseStudyContent
+        color="white"
+        section="Outcome"
         content={[
           outcome_contentblock_1,
           outcome_contentblock_2,
@@ -561,27 +563,24 @@ const DesignSystem = () => {
         ]}
       />
 
-      <CaseStudySection
-        flexDirection={"horizontal"}
-        section={"Reflection"}
-        headline={"Wait - it’s that easy? We wish."}
-        image={null}
-        text={
-          <p class="text-l">
-            When I introduced the design system and our component release
-            process to new design team members, they were consistently surprised
-            by the simplicity and the self-explanatory structure and process.
-            Nevertheless, we identified new challenges as we progressed. We were
-            lacking the role of a design system lead who was responsible for the
-            evaluation of new component requests. This slowed down the decision
-            and release process and created uncertainty. Also, our process
-            proposal did not cover the actual implementation, which means that
-            misalignment and double-work were still likely to happen within the
-            implementation of components. This project taught me that we as
-            designers should regularly evaluate the structures we are working
-            with to find opportunitites to improve our workflow.
-          </p>
-        }
+      <CaseStudyContent
+        section="Reflection"
+        color="dark"
+        content={[
+          <ContentBlock
+            size={size}
+            headline={<h3>Three reasons why...</h3>}
+            text={
+              <p class="text-l text-light">... this was just the beginning:</p>
+            }
+            content={threeReasonsWhy.map((item) => (
+              <div class={"content-horizontal item-icons"}>
+                <img class="icon-extrabig" src={item.icon} alt={item.alt} />
+                {item.text}
+              </div>
+            ))}
+          />,
+        ]}
       />
 
       <NextProject project="TODO" button="View Case Study" link="/cp-you" />

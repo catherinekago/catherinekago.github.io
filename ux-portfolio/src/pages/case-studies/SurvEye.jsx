@@ -23,6 +23,9 @@ import spaceIcon from "../../assets/icons/space.svg";
 import icon_role from "../../assets/icons/quotes.svg";
 import icon_tools from "../../assets/icons/tools.svg";
 import icon_duration from "../../assets/icons/duration.svg";
+import icon_interaction from "../../assets/icons/interaction.svg";
+import icon_inclusive from "../../assets/icons/inclusive.svg";
+import icon_diamond from "../../assets/icons/diamond.svg";
 
 import CaseStudyHeader from "../../components/case-study-components/CaseStudyHeader";
 import CaseStudyOverview from "../../components/case-study-components/CaseStudyOverview";
@@ -31,22 +34,12 @@ import CaseStudyContent from "../../components/case-study-components/CaseStudyCo
 
 import ContentBlock from "../../components/case-study-components/ContentBlock";
 
-import eyeIllustration from "../../assets/illustrations/eye_illustration.svg";
+import surveyeIdeation from "../../assets/images/surveyeIdeation.jpg";
+import surveyeInteractionFlow from "../../assets/images/surveyeInteractionFlow.jpg";
 
-import implementationIllustration from "../../assets/illustrations/implementation_illustration.svg";
-import userIllustration from "../../assets/illustrations/illustration_users.svg";
+import mockup from "../../assets/images/mockup.svg";
 
-import image_discovery from "../../assets/illustrations/image_discovery.svg";
-
-import surveyeIdeation from "../../assets/images/surveye_ideation.svg";
-import surveyeInteractionFlow from "../../assets/images/surveye_interaction-flow.svg";
-
-import mockup_l1 from "../../assets/images/mockup_l1.svg";
-import mockup_l2 from "../../assets/images/mockup_l2.svg";
-import mockup_s1 from "../../assets/images/mockup_s1.svg";
-import mockup_s2 from "../../assets/images/mockup_s2.svg";
-
-import surveyeUserstudyFeedback from "../../assets/images/surveye_userstudy-feedback.jpg";
+import surveyeUserstudyFeedback from "../../assets/images/surveyeUserstudyFeedback.jpg";
 
 import CardGroup from "../../components/groups/CardGroup";
 import ItemGroup from "../../components/groups/ItemGroup";
@@ -108,7 +101,7 @@ const SurvEye = () => {
 
   const alternativesCardContainer = (
     <div class="main-content card-group">
-      <div class="card-container container-grey">
+      <div class="card-container container-grey-light">
         <div class="card-icon-text-container">
           <img
             class="icon-medium"
@@ -135,7 +128,7 @@ const SurvEye = () => {
         </div>
       </div>
 
-      <div class="card-container container-grey">
+      <div class="card-container container-grey-light">
         <div class="card-icon-text-container">
           <img
             class="icon-medium"
@@ -206,12 +199,13 @@ const SurvEye = () => {
   const discovery_contentblock_1 = (
     <ContentBlock
       size={size}
+      headline={<h3>Understanding the problem</h3>}
       text={
         <p class="text-l primaryMain">
-          I mapped out my initial investigation of existing research on how
-          manually impaired individuals interact with paper-based or digital
-          questionnaires <span class="text-l text-title">into a task flow</span>
-          :
+          I embarked on my journey by digging into the underlying reasons behind
+          the inaccessibility of questionnaires for individuals with manual
+          impairments and aggregated my insights{" "}
+          <span class="text-l text-title">into a task flow</span>:
         </p>
       }
       content={
@@ -232,11 +226,8 @@ const SurvEye = () => {
       text={
         <p class="text-l primaryMain">
           The task flow helped me to define the{" "}
-          <span class="text-l text-title">goal</span> of my solution:
-        </p>
-      }
-      content={
-        <p class="text-l primaryMain">
+          <span class="text-l text-title">goal</span> of my solution: <br></br>{" "}
+          <br></br>
           Enable manually impaired individuals to{" "}
           <span
             class="primaryMain text-h3"
@@ -260,6 +251,7 @@ const SurvEye = () => {
   const design_contentblock_1 = (
     <ContentBlock
       size={size}
+      headline={<h3>Exploring the solution space</h3>}
       text={
         <p class="text-l primaryMain">
           What
@@ -289,7 +281,12 @@ const SurvEye = () => {
         </p>
       }
       content={
-        <ItemGroup type="underline" size="small" items={listIemsRequirements} />
+        <ItemGroup
+          type="underline"
+          size="small"
+          expandable={true}
+          items={listIemsRequirements}
+        />
       }
     />
   );
@@ -417,70 +414,38 @@ const SurvEye = () => {
   const implementation_contentblock_1 = (
     <ContentBlock
       size={size}
+      headline={<h3>A gaze-based web application</h3>}
       text={
         <p class="text-l primaryMain">
-          The first two designs followed two different approaches to enable
-          users{" "}
-          <span class="text-l text-title">
-            to select one out of seven options
-          </span>{" "}
-          to respond to a given statement.
+          I translated my designs into{" "}
+          <a
+            class="inline-link text-l inverted"
+            target="_blank"
+            href="https://github.com/catherinekago/surv-eye"
+          >
+            concrete interface implementations
+          </a>{" "}
+          and set up data collection algorithms in the background to collect
+          quantitative data during my user testings. To capture gaze input in
+          real-time I used the eye-tracking library{" "}
+          <a
+            class="inline-link text-l"
+            target="_blank"
+            href="https://webgazer.cs.brown.edu/"
+          >
+            Webgazer
+          </a>{" "}
+          and adjusted the library to better suit my use case.
         </p>
       }
       content={
-        <div class="content-horizontal">
-          {" "}
-          <img
-            class="img-two-columnsf"
-            src={mockup_l1}
-            alt={
-              "A mockup of the first interface design, where the likert scale is divided into seven blocks that cover about half of the screen's height. Once the user's gaze is identified to touch one of the blocks, the selection process begins."
-            }
-          />{" "}
-          <img
-            class="img-two-columns"
-            src={mockup_l2}
-            alt={
-              "A mockup of the second interace design, where the likert scale is displayed two times: first in a gaze-insensitive inspection area, and also within a gaze-sensitive interaction area. The user can inspect the question and the corresponding options, and then follow a line connecting the option they want to chose to the corresponding interaction element."
-            }
-          />
-        </div>
-      }
-    />
-  );
-
-  const implementation_contentblock_2 = (
-    <ContentBlock
-      size={size}
-      text={
-        <p class="text-l primaryMain">
-          The other interface variations addressed the task of{" "}
-          <span class="text-l text-title">
-            selecting a value on a continuous scale
-          </span>
-          . As for the previous designs, I asked the participants to select
-          specific values during the testing and think aloud during the
-          interaction.
-        </p>
-      }
-      content={
-        <div class="content-horizontal">
-          {" "}
-          <img
-            class="img-two-columns"
-            src={mockup_s1}
-            alt={
-              "The third mockup of the interface design shows the interface of a slider. Within a gaze insensitive inspection area, the user can see the question as well as the slider and its current knob position. Beneath, there is another slider displayed, where the user can look ath the left and right side of the knob to move the knob towards their gaze position."
-            }
-          />{" "}
-          <img
-            class="img-two-columns"
-            src={mockup_s2}
-            alt={
-              "The fourth mockup also depicts a slider interface. Here the user has two buttons spanning 50% of the screen width each, whcih the user can select to control the slider component underneath. Once the user is satisfied, they can drop their gaze to the lower screen border which triggers the knob movement to stop."
-            }
-          />
-        </div>
+        <img
+          class="main-content-container"
+          src={mockup}
+          alt={
+            "A mockup of the four interface designs. The first one shows a design where the likert scale is divided into seven blocks that cover about half of the screen's height. Once the user's gaze is identified to touch one of the blocks, the selection process begins. For the second one, the likert scale is displayed two times: first in a gaze-insensitive inspection area, and also within a gaze-sensitive interaction area. The user can inspect the question and the corresponding options, and then follow a line connecting the option they want to chose to the corresponding interaction element. The third one shows an interface for a slider component. Within a gaze insensitive inspection area, the user can see the question as well as the slider and its current knob position. Beneath, there is another slider displayed, where the user can look ath the left and right side of the knob to move the knob towards their gaze position. The fourth mockup also depicts a slider interface. Here the user has two buttons spanning 50% of the screen width each, whcih the user can select to control the slider component underneath. Once the user is satisfied, they can drop their gaze to the lower screen border which triggers the knob movement to stop."
+          }
+        />
       }
     />
   );
@@ -488,16 +453,19 @@ const SurvEye = () => {
   const evaluation_contentblock_1 = (
     <ContentBlock
       size={size}
+      headline={<h3>Collecting feedback</h3>}
       text={
         <p class="text-l primaryMain">
-          I transferred my transcripts to a Miro board and{" "}
+          I tested my designs with{" "}
+          <span class="text-l text-title">16 individuals.</span> During my study
+          I collected quantiative and qualitative feedback. I transferred my
+          transcripts to a Miro board and{" "}
           <span class="text-l text-title">
             categorized the qualitative feedback
           </span>{" "}
           as “positive feedback”, “negative feedback”, and “requests and
-          observations”.{" "}
-          <span class="text-l text-title">I then identified clusters</span>{" "}
-          among the feedback and grouped the data accordingly.
+          observations”, and clustered the feedback according to recurring
+          themes.
         </p>
       }
       content={
@@ -533,6 +501,51 @@ const SurvEye = () => {
     />
   );
 
+  const threeReasonsWhy = [
+    {
+      icon: icon_interaction,
+      alt: "An icon displaying a person standing in front of a interaction area in the shape of a whiteboard",
+      text: (
+        <p class="text-l text-light">
+          Firstly, it presented me with an exciting challenge of{" "}
+          <span class="text-l text-title text-light">
+            truly understanding how humans interact
+          </span>{" "}
+          with digital interfaces in the context of gaze-based design.
+        </p>
+      ),
+    },
+    {
+      icon: icon_inclusive,
+      alt: "An icon displaying three persons with a heart symbol in front of them.",
+      text: (
+        <p class="text-l text-light">
+          Secondly, working on something that{" "}
+          <span class="text-l text-title text-light">
+            contributes towards shaping a more accessible and inclusive digital
+            world{" "}
+          </span>{" "}
+          was incredibly fulfilling.
+        </p>
+      ),
+    },
+    {
+      icon: icon_diamond,
+      alt: "An icon displaying a diamond.",
+      text: (
+        <p class="text-l text-light">
+          Lastly, this project provided me with the opportunity{" "}
+          <span class="text-l text-title text-light">
+            to see a project through from the research and design stages to the
+            implementation and evaluation phases.
+          </span>{" "}
+          This comprehensive experience has left me feeling excited, proud, and
+          genuinely confident in the value of my work..
+        </p>
+      ),
+    },
+  ];
+
   return (
     <>
       {/* Hero */}
@@ -545,50 +558,17 @@ const SurvEye = () => {
 
       {/* Setting the scene */}
 
-      <CaseStudySection
-        flexDirection={"horizontal"}
-        section={"Discovery"}
-        headline={"Diving into the problem space"}
-        text={
-          <p class="text-l main-content">
-            I embarked on my journey by digging into the underlying reasons
-            behind the inaccessibility of questionnaires for individuals with
-            manual impairments. I aggregated insights from existing user-centric
-            research around this topic to better understand the target group,
-            their challenges and needs.
-          </p>
-        }
-        image={image_discovery}
-        imageAlt={
-          "An illustration of a female diver surrounded by several fish and a turtle. The diver is reaching with her hand for the turtle. Anemones are covering the ground."
-        }
-      />
       <CaseStudyContent
+        color="white"
+        section="Discovery"
         content={[discovery_contentblock_1, discovery_contentblock_2]}
       />
 
       {/* Design */}
 
-      <CaseStudySection
-        flexDirection={"horizontal"}
-        section={"Design"}
-        headline={"Exploring the solution space"}
-        text={
-          <p class="text-l main-content">
-            I compared eligible input modalities and selected the most suitable
-            one to proceed with. Before diving into the actual design process, I
-            systematically researched existing approaches to gain insights into
-            the human and technical limitations that needed to be taken into
-            account. This aggregated knowledge then supported me in narrowing
-            down the solution space, laying the foundation for a set of
-            promising approaches.
-          </p>
-        }
-        image={eyeIllustration}
-        imageAlt={"An illustration of an open eye."}
-      />
-
       <CaseStudyContent
+        color="grey-light"
+        section="Design"
         content={[
           design_contentblock_1,
           design_contentblock_2,
@@ -599,115 +579,40 @@ const SurvEye = () => {
 
       {/* Implementation */}
 
-      <CaseStudySection
-        flexDirection={"horizontal"}
-        section={"Prototypical implementation"}
-        headline={"A React web app for gaze input"}
-        text={
-          <p class="text-l">
-            {" "}
-            I translated my designs into{" "}
-            <a
-              class="inline-link text-l inverted"
-              target="_blank"
-              href="https://github.com/catherinekago/surv-eye"
-            >
-              concrete interface implementations
-            </a>{" "}
-            and set up data collection algorithms in the background to collect
-            quantitative data during my user testings. To capture gaze input in
-            real-time I used the eye-tracking library{" "}
-            <a
-              class="inline-link text-l"
-              target="_blank"
-              href="https://webgazer.cs.brown.edu/"
-            >
-              Webgazer
-            </a>{" "}
-            and adjusted the library to better suit my use case.
-          </p>
-        }
-        image={implementationIllustration}
-        imageAlt={
-          "A laptop, surrounded by a cup of coffee, a light bulb, color schemes, glasses, and a sketch pad."
-        }
-      />
-
       <CaseStudyContent
-        content={[implementation_contentblock_1, implementation_contentblock_2]}
+        color="white"
+        section="Prototypical Implementation"
+        content={[implementation_contentblock_1]}
       />
 
       {/* User study */}
 
-      <CaseStudySection
-        flexDirection={"horizontal"}
-        section={"Evaluation"}
-        headline={"I tested my designs with 16 individuals"}
-        text={
-          <p class="text-l">
-            During my study, I asked the participants to select the options that
-            were displayed at the top of the interface. I also encouraged them
-            to think aloud during the interaction so I could get deeper insights
-            on their perceptions and thoughts. Additionally, I evaluated
-            usability with the{" "}
-            <a
-              class="inline-link text-l"
-              target="_blank"
-              href="https://www.usability.gov/how-to-and-tools/methods/system-usability-scale.html"
-            >
-              SUS
-            </a>{" "}
-            and workload with the{" "}
-            <a
-              class="inline-link text-l"
-              target="_blank"
-              href="https://humansystems.arc.nasa.gov/groups/TLX/"
-            >
-              NASA-TLX
-            </a>{" "}
-            questionnaires. My data collection algorithms further measured
-            completion times and errors to back up the qualitative feedback.
-          </p>
-        }
-        image={userIllustration}
-        imageAlt={
-          "An illustration showing six faces, differing in age, gender, and ethical background."
-        }
-      />
-
       <CaseStudyContent
+        section="Evaluation"
+        color="grey-light"
         content={[evaluation_contentblock_1, evaluation_contentblock_2]}
       />
 
-      <CaseStudySection
-        flexDirection={"horizontal"}
-        section={"Reflection"}
-        headline={"Three reaons why..."}
-        image={null}
-        text={
-          <p class="text-l">
-            ... I absolutely loved working on this project:
-            <br></br> <br></br> Firstly, it presented me with an exciting
-            challenge of{" "}
-            <span class="text-l text-title">
-              truly understanding how humans interact
-            </span>{" "}
-            with digital interfaces in the context of gaze-based design.
-            <br></br> <br></br> Secondly, working on something that{" "}
-            <span class="text-l text-title">
-              contributes towards shaping a more accessible and inclusive
-              digital world
-            </span>{" "}
-            was incredibly fulfilling. <br></br> <br></br> Lastly, this project
-            provided me with the opportunity{" "}
-            <span class="text-l text-title">
-              to see a project through from the research and design stages to
-              the implementation and evaluation phases.
-            </span>{" "}
-            This comprehensive experience has left me feeling excited, proud,
-            and genuinely confident in the value of my work.
-          </p>
-        }
+      <CaseStudyContent
+        section="Reflection"
+        color="dark"
+        content={[
+          <ContentBlock
+            size={size}
+            headline={<h3>Three reasons why...</h3>}
+            text={
+              <p class="text-l text-light">
+                ... I absolutely loved working on this project:
+              </p>
+            }
+            content={threeReasonsWhy.map((item) => (
+              <div class={"content-horizontal item-icons"}>
+                <img class="icon-extrabig" src={item.icon} alt={item.alt} />
+                {item.text}
+              </div>
+            ))}
+          />,
+        ]}
       />
     </>
   );

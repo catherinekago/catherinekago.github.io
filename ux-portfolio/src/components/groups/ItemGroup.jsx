@@ -1,5 +1,6 @@
 import React from "react";
 import "./ItemGroup.scss";
+import Item from "./Item";
 
 const ItemGroup = (props) => {
   const buildGroup = (type, size) => {
@@ -13,40 +14,26 @@ const ItemGroup = (props) => {
         <div class="item-group-container-underline">
           {props.items.map((item, index) => (
             <div class={containerCountDependentClass}>
-              <div class="item-group-header">
-                <div class="item-group-headline">
-                  {item.icon !== null ? item.icon : null}
-                  <p class="text-l text-title text-primary">{item.headline}</p>
-                </div>
-                <div class="item-group-header-underline" />
-              </div>
-              <p class="text-l primaryMain">{item.text}</p>
+              <Item type={type} item={item} expandable={props.expandable} />
             </div>
           ))}
         </div>
       );
     } else {
-      let itemGroupClass;
-      if (size === "small") {
-        itemGroupClass = "item-group-item-box item-group-item-box-small";
-      } else if (size === "large") {
-        itemGroupClass = "item-group-item-box item-group-item-box-large";
-      }
-
-      // TODO: based on itemGroupClass create layout for items in container
       return (
         <div class="item-group-container-box">
-          {props.items.map((item) => (
-            <div class={itemGroupClass}>
-              <p class="text-l text-title text-primary">{item.headline}</p>
-              <p class="text-l primaryMain">{item.text}</p>
-            </div>
+          {props.items.map((item, index) => (
+            <Item
+              size={size}
+              type={type}
+              item={item}
+              expandable={false}
+              background={props.background}
+            />
           ))}
         </div>
       );
     }
-
-    // TODO:
   };
 
   return buildGroup(props.type, props.size);
