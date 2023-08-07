@@ -759,3 +759,18 @@ button {
   max-width: 800px;
   align-self: flex-start;
 }
+
+.loader-container {
+  opacity: 1;
+  display: flex;
+  position: absolute;
+  width: 100vw;
+  height: 100wh;
+  background-color: $primaryMain;
+  z-index: 20;
+}
+
+.transparent {
+  transition: opacity ease-out 1000ms;
+  opacity: 0 !important;
+}
