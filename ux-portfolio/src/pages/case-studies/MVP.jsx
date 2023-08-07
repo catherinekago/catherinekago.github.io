@@ -7,19 +7,17 @@ import CaseStudyOverview from "../../components/case-study-components/CaseStudyO
 import CaseStudyDescription from "../../components/case-study-components/CaseStudyDescription";
 import ItemGroup from "../../components/groups/ItemGroup";
 import ContentBlock from "../../components/case-study-components/ContentBlock";
-import CaseStudySection from "../../components/case-study-components/CaseStudySection";
-import SurvEyeHero from "../../assets/images/surveye_hero.png"; // TODO REPLACE
 import CaseStudyContent from "../../components/case-study-components/CaseStudyContent";
 import NextProject from "../../components/case-study-components/NextProject";
 
 import mvp_teaser from "../../assets/images/MVP/mvp_teaser.png";
 import mvp_discovery_personas from "../../assets/images/MVP/mvp_discovery_personas.svg";
-import mvp_discovery_empathy from "../../assets/images/MVP/mvp_discovery_empathy.svg";
-import mvp_design_userflow from "../../assets/images/MVP/mvp_design_userflow.svg";
-import mvp_trialRun from "../../assets/images/MVP/mvp_design_trial.png";
+import mvp_discovery_empathy from "../../assets/images/MVP/mvp_empathy.jpg";
+import mvp_design_userflow from "../../assets/images/MVP/mvp_design_flow.jpg";
+import mvp_trialRun from "../../assets/images/MVP/mvp_trialRun.jpg";
 import mvp_deliveryprep from "../../assets/images/MVP/mvp_partner_product.png";
-import mvp_vision from "../../assets/images/MVP/mvp_vision.png";
-import mvp_realData from "../../assets/images/MVP/image002.png";
+import mvp_vision from "../../assets/images/MVP/mvp_vision_flow.jpg";
+import mvp_realData from "../../assets/images/MVP/mvp_design_realdata.jpg";
 
 import icon_role from "../../assets/icons/quotes.svg";
 import icon_tools from "../../assets/icons/tools.svg";
