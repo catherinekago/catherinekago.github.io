@@ -9,6 +9,7 @@ import CaseStudyDescription from "../../components/case-study-components/CaseStu
 import CaseStudyContent from "../../components/case-study-components/CaseStudyContent";
 import ContentBlock from "../../components/case-study-components/ContentBlock";
 import NextProject from "../../components/case-study-components/NextProject";
+import LoadingScreen from "../LoadingScreen";
 
 import icon_role from "../../assets/icons/quotes.svg";
 import icon_tools from "../../assets/icons/tools.svg";
@@ -68,6 +69,19 @@ const DesignSystem = () => {
     }, []); // Empty array ensures that effect is only run on mount
     return windowSize;
   }
+
+  window.onbeforeunload = function () {
+    setLoading(true);
+    window.scrollTo(0, 0);
+  };
+
+  const [loading, setLoading] = useState(true);
+  useEffect(() => {
+    setLoading(true);
+    setTimeout(() => {
+      setLoading(false);
+    }, 1500);
+  }, []);
 
   const title = "Design System Rework";
   const overview =
@@ -518,6 +532,7 @@ const DesignSystem = () => {
 
   return (
     <>
+      {loading ? <LoadingScreen /> : null}
       <CaseStudyHeader title={title} text={overview} image={ds_hero} />
       <CaseStudyOverview
         challenge={challenge}

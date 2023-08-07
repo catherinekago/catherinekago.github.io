@@ -4,6 +4,7 @@ import "./../../style/style.scss";
 
 import CaseStudyDescription from "../../components/case-study-components/CaseStudyDescription";
 import SurvEyeHero from "../../assets/images/surveye_hero.png";
+import LoadingScreen from "../LoadingScreen";
 
 import durationIcon from "../../assets/icons/schedule.svg";
 import surveyeTaskFlowHorizontal from "../../assets/images/surveye_task_flow_horizontal.svg";
@@ -76,6 +77,19 @@ const SurvEye = () => {
     }, []); // Empty array ensures that effect is only run on mount
     return windowSize;
   }
+
+  window.onbeforeunload = function () {
+    setLoading(true);
+    window.scrollTo(0, 0);
+  };
+
+  const [loading, setLoading] = useState(true);
+  useEffect(() => {
+    setLoading(true);
+    setTimeout(() => {
+      setLoading(false);
+    }, 1500);
+  }, []);
 
   const roleText = ["Researcher, Designer, Developer (solo)"];
   const toolsText = ["Miro, Figma, Firebase, JavaScript"];
@@ -542,6 +556,8 @@ const SurvEye = () => {
 
   return (
     <>
+      {loading ? <LoadingScreen /> : null}
+
       {/* Hero */}
       <CaseStudyHeader title={title} text={overview} image={SurvEyeHero} />
       <CaseStudyOverview

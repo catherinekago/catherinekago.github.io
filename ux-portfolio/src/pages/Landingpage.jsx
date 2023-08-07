@@ -20,12 +20,17 @@ const Portfolio = () => {
     window.scrollTo(0, 0);
   }, []);
 
-  const [loading, setLoading] = useState(false);
+  window.onbeforeunload = function () {
+    setLoading(true);
+    window.scrollTo(0, 0);
+  };
+
+  const [loading, setLoading] = useState(true);
   useEffect(() => {
     setLoading(true);
     setTimeout(() => {
       setLoading(false);
-    }, 2000);
+    }, 1500);
   }, []);
 
   // Hook
