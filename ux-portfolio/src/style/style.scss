@@ -20,6 +20,9 @@ $primaryLight: #37414d;
 $boxShadow: 0px 4px 32px rgba(0, 0, 0, 0.05),
   -4px -4px 32px rgba(37, 43, 51, 0.05);
 
+$boxShadowHover: 0px 4px 32px rgba(0, 0, 0, 0.15),
+  -4px -4px 64px rgba(37, 43, 51, 0.12);
+
 $textDark: #727272;
 
 .text-dark {

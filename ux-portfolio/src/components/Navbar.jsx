@@ -17,11 +17,11 @@ const Navbar = () => {
     // Setting a different color for each route
     // Can also be classes or other custom styling
     color: {
-      ["/contact"]: "main-background-container nav-container dark",
-      ["/design-system"]: "main-background-container nav-container light",
-      ["/surveye"]: "main-background-container nav-container light",
-      ["/about"]: "main-background-container nav-container light",
-      ["/"]: "main-background-container nav-container light",
+      ["/contact"]: "nav-container dark",
+      ["/design-system"]: "nav-container light",
+      ["/surveye"]: "nav-container light",
+      ["/about"]: "nav-container light",
+      ["/"]: "nav-container light",
     },
   };
 
