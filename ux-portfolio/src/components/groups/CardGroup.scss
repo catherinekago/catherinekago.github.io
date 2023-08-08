@@ -5,8 +5,12 @@
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  gap: 40px;
+  gap: 24px;
   transition: 100ms ease-out 100ms;
+
+  @include s {
+    gap: 40px;
+  }
 
   .card-container {
     transition: 100ms ease-out 100ms;

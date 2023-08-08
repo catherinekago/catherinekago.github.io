@@ -85,7 +85,7 @@ $transition: 100ms ease-out 100ms;
 
 h1 {
   @extend %headline;
-  font-size: 36px;
+  font-size: 32px;
   line-height: 125%;
 
   @media (min-width: $screen-s-min) {
@@ -100,7 +100,7 @@ h1 {
 h2,
 .text-h2 {
   @extend %headline;
-  font-size: 32px;
+  font-size: 38px;
 
   @media (min-width: $screen-s-min) {
     font-size: 36px !important;
@@ -114,7 +114,7 @@ h2,
 h3,
 .text-h3 {
   @extend %headline;
-  font-size: 28px;
+  font-size: 24px;
 
   @media (min-width: $screen-s-min) {
     font-size: 32px !important;
@@ -127,7 +127,7 @@ h3,
 
 h4 {
   @extend %headline;
-  font-size: 24px;
+  font-size: 18px;
 
   @media (min-width: $screen-s-min) {
     font-size: 28px !important;
@@ -230,7 +230,11 @@ li {
   justify-content: flex-start;
   flex-direction: column;
   padding: 0px;
-  gap: 56px;
+  gap: 32px;
+
+  @media (min-width: $screen-s-min) {
+    gap: 56px !important;
+  }
 
   @media (min-width: $screen-l-min) {
     gap: 56px !important;
@@ -241,7 +245,11 @@ li {
 }
 
 .content-blocks {
-  gap: 120px !important;
+  gap: 80px !important;
+
+  @media (min-width: $screen-s-min) {
+    gap: 120px !important;
+  }
 
   @media (min-width: $screen-xl-min) {
     width: 1200px !important;
@@ -307,8 +315,13 @@ body {
   flex-direction: column;
   transition: 100ms ease-out 100ms;
   height: fit-content !important;
-  padding: 80px 10%;
-  width: 80%;
+  padding: 40px 10%;
+  width: 90%;
+
+  @media (min-width: $screen-s-min) {
+    padding: 80px 10% !important;
+    width: 80%;
+  }
 
   @media (min-width: $screen-l-min) {
     gap: 80px !important;
@@ -424,7 +437,7 @@ body {
   gap: 24px;
 
   &.item-icons-container {
-    gap: 80px;
+    gap: 64px;
   }
 
   @media (min-width: $screen-s-min) {
@@ -460,7 +473,10 @@ body {
 
   &.no-group {
     width: 100%;
-    gap: 160px;
+    gap: 80px;
+    @media (min-width: $screen-s-min) {
+      gap: 160px !important;
+    }
 
     @media (min-width: 1000px) {
       align-items: flex-start;
@@ -503,6 +519,17 @@ body {
     @media (min-width: $screen-l-min) {
       width: 300px !important;
     }
+  }
+}
+
+.avatar {
+  width: 65px;
+  height: 65px;
+  border-radius: 100px;
+  background-color: $textLight;
+  @media (min-width: $screen-s-min) {
+    width: 150px !important;
+    height: 150px !important;
   }
 }
 
@@ -578,9 +605,14 @@ body {
   background-color: $greyBackground;
 }
 
-icon-extrabig {
-  height: 48px;
-  width: 48px;
+.icon-extrabig {
+  height: 32px;
+  width: 32px;
+
+  @media (min-width: $screen-s-min) {
+    height: 48px !important;
+    width: 48px !important;
+  }
 
   @media (min-width: $screen-l-min) {
     height: 56px !important;

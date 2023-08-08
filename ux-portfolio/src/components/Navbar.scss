@@ -40,13 +40,17 @@
 nav {
   padding-top: 8px !important;
   padding-bottom: 8px !important;
-  width: 80% !important;
+  width: 90% !important;
   height: 45px;
   align-self: center;
   display: flex;
   flex-direction: row !important;
   align-items: flex-start;
   justify-content: space-between !important;
+
+  @include s {
+    width: 80% !important;
+  }
 
   @include xl {
     width: 1200px !important;

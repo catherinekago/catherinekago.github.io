@@ -23,8 +23,13 @@
     @extend %text;
 
     white-space: nowrap;
-    font-size: 14px;
-    line-height: 14px;
+    font-size: 12px;
+    line-height: 12px;
     letter-spacing: 0.1px;
+
+    @include s {
+      font-size: 14px;
+      line-height: 14px;
+    }
   }
 }

@@ -3,7 +3,7 @@ import { useState, useEffect } from "react";
 import "./../../style/style.scss";
 
 import CaseStudyDescription from "../../components/case-study-components/CaseStudyDescription";
-import SurvEyeHero from "../../assets/images/surveye_hero.png";
+import SurvEyeHero from "../../assets/images/surveye_hero_cut.png";
 import LoadingScreen from "../LoadingScreen";
 
 import durationIcon from "../../assets/icons/schedule.svg";
