@@ -185,11 +185,11 @@ const About = () => {
       </div>
       <div class={"main-background-container container-grey"}>
         <div class="content-horizontal main-content-container">
-          <img
-            class="img-small"
+          {/* <img
+            class="avatar"
             src={portrait}
             alt={"A back and white portrait of me, Kathrin Schnizer."}
-          />
+          /> */}
           <div class={"content-vertical-small"}>{introText}</div>
         </div>
       </div>

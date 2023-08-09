@@ -1,6 +1,8 @@
 @import "../style/style.scss";
 
 .nav-container {
+  transition: $transition;
+
   padding: 0px !important;
   display: flex;
   width: 100% !important;
@@ -9,6 +11,11 @@
   z-index: 2;
   top: 0px;
   margin: 0px !important;
+  justify-content: flex-start;
+  flex-direction: column;
+  transition: 100ms ease-out 100ms;
+  height: fit-content !important;
+  width: 90%;
 
   @include xl {
     width: 100% !important;
@@ -40,13 +47,17 @@
 nav {
   padding-top: 8px !important;
   padding-bottom: 8px !important;
-  width: 80% !important;
+  width: 90% !important;
   height: 45px;
   align-self: center;
   display: flex;
   flex-direction: row !important;
   align-items: flex-start;
   justify-content: space-between !important;
+
+  @include s {
+    width: 90% !important;
+  }
 
   @include xl {
     width: 1200px !important;

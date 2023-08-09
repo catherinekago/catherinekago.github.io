@@ -13,7 +13,7 @@ const Contact = (props) => {
           <Section variant="section-light" text="Contact" />
         ) : null}
         <div class="content-vertical-small main-content-container contact-container">
-          <a class="link-white" href="mailto:kathrin.schnizer@gmail.com">
+          <a class="link-white e-mail" href="mailto:kathrin.schnizer@gmail.com">
             kathrin.schnizer@gmail.com
           </a>
           <p class="text-l text-light">

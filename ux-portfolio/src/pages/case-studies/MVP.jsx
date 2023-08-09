@@ -10,14 +10,16 @@ import ContentBlock from "../../components/case-study-components/ContentBlock";
 import CaseStudyContent from "../../components/case-study-components/CaseStudyContent";
 import NextProject from "../../components/case-study-components/NextProject";
 
-import mvp_teaser from "../../assets/images/MVP/mvp_teaser.png";
+import mvp_teaser from "../../assets/images/MVP/mvp_teaser_variant.png";
 import mvp_discovery_personas from "../../assets/images/MVP/mvp_discovery_personas.svg";
 import mvp_discovery_empathy from "../../assets/images/MVP/mvp_empathy.jpg";
 import mvp_design_userflow from "../../assets/images/MVP/mvp_design_flow.jpg";
 import mvp_trialRun from "../../assets/images/MVP/mvp_trialRun.jpg";
-import mvp_deliveryprep from "../../assets/images/MVP/mvp_partner_product.png";
+import mvp_deliveryprep from "../../assets/images/MVP/mvp_deliveryprep.png";
 import mvp_vision from "../../assets/images/MVP/mvp_vision_flow.jpg";
-import mvp_realData from "../../assets/images/MVP/mvp_design_realdata.jpg";
+import mvp_realData from "../../assets/images/MVP/mvp_design_realdata.png";
+import mvp_partner_product from "../../assets/images/MVP/mvp_partner_product.png";
+import mvp_customer_product from "../../assets/images/MVP/mvp_customer_product.png";
 
 import icon_role from "../../assets/icons/quotes.svg";
 import icon_tools from "../../assets/icons/tools.svg";
@@ -124,7 +126,7 @@ const MVP = () => {
                   alt="An icon showing an individual wearing a headset"
                 />
               ),
-              text: "... need a standardized process that support them in handling multiple customers’ request to collect data from their partner organizations to reduce administrative work and be able to serve more customers.",
+              text: "... need a standardized process that reduces administrative work and enables them to serve more customers.",
             },
             {
               headline: "Customers",
@@ -221,15 +223,16 @@ const MVP = () => {
           <span class="text-l text-title text-primary"> user flows </span>
           for each stakeholder and obtained early feedback from our consultants.
           During the process of refining these flows, we recognized that a
-          Software-as-a-Service application would provide the
+          <span class="text-l text-title text-primary">
+            {" "}
+            Software-as-a-Service{" "}
+          </span>
+          application would provide the
           <span class="text-l text-title text-primary">
             {" "}
             most efficient solution,{" "}
           </span>
-          reducing the workload on our consultants. As a result, we decided
-          against integrating a consultant interface and proposed a consolidated
-          user flow for our MVP, encompassing our customers and their partner
-          organizations only.
+          reducing the workload on our consultants.
         </p>
       }
       content={
@@ -240,23 +243,6 @@ const MVP = () => {
             "The image visualizes the user flows of the customer and the partner organization. We combined both flows on one horizontal pathway to highlight how the two flows relate to each other, and what steps of one flow preceed subsequent steps of the other flow. The steps are portrayed by sticky notes along a horizontal arrow. However, it is an altered version containing less information and more placeholders to maintain confidentiality."
           }
         />
-      }
-      text2={
-        <p class="text-l text-primary">
-          We enhanced our collaboration with our consultants to determine an
-          <span class="text-l text-title text-primary">
-            {" "}
-            effective way to incorporate their expertise{" "}
-          </span>
-          into our MVP solution. Through this collaboration, we further
-          identified two key opportunities to
-          <span class="text-l text-title text-primary">
-            {" "}
-            leverage our consultants' insights{" "}
-          </span>
-          and support partner organizations in achieving better data quality
-          while streamlining their data collection processes.
-        </p>
       }
     />
   );
@@ -387,8 +373,7 @@ const MVP = () => {
       content={<img class="img-two-columns" src={mvp_realData} alt={"todo"} />}
     />
   );
-
-  const delivery_contentblock_1 = (
+  const design_contentblock_5 = (
     <ContentBlock
       imgType="confidential"
       imgPos="right"
@@ -397,19 +382,13 @@ const MVP = () => {
       headline={<h3>Delivery preparation</h3>}
       text={
         <p class="text-l text-primary">
-          I prepared the frames and documentation for delivery, incorporating
-          the valuable feedback we have received from customers and partners. I
-          was responsible for preparing frames that communicate the
+          I prepared our designs for the implementation, considering
           <span class="text-l text-title text-primary">
             {" "}
-            responsive behavior{" "}
-          </span>
-          of our components, and in that course I further supplemented the
-          design files with additional{" "}
-          <span class="text-l text-title text-primary"> documentation </span>
-          to speed up the definition of acceptance criteria from UI perspective.
-          And now... it's
-          <span class="text-l text-title text-primary"> live! 🎉 </span>
+            different states, responsive behavior, and supplementary
+            documentation
+          </span>{" "}
+          to ensure a smooth handover.
         </p>
       }
       content={
@@ -424,41 +403,73 @@ const MVP = () => {
     />
   );
 
+  const delivery_contentblock_1 = (
+    <ContentBlock
+      imgType="confidential"
+      imgPos="right"
+      alignment="vertical"
+      size={size}
+      headline={<h3>And now... it's live! 🎉</h3>}
+      text={
+        <p class="text-l text-primary">
+          Through our MVP, our
+          <span class="text-l text-title text-primary"> customers</span> are now
+          able to
+          <span class="text-l text-title text-primary">
+            {" "}
+            invite their partner organizations
+          </span>{" "}
+          to provide their data, and can then{" "}
+          <span class="text-l text-title text-primary">
+            {" "}
+            track and manage{" "}
+          </span>{" "}
+          the collected data.
+        </p>
+      }
+      content={
+        <img
+          class="main-content-container"
+          src={mvp_customer_product}
+          alt={
+            "A screenshot of the main screens of the partner organization flow in Figma, including with a registration page, a dashboard overview, a data entry form, and a section with graphs for comparing oneself with different organizations."
+          }
+        />
+      }
+    />
+  );
+
   const delivery_contentblock_2 = (
     <ContentBlock
       imgType="confidential"
       imgPos="right"
       alignment="vertical"
       size={size}
-      headline={<h3>Vision</h3>}
       text={
         <p class="text-l text-primary">
-          We have further identified
+          Our MVP further enables
           <span class="text-l text-title text-primary">
             {" "}
-            opportunities to enhance our MVP{" "}
-          </span>
-          into a more advanced tool. This evolution entails
+            partner organizations{" "}
+          </span>{" "}
+          to
           <span class="text-l text-title text-primary">
             {" "}
-            integrating existing data from other tools,{" "}
-          </span>
-          thereby minimizing the user's manual workload. In the long run, we
-          strive to evolve our solution to be able to assist both our customers
-          and their partner organizations in{" "}
+            register, enter their data, track their progress{" "}
+          </span>{" "}
+          and understand how their data{" "}
           <span class="text-l text-title text-primary">
             {" "}
-            analyzing their data, offer them guidance in improving data quality,
-            and achieving strategic goals.{" "}
+            compares to others.{" "}
           </span>
         </p>
       }
       content={
         <img
           class="main-content-container"
-          src={mvp_vision}
+          src={mvp_partner_product}
           alt={
-            "A screenshot of the stylized extended user flow that I provided in the section about our discovery. The extended version shows additional steps that indicate where we identified potential actions, and opportunities for integrations with external tools within the journey."
+            "A screenshot of the main screens of the partner organization flow in Figma, including with a registration page, a dashboard overview, a data entry form, and a section with graphs for comparing oneself with different organizations."
           }
         />
       }
@@ -544,6 +555,7 @@ const MVP = () => {
           design_contentblock_2,
           design_contentblock_3,
           design_contentblock_4,
+          design_contentblock_5,
         ]}
       />
 

@@ -3,7 +3,8 @@ import { useState, useEffect } from "react";
 import "./../../style/style.scss";
 
 import CaseStudyDescription from "../../components/case-study-components/CaseStudyDescription";
-import SurvEyeHero from "../../assets/images/surveye_hero.png";
+import SurvEyeHero from "../../assets/images/surveye_hero_cut.png";
+import LoadingScreen from "../LoadingScreen";
 
 import durationIcon from "../../assets/icons/schedule.svg";
 import surveyeTaskFlowHorizontal from "../../assets/images/surveye_task_flow_horizontal.svg";
@@ -37,7 +38,7 @@ import ContentBlock from "../../components/case-study-components/ContentBlock";
 import surveyeIdeation from "../../assets/images/surveyeIdeation.jpg";
 import surveyeInteractionFlow from "../../assets/images/surveyeInteractionFlow.jpg";
 
-import mockup from "../../assets/images/mockup.svg";
+import mockup from "../../assets/images/mockup.png";
 
 import surveyeUserstudyFeedback from "../../assets/images/surveyeUserstudyFeedback.jpg";
 
@@ -76,6 +77,19 @@ const SurvEye = () => {
     }, []); // Empty array ensures that effect is only run on mount
     return windowSize;
   }
+
+  window.onbeforeunload = function () {
+    setLoading(true);
+    window.scrollTo(0, 0);
+  };
+
+  const [loading, setLoading] = useState(true);
+  useEffect(() => {
+    setLoading(true);
+    setTimeout(() => {
+      setLoading(false);
+    }, 1500);
+  }, []);
 
   const roleText = ["Researcher, Designer, Developer (solo)"];
   const toolsText = ["Miro, Figma, Firebase, JavaScript"];
@@ -326,8 +340,8 @@ const SurvEye = () => {
           as how to best provide{" "}
           <span class="text-l text-title">visual feedback</span> to the user.
           The <span class="text-l text-title">interaction flow</span> below
-          showcases the outcome of my exploration of one of the four design
-          variant.
+          showcases the outcome of my exploration for one of the design
+          variants.
         </p>
       }
       content={
@@ -548,6 +562,8 @@ const SurvEye = () => {
 
   return (
     <>
+      {loading ? <LoadingScreen /> : null}
+
       {/* Hero */}
       <CaseStudyHeader title={title} text={overview} image={SurvEyeHero} />
       <CaseStudyOverview

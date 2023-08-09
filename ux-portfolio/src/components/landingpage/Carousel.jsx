@@ -42,7 +42,7 @@ const CarouselItem = (props) => {
         <img
           src={props.img}
           alt="portrait picture of the person behind the statement"
-          class="carousel-item-person-img"
+          class="avatar"
         />
         <div class="carousel-item-person-info container-white">
           <h3 class="primaryMain">{props.name}</h3>{" "}

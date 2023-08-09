@@ -3,8 +3,11 @@
 .section-block {
   display: flex;
   flex-direction: column;
-  gap: 100px;
+  gap: 40px;
   width: 100%;
+  @include s {
+    gap: 80px;
+  }
 }
 
 #contact-container {
@@ -23,9 +26,17 @@
 
 a {
   @extend h3;
-  font-size: 28px;
+
   transition: 100ms ease-out 100ms;
   text-decoration: none;
+
+  &.e-mail {
+    font-size: 20px;
+
+    @include s {
+      font-size: 28px;
+    }
+  }
 
   &:hover {
     color: $primaryMain;

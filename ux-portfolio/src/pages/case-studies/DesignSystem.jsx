@@ -9,6 +9,7 @@ import CaseStudyDescription from "../../components/case-study-components/CaseStu
 import CaseStudyContent from "../../components/case-study-components/CaseStudyContent";
 import ContentBlock from "../../components/case-study-components/ContentBlock";
 import NextProject from "../../components/case-study-components/NextProject";
+import LoadingScreen from "../LoadingScreen";
 
 import icon_role from "../../assets/icons/quotes.svg";
 import icon_tools from "../../assets/icons/tools.svg";
@@ -17,8 +18,6 @@ import icon_inventory from "../../assets/icons/inventory.svg";
 import icon_rocket from "../../assets/icons/rocket.svg";
 import icon_structure from "../../assets/icons/structure.svg";
 import icon_description from "../../assets/icons/description.svg";
-import icon_communication from "../../assets/icons/communication.svg";
-import icon_child from "../../assets/icons/child.svg";
 
 import icon_locked from "../../assets/icons/locked.svg";
 import icon_code from "../../assets/icons/code.svg";
@@ -31,7 +30,7 @@ import ds_discovery_process_horizontal from "../../assets/images/DesignSystem/ds
 import ds_discovery_research from "../../assets/images/DesignSystem/ds_discovery_research.png";
 import ds_design_documentation_brainstorming from "../../assets/images/DesignSystem/ds_design_documentation_brainstorming.jpg";
 import ds_design_process from "../../assets/images/DesignSystem/ds_design_structure.png";
-import ds_outcome_hybrid_approach from "../../assets/images/DesignSystem/ds_design_hybrid_approach.svg";
+import ds_outcome_hybrid_approach from "../../assets/images/DesignSystem/ds_outcome_hybrid_approach.png";
 import ds_outcome_prototypical_implementation from "../../assets/images/DesignSystem/ds_design_prototypical_implementation.png";
 import ds_outcome_process_horizontal from "../../assets/images/DesignSystem/ds_outcome_process_horizontal.png";
 import ds_outcome_documentation from "../../assets/images/DesignSystem/ds_outcome_documentation.png";
@@ -69,6 +68,19 @@ const DesignSystem = () => {
     return windowSize;
   }
 
+  window.onbeforeunload = function () {
+    setLoading(true);
+    window.scrollTo(0, 0);
+  };
+
+  const [loading, setLoading] = useState(true);
+  useEffect(() => {
+    setLoading(true);
+    setTimeout(() => {
+      setLoading(false);
+    }, 1500);
+  }, []);
+
   const title = "Design System Rework";
   const overview =
     "Closing the gaps within existing processes and structures to meet the evolving needs of a growing design team.";
@@ -100,7 +112,7 @@ const DesignSystem = () => {
           To understand the challenges of our current structures, I gathered
           insights from the users of our design system, namely my design
           colleagues. I identified the following
-          <span class="text-l text-title"> pain points:</span>:
+          <span class="text-l text-title"> pain points:</span>
         </p>
       }
       content={
@@ -115,15 +127,15 @@ const DesignSystem = () => {
             },
             {
               headline: "Missing documentation",
-              text: "Especially for custom components, there was no further explanation on how they should be used, how it behaves and who created it in the first place.",
+              text: "Especially for custom components, there was no further explanation on usage, behavior, and initial creator.",
             },
             {
               headline: "No alignment",
-              text: "Designers of different product teams were working on similar components simultaneously without being aware of it. This resulted in double work and in missed opportunities to co-create at an early stage.",
+              text: "Designers of different product teams were working on similar components simultaneously without being aware of it, resulting in double work and misalignment.",
             },
             {
               headline: "Incomplete process",
-              text: "There was no streamlined process on when and how to communicate the need for new components within the design team and bring in new components to the design system.",
+              text: "There was no streamlined process on the extension of the existing design system through new components.",
             },
           ]}
         />
@@ -161,11 +173,20 @@ const DesignSystem = () => {
   const discovery_contentblock_3 = (
     <ContentBlock
       size={size}
+      headline={<h3>Research</h3>}
       text={
         <p class="text-l primaryMain">
-          I then continued my investigation by analyzing the current structure
-          of our design system and collecting good examples from design systems
-          of other companies.
+          I then conducted some research by{" "}
+          <span class="text-l text-title">
+            {" "}
+            analyzing the current structure of our design system{" "}
+          </span>
+          and
+          <span class="text-l text-title">
+            {" "}
+            examining existing design systems{" "}
+          </span>
+          to derive good examples and best practices.
         </p>
       }
       content={
@@ -183,15 +204,19 @@ const DesignSystem = () => {
   const design_contentblock_1 = (
     <ContentBlock
       size={size}
-      headline={<h3>Workshop preparation</h3>}
+      headline={<h3>Workshop agenda</h3>}
       text={
         <p class="text-l primaryMain">
-          The outcome of my initial research was a clear goal: to enhance the
-          design system and associated processes to improve transparency and
-          alignment on existing and emerging UI components. My design mentor and
-          I decided to conduct a workshop for the whole design team to
-          collectively refine the requirements and evaluate first solution
-          approaches. We defined our workshop agenda as follows:
+          To move towards{" "}
+          <span class="text-l text-title">
+            {" "}
+            an enhanced design system and its associated processes{" "}
+          </span>
+          , my design mentor and I decided to conduct a{" "}
+          <span class="text-l text-title"> workshop </span>
+          with the whole design team to collectively refine the requirements and
+          evaluate first solution approaches. We defined our workshop agenda as
+          follows:
         </p>
       }
       content={
@@ -200,7 +225,7 @@ const DesignSystem = () => {
           size="small"
           items={[
             {
-              headline: "Status quo",
+              headline: "Review the status quo",
               icon: (
                 <img
                   class="icon-small"
@@ -211,7 +236,7 @@ const DesignSystem = () => {
               text: "Reviewing the old design system and presenting the goals for the new design system",
             },
             {
-              headline: "Component release process",
+              headline: "Propose component release process",
               icon: (
                 <img
                   class="icon-small"
@@ -222,7 +247,7 @@ const DesignSystem = () => {
               text: "Presentation of proposed process and gathering feedback",
             },
             {
-              headline: "Design system structure",
+              headline: "Discuss design system structure",
               icon: (
                 <img
                   class="icon-small"
@@ -233,7 +258,7 @@ const DesignSystem = () => {
               text: "Presentation of possible approaches and gathering feedback",
             },
             {
-              headline: "Documentation",
+              headline: "Gather requirements for documentation",
               icon: (
                 <img
                   class="icon-small"
@@ -249,114 +274,108 @@ const DesignSystem = () => {
     />
   );
 
-  const design_contentblock_2 = (
-    <ContentBlock
-      size={size}
-      headline={<h3>Component release process</h3>}
-      text={
-        <p class="text-l primaryMain">
-          Based on the weaknesses that my design mentor and I discovered in our
-          current component release process, we proposed an adaptation of the
-          process so it incorporates early highlighting of needs for new
-          components, and transparency on the design process of new components.
-          We had two main additions to the existing process:
-        </p>
-      }
-      content={
-        <ItemGroup
-          type="underline"
-          size="small"
-          items={[
-            {
-              headline: "Communicating needs and releases",
-              icon: (
-                <img
-                  class="icon-small"
-                  src={icon_communication}
-                  alt="An icon showing two overlapping speech bubbles"
-                />
-              ),
-              text: "We proposed to use the design system to raise emerging needs for and the release of new components",
-            },
-            {
-              headline: "Component kindergarden",
-              icon: (
-                <img
-                  class="icon-small"
-                  src={icon_child}
-                  alt="An icon showing a rocking horse"
-                />
-              ),
-              text: "We introduced the component kindergarden, which is a dedicated page in the design system where new components are transparently being worked on",
-            },
-          ]}
-        />
-      }
-      text2={
-        <p class="text-l primaryMain">
-          We gathered feedback from our design team on the additions which we
-          took with us for a final revision of the proposal in a workshop
-          debrief.
-        </p>
-      }
-    />
-  );
+  // const design_contentblock_2 = (
+  //   <ContentBlock
+  //     size={size}
+  //     headline={<h3>Component release process</h3>}
+  //     text={
+  //       <p class="text-l primaryMain">
+  //         Based on the weaknesses that my design mentor and I discovered in our
+  //         current component release process, we proposed an adaptation of the
+  //         process so it incorporates early highlighting of needs for new
+  //         components, and transparency on the design process of new components.
+  //         We had two main additions to the existing process:
+  //       </p>
+  //     }
+  //     content={
+  //       <ItemGroup
+  //         type="underline"
+  //         size="small"
+  //         items={[
+  //           {
+  //             headline: "Communicating needs and releases",
+  //             icon: (
+  //               <img
+  //                 class="icon-small"
+  //                 src={icon_communication}
+  //                 alt="An icon showing two overlapping speech bubbles"
+  //               />
+  //             ),
+  //             text: "We proposed to use the design system to raise emerging needs for and the release of new components",
+  //           },
+  //           {
+  //             headline: "Component kindergarden",
+  //             icon: (
+  //               <img
+  //                 class="icon-small"
+  //                 src={icon_child}
+  //                 alt="An icon showing a rocking horse"
+  //               />
+  //             ),
+  //             text: "We introduced the component kindergarden, which is a dedicated page in the design system where new components are transparently being worked on",
+  //           },
+  //         ]}
+  //       />
+  //     }
+  //     text2={
+  //       <p class="text-l primaryMain">
+  //         We gathered feedback from our design team on the additions which we
+  //         took with us for a final revision of the proposal in a workshop
+  //         debrief.
+  //       </p>
+  //     }
+  //   />
+  // );
 
-  const design_contentblock_3 = (
-    <ContentBlock
-      size={size}
-      alignment="horizontal"
-      headline={<h3>Design system structure</h3>}
-      text={
-        <p class="text-l primaryMain">
-          Within the workshop, I presented our current structure, and proposed
-          three approaches to improve them based on the research I performed and
-          led a discussion with the design team to evaluate the suitability of
-          the appraoches for our use cases.
-        </p>
-      }
-      content={
-        <img
-          class="img-two-columns"
-          src={ds_design_process}
-          alt={
-            "A screenshot of the information I aggregated to present during the workshop on the topic of the design system structure. It shows three frames, one for the atomic design, one for design systems by alphabet, and one for design systems by purpose. "
-          }
-        />
-      }
-    />
-  );
+  // const design_contentblock_2 = (
+  //   <ContentBlock
+  //     size={size}
+  //     alignment="horizontal"
+  //     headline={<h3>Design system structure</h3>}
+  //     text={
+  //       <p class="text-l primaryMain">
+  //         Within the workshop, I presented our current structure, and proposed
+  //         three approaches to improve them based on the research I performed and
+  //         led a discussion with the design team to evaluate the suitability of
+  //         the appraoches for our use cases.
+  //       </p>
+  //     }
+  //     content={
+  //       <img class="img-two-columns" src={ds_design_process} alt={"TODO"} />
+  //     }
+  //   />
+  // );
 
-  const design_contentblock_4 = (
-    <ContentBlock
-      size={size}
-      alignment="horizontal"
-      imgPos="left"
-      headline={<h3>Documentation</h3>}
-      text={
-        <p class="text-l primaryMain">
-          We further used the workshop to establish a shared understanding of
-          what needs the documentation of our components should address, which
-          served me as a starting point to propose a template for component
-          documentation.
-        </p>
-      }
-      content={
-        <img
-          class="img-two-columns"
-          src={ds_design_documentation_brainstorming}
-          alt={
-            "A screenshot of the workspace of our workshop where we collectively gathered information on what the documentation of a component should provide. We gathere information around where to document components, who is writing the documentation, for whom it is written, e.g. who is the target group, and finally, what exactly we want to document."
-          }
-        />
-      }
-    />
-  );
+  // const design_contentblock_3 = (
+  //   <ContentBlock
+  //     size={size}
+  //     alignment="horizontal"
+  //     imgPos="left"
+  //     headline={<h3>Documentation</h3>}
+  //     text={
+  //       <p class="text-l primaryMain">
+  //         We further used the workshop to establish a shared understanding of
+  //         what needs the documentation of our components should address, which
+  //         served me as a starting point to propose a template for component
+  //         documentation.
+  //       </p>
+  //     }
+  //     content={
+  //       <img
+  //         class="img-two-columns"
+  //         src={ds_design_documentation_brainstorming}
+  //         alt={
+  //           "A screenshot of the workspace of our workshop where we collectively gathered information on what the documentation of a component should provide. We gathere information around where to document components, who is writing the documentation, for whom it is written, e.g. who is the target group, and finally, what exactly we want to document."
+  //         }
+  //       />
+  //     }
+  //   />
+  // );
 
   const outcome_contentblock_1 = (
     <ContentBlock
       size={size}
-      alignment="horizontal"
+      alignment="vertical"
       headline={<h3>Design system structure</h3>}
       text={
         <p class="text-l primaryMain">
@@ -367,81 +386,88 @@ const DesignSystem = () => {
           </span>{" "}
           where the components were organized in the manner of the atomic
           design, and within these groups, the components themselves where
-          ordered alphabetically.
-        </p>
-      }
-      content={
-        <img
-          class="img-two-columns"
-          src={ds_outcome_hybrid_approach}
-          alt={
-            "A visualisation of the hybrid approach for our design system: it consists of three types of components, atoms, which refer to the theme of the design system, molecules, which are Material UI components, and oragnisms, which are formed by our custom components. Within each of these categories, the components themselves are ordered alphabetically."
-          }
-        />
-      }
-    />
-  );
-
-  const outcome_contentblock_2 = (
-    <ContentBlock
-      size={size}
-      alignment="horizontal"
-      imgPos="left"
-      text={
-        <p class="text-l primaryMain">
-          I created a
+          ordered alphabetically. I further created a
           <span class="text-l text-title">
             {" "}
             prototypical design system file{" "}
           </span>
           to showcase the proposed design system structure with a small
-          selection of our actual components. I scheduled another feedback
-          session with the design team to gather feedback on the refined
-          proposal.
-        </p>
-      }
-      content={
-        <img
-          class="img-two-columns"
-          src={ds_outcome_prototypical_implementation}
-          alt={
-            "A screenshot of the prototypical implementation of the proposed design system structure. It shows the following Figma page structure: Overview, Atoms, Molecules and Organisms. For each category of the atomic design system, there are sub-pages with the actual components of the category, ordered alphabetically."
-          }
-        />
-      }
-    />
-  );
-  const outcome_contentblock_3 = (
-    <ContentBlock
-      size={size}
-      alignment="horizontal"
-      imgPos="right"
-      headline={<h3>Documentation</h3>}
-      text={
-        <p class="text-l primaryMain">
-          I rearranged and extended our design system to follow the approved
-          structure. Additionally, I introduced a
+          selection of our actual components, and introduced a
           <span class="text-l text-title"> documentation template </span>
           for our custom components to record information on component origin,
-          usage and behavior. I further used the template to document the
-          restructuring process itself to ensure transparency for on the changes
-          and the reasoning behind them.
+          usage and behavior.
         </p>
       }
-      // MUCHO LOVE <3
       content={
         <img
-          class="img-two-columns"
-          src={ds_outcome_documentation}
+          class="main-content-container"
+          src={ds_outcome_hybrid_approach}
           alt={
-            "A screenshot of the documentation template in Figma that I created for our design system. In the header of the template, the designer can add the name of the component and some details. Also, the designer can provide links to a shared components demo, refer to a documentation in Material UI, and link to the archive in case some related component has been moved there. They can indicate the origin of use, which also refers to the creator of the component. Underneath the header, the designer can add information on the component's behavior. In this screenshot, the template is about a notification banner component, and the behavior section shows how the component's animation works."
+            "A visualisation of the hybrid approach for our design system: it consists of three types of components, atoms, which refer to the theme of the design system, molecules, which are Material UI components, and oragnisms, which are formed by our custom components. Within each of these categories, the components themselves are ordered alphabetically. A screenshot of the prototypical implementation of the proposed design system structure. It shows the following Figma page structure: Overview, Atoms, Molecules and Organisms. For each category of the atomic design system, there are sub-pages with the actual components of the category, ordered alphabetically. A screenshot of the documentation template in Figma that I created for our design system. In the header of the template, the designer can add the name of the component and some details. Also, the designer can provide links to a shared components demo, refer to a documentation in Material UI, and link to the archive in case some related component has been moved there. They can indicate the origin of use, which also refers to the creator of the component. Underneath the header, the designer can add information on the component's behavior. In this screenshot, the template is about a notification banner component, and the behavior section shows how the component's animation works."
           }
         />
       }
     />
   );
 
-  const outcome_contentblock_4 = (
+  // const outcome_contentblock_2 = (
+  //   <ContentBlock
+  //     size={size}
+  //     alignment="horizontal"
+  //     imgPos="left"
+  //     text={
+  //       <p class="text-l primaryMain">
+  //         I created a
+  //         <span class="text-l text-title">
+  //           {" "}
+  //           prototypical design system file{" "}
+  //         </span>
+  //         to showcase the proposed design system structure with a small
+  //         selection of our actual components. I scheduled another feedback
+  //         session with the design team to gather feedback on the refined
+  //         proposal.
+  //       </p>
+  //     }
+  //     content={
+  //       <img
+  //         class="img-two-columns"
+  //         src={ds_outcome_prototypical_implementation}
+  //         alt={
+  //           "A screenshot of the prototypical implementation of the proposed design system structure. It shows the following Figma page structure: Overview, Atoms, Molecules and Organisms. For each category of the atomic design system, there are sub-pages with the actual components of the category, ordered alphabetically."
+  //         }
+  //       />
+  //     }
+  //   />
+  // );
+  // const outcome_contentblock_3 = (
+  //   <ContentBlock
+  //     size={size}
+  //     alignment="horizontal"
+  //     imgPos="right"
+  //     headline={<h3>Documentation</h3>}
+  //     text={
+  //       <p class="text-l primaryMain">
+  //         I rearranged and extended our design system to follow the approved
+  //         structure. Additionally, I introduced a
+  //         <span class="text-l text-title"> documentation template </span>
+  //         for our custom components to record information on component origin,
+  //         usage and behavior.
+  //       </p>
+  //     }
+  //     // MUCHO LOVE <3
+  //     content={
+  //       <img
+  //         class="img-two-columns"
+  //         src={ds_outcome_documentation}
+  //         alt={
+  //           "A screenshot of the documentation template in Figma that I created for our design system. In the header of the template, the designer can add the name of the component and some details. Also, the designer can provide links to a shared components demo, refer to a documentation in Material UI, and link to the archive in case some related component has been moved there. They can indicate the origin of use, which also refers to the creator of the component. Underneath the header, the designer can add information on the component's behavior. In this screenshot, the template is about a notification banner component, and the behavior section shows how the component's animation works."
+  //         }
+  //       />
+  //     }
+  //   />
+  // );
+
+  const outcome_contentblock_2 = (
     <ContentBlock
       size={size}
       alignment="vertical"
@@ -516,7 +542,8 @@ const DesignSystem = () => {
             into the design system.
           </span>{" "}
           To create a holistic, unified experience within our product landscape,
-          we focused on exchange and transparency within the design team.
+          we continued our efforts to improve exchange and transparency within
+          the design team.
         </p>
       ),
     },
@@ -524,6 +551,7 @@ const DesignSystem = () => {
 
   return (
     <>
+      {loading ? <LoadingScreen /> : null}
       <CaseStudyHeader title={title} text={overview} image={ds_hero} />
       <CaseStudyOverview
         challenge={challenge}
@@ -543,24 +571,14 @@ const DesignSystem = () => {
 
       <CaseStudyContent
         color="grey-light"
-        section="Design"
-        content={[
-          design_contentblock_1,
-          design_contentblock_2,
-          design_contentblock_3,
-          design_contentblock_4,
-        ]}
+        section="Workshop"
+        content={[design_contentblock_1]}
       />
 
       <CaseStudyContent
         color="white"
         section="Outcome"
-        content={[
-          outcome_contentblock_1,
-          outcome_contentblock_2,
-          outcome_contentblock_3,
-          outcome_contentblock_4,
-        ]}
+        content={[outcome_contentblock_1, outcome_contentblock_2]}
       />
 
       <CaseStudyContent

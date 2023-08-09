@@ -5,7 +5,7 @@ const ProjectFooter = (props) => {
   return (
     <div class="container-dark project-footer">
       <p class="text-small">
-        This site is carefully hand-crafted, it comes from my soul.
+        This site is carefully and soulfully hand-crafted.
       </p>
       <p class="text-small">
         Illustrations courtesy of{" "}

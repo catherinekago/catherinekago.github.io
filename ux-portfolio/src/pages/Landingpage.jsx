@@ -7,6 +7,7 @@ import Contact from "./Contact";
 import Carousel from "../components/landingpage/Carousel";
 import { useState, useEffect } from "react";
 import ProjectFooter from "../components/case-study-components/ProjectFooter";
+import LoadingScreen from "./LoadingScreen";
 
 const Portfolio = () => {
   let featuredProjects = require("../content.json").portfolio.featuredProjects;
@@ -17,6 +18,19 @@ const Portfolio = () => {
 
   useEffect(() => {
     window.scrollTo(0, 0);
+  }, []);
+
+  window.onbeforeunload = function () {
+    setLoading(true);
+    window.scrollTo(0, 0);
+  };
+
+  const [loading, setLoading] = useState(true);
+  useEffect(() => {
+    setLoading(true);
+    setTimeout(() => {
+      setLoading(false);
+    }, 1500);
   }, []);
 
   // Hook
@@ -47,6 +61,7 @@ const Portfolio = () => {
 
   return (
     <>
+      {loading ? <LoadingScreen /> : null}
       <Hero width={size.width} />
       <Carousel />
       <div
