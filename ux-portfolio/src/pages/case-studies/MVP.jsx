@@ -9,6 +9,7 @@ import ItemGroup from "../../components/groups/ItemGroup";
 import ContentBlock from "../../components/case-study-components/ContentBlock";
 import CaseStudyContent from "../../components/case-study-components/CaseStudyContent";
 import NextProject from "../../components/case-study-components/NextProject";
+import LoadingScreen from "../LoadingScreen";
 
 import mvp_teaser from "../../assets/images/MVP/mvp_teaser_variant.png";
 import mvp_discovery_personas from "../../assets/images/MVP/mvp_discovery_personas.svg";
@@ -46,6 +47,19 @@ const MVP = () => {
 
   useEffect(() => {
     window.scrollTo(0, 0);
+  }, []);
+
+  window.onbeforeunload = function () {
+    setLoading(true);
+    window.scrollTo(0, 0);
+  };
+
+  const [loading, setLoading] = useState(true);
+  useEffect(() => {
+    setLoading(true);
+    setTimeout(() => {
+      setLoading(false);
+    }, 1500);
   }, []);
 
   // Hook
@@ -529,6 +543,7 @@ const MVP = () => {
 
   return (
     <>
+      {loading ? <LoadingScreen /> : null}
       {/* Hero */}
       <CaseStudyHeader title={title} text={overview} image={mvp_teaser} />
       <CaseStudyOverview
