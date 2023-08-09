@@ -38,7 +38,7 @@ import ContentBlock from "../../components/case-study-components/ContentBlock";
 import surveyeIdeation from "../../assets/images/surveyeIdeation.jpg";
 import surveyeInteractionFlow from "../../assets/images/surveyeInteractionFlow.jpg";
 
-import mockup from "../../assets/images/mockup.svg";
+import mockup from "../../assets/images/mockup.png";
 
 import surveyeUserstudyFeedback from "../../assets/images/surveyeUserstudyFeedback.jpg";
 
@@ -340,8 +340,8 @@ const SurvEye = () => {
           as how to best provide{" "}
           <span class="text-l text-title">visual feedback</span> to the user.
           The <span class="text-l text-title">interaction flow</span> below
-          showcases the outcome of my exploration of one of the four design
-          variant.
+          showcases the outcome of my exploration for one of the design
+          variants.
         </p>
       }
       content={

@@ -12,13 +12,17 @@ const Item = (props) => {
     setExpanded(!expanded);
   };
 
+  const headerClass = props.expandable
+    ? "item-group-header clickable"
+    : "item-group-header";
+
   const buildItem = (type) => {
     if (type === "underline") {
       return (
         <div class="item-group-item-underline">
           <div>
             <div
-              class="item-group-header"
+              class={headerClass}
               onClick={() => {
                 handleExpansion();
               }}
