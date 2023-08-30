@@ -4,12 +4,14 @@ import "./ProjectTeaser.scss";
 import Chip from "../atoms/Chip";
 import SurveyeHero from "../../assets/images/surveye_hero_cut.png";
 import DesignSystem from "../../assets/images//DesignSystem/ds_hero.svg";
+import CPYouHero from "../../assets/images//CPYou/you_hero.png";
 
 const ProjectTeaser = (props) => {
   const className = "project-teaser-container " + props.teaserType;
   const images = {
     SurvEye: SurveyeHero,
     DesignSystem: DesignSystem,
+    CPYou: CPYouHero,
   };
 
   const [width, setWidth] = React.useState(window.innerWidth);

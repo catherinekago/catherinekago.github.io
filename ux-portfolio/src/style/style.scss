@@ -868,3 +868,13 @@ button {
     opacity: 0;
   }
 }
+
+.img-project-hero {
+  height: 300px;
+  width: 100%;
+  object-fit: cover;
+
+  @include m {
+    height: 600px !important;
+  }
+}

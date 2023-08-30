@@ -23,6 +23,20 @@
                     "User Testing"
                 ]
             },
+                        {
+                "title": "CP YOU",
+                "slug": "CPYou",
+                "description": "",
+                "button": "View Project",
+                "link": "/cp-you",
+                "projectType": "Work - B2C",
+                "chips": [
+                    "Research",
+                    "Concept",
+                    "Design",
+                    "Prototyping"
+                ]
+            },
 
             {
                 "title": "Building an MVP - coming soon",
