@@ -236,11 +236,11 @@ li {
   gap: 32px;
 
   @media (min-width: $screen-s-min) {
-    gap: 56px !important;
+    gap: 40px !important;
   }
 
   @media (min-width: $screen-l-min) {
-    gap: 56px !important;
+    gap: 40px !important;
   }
   @media (min-width: $screen-xl-min) {
     width: 1200px !important;
@@ -322,7 +322,7 @@ body {
   width: 90%;
 
   @media (min-width: $screen-s-min) {
-    padding: 80px 10% !important;
+    padding: 56px 10% !important;
     width: 80%;
   }
 
@@ -469,13 +469,13 @@ body {
   gap: 40px;
 
   @media (min-width: 1000px) {
-    align-items: center;
+    align-items: flex-start;
     flex-direction: row !important;
-    gap: 80px;
+    gap: 56px;
   }
 
   @media (min-width: $screen-l-min) {
-    gap: 80px !important;
+    gap: 56px !important;
   }
 
   &.no-group {

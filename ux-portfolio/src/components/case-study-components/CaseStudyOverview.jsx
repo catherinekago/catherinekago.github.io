@@ -4,16 +4,16 @@ import "./CaseStudyStyles.scss";
 
 const CaseStudyOverview = (props) => {
   return (
-    <div class="main-background-container container-grey">
+    <div class="main-background-container container-dark">
       <div class="main-content-container">
-        <Section text="Overview" />
+        <h1>{props.title}</h1>
         <div class="two-columns-container">
           <div class="content-vertical-small">
-            <h3>The challenge</h3>
+            <Section variant="section-light" text="The challenge" />
             <p class="text-l primaryMain">{props.challenge}</p>
           </div>
           <div class="content-vertical-small">
-            <h3>The solution</h3>
+            <Section variant="section-light" text="The solution" />
             <p class="text-l primaryMain">{props.solution}</p>
           </div>
         </div>
