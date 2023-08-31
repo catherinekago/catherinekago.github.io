@@ -1,0 +1,83 @@
+@import "../../style/style.scss";
+@import "react-alice-carousel/lib/scss/alice-carousel.scss";
+
+.alice-carousel {
+  width: 100%;
+
+  @include xl {
+    width: 1200px;
+    padding: 0px 0px;
+  }
+
+  .alice-carousel__dots-item {
+    background-color: black;
+
+    &.__active {
+      background-color: $textLight;
+    }
+  }
+
+  .alice-carousel__prev-btn {
+    padding-right: 16px;
+  }
+
+  .alice-carousel__next-btn {
+    padding-left: 16px;
+    text-align: left;
+  }
+
+  .alice-carousel__prev-btn-item,
+  .alice-carousel__next-btn-item {
+    color: $primaryMain;
+  }
+}
+
+.project-carousel-item-container {
+  margin-left: 0px;
+  margin-right: 0px;
+  user-select: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  padding-left: 24px;
+  padding-right: 24px;
+  gap: 32px;
+  height: fit-content !important;
+}
+
+.carousel-project-header {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  position: relative;
+}
+
+.carousel-project-item-number {
+  align-items: center;
+  border-radius: 42px;
+  display: flex;
+  gap: 10px;
+  height: 40px;
+  justify-content: center;
+  overflow: hidden;
+  position: relative;
+  width: 40px;
+}
+
+.you-red {
+  background-color: #ef4f4f;
+}
+
+.you-yellow {
+  background-color: #ffd850;
+}
+
+.carousel-project-image {
+  width: 230px;
+  @media (min-width: $screen-l-min) {
+    width: 200px !important;
+  }
+}

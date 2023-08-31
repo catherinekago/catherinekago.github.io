@@ -13,6 +13,10 @@ $greyBackgroundLight: #f3f5f7;
 $primaryMain: #252b33;
 $primaryLight: #37414d;
 
+.text-white {
+  color: $white !important;
+}
+
 .text-primary {
   color: $primaryMain !important;
 }
@@ -150,6 +154,10 @@ li {
   line-height: 175%;
   text-align: left;
   margin: 0px;
+}
+
+.centered {
+  text-align: center;
 }
 
 .italic {
