@@ -5,6 +5,7 @@ import "./../../components/case-study-components/CarouselProject.scss";
 
 import CPYouHero from "../../assets/images/CPYou/you_hero.svg";
 import LoadingScreen from "../LoadingScreen";
+import NextProject from "../../components/case-study-components/NextProject";
 import you_personas from "../../assets/images/CPYou/you_personas.png";
 import you_brand from "../../assets/images/CPYou/you_brand.png";
 import you_feature_1 from "../../assets/images/CPYou/you_feature_1.png";
@@ -292,6 +293,12 @@ const CPYou = () => {
         color="white"
         section="Reveal the potential"
         content={[block_4]}
+      />
+
+      <NextProject
+        project="Building an MVP"
+        button="View Project"
+        link="/mvp"
       />
     </>
   );
