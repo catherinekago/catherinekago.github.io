@@ -11,6 +11,7 @@ import Contact from "../pages/Contact";
 import SurvEye from "../pages/case-studies/SurvEye";
 import DesignSystem from "../pages/case-studies/DesignSystem";
 import MVP from "../pages/case-studies/MVP";
+import CPYou from "../pages/projects/CPYou";
 
 const Navbar = () => {
   const { pathname } = useLocation();
@@ -21,9 +22,10 @@ const Navbar = () => {
       ["/contact"]: "nav-container dark",
       ["/design-system"]: "nav-container light",
       ["/surveye"]: "nav-container light",
-      ["/mvp"]: "nav-container light",
+      ["/data-collection"]: "nav-container light",
       ["/about"]: "nav-container light",
       ["/"]: "nav-container light",
+      ["/cp-you"]: "nav-container dark",
     },
   };
 
@@ -57,7 +59,8 @@ const Navbar = () => {
         <Route path="/contact" element={<Contact />} />
         <Route path="/surveye" element={<SurvEye />} />
         <Route path="/design-system" element={<DesignSystem />} />
-        <Route path="/mvp" element={<MVP />} />
+        <Route path="/data-collection" element={<MVP />} />
+        <Route path="/cp-you" element={<CPYou />} />
       </Routes>
     </>
   );

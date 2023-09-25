@@ -21,9 +21,6 @@ import pathIcon from "../../assets/icons/path.svg";
 import anchorIcon from "../../assets/icons/anchor.svg";
 import animationIcon from "../../assets/icons/animation.svg";
 import spaceIcon from "../../assets/icons/space.svg";
-import icon_role from "../../assets/icons/quotes.svg";
-import icon_tools from "../../assets/icons/tools.svg";
-import icon_duration from "../../assets/icons/duration.svg";
 import icon_interaction from "../../assets/icons/interaction.svg";
 import icon_inclusive from "../../assets/icons/inclusive.svg";
 import icon_diamond from "../../assets/icons/diamond.svg";
@@ -104,11 +101,8 @@ const SurvEye = () => {
     "I conducted a thorough exploration of the design of gaze-based digital questionnaires. Through a user-centric process based on research, iterations, and user testing, I identified a set of guidelines for the development of gaze-based questionnaire design.";
   const description = (
     <CaseStudyDescription
-      roleIcon={icon_role}
       roleText={roleText}
-      toolsIcon={icon_tools}
       toolsText={toolsText}
-      durationIcon={icon_duration}
       durationText={durationText}
     />
   );
@@ -565,8 +559,8 @@ const SurvEye = () => {
       {loading ? <LoadingScreen /> : null}
 
       {/* Hero */}
-      <CaseStudyHeader title={title} text={overview} image={SurvEyeHero} />
       <CaseStudyOverview
+        title={title}
         challenge={challenge}
         solution={solution}
         description={description}

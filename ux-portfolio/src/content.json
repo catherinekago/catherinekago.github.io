@@ -13,9 +13,9 @@
                 "title": "Building an MVP",
                 "slug": "MVP",
                 "description": "Facilitating streamlined data collection and collaboration within an organization's network.",
-                "button": "View Case Study",
-                "link": "/mvp",
-                "projectType": "Work experience",
+                "button": "View Project",
+                "link": "/data-collection",
+                "projectType": "Work - B2B2C",
                 "chips": [
                     "Research",
                     "Concept",
@@ -24,7 +24,27 @@
                     "Delivery Prep"
                 ]
             },
-            {
+
+                        {
+                "title": "ClimateParter YOU",
+                "slug": "CPYou",
+                "description": "Empowering individuals to calculate their carbon footprint to take climate action.",
+                "button": "View Project",
+                "link": "/cp-you",
+                "projectType": "Work - B2C",
+                "chips": [
+                    "Research",
+                    "Concept",
+                    "Design",
+                    "Prototyping",
+                    "Delivery Prep"
+                ]
+            }
+        ],
+
+        "additionalProjects": {
+            "pair1": [
+                            {
                 "title": "SurvEye",
                 "slug": "SurvEye",
                 "description": "Exploring the design of user interfaces for gaze-based questionnaires for manually impaired individuals.",
@@ -37,14 +57,7 @@
                     "Development",
                     "User Testing"
                 ]
-            }
-
-  
-
-        ],
-
-        "additionalProjects": {
-            "pair1": [
+            },
                 {
         
                 "title": "Design System Rework",
@@ -58,17 +71,7 @@
                     "Concept",
                     "Workshop"
                 ]
-            },
-                {
-                    "title": "Coming soon...",
-                    "description": "",
-                    "button": "View Project",
-                    "link": "",
-                    "projectType": "",
-                    "chips": [
-
-                    ]
-                }
+            }
             ],
             "pair2": [
                 {

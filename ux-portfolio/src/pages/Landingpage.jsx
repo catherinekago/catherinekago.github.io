@@ -85,7 +85,7 @@ const Portfolio = () => {
             />
           ))}
 
-          <Section text="Additional projects" />
+          <Section text="How I work" />
           <div className="additional-teaser-container">
             <div class="project-pair-container">
               <ProjectTeaser

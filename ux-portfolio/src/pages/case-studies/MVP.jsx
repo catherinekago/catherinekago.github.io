@@ -1,7 +1,7 @@
 import React from "react";
 import { useState, useEffect } from "react";
 import "./../../style/style.scss";
-
+import ProjectHero from "../../components/project-components/ProjectHero";
 import CaseStudyHeader from "../../components/case-study-components/CaseStudyHeader";
 import CaseStudyOverview from "../../components/case-study-components/CaseStudyOverview";
 import CaseStudyDescription from "../../components/case-study-components/CaseStudyDescription";
@@ -31,6 +31,7 @@ import icon_progress from "../../assets/icons/track_progress.svg";
 import icon_registration from "../../assets/icons/registration.svg";
 import icon_dataEntry from "../../assets/icons/data_entry.svg";
 import icon_knowledge from "../../assets/icons/knowledge.svg";
+import icon_cycle from "../../assets/icons/cycle.svg";
 
 import icon_support from "../../assets/icons/support.svg";
 import icon_company from "../../assets/icons/company.svg";
@@ -88,15 +89,15 @@ const MVP = () => {
     return windowSize;
   }
 
-  const roleText = ["Designer (team of two)"];
+  const roleText = ["Designer (team & solo)"];
   const toolsText = ["Figma, Dovetail"];
-  const durationText = ["October 2021 - June 2022", "(8 mo. total)"];
+  const durationText = ["October 2021 - December 2023", "(26 mo. total)"];
 
-  const title = "Building an MVP";
+  const title = "Facilitating Data Collection";
   const overview =
     "Facilitating streamlined data collection and collaboration within an organization's network, empowering them to make well-informed strategic decisions.";
   const challenge =
-    "Companies strive to obtain crucial firsthand data from their partner organizations, which is essential for making well-informed strategic decisions. However, the partners oftentimes don't know where to begin, how to acquire the requested data, and have to navigate multiple platforms and formats through which data is requested. This obstacle limits effective data sharing and collaboration, hindering companies from gaining access to the valuable insights they require.";
+    "Companies strive to obtain crucial firsthand data from their partner organizations, which is essential for making well-informed strategic decisions. However, the partners oftentimes don't know where to begin, how to acquire the requested data, and have to navigate multiple platforms and formats through which data is requested.";
   const solution =
     "We created a scalable platform that streamlines data sharing between partner organizations and multiple companies. It offers a simplified input process with guidance for accurate reporting and provides recommendations to improve data quality based on an analysis of the provided data..";
   const description = (
@@ -113,15 +114,11 @@ const MVP = () => {
   const discovery_contentblock_1 = (
     <ContentBlock
       size={size}
-      headline={<h3>Persona interviews</h3>}
       text={
         <p class="text-l primaryMain">
           We conducted
           <span class="text-l text-title"> persona interviews </span>
-          with three of our own consultants, as well as two customers and five
-          partner companies. We tagged key insights from the protocols that I
-          created during the interviews, and through the aggregation of insights
-          we highlighted in our debriefs we were able to uncover{" "}
+          with the three main stakeholder groups of our solution to uncover{" "}
           <span class="text-l text-title"> the primary unmet needs </span> that
           our solution should address:
         </p>
@@ -173,14 +170,13 @@ const MVP = () => {
     <ContentBlock
       imgType="confidential"
       size={size}
-      headline={<h3>Understand the user</h3>}
       text={
         <p class="text-l primaryMain">
           Based on the information we derived from the persona interviews, we
           created
           <span class="text-l text-title"> personas </span>
-          to clearly understand their perspective and communicate it our
-          stakeholders.
+          and <span class="text-l text-title"> empathy maps </span> to build our
+          further efforts on.
         </p>
       }
       content={
@@ -188,40 +184,9 @@ const MVP = () => {
           class="main-content-container"
           src={mvp_discovery_personas}
           alt={
-            "The image shows the three personas of our stakeholders. The persona displays information on their demographics, values, role description, challenges, needs and opportunities. However, it is an altered version containing less information and more placeholders to maintain confidentiality."
+            "The image shows the three personas of our stakeholders, stacked upon each other. The persona displays information on their demographics, values, role description, challenges, needs and opportunities. Next to the personas, an empathy map is displayed, with sticky notes in the four quadrants say, think, do, and feel.However, it is an altered version containing less information and more placeholders to maintain confidentiality."
           }
         />
-      }
-    />
-  );
-
-  const discovery_contentblock_3 = (
-    <ContentBlock
-      imgType="confidential"
-      size={size}
-      text={
-        <p class="text-l primaryMain">
-          We further analyzed our interviews to create
-          <span class="text-l text-title"> empathy maps </span> to gain
-          additional insights on emotions, challenges and needs of our target
-          groups and derive first implications for our solution.
-        </p>
-      }
-      content={
-        <img
-          class="main-content-container"
-          src={mvp_discovery_empathy}
-          alt={
-            "The image shows Three empathy maps, one for each stakeholder. It is a square that is divided into four quadrants, one for 'say', 'think', 'do' and 'feel', to clearly capture the users internal and external matters. Each quadrant is filled with stickies that hold information relevant to the quadrant. However, it is an altered version containing less information and more placeholders to maintain confidentiality."
-          }
-        />
-      }
-      text2={
-        <p class="text-l primaryMain">
-          The aggregation of our user research led us to a set of
-          <span class="text-l text-title"> value prepositions </span> which
-          guided us within the next phase of our design process.
-        </p>
       }
     />
   );
@@ -230,23 +195,12 @@ const MVP = () => {
     <ContentBlock
       imgType="confidential"
       size={size}
-      headline={<h3>User flows</h3>}
       text={
         <p class="text-l text-primary">
-          We drafted
+          We created
           <span class="text-l text-title text-primary"> user flows </span>
-          for each stakeholder and obtained early feedback from our consultants.
-          During the process of refining these flows, we recognized that a
-          <span class="text-l text-title text-primary">
-            {" "}
-            Software-as-a-Service{" "}
-          </span>
-          application would provide the
-          <span class="text-l text-title text-primary">
-            {" "}
-            most efficient solution,{" "}
-          </span>
-          reducing the workload on our consultants.
+          for our two user groups and obtained early feedback from our
+          consultants.
         </p>
       }
       content={
@@ -311,17 +265,26 @@ const MVP = () => {
         </p>
       ),
     },
+    {
+      icon: icon_cycle,
+      text: (
+        <p class="text-l text-primary">
+          <span class="text-l text-title text-primary">Recurrance</span> <br />
+          Enabling our customers to collect data on a yearly basis
+        </p>
+      ),
+    },
   ];
 
   const design_contentblock_2 = (
     <ContentBlock
       size={size}
-      headline={<h3>Iterating over ideas</h3>}
       text={
         <p class="text-l primaryMain">
           Based on our stakeholders’ feedback we generated ideas on solutions
-          that address the identified needs. Key concepts we addressed within
-          our ideation included:
+          that address the identified needs.
+          <span class="text-l text-title text-primary"> Key concepts </span>
+          we addressed within our ideation included:
         </p>
       }
       content={
@@ -335,19 +298,16 @@ const MVP = () => {
       imgType="confidential"
       imgPos="right"
       size={size}
-      headline={<h3>Trial run</h3>}
       text={
         <p class="text-l text-primary">
-          Once we felt confident with our proposal, backed up by several rounds
-          of user testing of our prototype to test parts of the journey, we
+          We collaborated with one of our customers to do a
           <span class="text-l text-title text-primary">
             {" "}
-            collaborated with one of our customers to do a trial to test our MVP
-            Figma prototype{" "}
+            trial to test our MVP Figma prototype holistically.{" "}
           </span>
-          holistically. Within this trial, we received insights from our
-          customer as well as from three of their partner organizations which we
-          integrated in another iteration over the designs.
+          Within this trial, we received insights from our customer as well as
+          from three of their partner organizations which we integrated in
+          another iteration over the designs.
         </p>
       }
       content={
@@ -362,38 +322,38 @@ const MVP = () => {
     />
   );
 
+  // const design_contentblock_4 = (
+  //   <ContentBlock
+  //     imgType="confidential"
+  //     imgPos="right"
+  //     alignment="horizontal"
+  //     size={size}
+  //     headline={<h3>Reality check</h3>}
+  //     text={
+  //       <p class="text-l text-primary">
+  //         We further
+  //         <span class="text-l text-title text-primary">
+  //           {" "}
+  //           validated our designs with real data.{" "}
+  //         </span>
+  //         So we reached out to a customer that had 20+ data sets already
+  //         available from their partner organizations. We tested our proposed
+  //         partner organization flow with three data sets to test its
+  //         applicability to real world data. We further performed a data analysis
+  //         on all data sets to validate our concept for the data overview on
+  //         customer side.
+  //       </p>
+  //     }
+  //     content={<img class="img-two-columns" src={mvp_realData} alt={"todo"} />}
+  //   />
+  // );
+
   const design_contentblock_4 = (
-    <ContentBlock
-      imgType="confidential"
-      imgPos="right"
-      alignment="horizontal"
-      size={size}
-      headline={<h3>Reality check</h3>}
-      text={
-        <p class="text-l text-primary">
-          We further
-          <span class="text-l text-title text-primary">
-            {" "}
-            validated our designs with real data.{" "}
-          </span>
-          So we reached out to a customer that had 20+ data sets already
-          available from their partner organizations. We tested our proposed
-          partner organization flow with three data sets to test its
-          applicability to real world data. We further performed a data analysis
-          on all data sets to validate our concept for the data overview on
-          customer side.
-        </p>
-      }
-      content={<img class="img-two-columns" src={mvp_realData} alt={"todo"} />}
-    />
-  );
-  const design_contentblock_5 = (
     <ContentBlock
       imgType="confidential"
       imgPos="right"
       alignment="vertical"
       size={size}
-      headline={<h3>Delivery preparation</h3>}
       text={
         <p class="text-l text-primary">
           I prepared our designs for the implementation, considering
@@ -423,20 +383,19 @@ const MVP = () => {
       imgPos="right"
       alignment="vertical"
       size={size}
-      headline={<h3>And now... it's live! 🎉</h3>}
       text={
         <p class="text-l text-primary">
-          Through our MVP, our
-          <span class="text-l text-title text-primary"> customers</span> are now
-          able to
+          Through our data collection tool, our
+          <span class="text-l text-title text-primary"> customers</span> were
+          now able to
           <span class="text-l text-title text-primary">
             {" "}
             invite their partner organizations
           </span>{" "}
-          to provide their data, and can then{" "}
+          to provide their data on an ongoing basis to{" "}
           <span class="text-l text-title text-primary">
             {" "}
-            track and manage{" "}
+            track and analyze{" "}
           </span>{" "}
           the collected data.
         </p>
@@ -461,7 +420,7 @@ const MVP = () => {
       size={size}
       text={
         <p class="text-l text-primary">
-          Our MVP further enables
+          Our solution further enabled
           <span class="text-l text-title text-primary">
             {" "}
             partner organizations{" "}
@@ -474,7 +433,7 @@ const MVP = () => {
           and understand how their data{" "}
           <span class="text-l text-title text-primary">
             {" "}
-            compares to others.{" "}
+            compared to others.{" "}
           </span>
         </p>
       }
@@ -545,8 +504,12 @@ const MVP = () => {
     <>
       {loading ? <LoadingScreen /> : null}
       {/* Hero */}
-      <CaseStudyHeader title={title} text={overview} image={mvp_teaser} />
+      <ProjectHero
+        image={mvp_partner_product}
+        imageAlt="A visualization showing multiple mockups of the the product."
+      />
       <CaseStudyOverview
+        title={title}
         challenge={challenge}
         solution={solution}
         description={description}
@@ -554,23 +517,18 @@ const MVP = () => {
 
       <CaseStudyContent
         color="white"
-        section="Discovery"
-        content={[
-          discovery_contentblock_1,
-          discovery_contentblock_2,
-          discovery_contentblock_3,
-        ]}
+        section="Understand the stakeholders"
+        content={[discovery_contentblock_1, discovery_contentblock_2]}
       />
 
       <CaseStudyContent
         color="grey-light"
-        section="Design"
+        section="Explore possible solutions"
         content={[
           design_contentblock_1,
           design_contentblock_2,
           design_contentblock_3,
           design_contentblock_4,
-          design_contentblock_5,
         ]}
       />
 
@@ -580,7 +538,7 @@ const MVP = () => {
         content={[delivery_contentblock_1, delivery_contentblock_2]}
       />
 
-      <CaseStudyContent
+      {/* <CaseStudyContent
         section="Reflection"
         color="dark"
         content={[
@@ -600,9 +558,13 @@ const MVP = () => {
             ))}
           />,
         ]}
-      />
+      /> */}
 
-      <NextProject project="TODO" button="View Case Study" link="/todo" />
+      <NextProject
+        project="ClimatePartner YOU"
+        button="View Project"
+        link="/cp-you"
+      />
     </>
   );
 };

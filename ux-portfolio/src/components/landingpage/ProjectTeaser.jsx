@@ -4,7 +4,8 @@ import "./ProjectTeaser.scss";
 import Chip from "../atoms/Chip";
 import SurveyeHero from "../../assets/images/surveye_hero_cut.png";
 import DesignSystem from "../../assets/images//DesignSystem/ds_hero.svg";
-import MVP from "../../assets/images/MVP/mvp_teaser_variant.png";
+import MVP from "../../assets/images/MVP/mvp_partner_product.png";
+import CPYouHero from "../../assets/images//CPYou/you_hero.png";
 
 const ProjectTeaser = (props) => {
   const className = "project-teaser-container " + props.teaserType;
@@ -12,6 +13,7 @@ const ProjectTeaser = (props) => {
     MVP: MVP,
     SurvEye: SurveyeHero,
     DesignSystem: DesignSystem,
+    CPYou: CPYouHero,
   };
 
   const [width, setWidth] = React.useState(window.innerWidth);

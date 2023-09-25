@@ -11,9 +11,6 @@ import ContentBlock from "../../components/case-study-components/ContentBlock";
 import NextProject from "../../components/case-study-components/NextProject";
 import LoadingScreen from "../LoadingScreen";
 
-import icon_role from "../../assets/icons/quotes.svg";
-import icon_tools from "../../assets/icons/tools.svg";
-import icon_duration from "../../assets/icons/duration.svg";
 import icon_inventory from "../../assets/icons/inventory.svg";
 import icon_rocket from "../../assets/icons/rocket.svg";
 import icon_structure from "../../assets/icons/structure.svg";
@@ -94,11 +91,8 @@ const DesignSystem = () => {
   const durationText = ["Feb 2021 - Apr 2021 (3 mo. total)"];
   const description = (
     <CaseStudyDescription
-      roleIcon={icon_role}
       roleText={roleText}
-      toolsIcon={icon_tools}
       toolsText={toolsText}
-      durationIcon={icon_duration}
       durationText={durationText}
     />
   );
