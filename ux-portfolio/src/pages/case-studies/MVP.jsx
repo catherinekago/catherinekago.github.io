@@ -208,7 +208,7 @@ const MVP = () => {
           class="main-content-container"
           src={mvp_design_userflow}
           alt={
-            "The image visualizes the user flows of the customer and the partner organization. We combined both flows on one horizontal pathway to highlight how the two flows relate to each other, and what steps of one flow preceed subsequent steps of the other flow. The steps are portrayed by sticky notes along a horizontal arrow. However, it is an altered version containing less information and more placeholders to maintain confidentiality."
+            "The image visualizes the user flows of the customer and the partner organization. We combined both flows on the intersection where the customer starts the partner's pathway to highlight how the two flows relate to each other, and what steps of one flow preceed subsequent steps of the other flow. The steps are portrayed by sticky notes along a horizontal arrow. However, it is an altered version containing less information and more generic labels to maintain confidentiality."
           }
         />
       }
