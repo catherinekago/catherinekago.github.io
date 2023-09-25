@@ -34,8 +34,8 @@
       box-shadow: $boxShadowHover;
     }
     img {
-      height: 90%;
-      width: 90%;
+      height: 100%;
+      width: 100%;
       max-width: 400px;
       max-height: 400px;
       @include m {

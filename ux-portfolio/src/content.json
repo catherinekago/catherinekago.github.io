@@ -9,20 +9,6 @@
             }
         ],
         "featuredProjects": [
-            {
-                "title": "SurvEye",
-                "slug": "SurvEye",
-                "description": "Exploring the design of user interfaces for gaze-based questionnaires for manually impaired individuals.",
-                "button": "View Case Study",
-                "link": "/surveye",
-                "projectType": "Bachelor studies",
-                "chips": [
-                    "Research",
-                    "Design",
-                    "Development",
-                    "User Testing"
-                ]
-            },
                         {
                 "title": "ClimateParter YOU",
                 "slug": "CPYou",
@@ -56,6 +42,20 @@
 
         "additionalProjects": {
             "pair1": [
+                            {
+                "title": "SurvEye",
+                "slug": "SurvEye",
+                "description": "Exploring the design of user interfaces for gaze-based questionnaires for manually impaired individuals.",
+                "button": "View Case Study",
+                "link": "/surveye",
+                "projectType": "Bachelor studies",
+                "chips": [
+                    "Research",
+                    "Design",
+                    "Development",
+                    "User Testing"
+                ]
+            },
                 {
         
                 "title": "Design System Rework",
@@ -69,17 +69,7 @@
                     "Concept",
                     "Workshop"
                 ]
-            },
-                {
-                    "title": "Coming soon...",
-                    "description": "",
-                    "button": "View Project",
-                    "link": "",
-                    "projectType": "",
-                    "chips": [
-
-                    ]
-                }
+            }
             ],
             "pair2": [
                 {
