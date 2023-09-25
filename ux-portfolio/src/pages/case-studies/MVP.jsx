@@ -348,34 +348,34 @@ const MVP = () => {
   //   />
   // );
 
-  const design_contentblock_4 = (
-    <ContentBlock
-      imgType="confidential"
-      imgPos="right"
-      alignment="vertical"
-      size={size}
-      text={
-        <p class="text-l text-primary">
-          I prepared our designs for the implementation, considering
-          <span class="text-l text-title text-primary">
-            {" "}
-            different states, responsive behavior, and supplementary
-            documentation
-          </span>{" "}
-          to ensure a smooth handover.
-        </p>
-      }
-      content={
-        <img
-          class="main-content-container"
-          src={mvp_deliveryprep}
-          alt={
-            "A screenshot of the main screens of the partner organization flow in Figma, including with a registration page, a dashboard overview, a data entry form, and a section with graphs for comparing oneself with different organizations."
-          }
-        />
-      }
-    />
-  );
+  // const design_contentblock_4 = (
+  //   <ContentBlock
+  //     imgType="confidential"
+  //     imgPos="right"
+  //     alignment="vertical"
+  //     size={size}
+  //     text={
+  //       <p class="text-l text-primary">
+  //         I prepared our designs for the implementation, considering
+  //         <span class="text-l text-title text-primary">
+  //           {" "}
+  //           different states, responsive behavior, and supplementary
+  //           documentation
+  //         </span>{" "}
+  //         to ensure a smooth handover.
+  //       </p>
+  //     }
+  //     content={
+  //       <img
+  //         class="main-content-container"
+  //         src={mvp_deliveryprep}
+  //         alt={
+  //           "A screenshot of the main screens of the partner organization flow in Figma, including with a registration page, a dashboard overview, a data entry form, and a section with graphs for comparing oneself with different organizations."
+  //         }
+  //       />
+  //     }
+  //   />
+  // );
 
   const delivery_contentblock_1 = (
     <ContentBlock
@@ -528,7 +528,7 @@ const MVP = () => {
           design_contentblock_1,
           design_contentblock_2,
           design_contentblock_3,
-          design_contentblock_4,
+          // design_contentblock_4,
         ]}
       />
 
