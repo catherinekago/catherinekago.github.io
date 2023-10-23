@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
 import "./ProjectTeaser.scss";
 import Chip from "../atoms/Chip";
-import SurveyeHero from "../../assets/images/surveye_hero_cut.png";
+import SurveyeHero from "../../assets/images/surveye_teaser.png";
 import DesignSystem from "../../assets/images//DesignSystem/ds_hero.svg";
 import CPYouHero from "../../assets/images//CPYou/you_hero.png";
 

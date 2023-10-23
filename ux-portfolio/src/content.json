@@ -17,10 +17,10 @@
                 "link": "/cp-you",
                 "projectType": "Work - B2C",
                 "chips": [
-                    "Research",
-                    "Concept",
-                    "Design",
-                    "Prototyping"
+                    "Mobile first",
+                    "Branding",
+                    "Prototyping",
+                    "User testing"
                 ]
             },
 
@@ -31,10 +31,11 @@
                 "link": "",
                 "projectType": "Work experience",
                 "chips": [
-                    "Research",
-                    "Concept",
-                    "Design",
-                    "UI Testing"
+                    "Desktop first",
+                    "Iterations", 
+                    "Data complexity",
+                    "User feedback"
+
                 ]
             }
 
@@ -50,10 +51,10 @@
                 "link": "/surveye",
                 "projectType": "Bachelor studies",
                 "chips": [
-                    "Research",
-                    "Design",
-                    "Development",
-                    "User Testing"
+                    "Accessibility",
+                    "Prototyping",
+                    "User Testing",
+                    "Design Guidelines"
                 ]
             },
                 {
