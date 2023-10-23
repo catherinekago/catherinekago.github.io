@@ -63,7 +63,6 @@ const Portfolio = () => {
     <>
       {loading ? <LoadingScreen /> : null}
       <Hero width={size.width} />
-      <Carousel />
       <div
         id="portfolio-main-container"
         class="main-background-container container-white"
@@ -114,6 +113,7 @@ const Portfolio = () => {
           </div>
         </div>
       </div>
+      <Carousel />
       <Contact section="true" />
       <ProjectFooter />
     </>

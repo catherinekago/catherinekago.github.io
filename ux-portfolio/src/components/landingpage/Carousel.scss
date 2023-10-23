@@ -6,8 +6,9 @@
   padding-bottom: 80px !important;
   gap: 40px !important;
   height: fit-content;
-  padding-left: 0px !important;
-  padding-right: 0px !important;
+  // padding-left: 0px !important;
+  // padding-right: 0px !important;
+  background-color: $greyBackground !important;
 
   .alice-carousel {
     width: 100%;
@@ -18,10 +19,10 @@
     }
 
     .alice-carousel__dots-item {
-      background-color: white;
+      background-color: $textMedium;
 
       &.__active {
-        background-color: $textLight;
+        background-color: $primaryDark;
       }
     }
 
@@ -36,12 +37,15 @@
 
     .alice-carousel__prev-btn-item,
     .alice-carousel__next-btn-item {
-      color: $textLight;
+      color: $textMedium;
+      &:hover {
+        color: $primaryDark;
+      }
     }
   }
 
   .carousel-item-container {
-    background-color: $primaryMain;
+    background-color: $greyBackground;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
