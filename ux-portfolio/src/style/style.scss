@@ -538,13 +538,13 @@ body {
 }
 
 .avatar {
-  width: 65px;
-  height: 65px;
+  width: 64px;
+  height: 64px;
   border-radius: 100px;
   background-color: $textLight;
   @media (min-width: $screen-s-min) {
-    width: 150px !important;
-    height: 150px !important;
+    width: 80px !important;
+    height: 80px !important;
   }
 }
 

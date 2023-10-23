@@ -2,9 +2,9 @@
 @import "react-alice-carousel/lib/scss/alice-carousel.scss";
 
 #carousel-container {
-  padding-top: 64px !important;
-  padding-bottom: 40px !important;
-  gap: 24px !important;
+  padding-top: 80px !important;
+  padding-bottom: 80px !important;
+  gap: 40px !important;
   height: fit-content;
   padding-left: 0px !important;
   padding-right: 0px !important;
@@ -41,22 +41,22 @@
   }
 
   .carousel-item-container {
-    background-color: white;
+    background-color: $primaryMain;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    padding: 24px;
+    padding-top: 16px;
+    padding-bottom: 24px;
     gap: 24px;
     height: fit-content !important;
     @include s {
-      padding: 40px;
-      gap: 40px;
+      gap: 32px;
     }
 
     .carousel-item-person-container {
       display: flex;
       flex-direction: row;
-      align-items: flex-start;
+      align-items: center;
       height: 50%;
       padding: 0px;
       gap: 16px;
@@ -64,7 +64,7 @@
       height: fit-content;
 
       @include s {
-        gap: 40px;
+        gap: 24px;
       }
 
       .carousel-item-person-info {
