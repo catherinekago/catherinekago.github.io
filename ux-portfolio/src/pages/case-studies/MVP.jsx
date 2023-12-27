@@ -21,6 +21,7 @@ import mvp_vision from "../../assets/images/MVP/mvp_vision_flow.jpg";
 import mvp_realData from "../../assets/images/MVP/mvp_design_realdata.png";
 import mvp_partner_product from "../../assets/images/MVP/mvp_partner_product.png";
 import mvp_customer_product from "../../assets/images/MVP/mvp_customer_product.png";
+import mvp_refinement_flow from "../../assets/images/MVP/mvp_refinement_flow.jpg";
 
 import icon_role from "../../assets/icons/quotes.svg";
 import icon_tools from "../../assets/icons/tools.svg";
@@ -500,6 +501,66 @@ const MVP = () => {
     },
   ];
 
+  const refinement_contentblock_1 = (
+    <ContentBlock
+      imgType="confidential"
+      imgPos="right"
+      alignment="vertical"
+      size={size}
+      text={
+        <p class="text-l text-primary">
+          After successfully launching our MVP, we worked closely together with
+          <span class="text-l text-title text-primary">
+            {" "}
+            first level support{" "}
+          </span>{" "}
+          and our
+          <span class="text-l text-title text-primary"> key customers. </span>
+          Drawing from feedback based on actual user interaction with our
+          product, we recognized{" "}
+          <span class="text-l text-title text-primary">
+            {" "}
+            the need to highlight the recurring character of the data entry
+            process.{" "}
+          </span>{" "}
+        </p>
+      }
+      content={
+        <img
+          class="main-content-container"
+          src={mvp_refinement_flow}
+          alt={
+            "The image visualizes the user flow of the partner organization, with the loop from the end of the linear journey of one-time data entry back to data entry of the first data type as the identified challenge."
+          }
+        />
+      }
+    />
+  );
+
+  const refinement_contentblock_2 = (
+    <ContentBlock
+      imgType="confidential"
+      imgPos="right"
+      alignment="vertical"
+      size={size}
+      text={
+        <p class="text-l text-primary">
+          This resulted in another essential iteration over the partner
+          organization dashboard:
+        </p>
+      }
+      content={
+        <img
+          class="main-content-container"
+          src={mvp_customer_product}
+          alt={
+            "A screenshot of the main screens of the partner organization flow in Figma, including with a registration page, a dashboard overview, a data entry form, and a section with graphs for comparing oneself with different organizations."
+          }
+        />
+      }
+    />
+  );
+
   return (
     <>
       {loading ? <LoadingScreen /> : null}
@@ -536,6 +597,12 @@ const MVP = () => {
         color="white"
         section="Outcome"
         content={[delivery_contentblock_1, delivery_contentblock_2]}
+      />
+
+      <CaseStudyContent
+        color="grey-light"
+        section="Refinement"
+        content={[refinement_contentblock_1, refinement_contentblock_2]}
       />
 
       {/* <CaseStudyContent

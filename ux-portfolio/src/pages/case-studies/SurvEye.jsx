@@ -3,7 +3,7 @@ import { useState, useEffect } from "react";
 import "./../../style/style.scss";
 
 import CaseStudyDescription from "../../components/case-study-components/CaseStudyDescription";
-import SurvEyeHero from "../../assets/images/surveye_hero_cut.png";
+import SurvEyeHero from "../../assets/images/surveye_hero.png";
 import LoadingScreen from "../LoadingScreen";
 
 import durationIcon from "../../assets/icons/schedule.svg";
@@ -25,12 +25,11 @@ import icon_interaction from "../../assets/icons/interaction.svg";
 import icon_inclusive from "../../assets/icons/inclusive.svg";
 import icon_diamond from "../../assets/icons/diamond.svg";
 
-import CaseStudyHeader from "../../components/case-study-components/CaseStudyHeader";
+import ProjectHero from "../../components/project-components/ProjectHero";
 import CaseStudyOverview from "../../components/case-study-components/CaseStudyOverview";
-import CaseStudySection from "../../components/case-study-components/CaseStudySection";
 import CaseStudyContent from "../../components/case-study-components/CaseStudyContent";
-
 import ContentBlock from "../../components/case-study-components/ContentBlock";
+import NextProject from "../../components/case-study-components/NextProject";
 
 import surveyeIdeation from "../../assets/images/surveyeIdeation.jpg";
 import surveyeInteractionFlow from "../../assets/images/surveyeInteractionFlow.jpg";
@@ -234,22 +233,10 @@ const SurvEye = () => {
       text={
         <p class="text-l primaryMain">
           The task flow helped me to define the{" "}
-          <span class="text-l text-title">goal</span> of my solution: <br></br>{" "}
-          <br></br>
-          Enable manually impaired individuals to{" "}
-          <span
-            class="primaryMain text-h3"
-            style={{ fontFamily: "Abril Fatface" }}
-          >
-            independently
-          </span>{" "}
-          and{" "}
-          <span
-            class="primaryMain text-h3"
-            style={{ fontFamily: "Abril Fatface" }}
-          >
-            anonymously
-          </span>{" "}
+          <span class="text-l text-title">goal</span> of my solution: Enable
+          manually impaired individuals to{" "}
+          <span class="text-l text-title"> independently </span>
+          and <span class="text-l text-title">anonymously </span>
           fill out questionnaires.
         </p>
       }
@@ -264,23 +251,9 @@ const SurvEye = () => {
         <p class="text-l primaryMain">
           What
           <span class="text-l text-title"> alternatives to manual input </span>
-          are there? I identified voice and gaze as potential alternatives and
-          analyzed their suitability to achieve my goal.
-        </p>
-      }
-      content={alternativesCardContainer}
-    />
-  );
-
-  const design_contentblock_2 = (
-    <ContentBlock
-      size={size}
-      headline={<h3>Defining requirements</h3>}
-      text={
-        <p class="text-l primaryMain">
-          With gaze defined as a suitable alternative input, I proceeded by
-          gathering insights from existing research on how to design gaze
-          interfaces and{" "}
+          are there? With gaze identified as a suitable alternative input, I
+          proceeded by gathering insights from existing research on how to
+          design gaze interfaces and{" "}
           <span class="text-title">
             aggregated them into requirements for my subsequent design
             exploration
@@ -299,7 +272,7 @@ const SurvEye = () => {
     />
   );
 
-  const design_contentblock_3 = (
+  const design_contentblock_2 = (
     <ContentBlock
       size={size}
       headline={<h3>Designing for gaze</h3>}
@@ -324,7 +297,7 @@ const SurvEye = () => {
     />
   );
 
-  const design_contentblock_4 = (
+  const design_contentblock_3 = (
     <ContentBlock
       size={size}
       text={
@@ -558,6 +531,11 @@ const SurvEye = () => {
     <>
       {loading ? <LoadingScreen /> : null}
 
+      <ProjectHero
+        image={SurvEyeHero}
+        imageAlt="A visualization showing multiple mockups of the mobile version of the product."
+      />
+
       {/* Hero */}
       <CaseStudyOverview
         title={title}
@@ -583,7 +561,6 @@ const SurvEye = () => {
           design_contentblock_1,
           design_contentblock_2,
           design_contentblock_3,
-          design_contentblock_4,
         ]}
       />
 
@@ -623,6 +600,12 @@ const SurvEye = () => {
             ))}
           />,
         ]}
+      />
+
+      <NextProject
+        project="Visual Impairment and Job Interviews"
+        button="View Project"
+        link="/mvp"
       />
     </>
   );

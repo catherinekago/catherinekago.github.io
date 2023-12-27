@@ -3,41 +3,41 @@
         "testimonials": [
             {
                 "name": "Beth Thayne",
-                "occupation": "Product Strategist",
+                "occupation": "Product Strategist at ClimatePartner",
                 "linkedin": "https://www.linkedin.com/in/beth-thayne/",
-                "quote": "I’ve had the pleasure of working with Kathrin at most stages of the product and design development cycle. Her strength lies in asking the right questions at the right time, bringing focus and clarity to tasks. She demonstrates creativity and out-of-the-box thinking in prototyping, and her execution is unmatched. Kathrin designs with speed and quality while effectively communicating her intentions, process, and decisions at every stage. She is not only a talented designer but also a wonderful person, empathetic towards team members and dedicated to fostering a positive and enjoyable working environment."
+                "quote": "Kathrin's strength lies in asking the right questions at the right time, bringing focus and clarity to tasks. She demonstrates creativity and out-of-the-box thinking in prototyping, and her execution is unmatched. Kathrin designs with speed and quality while effectively communicating her intentions, process, and decisions at every stage. She is not only a talented designer but also a wonderful person, empathetic towards team members and dedicated to fostering a positive and enjoyable working environment."
             }
         ],
         "featuredProjects": [
                       {
-                "title": "Building an MVP",
+                "title": "Facilitating Data Collection",
                 "slug": "MVP",
                 "description": "Facilitating streamlined data collection and collaboration within an organization's network.",
                 "button": "View Project",
                 "link": "/data-collection",
                 "projectType": "Work - B2B2C",
                 "chips": [
-                    "Research",
-                    "Concept",
-                    "Design",
-                    "Prototyping",
-                    "Delivery Prep"
+                    "Desktop first",
+                    "Iterations", 
+                    "Data complexity",
+                    "User feedback"
                 ]
             },
 
                         {
-                "title": "ClimateParter YOU",
+                "title": "ClimatePartner YOU",
                 "slug": "CPYou",
                 "description": "Empowering individuals to calculate their carbon footprint to take climate action.",
                 "button": "View Project",
                 "link": "/cp-you",
                 "projectType": "Work - B2C",
                 "chips": [
-                    "Research",
-                    "Concept",
-                    "Design",
+
+                                        "Mobile first",
+                    "Branding",
                     "Prototyping",
-                    "Delivery Prep"
+                    "User testing"
+
                 ]
             }
         ],
@@ -52,10 +52,10 @@
                 "link": "/surveye",
                 "projectType": "Bachelor studies",
                 "chips": [
-                    "Research",
-                    "Design",
-                    "Development",
-                    "User Testing"
+                    "Accessibility",
+                    "Prototyping",
+                    "User Testing",
+                    "Design Guidelines"
                 ]
             },
                 {

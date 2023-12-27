@@ -13,7 +13,7 @@ const Carousel = () => {
     <CarouselItem
       name={testimonial.name}
       occupation={testimonial.occupation}
-      linkedin={testimonial.linkedin}
+      // linkedin={testimonial.linkedin}
       quote={testimonial.quote}
       img={portraits[index]}
     />
@@ -21,7 +21,7 @@ const Carousel = () => {
 
   return (
     <div class="main-background-container" id="carousel-container">
-      <Section variant="section-light" text="What others say about me" />
+      <Section variant="section-dark" text="What my coworkers say about me" />
       <AliceCarousel
         autoPlay={true}
         autoPlayStrategy={"default"}
@@ -37,22 +37,22 @@ const Carousel = () => {
 
 const CarouselItem = (props) => {
   return (
-    <div class="carousel-item-container">
-      <div class="carousel-item-person-container">
+    <div class="carousel-item-container container-gray">
+      <div class="carousel-item-person-container container-gray">
         <img
           src={props.img}
           alt="portrait picture of the person behind the statement"
           class="avatar"
         />
-        <div class="carousel-item-person-info container-white">
-          <h3 class="primaryMain">{props.name}</h3>{" "}
-          <p class="text-l primaryMain">{props.occupation}</p>
-          <a href={props.linkedin} target="_blank" rel="noreferrer">
+        <div class="carousel-item-person-info container-gray">
+          <h4 class="primaryMain">{props.name}</h4>{" "}
+          <p class="text-m primaryMain">{props.occupation}</p>
+          {/* <a href={props.linkedin} target="_blank" rel="noreferrer">
             <img class="icon-extrasmall" src={linkedin} alt="LinkedIn" />
-          </a>
+          </a> */}
         </div>
       </div>
-      <p class="text-m primaryMain italic">"{props.quote}"</p>
+      <p class="text-l primaryMain">"{props.quote}"</p>
     </div>
   );
 };
