@@ -20,8 +20,10 @@ import mvp_deliveryprep from "../../assets/images/MVP/mvp_deliveryprep.png";
 import mvp_vision from "../../assets/images/MVP/mvp_vision_flow.jpg";
 import mvp_realData from "../../assets/images/MVP/mvp_design_realdata.png";
 import mvp_partner_product from "../../assets/images/MVP/mvp_partner_product.png";
+import mvp_partner_product_refined from "../../assets/images/MVP/mvp_partner_product_refined.png";
 import mvp_customer_product from "../../assets/images/MVP/mvp_customer_product.png";
 import mvp_refinement_flow from "../../assets/images/MVP/mvp_refinement_flow.jpg";
+import mvp_refinement_impr1 from "../../assets/images/MVP/mvp_refinement_impr_1.jpg";
 
 import icon_role from "../../assets/icons/quotes.svg";
 import icon_tools from "../../assets/icons/tools.svg";
@@ -552,9 +554,9 @@ const MVP = () => {
       content={
         <img
           class="main-content-container"
-          src={mvp_customer_product}
+          src={mvp_refinement_impr1}
           alt={
-            "A screenshot of the main screens of the partner organization flow in Figma, including with a registration page, a dashboard overview, a data entry form, and a section with graphs for comparing oneself with different organizations."
+            "A subset of changes we applied to our partner organization dashboard to communicate the circular nature of the data collection process. The visualization shows the before and after versions of UI components, with an explanation what has changed. The first group addresses the missing information why data has to be entered again, which we added by replacing a linear progress bar with a visualization of the circular process, and added an explanation on demand why a certain data type is required again. The next example centeres around enabling users to edit already published data to provide data flexibly once it is available, and support them by providing information on what information is still missing per data set. Finally, the last improvement addresses the insufficient saliency of areas that require user action. Here we introduced a visual element to clearly highlight elements that require the user's attention, and enforced consistent placement of primary controls to support recognition."
           }
         />
       }
@@ -566,7 +568,7 @@ const MVP = () => {
       {loading ? <LoadingScreen /> : null}
       {/* Hero */}
       <ProjectHero
-        image={mvp_partner_product}
+        image={mvp_partner_product_refined}
         imageAlt="A visualization showing multiple mockups of the the product."
       />
       <CaseStudyOverview
