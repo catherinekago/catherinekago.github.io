@@ -304,6 +304,21 @@ body,
 #root {
   height: 100%;
 }
+.App {
+  position: relative;
+  /* Other styles for your main content */
+
+  .glassmorphism-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8); /* Adjust opacity as needed */
+    backdrop-filter: blur(5px);
+    z-index: 1000; /* Ensure the overlay is above the content */
+  }
+}
 
 body {
   background-color: $primaryMain;

@@ -8,6 +8,7 @@ import Carousel from "../components/landingpage/Carousel";
 import { useState, useEffect } from "react";
 import ProjectFooter from "../components/case-study-components/ProjectFooter";
 import LoadingScreen from "./LoadingScreen";
+import PasswordModal from "../components/PasswordModal";
 
 const Portfolio = () => {
   let featuredProjects = require("../content.json").portfolio.featuredProjects;
@@ -15,7 +16,18 @@ const Portfolio = () => {
     require("../content.json").portfolio.additionalProjects;
 
   const size = useWindowSize();
+  const [isModalOpen, setModalOpen] = useState(false);
 
+  const openModal = () => {
+    // TODO: open this when user clicks on project and has no cookies
+    setModalOpen(true);
+    document.body.style.overflow = "hidden"; // Disable scrolling
+  };
+
+  const closeModal = () => {
+    setModalOpen(false);
+    document.body.style.overflow = "auto"; // Enable scrolling
+  };
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
@@ -30,6 +42,7 @@ const Portfolio = () => {
     setLoading(true);
     setTimeout(() => {
       setLoading(false);
+      openModal(); // TODO: change
     }, 1500);
   }, []);
 
@@ -116,6 +129,14 @@ const Portfolio = () => {
       <Carousel />
       <Contact section="true" />
       <ProjectFooter />
+
+      {/* Glassmorphism overlay */}
+      {isModalOpen && (
+        <div className="glassmorphism-overlay" onClick={closeModal}></div>
+      )}
+
+      {/* Password Modal */}
+      {isModalOpen && <PasswordModal closeModal={closeModal} />}
     </>
   );
 };
