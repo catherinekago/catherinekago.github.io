@@ -65,11 +65,11 @@ const Portfolio = () => {
 
   const createOpenPasswordModal = (project, link, password) => {
     return () => {      
-      const cache = localStorage.getItem(project)
+      const cache = sessionStorage.getItem(project)
       if(cache === password) {
         window.location.href = "#" + link;
         // enable for testing
-        // localStorage.removeItem(project)
+        // sessionStorage.removeItem(project)
         return
       }
 
@@ -90,7 +90,7 @@ const Portfolio = () => {
   const passwordChecker = (secret) => {
     const result = secret === password
     if (result) {
-      localStorage.setItem(project, password)
+      sessionStorage.setItem(project, password)
       const link = securedLink
       closePasswordModal()
       window.location.href = "#" + link;
