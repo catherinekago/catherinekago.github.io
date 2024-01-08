@@ -17,10 +17,10 @@
   height: fit-content !important;
 
   @include s {
-    width: 80%;
+    width: 90%;
   }
   @media (min-width: $screen-xl-min) {
-    max-width: 1200px;
+    max-width: 100%;
   }
 
   p {
