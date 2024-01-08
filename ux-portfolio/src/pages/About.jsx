@@ -51,21 +51,17 @@ const About = () => {
   const introText = (
     <>
       {" "}
-      <p class="text-l primaryMain italic">
-        "Hey Kathrin, I am simply blown away by your study notes. I could never
-        do that. They are so well-structured. Your version is way easier to
-        digest, understand, and memorize than the original set of material
-        provided by the lecturer. And on top of that it just looks so good, with
-        that color coding and the visualizations that you included. Would you
-        mind sharing them with me?"
-      </p>
       <p class="text-l primaryMain">
-        This is how I was commonly approached during my time at university, and
-        it made me realize{" "}
+        As a UX and UI designer, I have a genuine interest in creating
+        user-friendly experiences and a particular passion for assistive
+        technologies, aiming to enhance accessibility for everyone. My strengths
+        lie in swift comprehension, organized problem-solving, and persistent
+        determination to understand and address real needs of real humans.
+        Guided by values of responsibility, ownership, efficiency, and
+        authenticity, I am committed to designing solutions{" "}
         <span class="text-l text-title">
           {" "}
-          that my making sense of information has the potential ease people's
-          lives.
+          that contribute to a more inclusive and accessible digital world.
         </span>
       </p>
     </>
@@ -103,7 +99,7 @@ const About = () => {
           During my further studies in{" "}
           <span class="text-l text-title"> Human-Computer Interaction </span>{" "}
           (B. Sc. and M. Sc.), I directed my attention towards two specific
-          areas: user experience and assistive technologies. In my final theses,
+          areas: user experience and assistive technologies. In my final thesis,
           I had the opportunity to collaborate with individuals who had{" "}
           <Link
             class="text-l primaryDark inline-link"
@@ -112,14 +108,14 @@ const About = () => {
           >
             manual impairments
           </Link>{" "}
-          and{" "}
+          {/* and{" "}
           <Link
             class="text-l primaryDark inline-link"
             target="_blank"
             to={"/surveye"}
           >
             visual impairments
-          </Link>
+          </Link> */}
           , conducting user-centered evaluations of suitable assisitve
           technology design.
         </p>
@@ -130,7 +126,7 @@ const About = () => {
       alt: "An icon displaying a rulter and a pencil, positioned over each other to resemble a cross",
       text: (
         <p class="text-l primaryMain">
-          Currently, I work as a UX/UI designer at{" "}
+          Currently, I work as a UX and UI designer at{" "}
           <a
             class="text-l text-title primaryMain link-underline"
             target="_blank"
@@ -138,10 +134,9 @@ const About = () => {
           >
             ClimatePartner
           </a>
-          , where I am involved in the design of two digital products. In my
-          role, I do user research, product ideation, design, testing, MVP
-          preparation and launch, as well as ongoing product improvement and
-          development.
+          , where I am involved in the design of TODO. In my role, I do user
+          research, product ideation, design, testing, MVP preparation and
+          launch, as well as ongoing product improvement and development.
         </p>
       ),
     },
@@ -161,15 +156,14 @@ const About = () => {
 
   const skills = {
     General: [
-      "UX/UI",
-      "Research",
+      "User Research",
+      "User Testing",
       "UX Flows",
       "Digital Prototyping",
-      "Usability Testing",
-      "UI Testing",
+      "UI Acceptance",
       "Frontend Development",
     ],
-    Design: ["Figma", "Miro"],
+    Design: ["Figma", "Miro", "Dovetail", "Condens"],
     Engineering: ["HTML & CSS", "JavaScript", "Java", "Android"],
   };
 
@@ -179,7 +173,7 @@ const About = () => {
         <div class="content-horizontal main-content-container">
           <h1>
             Hi, I am Kathrin. <br />
-            UX/UI designer living in Munich.{" "}
+            UX & UI designer based in Munich.{" "}
           </h1>
         </div>
       </div>
@@ -219,20 +213,20 @@ const About = () => {
                 <span class="text-l text-title">
                   Human-Computer Interaction
                 </span>
-                , Master of Science, Focus in UX and Assistive Technologies ·
-                2023
+                , Master of Science, Focus on UX and Assistive Technologies ·
+                2024
               </p>
 
               <p class="text-l primaryMain">
                 <span class="text-l text-title">Media Informatics</span>,
-                Bachelor of Science, Focus in Human-Computer Interaction · 2021
+                Bachelor of Science, Focus on Human-Computer Interaction · 2021
               </p>
 
               <p class="text-l primaryMain">
                 <span class="text-l text-title">
                   Phonetics and Speech Processing
                 </span>
-                , Bachelor of Arts, Focus in Psycholinguistics · 2018
+                , Bachelor of Arts, Focus on Psycholinguistics · 2018
               </p>
             </div>
           </div>
@@ -251,7 +245,21 @@ const About = () => {
                 <p class="text-xxl primaryMain">ClimatePartner</p>
 
                 <p class="text-l primaryMain">
-                  UX/UI Designer (Working Student) · May 2020 - Present
+                  UX & UI Designer · Jan 2024 - present
+                </p>
+              </div>
+
+              <div
+                style={{
+                  display: "flex",
+                  flexDirection: "column",
+                  gap: "8px",
+                }}
+              >
+                <p class="text-xxl primaryMain">ClimatePartner</p>
+
+                <p class="text-l primaryMain">
+                  UX & UI Designer (Working Student) · May 2020 - Dec 2023
                 </p>
               </div>
               <div
@@ -264,7 +272,7 @@ const About = () => {
                 <p class="text-xxl primaryMain">University of Munich (LMU)</p>
 
                 <p class="text-l primaryMain">
-                  Student Assistant · TODO 2015 - Dec 2019
+                  Student Assistant · 2015 - 2019
                 </p>
               </div>
             </div>
