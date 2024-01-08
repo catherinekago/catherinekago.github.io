@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import "./PasswordModal.scss";
 import close from "../assets/icons/close.svg";
 
-const PasswordModal = ({ closeModal }) => {
+const PasswordModal = ({ closeModal, passwordChecker }) => {
   const [password, setPassword] = useState("");
   const [error, setError] = useState("");
   const [isInputFocused, setInputFocused] = useState(false);
@@ -14,7 +14,10 @@ const PasswordModal = ({ closeModal }) => {
 
   const handleViewProjectClick = () => {
     // Placeholder method for password validation
-    if (password === "your-expected-password") {
+    console.log("Click with password " + password)
+
+    if (passwordChecker && passwordChecker(password)) {
+      console.log("YAY")
       // Perform actions when password is valid, e.g., navigate to the project
     } else {
       setError("Invalid password. Please try again.");
@@ -71,6 +74,7 @@ const PasswordModal = ({ closeModal }) => {
               class="text-l inline-link inverted"
               target="_blank"
               href="mailto:kathrin.schnizer@gmail.com"
+              rel="noreferrer"
             >
               Contact me
             </a>{" "}

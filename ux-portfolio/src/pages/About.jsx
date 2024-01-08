@@ -82,6 +82,7 @@ const About = () => {
             class="text-l primaryDark inline-link"
             target="_blank"
             href="https://www.felsenstein.org/wp/"
+            rel="noreferrer"
           >
             Fritz-Felsenstein-Haus
           </a>
@@ -109,6 +110,7 @@ const About = () => {
             class="text-l primaryDark inline-link"
             target="_blank"
             to={"/surveye"}
+            rel="noreferrer"
           >
             manual impairments
           </Link>{" "}
@@ -117,6 +119,7 @@ const About = () => {
             class="text-l primaryDark inline-link"
             target="_blank"
             to={"/surveye"}
+            rel="noreferrer"
           >
             visual impairments
           </Link>
@@ -135,6 +138,7 @@ const About = () => {
             class="text-l text-title primaryMain link-underline"
             target="_blank"
             href="https://www.climatepartner.com/en?utm_source=google&utm_campaign=1263822618&utm_medium=cpc&utm_content=653770977769&utm_term=climatepartner&gclid=Cj0KCQjw4s-kBhDqARIsAN-ipH3w88iD-kn1zCNE3w_dlQhPUxWRZUTMFXssAbZSUZGonKMMIRHiLcMaAiD8EALw_wcB"
+            rel="noreferrer"
           >
             ClimatePartner
           </a>
