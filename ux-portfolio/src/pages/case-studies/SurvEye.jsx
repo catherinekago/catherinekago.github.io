@@ -403,6 +403,7 @@ const SurvEye = () => {
             class="inline-link text-l inverted"
             target="_blank"
             href="https://github.com/catherinekago/surv-eye"
+            rel="noreferrer"
           >
             concrete interface implementations
           </a>{" "}
@@ -413,6 +414,7 @@ const SurvEye = () => {
             class="inline-link text-l"
             target="_blank"
             href="https://webgazer.cs.brown.edu/"
+            rel="noreferrer"
           >
             Webgazer
           </a>{" "}

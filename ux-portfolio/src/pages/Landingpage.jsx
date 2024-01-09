@@ -16,18 +16,10 @@ const Portfolio = () => {
     require("../content.json").portfolio.additionalProjects;
 
   const size = useWindowSize();
-  const [isModalOpen, setModalOpen] = useState(false);
+  const [password, setPasswordRequired] = useState(undefined);
+  const [securedLink, setSecuredLink] = useState(undefined);
+  const [project, setProject] = useState(undefined);
 
-  const openModal = () => {
-    // TODO: open this when user clicks on project and has no cookies
-    setModalOpen(true);
-    document.body.style.overflow = "hidden"; // Disable scrolling
-  };
-
-  const closeModal = () => {
-    setModalOpen(false);
-    document.body.style.overflow = "auto"; // Enable scrolling
-  };
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
@@ -42,7 +34,6 @@ const Portfolio = () => {
     setLoading(true);
     setTimeout(() => {
       setLoading(false);
-      openModal(); // TODO: change
     }, 1500);
   }, []);
 
@@ -72,6 +63,42 @@ const Portfolio = () => {
     return windowSize;
   }
 
+  const createOpenPasswordModal = (project, link, password) => {
+    return () => {      
+      const cache = sessionStorage.getItem(project)
+      if(cache === password) {
+        window.location.href = "#" + link;
+        // enable for testing
+        // sessionStorage.removeItem(project)
+        return
+      }
+
+      setPasswordRequired(password)
+      setSecuredLink(link)
+      setProject(project)
+      document.body.style.overflow = "hidden"; // Disable scrolling
+    }
+  }
+
+  const closePasswordModal = () => {
+    setPasswordRequired(undefined)
+    setSecuredLink(undefined)
+    setProject(undefined)
+    document.body.style.overflow = "auto"; // Enable scrolling
+  };
+
+  const passwordChecker = (secret) => {
+    const result = secret === password
+    if (result) {
+      sessionStorage.setItem(project, password)
+      const link = securedLink
+      closePasswordModal()
+      window.location.href = "#" + link;
+    }
+    
+    return result
+  }
+
   return (
     <>
       {loading ? <LoadingScreen /> : null}
@@ -94,6 +121,7 @@ const Portfolio = () => {
               componentKey={project.componentKey}
               projectType={project.projectType}
               chips={project.chips}
+              onClick={createOpenPasswordModal(project.title, project.link, project.password)}
             />
           ))}
 
@@ -131,12 +159,12 @@ const Portfolio = () => {
       <ProjectFooter />
 
       {/* Glassmorphism overlay */}
-      {isModalOpen && (
-        <div className="glassmorphism-overlay" onClick={closeModal}></div>
+      {password && (
+        <div className="glassmorphism-overlay" onClick={closePasswordModal}></div>
       )}
 
       {/* Password Modal */}
-      {isModalOpen && <PasswordModal closeModal={closeModal} />}
+      {password && <PasswordModal closeModal={closePasswordModal} passwordChecker={passwordChecker}/>}
     </>
   );
 };
