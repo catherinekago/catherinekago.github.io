@@ -15,13 +15,13 @@ const Carousel = () => {
       occupation={testimonial.occupation}
       // linkedin={testimonial.linkedin}
       quote={testimonial.quote}
-      img={portraits[index]}
+      //img={portraits[index]}
     />
   ));
 
   return (
     <div class="main-background-container" id="carousel-container">
-      <Section variant="section-dark" text="What my coworkers say about me" />
+      <Section variant="section-dark" text="What others say about me" />
       <AliceCarousel
         autoPlay={true}
         autoPlayStrategy={"default"}
@@ -39,11 +39,11 @@ const CarouselItem = (props) => {
   return (
     <div class="carousel-item-container container-gray">
       <div class="carousel-item-person-container container-gray">
-        <img
+        {/* <img
           src={props.img}
           alt="portrait picture of the person behind the statement"
           class="avatar"
-        />
+        /> */}
         <div class="carousel-item-person-info container-gray">
           <h4 class="primaryMain">{props.name}</h4>{" "}
           <p class="text-m primaryMain">{props.occupation}</p>

@@ -18,10 +18,11 @@
                 "projectType": "Work - B2B2C",
                 "chips": [
                     "Desktop first",
-                    "Iterations", 
-                    "Data complexity",
+                    "Incremental approach",
+                    "Data complexity", 
                     "User feedback"
-                ]
+                ],
+                "password": "alohomora"
             },
 
                         {
@@ -33,12 +34,12 @@
                 "projectType": "Work - B2C",
                 "chips": [
 
-                                        "Mobile first",
-                    "Branding",
+                    "Mobile first",
+                    "User interviews",
                     "Prototyping",
                     "User testing"
-
-                ]
+                ],
+                "password": "alohomora"
             }
         ],
 

@@ -13,7 +13,7 @@ const CaseStudyContent = (props) => {
           variant={props.color === "dark" ? "section-light" : "section-dark"}
           text={props.section}
         />
-        <div class={"main-content-container content-blocks"}>
+        <div class={"main-content-container content-blocks"} key="3">
           {props.content.map((item) => item)}
         </div>
       </div>

@@ -34,14 +34,21 @@ const ProjectTeaser = (props) => {
           <Chip chipType="chip-secondary" label={chipLabel} />
         ))}
       </div>
-
-      <Link class="button-medium" to={props.link}>
-        <button>{props.button}</button>
-      </Link>
+      {props.onClick ? (
+        <button onClick={props.onClick}>{props.button}</button>
+      ) : (
+        <Link class="button-medium" to={props.link}>
+          <button>{props.button}</button>
+        </Link>
+      )}
     </div>
   );
 
-  const imageContainer = (
+  const imageContainer = props.onClick ? (
+    <Link class="project-teaser-image" onClick={props.onClick}>
+      <img src={images[props.slug]} />
+    </Link>
+  ) : (
     <Link class="project-teaser-image" to={props.link}>
       <img src={images[props.slug]} />
     </Link>

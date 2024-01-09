@@ -403,6 +403,7 @@ const SurvEye = () => {
             class="inline-link text-l inverted"
             target="_blank"
             href="https://github.com/catherinekago/surv-eye"
+            rel="noreferrer"
           >
             concrete interface implementations
           </a>{" "}
@@ -413,6 +414,7 @@ const SurvEye = () => {
             class="inline-link text-l"
             target="_blank"
             href="https://webgazer.cs.brown.edu/"
+            rel="noreferrer"
           >
             Webgazer
           </a>{" "}
@@ -521,7 +523,7 @@ const SurvEye = () => {
             implementation and evaluation phases.
           </span>{" "}
           This comprehensive experience has left me feeling excited, proud, and
-          genuinely confident in the value of my work..
+          genuinely confident in the value of my work.
         </p>
       ),
     },
@@ -603,9 +605,9 @@ const SurvEye = () => {
       />
 
       <NextProject
-        project="Visual Impairment and Job Interviews"
+        project="ClimatePartner You"
         button="View Project"
-        link="/mvp"
+        link="/cp-you"
       />
     </>
   );
