@@ -515,7 +515,7 @@ const SurvEye = () => {
             implementation and evaluation phases.
           </span>{" "}
           This comprehensive experience has left me feeling excited, proud, and
-          genuinely confident in the value of my work..
+          genuinely confident in the value of my work.
         </p>
       ),
     },
@@ -597,9 +597,9 @@ const SurvEye = () => {
       />
 
       <NextProject
-        project="Visual Impairment and Job Interviews"
+        project="ClimatePartner You"
         button="View Project"
-        link="/mvp"
+        link="/cp-you"
       />
     </>
   );
