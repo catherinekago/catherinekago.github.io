@@ -11,7 +11,7 @@ import CaseStudyContent from "../../components/case-study-components/CaseStudyCo
 import NextProject from "../../components/case-study-components/NextProject";
 import LoadingScreen from "../LoadingScreen";
 
-import mvp_teaser from "../../assets/images/MVP/mvp_teaser_variant.png";
+import mvp_teaser from "../../assets/images/MVP/mvp_teaser.png";
 import mvp_discovery_personas from "../../assets/images/MVP/mvp_discovery_personas.svg";
 import mvp_discovery_empathy from "../../assets/images/MVP/mvp_empathy.jpg";
 import mvp_design_userflow from "../../assets/images/MVP/mvp_design_flow.jpg";
@@ -568,7 +568,7 @@ const MVP = () => {
       {loading ? <LoadingScreen /> : null}
       {/* Hero */}
       <ProjectHero
-        image={mvp_partner_product_refined}
+        image={mvp_teaser}
         imageAlt="A visualization showing multiple mockups of the the product."
       />
       <CaseStudyOverview

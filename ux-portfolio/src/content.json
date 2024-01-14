@@ -1,12 +1,19 @@
 {
     "portfolio": {
         "testimonials": [
+                        {
+                "name": "Lena Rieger",
+                "occupation": "Senior UX/UI Designer",
+                "linkedin": "",
+                "quote": "Kathrin has the incredible superpower of seamlessly blending creativity with a deep understanding of user experience and tech principles. Her keen eye for detail, collaborative nature, and ability to meet deadlines make her an invaluable asset to any team. I wholeheartedly recommend Kathrin for her exceptional design skills and dedication to creating impactful user experiences."
+            },
             {
                 "name": "Beth Thayne",
-                "occupation": "Product Strategist at ClimatePartner",
-                "linkedin": "https://www.linkedin.com/in/beth-thayne/",
+                "occupation": "Product Strategist",
+                "linkedin": "",
                 "quote": "Kathrin's strength lies in asking the right questions at the right time, bringing focus and clarity to tasks. She demonstrates creativity and out-of-the-box thinking in prototyping, and her execution is unmatched. Kathrin designs with speed and quality while effectively communicating her intentions, process, and decisions at every stage. She is not only a talented designer but also a wonderful person, empathetic towards team members and dedicated to fostering a positive and enjoyable working environment."
             }
+
         ],
         "featuredProjects": [
                       {

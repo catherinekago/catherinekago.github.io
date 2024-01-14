@@ -54,7 +54,7 @@ const PasswordModal = ({ closeModal, passwordChecker }) => {
           <div class="password-controls">
             <div class="password-input-container">
               <input
-                type="password"
+                type="input"
                 id="password"
                 placeholder="Password"
                 value={password}

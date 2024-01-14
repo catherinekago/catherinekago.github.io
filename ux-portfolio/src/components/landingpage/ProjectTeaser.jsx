@@ -4,7 +4,7 @@ import "./ProjectTeaser.scss";
 import Chip from "../atoms/Chip";
 import SurveyeHero from "../../assets/images/surveye_teaser.png";
 import DesignSystem from "../../assets/images//DesignSystem/ds_hero.svg";
-import MVP from "../../assets/images/MVP/mvp_partner_product_refined.png";
+import MVP from "../../assets/images/MVP/mvp_teaser.png";
 import CPYouHero from "../../assets/images//CPYou/you_hero.png";
 
 const ProjectTeaser = (props) => {
