@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useRef, useEffect } from "react";
 import "./PasswordModal.scss";
 import close from "../assets/icons/close.svg";
 
@@ -7,6 +7,13 @@ const PasswordModal = ({ closeModal, passwordChecker }) => {
   const [error, setError] = useState("");
   const [isInputFocused, setInputFocused] = useState(false);
 
+  const inputRef = useRef(null);
+
+  useEffect(() => {
+    // Focus the input field when the component mounts
+    inputRef.current.focus();
+  }, []); // Empty dependency array ensures this effect runs only once after initial render
+
   const handlePasswordChange = (event) => {
     setPassword(event.target.value);
     setError("");
@@ -14,6 +21,7 @@ const PasswordModal = ({ closeModal, passwordChecker }) => {
 
   const handleViewProjectClick = () => {
     // Placeholder method for password validation
+
     console.log("Click with password " + password);
 
     if (passwordChecker && passwordChecker(password)) {
@@ -32,6 +40,11 @@ const PasswordModal = ({ closeModal, passwordChecker }) => {
 
   const handleInputFocus = () => {
     setInputFocused(true);
+  };
+
+  const setFocus = () => {
+    // Using current to access the DOM element and calling focus
+    inputRef.current.focus();
   };
 
   const handleInputBlur = () => {
@@ -62,6 +75,7 @@ const PasswordModal = ({ closeModal, passwordChecker }) => {
                 onFocus={handleInputFocus}
                 onBlur={handleInputBlur}
                 onKeyDown={handleKeyPress}
+                ref={inputRef}
                 style={{
                   borderColor: error
                     ? "#e10101"

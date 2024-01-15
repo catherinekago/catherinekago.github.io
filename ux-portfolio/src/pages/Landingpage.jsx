@@ -64,40 +64,40 @@ const Portfolio = () => {
   }
 
   const createOpenPasswordModal = (project, link, password) => {
-    return () => {      
-      const cache = sessionStorage.getItem(project)
-      if(cache === password) {
+    return () => {
+      const cache = sessionStorage.getItem(project);
+      if (cache === password) {
         window.location.href = "#" + link;
         // enable for testing
         // sessionStorage.removeItem(project)
-        return
+        return;
       }
 
-      setPasswordRequired(password)
-      setSecuredLink(link)
-      setProject(project)
+      setPasswordRequired(password);
+      setSecuredLink(link);
+      setProject(project);
       document.body.style.overflow = "hidden"; // Disable scrolling
-    }
-  }
+    };
+  };
 
   const closePasswordModal = () => {
-    setPasswordRequired(undefined)
-    setSecuredLink(undefined)
-    setProject(undefined)
+    setPasswordRequired(undefined);
+    setSecuredLink(undefined);
+    setProject(undefined);
     document.body.style.overflow = "auto"; // Enable scrolling
   };
 
   const passwordChecker = (secret) => {
-    const result = secret === password
+    const result = secret === password;
     if (result) {
-      sessionStorage.setItem(project, password)
-      const link = securedLink
-      closePasswordModal()
+      sessionStorage.setItem(project, password);
+      const link = securedLink;
+      closePasswordModal();
       window.location.href = "#" + link;
     }
-    
-    return result
-  }
+
+    return result;
+  };
 
   return (
     <>
@@ -121,7 +121,11 @@ const Portfolio = () => {
               componentKey={project.componentKey}
               projectType={project.projectType}
               chips={project.chips}
-              onClick={createOpenPasswordModal(project.title, project.link, project.password)}
+              onClick={createOpenPasswordModal(
+                project.title,
+                project.link,
+                project.password
+              )}
             />
           ))}
 
@@ -160,11 +164,19 @@ const Portfolio = () => {
 
       {/* Glassmorphism overlay */}
       {password && (
-        <div className="glassmorphism-overlay" onClick={closePasswordModal}></div>
+        <div
+          className="glassmorphism-overlay"
+          onClick={closePasswordModal}
+        ></div>
       )}
 
       {/* Password Modal */}
-      {password && <PasswordModal closeModal={closePasswordModal} passwordChecker={passwordChecker}/>}
+      {password && (
+        <PasswordModal
+          closeModal={closePasswordModal}
+          passwordChecker={passwordChecker}
+        />
+      )}
     </>
   );
 };
