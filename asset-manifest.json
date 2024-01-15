@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.4d4f0558.css",
-    "main.js": "/static/js/main.24782d09.js",
+    "main.css": "/static/css/main.3b9057fe.css",
+    "main.js": "/static/js/main.1e6eadea.js",
     "static/js/787.2eb2047b.chunk.js": "/static/js/787.2eb2047b.chunk.js",
     "static/media/portrait.svg": "/static/media/portrait.4e9fb1e87716a7cd6df29ec7514a3c26.svg",
     "static/media/Kathrin-Schnizer_CV_EN.pdf": "/static/media/Kathrin-Schnizer_CV_EN.3b18aab5d068b0d289a7.pdf",
@@ -11,6 +11,7 @@
     "static/media/mvp_partner_product.png": "/static/media/mvp_partner_product.8f1a74fa1c0a5834ffa7.png",
     "static/media/mvp_partner_product_refined.png": "/static/media/mvp_partner_product_refined.868013e75c72bb5fa158.png",
     "static/media/you_brand.png": "/static/media/you_brand.34b4012a818226dbcbe1.png",
+    "static/media/mvp_teaser.png": "/static/media/mvp_teaser.994900b4e5f5843ec090.png",
     "static/media/mvp_customer_product.png": "/static/media/mvp_customer_product.e64ef39e53ab53807a3f.png",
     "static/media/ds_discovery_research.png": "/static/media/ds_discovery_research.febaf1b88075df88e102.png",
     "static/media/you_hero.svg": "/static/media/you_hero.5ca44e032b11afc55fd5bb5406fba774.svg",
@@ -21,7 +22,6 @@
     "static/media/mockup.png": "/static/media/mockup.a4a8c466dff0fa4e14cc.png",
     "static/media/ds_outcome_process_horizontal.png": "/static/media/ds_outcome_process_horizontal.57565f8df84703168c14.png",
     "static/media/mvp_refinement_impr_1.jpg": "/static/media/mvp_refinement_impr_1.cf4e366bb14b838d8c8d.jpg",
-    "static/media/mvp_teaser_variant.png": "/static/media/mvp_teaser_variant.7b662a895a244401b3be.png",
     "static/media/ds_outcome_documentation.png": "/static/media/ds_outcome_documentation.8be36648fdbd4f2d30af.png",
     "static/media/bethThayne.png": "/static/media/bethThayne.49e0c4ddea800b9ad04f.png",
     "static/media/you_personas.png": "/static/media/you_personas.4dbafa8431f36c58a5bd.png",
@@ -96,12 +96,12 @@
     "static/media/expand_less.svg": "/static/media/expand_less.0b6ff2a161fb229ef18f666fa75a92b0.svg",
     "static/media/expand_more.svg": "/static/media/expand_more.570f9cd38f61556380c79e1c3c452fff.svg",
     "static/media/close.svg": "/static/media/close.c76ad28c33323dfe86ec1e4bcf9c5b6c.svg",
-    "main.4d4f0558.css.map": "/static/css/main.4d4f0558.css.map",
-    "main.24782d09.js.map": "/static/js/main.24782d09.js.map",
+    "main.3b9057fe.css.map": "/static/css/main.3b9057fe.css.map",
+    "main.1e6eadea.js.map": "/static/js/main.1e6eadea.js.map",
     "787.2eb2047b.chunk.js.map": "/static/js/787.2eb2047b.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.4d4f0558.css",
-    "static/js/main.24782d09.js"
+    "static/css/main.3b9057fe.css",
+    "static/js/main.1e6eadea.js"
   ]
 }
