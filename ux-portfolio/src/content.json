@@ -52,20 +52,39 @@
 
         "additionalProjects": {
             "pair1": [
+                
+                {
+        
+                "title": "Gaze and Visual Impairment",
+                "slug": "GazeVisualImpairment",
+                "description": "Investigating the design visual cues to make eye contact accessible to visually impaired individuals.",
+                "button": "View Case Study",
+                "link": "/gaze-visual-impairment",
+                "projectType": "Master thesis",
+                "chips": [
+                    "Accessibility",
+                    "Persona Interviews",
+                    "VR Prototype",
+                    "User Study"
+                ]
+            },
                             {
                 "title": "SurvEye",
                 "slug": "SurvEye",
                 "description": "Exploring the design of user interfaces for gaze-based questionnaires for manually impaired individuals.",
                 "button": "View Case Study",
                 "link": "/surveye",
-                "projectType": "Bachelor studies",
+                "projectType": "Bachelor thesis",
                 "chips": [
                     "Accessibility",
                     "Prototyping",
                     "User Testing",
                     "Design Guidelines"
                 ]
-            },
+            }
+
+            ],
+            "pair2": [
                 {
         
                 "title": "Design System Rework",
@@ -79,19 +98,7 @@
                     "Concept",
                     "Workshop"
                 ]
-            }
-            ],
-            "pair2": [
-                {
-                    "title": "Scientific Review",
-                    "description": "... of current assistive technologies",
-                    "button": "View Project",
-                    "link": "/scientific-review",
-                    "projectType": "Uni project",
-                    "chips": [
-                        "Research"
-                    ]
-                },
+            },
                 {
                     "title": "Drunk-o-meter",
                     "description": "Cheers to a night of no regrets",

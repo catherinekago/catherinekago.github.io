@@ -12,6 +12,7 @@ import SurvEye from "../pages/case-studies/SurvEye";
 import DesignSystem from "../pages/case-studies/DesignSystem";
 import MVP from "../pages/case-studies/MVP";
 import CPYou from "../pages/projects/CPYou";
+import GazeVisualImpairment from "../pages/case-studies/GazeVisualImpairment";
 
 const Navbar = () => {
   const { pathname } = useLocation();
@@ -26,6 +27,7 @@ const Navbar = () => {
       ["/about"]: "nav-container light",
       ["/"]: "nav-container light",
       ["/cp-you"]: "nav-container dark",
+      ["/gaze-visual-impairment"]: "nav-container light",
     },
   };
 
@@ -61,6 +63,10 @@ const Navbar = () => {
         <Route path="/design-system" element={<DesignSystem />} />
         <Route path="/data-collection" element={<MVP />} />
         <Route path="/cp-you" element={<CPYou />} />
+        <Route
+          path="/gaze-visual-impairment"
+          element={<GazeVisualImpairment />}
+        />
       </Routes>
     </>
   );

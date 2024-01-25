@@ -52,16 +52,16 @@ const About = () => {
     <>
       {" "}
       <p class="text-l primaryMain">
-        As a UX and UI designer, I have a genuine interest in creating
-        user-friendly experiences and a particular passion for assistive
-        technologies, aiming to enhance accessibility for everyone. My strengths
-        lie in swift comprehension, organized problem-solving, and persistent
-        determination to understand and address real needs of real humans.
-        Guided by values of responsibility, ownership, efficiency, and
-        authenticity, I am committed to designing solutions{" "}
+        As a UX/UI designer, I have a genuine interest in creating user-friendly
+        experiences and a particular passion for assistive technologies, aiming
+        to enhance accessibility for everyone. My strengths lie in swift
+        comprehension, organized problem-solving, and persistent determination
+        to understand and address real needs of real humans. Guided by values of
+        responsibility, ownership, efficiency, and authenticity, I am committed
+        to designing solutions{" "}
         <span class="text-l text-title">
           {" "}
-          that contribute to a more inclusive and accessible digital world.
+          that contribute to a more delightful and accessible digital world.
         </span>
       </p>
     </>
@@ -177,7 +177,7 @@ const About = () => {
         <div class="content-horizontal main-content-container">
           <h1>
             Hi, I am Kathrin. <br />
-            UX & UI designer based in Munich.{" "}
+            UX/UI designer based in Munich.{" "}
           </h1>
         </div>
       </div>
@@ -249,7 +249,7 @@ const About = () => {
                 <p class="text-xxl primaryMain">ClimatePartner</p>
 
                 <p class="text-l primaryMain">
-                  UX & UI Designer · Jan 2024 - present
+                  UX/UI Designer · Jan 2024 - present
                 </p>
               </div>
 
@@ -263,7 +263,7 @@ const About = () => {
                 <p class="text-xxl primaryMain">ClimatePartner</p>
 
                 <p class="text-l primaryMain">
-                  UX & UI Designer (Working Student) · May 2020 - Dec 2023
+                  UX/UI Designer (Working Student) · May 2020 - Dec 2023
                 </p>
               </div>
               <div

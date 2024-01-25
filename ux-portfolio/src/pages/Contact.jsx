@@ -17,7 +17,7 @@ const Contact = (props) => {
             kathrin.schnizer@gmail.com
           </a>
           <p class="text-l text-light">
-            Are you seeking allies on your mission to build an inclusive and
+            Are you seeking allies on your mission to build a delightful and
             accessible digital world? Reach out and let's have a chat! 🙌
           </p>
           <div class="contact-icons-container">

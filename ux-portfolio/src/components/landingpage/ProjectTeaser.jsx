@@ -14,6 +14,7 @@ const ProjectTeaser = (props) => {
     SurvEye: SurveyeHero,
     DesignSystem: DesignSystem,
     CPYou: CPYouHero,
+    GazeVisualImpairment: CPYouHero,
   };
 
   const [width, setWidth] = React.useState(window.innerWidth);
