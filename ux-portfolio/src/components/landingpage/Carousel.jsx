@@ -4,10 +4,8 @@ import Section from "../atoms/Section";
 import "./Carousel.scss";
 
 import linkedin from "../../assets/icons/linkedin-mark-light.svg";
-import bethThayne from "../../assets/images/testimonial-portraits/bethThayne.png";
 
 const Carousel = () => {
-  let portraits = [bethThayne];
   let testimonials = require("../../content.json").portfolio.testimonials;
   let items = testimonials.map((testimonial, index) => (
     <CarouselItem

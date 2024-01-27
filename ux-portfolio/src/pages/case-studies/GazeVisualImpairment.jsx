@@ -3,7 +3,7 @@ import { useState, useEffect } from "react";
 import "./../../style/style.scss";
 
 import CaseStudyDescription from "../../components/case-study-components/CaseStudyDescription";
-import SurvEyeHero from "../../assets/images/surveye_hero.png";
+import GazeHero from "../../assets/images/GazeVisualImpairment/gaze_hero.png";
 import LoadingScreen from "../LoadingScreen";
 
 import durationIcon from "../../assets/icons/schedule.svg";
@@ -300,21 +300,8 @@ const GazeVisualImpairment = () => {
   const design_contentblock_1 = (
     <ContentBlock
       size={size}
-      headline={<h3>Exploring the solution space</h3>}
-      text={
-        <p class="text-l primaryMain">
-          What
-          <span class="text-l text-title"> alternatives to manual input </span>
-          are there? With gaze identified as a suitable alternative input, I
-          proceeded by gathering insights from existing research on how to
-          design gaze interfaces and{" "}
-          <span class="text-title">
-            aggregated them into requirements for my subsequent design
-            exploration
-          </span>
-          .
-        </p>
-      }
+      // headline={<h3>Exploring the solution space</h3>}
+      text={<p class="text-l primaryMain">To be continued...</p>}
     />
   );
 
@@ -580,7 +567,7 @@ const GazeVisualImpairment = () => {
       {loading ? <LoadingScreen /> : null}
 
       <ProjectHero
-        image={SurvEyeHero}
+        image={GazeHero}
         imageAlt="A visualization showing multiple mockups of the mobile version of the product."
       />
 
@@ -611,22 +598,22 @@ const GazeVisualImpairment = () => {
         section="Design"
         content={[
           design_contentblock_1,
-          design_contentblock_2,
-          design_contentblock_3,
+          // design_contentblock_2,
+          // design_contentblock_3,
         ]}
       />
 
       {/* Implementation */}
-
+      {/* 
       <CaseStudyContent
         color="white"
         section="Prototypical Implementation"
         content={[implementation_contentblock_1]}
-      />
+      /> */}
 
       {/* User study */}
 
-      <CaseStudyContent
+      {/* <CaseStudyContent
         section="Evaluation"
         color="grey-light"
         content={[evaluation_contentblock_1, evaluation_contentblock_2]}
@@ -652,7 +639,7 @@ const GazeVisualImpairment = () => {
             ))}
           />,
         ]}
-      />
+      /> */}
 
       <NextProject project="SurvEye" button="View Case Study" link="/surveye" />
     </>

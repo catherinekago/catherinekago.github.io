@@ -6,6 +6,7 @@ import SurveyeHero from "../../assets/images/surveye_teaser.png";
 import DesignSystem from "../../assets/images//DesignSystem/ds_hero.svg";
 import MVP from "../../assets/images/MVP/mvp_teaser.png";
 import CPYouHero from "../../assets/images//CPYou/you_hero.png";
+import GazeHero from "../../assets/images//GazeVisualImpairment/gaze_teaser.png";
 
 const ProjectTeaser = (props) => {
   const className = "project-teaser-container " + props.teaserType;
@@ -14,7 +15,7 @@ const ProjectTeaser = (props) => {
     SurvEye: SurveyeHero,
     DesignSystem: DesignSystem,
     CPYou: CPYouHero,
-    GazeVisualImpairment: CPYouHero,
+    GazeVisualImpairment: GazeHero,
   };
 
   const [width, setWidth] = React.useState(window.innerWidth);

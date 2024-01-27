@@ -27,7 +27,7 @@ const Navbar = () => {
       ["/about"]: "nav-container light",
       ["/"]: "nav-container light",
       ["/cp-you"]: "nav-container dark",
-      ["/gaze-visual-impairment"]: "nav-container light",
+      ["/gaze-visual-impairment"]: "nav-container dark",
     },
   };
 
