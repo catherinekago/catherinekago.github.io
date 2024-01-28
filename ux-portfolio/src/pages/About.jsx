@@ -138,9 +138,11 @@ const About = () => {
           >
             ClimatePartner
           </a>
-          , where I am involved in the design of TODO. In my role, I do user
-          research, product ideation, design, testing, MVP preparation and
-          launch, as well as ongoing product improvement and development.
+          , where I am involved in the design of human interaction with a search
+          tool using AI to perform automized mapping of data. In my role, I do
+          user research, product ideation, design, user testing, design
+          refinement and hand-off preparation, as well as ongoing product
+          improvement and development.
         </p>
       ),
     },

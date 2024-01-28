@@ -7,23 +7,14 @@ import GazeHero from "../../assets/images/GazeVisualImpairment/gaze_hero.png";
 import LoadingScreen from "../LoadingScreen";
 
 import durationIcon from "../../assets/icons/schedule.svg";
-import surveyeTaskFlowHorizontal from "../../assets/images/surveye_task_flow_horizontal.svg";
-
-import voiceIcon from "../../assets/icons/voice.svg";
-import gazeIcon from "../../assets/icons/gaze.svg";
 import magnifierIcon from "../../assets/icons/magnifier.svg";
 import deblurIcon from "../../assets/icons/deblur.svg";
 import invisibleIcon from "../../assets/icons/invisible.svg";
-import feedbackIcon from "../../assets/icons/feedback.svg";
-import zoomIcon from "../../assets/icons/zoom.svg";
-import pauseIcon from "../../assets/icons/pause.svg";
-import pathIcon from "../../assets/icons/path.svg";
-import anchorIcon from "../../assets/icons/anchor.svg";
-import animationIcon from "../../assets/icons/animation.svg";
-import spaceIcon from "../../assets/icons/space.svg";
-import icon_interaction from "../../assets/icons/interaction.svg";
-import icon_inclusive from "../../assets/icons/inclusive.svg";
-import icon_diamond from "../../assets/icons/diamond.svg";
+
+import importantIcon from "../../assets/icons/release_alert_FILL0_wght400_GRAD0_opsz24.svg";
+import stressIcon from "../../assets/icons/pulse_alert_FILL0_wght400_GRAD0_opsz24.svg";
+import tiredIcon from "../../assets/icons/sentiment_worried_FILL0_wght400_GRAD0_opsz24.svg";
+import icon_diamond from "../../assets/icons/diamond_FILL0_wght400_GRAD0_opsz24.svg";
 
 import ProjectHero from "../../components/project-components/ProjectHero";
 import CaseStudyOverview from "../../components/case-study-components/CaseStudyOverview";
@@ -106,103 +97,6 @@ const GazeVisualImpairment = () => {
       durationText={durationText}
     />
   );
-
-  const alternativesCardContainer = (
-    <div class="main-content card-group">
-      <div class="card-container container-grey-light">
-        <div class="card-icon-text-container">
-          <img
-            class="icon-medium"
-            src={voiceIcon}
-            alt="An icon displaying voice"
-          />
-          <h3>Voice</h3>
-        </div>
-        <div class="card-content-container">
-          <p class="text-l" style={{ color: "#252b33" }}>
-            {" "}
-            <span class="text-title">independent ✓</span>
-          </p>
-          <p
-            style={{
-              color: "#9A9A9A",
-              opacity: "50%",
-              textDecoration: "line-through",
-            }}
-            class="text-l"
-          >
-            <span class="text-title">anonymous</span>
-          </p>
-        </div>
-      </div>
-
-      <div class="card-container container-grey-light">
-        <div class="card-icon-text-container">
-          <img
-            class="icon-medium"
-            src={gazeIcon}
-            alt="An icon showing an eye"
-          />
-          <h3>Gaze</h3>
-        </div>
-        <div class="card-content-container">
-          <p class="text-l" style={{ color: "#252b33" }}>
-            <span class="text-title">independent ✓</span>
-          </p>
-          <p class="text-l" style={{ color: "#252b33" }}>
-            <span class="text-title">anonymous ✓</span>
-          </p>
-        </div>
-      </div>
-    </div>
-  );
-
-  const listItemsQuestions = [
-    {
-      icon: (
-        <img
-          class="icon-small"
-          src={magnifierIcon}
-          alt="An icon showing a magnification glass"
-        />
-      ),
-      headline: "Allow for initial inspection",
-      text: "In gaze-based interaction, the eyes are used for both inspecting and selecting elements, which may lead to unintentional selection. Therefore, it is important to enable users to inspect their options before making a selection.",
-    },
-    {
-      icon: (
-        <img
-          class="icon-small"
-          src={deblurIcon}
-          alt="An icon showing a deblur effect, where a round shape is half pixelated, and half sharp"
-        />
-      ),
-      headline: "Consider varying accuracy",
-      text: "Maximize the size of interaction elements to ensure successful selection, and, additionally, identify the minimal sufficient size based on the eye-tracking technology's accuracy.",
-    },
-    {
-      icon: (
-        <img
-          class="icon-small"
-          src={invisibleIcon}
-          alt="An icon showing an eye that is crossed out with a line"
-        />
-      ),
-      headline: "Ensure robustness against blinking",
-      text: "Blinking is a natural behavior that humans can only control to a certain extend. By setting the bottom border of interaction elements equal to the bottom border of the screen, you can ensure that blinking will not interrupt interaction that requires gaze fixation.",
-    },
-    {
-      icon: (
-        <img
-          class="icon-small"
-          src={feedbackIcon}
-          alt="An icon showing a speech bubble with a star inside"
-        />
-      ),
-      headline: "Provide visual feedback",
-      text: "Support the user by indicating where the system estimates their gaze at, which interaction elements are currently being affected by the gaze, and how long the user has to remain fixating on an element in order to select it.",
-    },
-  ];
 
   const discovery_contentblock_1 = (
     <ContentBlock
@@ -297,6 +191,74 @@ const GazeVisualImpairment = () => {
     />
   );
 
+  const listItemsQuestions = [
+    {
+      icon: (
+        <img
+          class="icon-small"
+          src={importantIcon}
+          alt="An icon showing an exclamation mark in the center of a star"
+        />
+      ),
+      headline: "Gaze is important",
+      text: "The participants stated that either from own experiences or explanations of sighted individuals, they learned about the association of eye contact with respect and attention. Both of which were found to be of great importance in job interviews.",
+    },
+    {
+      icon: (
+        <img
+          class="icon-small"
+          src={stressIcon}
+          alt="An icon showing a heart, a line indicating a heartbeat, and an exclamation mark"
+        />
+      ),
+      headline: "Job interviews are stressful",
+      text: "Visually impaired job candidates want to present themselves from their best side, and make a positive and capable impression. They experienced that due to their impairment, they had to justify their skills and competence even stronger, as they were frequently confronted with misconceptions on the capabilities of visually impaired individuals, especially in the context of the workforce.",
+    },
+    {
+      icon: (
+        <img
+          class="icon-small"
+          src={tiredIcon}
+          alt="An icon showing a tired smiley face"
+        />
+      ),
+      headline: "Expressing gaze is exhausting",
+      text: "Visually impaired job candidates are putting effort in simulating eye contact although they cannot perceive the eyes of their conversation partner. They want to show their respect and attention, which is why they try to direct their gaze at their partner. However, it requires great effort to focus on something you cannot perceive, and anchor your eyes on.",
+    },
+    {
+      icon: (
+        <img
+          class="icon-small"
+          src={icon_diamond}
+          alt="An icon showing a diamond"
+        />
+      ),
+      headline: "Perceiving gaze would add value",
+      text: "Visually impaired job candidates have limited capabilities to perceive the interviewer’s gaze. They wish to be able to access this information though, to support them determining the attention of the interviewer. Based on this information, they would expect to gain better insights on how the conversation is developing, if they need to be more persuasive, and to get more insights on how the interviewer reacts to certain topics.",
+    },
+  ];
+
+  const discovery_contentblock_4 = (
+    <ContentBlock
+      size={size}
+      text={
+        <p class="text-l primaryMain">
+          The <span class="text-l text-title">key findings</span> of the user
+          interviews were as follows:
+        </p>
+      }
+      content={
+        <ItemGroup
+          type="underline"
+          size="small"
+          expandable={true}
+          length={4}
+          items={listItemsQuestions}
+        />
+      }
+    />
+  );
+
   const design_contentblock_1 = (
     <ContentBlock
       size={size}
@@ -355,75 +317,6 @@ const GazeVisualImpairment = () => {
       }
     />
   );
-
-  const cardGroupItemsOutcome = [
-    {
-      icon: magnifierIcon,
-      text: (
-        <p class="text-l">
-          Provide a gaze-insensitive{" "}
-          <span class="text-l text-title">inspection area</span>
-        </p>
-      ),
-    },
-    {
-      icon: zoomIcon,
-      text: (
-        <p class="text-l">
-          Minimize required <span class="text-l text-title">saccades</span>
-        </p>
-      ),
-    },
-    {
-      icon: durationIcon,
-      text: (
-        <p class="text-l">
-          Acknowledge time for <span class="text-l text-title">inspection</span>
-        </p>
-      ),
-    },
-    {
-      icon: pauseIcon,
-      text: (
-        <p class="text-l">
-          Avoid prolonged <span class="text-l text-title">gaze fixations</span>
-        </p>
-      ),
-    },
-    {
-      icon: pathIcon,
-      text: (
-        <p class="text-l">
-          Exploit <span class="text-l text-title">object-based attention</span>
-        </p>
-      ),
-    },
-    {
-      icon: anchorIcon,
-      text: (
-        <p class="text-l">
-          Provide <span class="text-l text-title">visual anchors</span>
-        </p>
-      ),
-    },
-    {
-      icon: animationIcon,
-      text: (
-        <p class="text-l">
-          Avoid unnecessary <span class="text-l text-title">movement</span>
-        </p>
-      ),
-    },
-    {
-      icon: spaceIcon,
-      text: (
-        <p class="text-l">
-          Consider target sizes and{" "}
-          <span class="text-l text-title">visual spacings</span>
-        </p>
-      ),
-    },
-  ];
 
   const implementation_contentblock_1 = (
     <ContentBlock
@@ -507,60 +400,8 @@ const GazeVisualImpairment = () => {
           design of gaze-based interfaces for manually impaired individuals:
         </p>
       }
-      content={
-        <CardGroup
-          items={cardGroupItemsOutcome}
-          maxPerRow="four"
-          textAlign="center"
-        />
-      }
     />
   );
-
-  const threeReasonsWhy = [
-    {
-      icon: icon_interaction,
-      alt: "An icon displaying a person standing in front of a interaction area in the shape of a whiteboard",
-      text: (
-        <p class="text-l text-light">
-          Firstly, it presented me with an exciting challenge of{" "}
-          <span class="text-l text-title text-light">
-            truly understanding how humans interact
-          </span>{" "}
-          with digital interfaces in the context of gaze-based design.
-        </p>
-      ),
-    },
-    {
-      icon: icon_inclusive,
-      alt: "An icon displaying three persons with a heart symbol in front of them.",
-      text: (
-        <p class="text-l text-light">
-          Secondly, working on something that{" "}
-          <span class="text-l text-title text-light">
-            contributes towards shaping a more accessible and inclusive digital
-            world{" "}
-          </span>{" "}
-          was incredibly fulfilling.
-        </p>
-      ),
-    },
-    {
-      icon: icon_diamond,
-      alt: "An icon displaying a diamond.",
-      text: (
-        <p class="text-l text-light">
-          Lastly, this project provided me with the opportunity{" "}
-          <span class="text-l text-title text-light">
-            to see a project through from the research and design stages to the
-            implementation and evaluation phases.
-          </span>{" "}
-          This comprehensive experience has left me feeling excited, proud, and
-          genuinely confident in the value of my work.
-        </p>
-      ),
-    },
-  ];
 
   return (
     <>
@@ -588,6 +429,7 @@ const GazeVisualImpairment = () => {
           discovery_contentblock_1,
           discovery_contentblock_2,
           discovery_contentblock_3,
+          discovery_contentblock_4,
         ]}
       />
 

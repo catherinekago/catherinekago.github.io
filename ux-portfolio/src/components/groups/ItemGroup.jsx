@@ -7,7 +7,7 @@ const ItemGroup = (props) => {
     const containerCountDependentClass =
       props.items.length === (2 || 4)
         ? "item-group-item-underline even"
-        : "item-group-item-underline uneven";
+        : "item-group-item-underline even";
 
     if (type === "underline") {
       return (

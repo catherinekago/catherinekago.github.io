@@ -23,6 +23,10 @@
     &.three {
       flex: 1 0 55%; /* explanation below */
     }
+
+    &.two {
+      flex: 1 0 55%; /* explanation below */
+    }
     flex-direction: column !important;
     align-items: stretch;
     align-items: center;
@@ -36,6 +40,9 @@
 
     @media (min-width: $screen-s-min) {
       &.three {
+        flex: 1 0 25%; /* explanation below */
+      }
+      &.two {
         flex: 1 0 25%; /* explanation below */
       }
     }
@@ -58,6 +65,7 @@
     }
 
     &.left {
+      align-items: start;
       p {
         text-align: left;
       }
