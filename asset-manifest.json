@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.7c44a5d5.css",
-    "main.js": "/static/js/main.d3fb2bbc.js",
+    "main.css": "/static/css/main.a2cd0c6e.css",
+    "main.js": "/static/js/main.255ddf92.js",
     "static/js/787.2eb2047b.chunk.js": "/static/js/787.2eb2047b.chunk.js",
     "static/media/Kathrin-Schnizer_CV_EN.pdf": "/static/media/Kathrin-Schnizer_CV_EN.77d1ba616f9774616b6c.pdf",
     "static/media/portrait.svg": "/static/media/portrait.4e9fb1e87716a7cd6df29ec7514a3c26.svg",
@@ -56,12 +56,14 @@
     "static/media/space.svg": "/static/media/space.26c56c82134a47bea104b799db62b56d.svg",
     "static/media/rocket.svg": "/static/media/rocket.00028e9710d93ead6bb677c53b9aed19.svg",
     "static/media/volunteer.svg": "/static/media/volunteer.5ae73a3de7a83baa328154804ee849c2.svg",
+    "static/media/pulse_alert_FILL0_wght400_GRAD0_opsz24.svg": "/static/media/pulse_alert_FILL0_wght400_GRAD0_opsz24.1f8dfd6cb91737cc8a23b6c1911c2bd7.svg",
     "static/media/interaction.svg": "/static/media/interaction.cc9c0b3037eaf6f791cfd4cf60b239a8.svg",
     "static/media/icon_support_light.svg": "/static/media/icon_support_light.ab6206b93fd8fceb0d9b975f4b28af29.svg",
     "static/media/support.svg": "/static/media/support.10eee9323a439c5137e821cd388cc0c6.svg",
     "static/media/invisible.svg": "/static/media/invisible.be4eaa83092334fffa1e358ffa775b98.svg",
     "static/media/tools.svg": "/static/media/tools.20ff1d154f8b1355bb62252917e670fc.svg",
     "static/media/path.svg": "/static/media/path.5209a3095ad3d608e21017c60ae7e6e8.svg",
+    "static/media/sentiment_worried_FILL0_wght400_GRAD0_opsz24.svg": "/static/media/sentiment_worried_FILL0_wght400_GRAD0_opsz24.3c2dda7882ca967382558024b25222c6.svg",
     "static/media/icon_partner_light.svg": "/static/media/icon_partner_light.6e60f28a321bf6ab0d2c86d6287d37ed.svg",
     "static/media/partner.svg": "/static/media/partner.c023a3645ac62526f35b5371614b7ef4.svg",
     "static/media/cycle.svg": "/static/media/cycle.5a7b03510e39af4656227bfec73a197c.svg",
@@ -79,6 +81,7 @@
     "static/media/work.svg": "/static/media/work.1c1151df41f00577975ad5982b2f993b.svg",
     "static/media/food.svg": "/static/media/food.588abbc1a996a9f88d7b92247856bf31.svg",
     "static/media/inventory.svg": "/static/media/inventory.32c97622eb0086b52fa6152d15b19609.svg",
+    "static/media/release_alert_FILL0_wght400_GRAD0_opsz24.svg": "/static/media/release_alert_FILL0_wght400_GRAD0_opsz24.b12c384e26b294523dae62134e9c8305.svg",
     "static/media/onboarding.svg": "/static/media/onboarding.50d96127bce3f5df87c0fb2a06cc6ef8.svg",
     "static/media/gaze.svg": "/static/media/gaze.243d25ed67f6772a79316d3eaffd7328.svg",
     "static/media/feedback.svg": "/static/media/feedback.b042cd38e3c102d7c5a9676d64c78d5e.svg",
@@ -96,16 +99,17 @@
     "static/media/diamond.svg": "/static/media/diamond.c68ad7a6133577aea488f339a56283d9.svg",
     "static/media/quotes.svg": "/static/media/quotes.35af10d08817388f43362faec30c6efd.svg",
     "static/media/structure.svg": "/static/media/structure.b2bb31911f26bc6f7bf7b99215f1240e.svg",
+    "static/media/diamond_FILL0_wght400_GRAD0_opsz24.svg": "/static/media/diamond_FILL0_wght400_GRAD0_opsz24.3d73c2d6de0a4b8d3de26b445cd83c1c.svg",
     "static/media/pause.svg": "/static/media/pause.5ab3a5e278bd1f8805b5555a9aeef088.svg",
     "static/media/expand_less.svg": "/static/media/expand_less.0b6ff2a161fb229ef18f666fa75a92b0.svg",
     "static/media/expand_more.svg": "/static/media/expand_more.570f9cd38f61556380c79e1c3c452fff.svg",
     "static/media/close.svg": "/static/media/close.c76ad28c33323dfe86ec1e4bcf9c5b6c.svg",
-    "main.7c44a5d5.css.map": "/static/css/main.7c44a5d5.css.map",
-    "main.d3fb2bbc.js.map": "/static/js/main.d3fb2bbc.js.map",
+    "main.a2cd0c6e.css.map": "/static/css/main.a2cd0c6e.css.map",
+    "main.255ddf92.js.map": "/static/js/main.255ddf92.js.map",
     "787.2eb2047b.chunk.js.map": "/static/js/787.2eb2047b.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.7c44a5d5.css",
-    "static/js/main.d3fb2bbc.js"
+    "static/css/main.a2cd0c6e.css",
+    "static/js/main.255ddf92.js"
   ]
 }
