@@ -25,9 +25,9 @@
                 "projectType": "Work - B2B2C",
                 "chips": [
                     "Desktop first",
-                    "Incremental approach",
                     "Data complexity", 
-                    "User feedback"
+                    "Two-sided UI",
+                    "Incremental approach"
                 ],
                 "password": "alohomora"
             },
@@ -43,8 +43,8 @@
 
                     "Mobile first",
                     "User interviews",
-                    "Prototyping",
-                    "User testing"
+                    "Barnding",
+                    "Prototype testing"
                 ],
                 "password": "alohomora"
             }
@@ -60,7 +60,7 @@
                 "description": "Investigating the design visual cues to make eye contact accessible to visually impaired individuals.",
                 "button": "View Case Study",
                 "link": "/gaze-visual-impairment",
-                "projectType": "Master thesis",
+                "projectType": "Master's thesis",
                 "chips": [
                     "Accessibility",
                     "Persona Interviews",
@@ -74,7 +74,7 @@
                 "description": "Exploring the design of user interfaces for gaze-based questionnaires for manually impaired individuals.",
                 "button": "View Case Study",
                 "link": "/surveye",
-                "projectType": "Bachelor thesis",
+                "projectType": "Bachelor's thesis",
                 "chips": [
                     "Accessibility",
                     "Prototyping",

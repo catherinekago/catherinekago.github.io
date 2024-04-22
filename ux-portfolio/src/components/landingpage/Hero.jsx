@@ -23,7 +23,7 @@ const Hero = (props) => {
               <span class="text-xl text-title">
                 human interaction with AI tools
               </span>{" "}
-              to automate manual processes.
+              to effectively and reliably automate manual processes.
             </p>
             <ScrollIntoView
               behavior="smooth"

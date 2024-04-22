@@ -473,13 +473,13 @@ const MVP = () => {
       alt: "An icon showing two stylistic buildings.",
       text: (
         <p class="text-l text-light">
-          Status as of July 2023, our MVP{" "}
+          Status as of January 2024, our tool{" "}
           <span class="text-l text-title">
-            enabled our main customers to request 1000+ of their partner
+            enabled our main customers to request 1.600+ of their partner
             organizations to provide their data
           </span>{" "}
-          through our service. They further plan to start a new data collection
-          round beginning in September 2023.
+          on a reocurring basis to easily collect streamlined data achieve their
+          business goals.
         </p>
       ),
     },
@@ -493,7 +493,7 @@ const MVP = () => {
             can provide a set of data once and share it with multiple companies
           </span>{" "}
           using our platform. The firsthand data that we obtained from the
-          partners further enables us to{" "}
+          partners further enabled us to{" "}
           <span class="text-l text-title text-light">
             systematically adapt our solution
           </span>{" "}
@@ -607,7 +607,7 @@ const MVP = () => {
         content={[refinement_contentblock_1, refinement_contentblock_2]}
       />
 
-      {/* <CaseStudyContent
+      <CaseStudyContent
         section="Reflection"
         color="dark"
         content={[
@@ -616,7 +616,8 @@ const MVP = () => {
             headline={<h3>Three reasons why...</h3>}
             text={
               <p class="text-l text-light">
-                ... our MVP addresses the identified user needs:
+                ... our solution successfully addresses the needs of all three
+                main stakeholders:
               </p>
             }
             content={threeReasonsWhy.map((item) => (
@@ -627,7 +628,7 @@ const MVP = () => {
             ))}
           />,
         ]}
-      /> */}
+      />
 
       <NextProject
         project="ClimatePartner YOU"

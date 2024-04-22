@@ -110,15 +110,15 @@ const About = () => {
           >
             manual impairments
           </Link>{" "}
-          {/* and{" "}
+          and{" "}
           <Link
             class="text-l primaryDark inline-link"
             target="_blank"
-            to={"/surveye"}
+            to={"/gaze-visual-impairment"}
             rel="noreferrer"
           >
             visual impairments
-          </Link> */}
+          </Link>
           , conducting user-centered evaluations of suitable assisitve
           technology design.
         </p>
@@ -129,7 +129,7 @@ const About = () => {
       alt: "An icon displaying a rulter and a pencil, positioned over each other to resemble a cross",
       text: (
         <p class="text-l primaryMain">
-          Currently, I work as a UX and UI designer at{" "}
+          Currently, I work as a UX/UI designer at{" "}
           <a
             class="text-l text-title primaryMain link-underline"
             target="_blank"
@@ -139,10 +139,11 @@ const About = () => {
             ClimatePartner
           </a>
           , where I am involved in the design of human interaction with a search
-          tool using AI to perform automized mapping of data. In my role, I do
-          user research, product ideation, design, user testing, design
-          refinement and hand-off preparation, as well as ongoing product
-          improvement and development.
+          tool using AI to perform automized mapping of data. In my role in a
+          product team consisting of a Product Owner, a Domain Expert, a Data
+          Expert, and two developers, I perform user research, product ideation,
+          design, user testing, design refinement and hand-off preparation, as
+          well as ongoing product improvement and development.
         </p>
       ),
     },
@@ -169,7 +170,7 @@ const About = () => {
       "UI Acceptance",
       "Frontend Development",
     ],
-    Design: ["Figma", "Miro", "Dovetail", "Condens"],
+    Tools: ["Figma", "Miro", "FigJam", "Dovetail", "Condens"],
     Engineering: ["HTML & CSS", "JavaScript", "Java", "Android"],
   };
 

@@ -69,15 +69,15 @@ const CPYou = () => {
     }, 1500);
   }, []);
 
-  const roleText = ["Researcher, Designer (support)"];
+  const roleText = ["Researcher, Designer (team of 2)"];
   const toolsText = ["Figma, Dovetail"];
   const durationText = ["June 2021 - Dec 2021", "(6 mo. total)"];
 
   const title = "ClimatePartner You";
   const challenge =
-    "Engaging in climate action requires an understanding of the impact of one's lifestyle on the environment. Acquiring and applying this knowledge to to one’s individual lifestyle takes a significant amount of effort and time.";
+    "Engaging in climate action requires an understanding of the impact of one's lifestyle on the environment. Acquiring and applying this knowledge to to one’s individual lifestyle takes a significant amount of effort and time, and let's be honest: how much can I as an individual make a difference?";
   const solution =
-    "We created an online calculator to empower individuals to identify their carbon emissions. Our solution focuses on positivity, simplicity, and education to make climate action accessible to users regardless of their climate knowledge.";
+    "The answer is: quite a lot. Which is why we created an online calculator to empower individuals to identify their carbon emissions. Our solution focuses on positivity, simplicity, and education to make climate action accessible and motivating to users regardless of their climate knowledge.";
   const description = (
     <CaseStudyDescription
       roleText={roleText}
@@ -96,8 +96,12 @@ const CPYou = () => {
           <span class="text-l text-title"> 30+ potential users</span> and
           identified <span class="text-l text-title"> six personas</span> which
           differed in their level of climate knowledge, motivation, and the
-          amount of time they were willing to spend to calculate their carbon
-          footprint.
+          amount of time they were willing to spend to engage in climate action.
+          However, they shared a common need:{" "}
+          <span class="text-l text-title">
+            {" "}
+            to understand how their lifestyles contribute to climate change.
+          </span>
         </p>
       }
       content={
@@ -119,7 +123,17 @@ const CPYou = () => {
       text={
         <p class="text-l primaryMain">
           Our target group highly valued peace of mind, a sense of community,
-          and credibility. Therefore, we crafted a brand centered around{" "}
+          and credibility. And they were{" "}
+          <span class="text-l text-title">
+            struggling to believe that their contribution could have a
+            significant impact.
+          </span>{" "}
+          So we had to be clear, to be light, and to be humorous, to get away
+          from the doomsday-kinda-attitude{" "}
+          <span class="text-l text-title">
+            towards rewarding and motivating climate action.
+          </span>{" "}
+          Which is why we crafted a brand centered around{" "}
           <span class="text-l text-title">
             individuals, a playful spirit, and clarity,
           </span>{" "}
@@ -139,7 +153,7 @@ const CPYou = () => {
   );
   const featureContent = [
     {
-      title: <p class="text-l text-title primaryMain">Consider time</p>,
+      title: <p class="text-l text-title primaryMain">Consider effort</p>,
       imgSource: you_feature_1,
       alt: "A mockup showing a screen of our calculator where the user can choose between a fast calculation that takes 3min to complete, and a detailed calculation that takes 10min to complete.",
     },
@@ -185,9 +199,14 @@ const CPYou = () => {
       alignment="vertical"
       text={
         <p class="text-l primaryMain">
-          Based on our persona insights we defined{" "}
-          <span class="text-l text-title">four key features</span> our carbon
-          footprint calculator had to incorporate:
+          With the brand in place, it was then time to explore how we can design
+          the footprint calculator itself to provide a{" "}
+          <span class="text-l text-title">
+            customizable, enjoyable, and motivating experience{" "}
+          </span>{" "}
+          to those who want to face the impact of their own lifestle. We focused
+          on <span class="text-l text-title">four key features</span> to meet
+          our users' needs:
         </p>
       }
       content={<CarouselProject responsive={responsive} items={featureItems} />}
@@ -202,7 +221,7 @@ const CPYou = () => {
         </p>
       ),
       imgSource: you_potential_1,
-      alt: "A wireframe....",
+      alt: "A wireframe outlining how our solution could incoporate individual reduction plans where users could understand the impact of specific measures and choose those that fit their needs and goals best.",
     },
     {
       title: (
@@ -211,7 +230,7 @@ const CPYou = () => {
         </p>
       ),
       imgSource: you_potential_2,
-      alt: "A wireframe....",
+      alt: "A wireframe displaying how our calculator could be supplemented with handling unavoidable emissions. Users could inform themselves about the possibilities to invest in climate impact projects to balance out unavoidable emissions.",
     },
     {
       title: (
@@ -220,7 +239,7 @@ const CPYou = () => {
         </p>
       ),
       imgSource: you_potential_3,
-      alt: "A wireframe....",
+      alt: "A wireframe depicting how a user could track their climate action over time by recording their emissions and employ reduction measures.",
     },
   ];
 
@@ -246,7 +265,8 @@ const CPYou = () => {
           revealed{" "}
           <span class="text-l text-title">additional opportunities</span> to
           empower our target audience to take climate action in ways that align
-          with their personal preferences:
+          with their personal preferences, spike up their motivation and make
+          their contribution tangible:
         </p>
       }
       content={
@@ -254,6 +274,57 @@ const CPYou = () => {
       }
     />
   );
+
+  const threeReasonsWhy = [
+    {
+      icon: "",
+      alt: "An icon showing an individual wearing a headset.",
+      text: (
+        <p class="text-l text-light">
+          Our MVP{" "}
+          <span class="text-l text-title">
+            {" "}
+            reduces the manual work of our consultants to a single action,
+          </span>{" "}
+          which is to click a single button to grant the customer access to the
+          platform.
+        </p>
+      ),
+    },
+    {
+      icon: "",
+      alt: "An icon showing two stylistic buildings.",
+      text: (
+        <p class="text-l text-light">
+          Status as of January 2024, our tool{" "}
+          <span class="text-l text-title">
+            enabled our main customers to request 1.600+ of their partner
+            organizations to provide their data
+          </span>{" "}
+          on a reocurring basis to easily collect streamlined data achieve their
+          business goals.
+        </p>
+      ),
+    },
+    {
+      icon: "",
+      alt: "An icon showing two individuals shaking hands.",
+      text: (
+        <p class="text-l text-light">
+          The partner organizations of our main customers{" "}
+          <span class="text-l text-title text-light">
+            can provide a set of data once and share it with multiple companies
+          </span>{" "}
+          using our platform. The firsthand data that we obtained from the
+          partners further enabled us to{" "}
+          <span class="text-l text-title text-light">
+            systematically adapt our solution
+          </span>{" "}
+          to better match their level of expertise.
+        </p>
+      ),
+    },
+  ];
 
   return (
     <>
@@ -295,10 +366,32 @@ const CPYou = () => {
         content={[block_4]}
       />
 
+      <CaseStudyContent
+        section="Reflection"
+        color="dark"
+        content={[
+          <ContentBlock
+            size={size}
+            headline={<h3>Three reasons why...</h3>}
+            text={
+              <p class="text-l text-light">
+                ... this project was an incredible learning opportunity:
+              </p>
+            }
+            content={threeReasonsWhy.map((item) => (
+              <div class={"content-horizontal item-icons"}>
+                <img class="icon-extrabig" src={item.icon} alt={item.alt} />
+                {item.text}
+              </div>
+            ))}
+          />,
+        ]}
+      />
+
       <NextProject
-        project="Building an MVP"
+        project="Facilitating Data Collection Processes"
         button="View Project"
-        link="/mvp"
+        link="/data-collection"
       />
     </>
   );
