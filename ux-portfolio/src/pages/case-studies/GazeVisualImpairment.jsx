@@ -483,7 +483,11 @@ const GazeVisualImpairment = () => {
         ]}
       /> */}
 
-      <NextProject project="SurvEye" button="View Case Study" link="/surveye" />
+      <NextProject
+        project="It's AI match"
+        button="View Project"
+        link="/AI-match"
+      />
     </>
   );
 };

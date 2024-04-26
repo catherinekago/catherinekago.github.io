@@ -16,6 +16,10 @@ import you_potential_1 from "../../assets/images/CPYou/you_potential_1.png";
 import you_potential_2 from "../../assets/images/CPYou/you_potential_2.png";
 import you_potential_3 from "../../assets/images/CPYou/you_potential_3.png";
 
+import icon_diversity from "../../assets/icons/icon_diversity.svg";
+import icon_dashboard from "../../assets/icons/icon_dashboard.svg";
+import icon_definition from "../../assets/icons/icon_definition.svg";
+
 import ProjectHero from "../../components/project-components/ProjectHero";
 import CaseStudyDescription from "../../components/case-study-components/CaseStudyDescription";
 import CaseStudyOverview from "../../components/case-study-components/CaseStudyOverview";
@@ -145,9 +149,12 @@ const CPYou = () => {
           class="main-content-container"
           src={you_brand}
           alt={
-            "A visualization dispalying three cards on top of each other, each of them showing a portrait of a person and a box next to them stating their level of knowledge, motivation, and amount of time. This is an abstract visualization of the personas we created."
+            "A collage of the elements that we combined to create a bold, clear brand voice: quirky graphics, colorful patterns, provocative and fun statements, and bold, fresh colors to give the topic of climate action a refresher."
           }
         />
+      }
+      imageDescription={
+        "A collage of the design elements we combined to create a bold, clear brand: guided by strong colors, playful patterns and visuals, and bold statements."
       }
     />
   );
@@ -277,46 +284,50 @@ const CPYou = () => {
 
   const threeReasonsWhy = [
     {
-      icon: "",
-      alt: "An icon showing an individual wearing a headset.",
+      icon: icon_diversity,
+      alt: "An icon showing three individuals in front of a huge heart symbol.",
       text: (
         <p class="text-l text-light">
-          Our MVP{" "}
+          This project taught me{" "}
           <span class="text-l text-title">
             {" "}
-            reduces the manual work of our consultants to a single action,
+            the power and joy of talking to your users
           </span>{" "}
-          which is to click a single button to grant the customer access to the
-          platform.
+          . We collaborated with over 40 potential users over the course of this
+          project, helping us to incrementally refine our approach and spark
+          ideas for future, promising directions.
         </p>
       ),
     },
     {
-      icon: "",
-      alt: "An icon showing two stylistic buildings.",
+      icon: icon_dashboard,
+      alt: "An icon showing four rectangles of different dimensions arranged in a square.",
       text: (
         <p class="text-l text-light">
-          Status as of January 2024, our tool{" "}
+          I discovered{" "}
           <span class="text-l text-title">
-            enabled our main customers to request 1.600+ of their partner
-            organizations to provide their data
+            my love for creating responsive design.
           </span>{" "}
-          on a reocurring basis to easily collect streamlined data achieve their
-          business goals.
+          Within this project it was my responsibility to come up with the
+          responsive behavior of the designs to work on both mobile and desktop
+          devices. It brought me lots of joy defining the layouts, formalize the
+          components' behavior and document it for the dev handoff.
         </p>
       ),
     },
     {
-      icon: "",
-      alt: "An icon showing two individuals shaking hands.",
+      icon: icon_definition,
+      alt: "An icon displaying the letter 'A' within a box, indicating its selection.",
       text: (
         <p class="text-l text-light">
-          The partner organizations of our main customers{" "}
+          Speaking of formalizing component behavior: this project served as an{" "}
           <span class="text-l text-title text-light">
-            can provide a set of data once and share it with multiple companies
+            introduction to design systems in Figma.
           </span>{" "}
-          using our platform. The firsthand data that we obtained from the
-          partners further enabled us to{" "}
+          We created a standalone design system from scratch, defining the atoms
+          and building molecules and organisms upon them. It helped us to stay
+          consistent, have a component documentation for our developers, and
+          quickly implement a rebrand.{" "}
           <span class="text-l text-title text-light">
             systematically adapt our solution
           </span>{" "}
@@ -380,7 +391,7 @@ const CPYou = () => {
             }
             content={threeReasonsWhy.map((item) => (
               <div class={"content-horizontal item-icons"}>
-                <img class="icon-extrabig" src={item.icon} alt={item.alt} />
+                <img class="icon-medium" src={item.icon} alt={item.alt} />
                 {item.text}
               </div>
             ))}
@@ -388,11 +399,7 @@ const CPYou = () => {
         ]}
       />
 
-      <NextProject
-        project="Facilitating Data Collection Processes"
-        button="View Project"
-        link="/data-collection"
-      />
+      <NextProject project="SurvEye" button="View Case Study" link="/surveye" />
     </>
   );
 };

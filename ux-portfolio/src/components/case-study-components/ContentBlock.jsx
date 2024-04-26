@@ -1,35 +1,19 @@
 import React from "react";
 
-import icon_lock from "../../assets/icons/lock.svg";
-
 const ContentBlock = (props) => {
   const blockAlignment =
     props.alignment === "horizontal"
       ? "content-horizontal"
       : "content-vertical";
 
-  const confidentialityNote = (
-    <div class="confidentiality-note">
-      <img
-        class="icon-extrasmall"
-        src={icon_lock}
-        alt="An icon showing a lock"
-      />
-      <p class="text-s primaryMain">
-        I altered the original content to respect its confidentiality.
-      </p>
-    </div>
-  );
-
-  const confidentialityContainer = (
-    <div class="confidentiality-container">
+  const imageContainer = (
+    <div class="image-container">
       {props.content}
-      {confidentialityNote}
+      <p class="text-comment">{props.imageDescription}</p>
     </div>
   );
 
-  const imgContent =
-    props.imgType === "confidential" ? confidentialityContainer : props.content;
+  const imgContent = imageContainer;
 
   return (
     <div class={blockAlignment}>

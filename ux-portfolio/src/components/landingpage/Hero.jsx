@@ -18,12 +18,12 @@ const Hero = (props) => {
           <div id="hero-text-container">
             <h1>Hi, I'm Kathrin.</h1>
             <p class="text-xl">
-              UX/UI Designer with a passion for inclusive and assistive
+              UX/UI Designer with a passion for health tech and assistive
               technologies. Currently, I am designing{" "}
               <span class="text-xl text-title">
                 human interaction with AI tools
               </span>{" "}
-              to effectively and reliably automate manual processes.
+              to significantly and reliably automate manual processes.
             </p>
             <ScrollIntoView
               behavior="smooth"

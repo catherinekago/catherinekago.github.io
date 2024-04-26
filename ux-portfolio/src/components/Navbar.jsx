@@ -13,6 +13,7 @@ import DesignSystem from "../pages/case-studies/DesignSystem";
 import MVP from "../pages/case-studies/MVP";
 import CPYou from "../pages/projects/CPYou";
 import GazeVisualImpairment from "../pages/case-studies/GazeVisualImpairment";
+import AImatching from "../pages/case-studies/AImatching";
 
 const Navbar = () => {
   const { pathname } = useLocation();
@@ -28,6 +29,7 @@ const Navbar = () => {
       ["/"]: "nav-container light",
       ["/cp-you"]: "nav-container dark",
       ["/gaze-visual-impairment"]: "nav-container dark",
+      ["/AI-matching"]: "nav-container dark",
     },
   };
 
@@ -61,6 +63,7 @@ const Navbar = () => {
         <Route path="/contact" element={<Contact />} />
         <Route path="/surveye" element={<SurvEye />} />
         <Route path="/design-system" element={<DesignSystem />} />
+        <Route path="/AI-matching" element={<AImatching />} />
         <Route path="/data-collection" element={<MVP />} />
         <Route path="/cp-you" element={<CPYou />} />
         <Route

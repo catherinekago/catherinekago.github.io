@@ -596,7 +596,7 @@ const SurvEye = () => {
             }
             content={threeReasonsWhy.map((item) => (
               <div class={"content-horizontal item-icons"}>
-                <img class="icon-extrabig" src={item.icon} alt={item.alt} />
+                <img class="icon-medium" src={item.icon} alt={item.alt} />
                 {item.text}
               </div>
             ))}
@@ -605,9 +605,9 @@ const SurvEye = () => {
       />
 
       <NextProject
-        project="ClimatePartner You"
+        project="It's AI match"
         button="View Project"
-        link="/cp-you"
+        link="/AI-matching"
       />
     </>
   );

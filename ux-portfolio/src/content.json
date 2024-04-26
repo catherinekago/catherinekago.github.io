@@ -16,13 +16,28 @@
 
         ],
         "featuredProjects": [
+                                  {
+                "title": "It's AI match",
+                "slug": "AI-matching",
+                "description": "Leveraging AI to identify the perfect match for complex data.",
+                "button": "View Project",
+                "link": "/AI-matching",
+                "projectType": "Internal tool",
+                "chips": [
+                    "Desktop first",
+                    "User research",
+                    "Data complexity", 
+                    "Interaction with AI"
+                ],
+                "password": "alohomora"
+            },
                       {
                 "title": "Facilitating Data Collection",
                 "slug": "MVP",
                 "description": "Facilitating streamlined data collection and collaboration within an organization's network.",
                 "button": "View Project",
                 "link": "/data-collection",
-                "projectType": "Work - B2B2C",
+                "projectType": "B2B2C",
                 "chips": [
                     "Desktop first",
                     "Data complexity", 
@@ -38,12 +53,12 @@
                 "description": "Empowering individuals to calculate their carbon footprint to take climate action.",
                 "button": "View Project",
                 "link": "/cp-you",
-                "projectType": "Work - B2C",
+                "projectType": "B2C",
                 "chips": [
 
                     "Mobile first",
                     "User interviews",
-                    "Barnding",
+                    "Branding",
                     "Prototype testing"
                 ],
                 "password": "alohomora"

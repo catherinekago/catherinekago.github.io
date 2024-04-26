@@ -114,6 +114,43 @@ const MVP = () => {
     />
   );
 
+  const personas = [
+    {
+      icon: icon_support,
+      text: (
+        <p class="text-l text-primary">
+          <span class="text-l text-title text-primary">Our consultants</span>{" "}
+          <br />
+          need a standardized process that reduces administrative work involved
+          in collecting partner organizations' data for our customers.
+        </p>
+      ),
+    },
+    {
+      icon: icon_company,
+      text: (
+        <p class="text-l text-primary">
+          <span class="text-l text-title text-primary">Customers</span> <br />
+          need to access their partner organizations' firsthand data to make
+          informed and strategic decisions.
+        </p>
+      ),
+    },
+    {
+      icon: icon_partner,
+      text: (
+        <p class="text-l text-primary">
+          <span class="text-l text-title text-primary">
+            Partner organisations
+          </span>{" "}
+          <br />
+          need an easy way to fulfill their customers' data requests to maintain
+          their partnerships.
+        </p>
+      ),
+    },
+  ];
+
   const discovery_contentblock_1 = (
     <ContentBlock
       size={size}
@@ -127,45 +164,7 @@ const MVP = () => {
         </p>
       }
       content={
-        <ItemGroup
-          type="underline"
-          size="small"
-          items={[
-            {
-              headline: "Consultants",
-              icon: (
-                <img
-                  class="icon-small"
-                  src={icon_support}
-                  alt="An icon showing an individual wearing a headset"
-                />
-              ),
-              text: "... need a standardized process that reduces administrative work and enables them to serve more customers.",
-            },
-            {
-              headline: "Customers",
-              icon: (
-                <img
-                  class="icon-small"
-                  src={icon_company}
-                  alt="An icon showing two stylistic buildings"
-                />
-              ),
-              text: "... need to access to their partner organizations’ firsthand data to be able to make informed strategic decisions.",
-            },
-            {
-              headline: "Partner organizations",
-              icon: (
-                <img
-                  class="icon-small"
-                  src={icon_partner}
-                  alt="An icon showing two individuals shaking hands"
-                />
-              ),
-              text: "... need an easy way to fulfill the customers’ data requests because they want to maintain their partnerships.",
-            },
-          ]}
-        />
+        <CardGroup items={personas} textAlign="center" maxPerRow="three" />
       }
     />
   );
@@ -191,6 +190,9 @@ const MVP = () => {
           }
         />
       }
+      imageDescription={
+        "A screenshot of the aggregated persona insights. For every group, we created a persona and an empathy map to help us to keep an eye on all three personas in the further design process."
+      }
     />
   );
 
@@ -214,6 +216,9 @@ const MVP = () => {
             "The image visualizes the user flows of the customer and the partner organization. We combined both flows on the intersection where the customer starts the partner's pathway to highlight how the two flows relate to each other, and what steps of one flow preceed subsequent steps of the other flow. The steps are portrayed by sticky notes along a horizontal arrow. However, it is an altered version containing less information and more generic labels to maintain confidentiality."
           }
         />
+      }
+      imageDescription={
+        "A high level visualization of the user flow that we envisioned for both customers and partner organizations to support data collection for both user groups. For the customer, our focus lay on enabling easy management and access to their partner organizations' data. For partner organizations on the other side, we needed to to enable them to easily add and share their data with their customers."
       }
     />
   );
@@ -322,6 +327,9 @@ const MVP = () => {
           }
         />
       }
+      imageDescription={
+        "The visualization outlines our testing plan for the trial run. In the first round, we focused on testing the high level concept, which we then refined based on the feedback we received, to bring into a second round in the form of a sophisticated click-prototype."
+      }
     />
   );
 
@@ -412,6 +420,9 @@ const MVP = () => {
           }
         />
       }
+      imageDescription={
+        "The final screen design of the customer dashboard - slighlty modified to ensure confidentiality."
+      }
     />
   );
 
@@ -448,6 +459,9 @@ const MVP = () => {
             "A screenshot of the main screens of the partner organization flow in Figma, including with a registration page, a dashboard overview, a data entry form, and a section with graphs for comparing oneself with different organizations."
           }
         />
+      }
+      imageDescription={
+        "The final screen design of the partner organization dashboard - slighlty modified to ensure confidentiality."
       }
     />
   );
@@ -536,6 +550,9 @@ const MVP = () => {
           }
         />
       }
+      imageDescription={
+        "Our implemented flow caused confusion for partner organizations when they were asked to provide data again. To ensure that this does not block customers from receiving data, we investigated the current circular flow and how to improve it further."
+      }
     />
   );
 
@@ -622,7 +639,7 @@ const MVP = () => {
             }
             content={threeReasonsWhy.map((item) => (
               <div class={"content-horizontal item-icons"}>
-                <img class="icon-extrabig" src={item.icon} alt={item.alt} />
+                <img class="icon-medium" src={item.icon} alt={item.alt} />
                 {item.text}
               </div>
             ))}

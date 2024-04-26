@@ -53,15 +53,17 @@ const About = () => {
       {" "}
       <p class="text-l primaryMain">
         As a UX/UI designer, I have a genuine interest in creating user-friendly
-        experiences and a particular passion for assistive technologies, aiming
-        to enhance accessibility for everyone. My strengths lie in swift
-        comprehension, organized problem-solving, and persistent determination
-        to understand and address real needs of real humans. Guided by values of
-        responsibility, ownership, efficiency, and authenticity, I am committed
-        to designing solutions{" "}
+        experiences and a particular passion for health tech and assistive
+        technologies, aiming to enhance the quality of life for every human
+        being. My strengths lie in swift comprehension, organized
+        problem-solving, and persistent determination to understand and address
+        real needs of real humans. Guided by values of responsibility,
+        ownership, efficiency, and authenticity, I am committed to designing
+        solutions{" "}
         <span class="text-l text-title">
           {" "}
-          that contribute to a more delightful and accessible digital world.
+          that contribute to a meaningful, delightful and accessible digital
+          world.
         </span>
       </p>
     </>
@@ -83,11 +85,11 @@ const About = () => {
             Fritz-Felsenstein-Haus
           </a>
           , a center for individuals with physical and multiple disabilities, I
-          immersed myself in a world of speech therapy sessions, classes, and
-          leisure activities with children and young adults facing diverse
-          medical conditions. Engaging with therapists, caregivers, teachers,
-          and the children themselves, I developed a profound interest in
-          assistive technologies and their potential to
+          took part in speech therapy sessions, classes, and leisure activities
+          with children and young adults facing diverse medical conditions.
+          Engaging with therapists, caregivers, teachers, and the children
+          themselves, I developed a profound interest in assistive technologies
+          and their potential to
           <span class="text-l text-title"> empower and enhance lives.</span>
         </p>
       ),
@@ -139,11 +141,11 @@ const About = () => {
             ClimatePartner
           </a>
           , where I am involved in the design of human interaction with a search
-          tool using AI to perform automized mapping of data. In my role in a
-          product team consisting of a Product Owner, a Domain Expert, a Data
-          Expert, and two developers, I perform user research, product ideation,
-          design, user testing, design refinement and hand-off preparation, as
-          well as ongoing product improvement and development.
+          tool using AI to perform automized mapping of data. In my role as a
+          part of a product team consisting of a Product Owner, a Domain Expert,
+          a Data Expert, and two developers, I perform user research, product
+          ideation, design, user testing, design refinement and hand-off
+          preparation, as well as ongoing product improvement and development.
         </p>
       ),
     },
@@ -154,8 +156,9 @@ const About = () => {
         <p class="text-l primaryMain">
           Apart from design, I find joy in creating and savoring delicious food
           with great company. When visiting a foreign country, I get all excited
-          to explore local supermarkets to discover country-specific products.
-          Additionally, I cherish the quiet mornings spent in the park.
+          to explore local supermarkets to discover local products.
+          Additionally, I cherish the quiet mornings spent in the park, looking
+          out for squirrels.
         </p>
       ),
     },
