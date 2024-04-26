@@ -17,6 +17,10 @@ import CardGroup from "../../components/groups/CardGroup";
 import UserResearch from "../../assets/images/AImatching/AImatching_research.png";
 import UserFlow from "../../assets/images/AImatching/AImatching_userflow.png";
 import InteractionLevels from "../../assets/images/AImatching/AImatching_interactions.jpg";
+import InformationArchitecture from "../../assets/images/AImatching/AImatching_IA.png";
+import PoCDesign from "../../assets/images/AImatching/AImatching_PoCDesign.jpg";
+import DesignIterations from "../../assets/images/AImatching/AImatching_DesignIterations.jpg";
+import FeedbackIllustration from "../../assets/images/AImatching/AImatching_FeedbackIllustration.png";
 
 import iconMatching from "../../assets/icons/icon_matching.svg";
 import iconModelTraining from "../../assets/icons/icon_modeltraining.svg";
@@ -261,10 +265,163 @@ const AImatching = () => {
     />
   );
 
+  const sd_block_1 = (
+    <ContentBlock
+      size={size}
+      headline={<h3>Defining the information architecture</h3>}
+      alignment="horizontal"
+      text={
+        <p class="text-l primaryMain">
+          The Proof of Concept (PoC) not only provided functionality for
+          managing large amounts of data but also featured{" "}
+          <span class="text-l text-title">
+            a basic single search interface.{" "}
+          </span>
+          Feedback on the PoC highlighted the value of the currently decoupled
+          single search. Consequently, I started an exploration of an{" "}
+          <span class="text-l text-title">
+            optimal, integrated information architecture{" "}
+          </span>
+          to join the two tools. This involved conducting user testing with five
+          participants, assessing three different information architecture
+          approaches. Their feedback guided my decision to proceed with the tab
+          variant.
+        </p>
+      }
+      content={
+        <img
+          class="img-two-columns"
+          src={InformationArchitecture}
+          alt={
+            "An overview of the three information architecture concepts that I tested: section,s tabs and cards to organize the single search and the mass data matching. The sections were found to be overwhelming, and that one could easily miss the second section once the first one was expanded. The cards were found to add an unnecessary step to using the single search feature which is the main, daily usecase for lots of consultants. Finally, the tabs seemed to meet the users' expectations best: being directed to the single search on default matched their workflow, and having both options visible at all times increased comfort and was easier to digest."
+          }
+        />
+      }
+      imageDescription={
+        "The three wireframes showcase the concepts I tested with five users, featuring their quotes from the testing sessions. It was an easy decision - the tabs were exactly what the users were looking for."
+      }
+    />
+  );
+
+  const sd_block_2 = (
+    <ContentBlock
+      size={size}
+      headline={<h3>Examining the PoC design</h3>}
+      alignment="vertical"
+      text={
+        <p class="text-l primaryMain">
+          Now it was time to take a look at the current interface implementation
+          for the single matching. The initial feedback that we collected on the
+          PoC highlighted a couple of drawbacks of the first release:
+        </p>
+      }
+      content={
+        <img
+          class="main-content-container"
+          src={PoCDesign}
+          alt={
+            "A screenshot highlighting the current drawbacks of the PoC design. First, it missed information on the capabilities and limitations of the AI tool which might lead to no or incorrect use. Second, the PoC just displayed the suggestions, but did not allow the user to interact with them. Lastly, the layout was not suitable for easy comparison of suggestions, as it focused on the wrong information to compare."
+          }
+        />
+      }
+      imageDescription={
+        "The screenshot highlights the main challenges of the initial interface design. As the PoC focused on the technical feasibility of the AI-powered matching, the design did not take into account any user need and desired interactions."
+      }
+    />
+  );
+
+  const sd_block_3 = (
+    <ContentBlock
+      size={size}
+      headline={<h3>Iterate and refine</h3>}
+      alignment="vertical"
+      text={
+        <p class="text-l primaryMain">
+          To tackle these drawbacks, I firstly addressed the{" "}
+          <span class="text-l text-title">
+            inadequate layout and incorporated the requested details.{" "}
+          </span>
+          I brought it back to two consultants to collect their feedback on the
+          design, continuing to then
+          <span class="text-l text-title">
+            {" "}
+            refine the incoporated information{" "}
+          </span>
+          based on their insights. Another two usability testings later, the
+          design was found to meet the requirements of our consultants, and it
+          was time to fine-tune the UI. I prepared a
+          <span class="text-l text-title">
+            {" "}
+            design critique session with a fellow design colleague{" "}
+          </span>
+          to finalize my screens. For the dev handover I prepared
+          <span class="text-l text-title">
+            {" "}
+            specifications and screens to define the responsive behavior{" "}
+          </span>
+          and shared my workspace with the frontend developer of my team.
+        </p>
+      }
+      content={
+        <img
+          class="main-content-container"
+          src={DesignIterations}
+          alt={
+            "A visualization of the three iterations over my design, demonstrating the progress from firstly focusing on layout and information, to later refine the interactions and UI elements."
+          }
+        />
+      }
+      imageDescription={
+        "Within two weeks I extensively refined and tested the designs following an iterative approach, focusing on the foundation first, and finishing with polishing and tweaking the UI components to provide visual guidance for the user."
+      }
+    />
+  );
+
+  const sd_block_4 = (
+    <ContentBlock
+      size={size}
+      headline={<h3>An unexpected finding</h3>}
+      alignment="horizontal"
+      text={
+        <p class="text-l primaryMain">
+          During the usability tests, two consultants mentioned they would{" "}
+          <span class="text-l text-title">
+            happily rate the tool's suggestions{" "}
+          </span>
+          if it could be done <span class="text-l text-title">swiftly. </span>I
+          saw the opportunity to leverage this willingness to
+          <span class="text-l text-title">
+            {" "}
+            generate training data our model{" "}
+          </span>
+          with little effort for both sides. I brought this insight back to the
+          team and we decided to bring in a simple feedback functionality to
+          enable users to rate the suggestions. I added the common design
+          pattern for voting actions in the form of thumbs to the design,
+          <span class="text-l text-title">
+            {" "}
+            enabling consultants to indicate good and bad matches.{" "}
+          </span>
+          Three door tests later, I handed over the design to my frontend
+          developer.
+        </p>
+      }
+      content={
+        <img
+          class="img-two-columns"
+          src={FeedbackIllustration}
+          alt={
+            "An illustration showing two individuals holding up big, blue thumb icons."
+          }
+        />
+      }
+      imageDescription={""}
+    />
+  );
+
   return (
     <>
       {loading ? <LoadingScreen /> : null}
-
       {/* Hero */}
       <ProjectHero
         image={CPYouHero}
@@ -276,15 +433,26 @@ const AImatching = () => {
         solution={solution}
         description={description}
       />
-
       <CaseStudyContent
         color="white"
         section="Understand the target group"
         content={[block_1, block_2, block_3, block_4]}
       />
 
-      <CaseStudyContent color="grey" content={[]} />
+      <div class={"main-background-container"}>
+        <div class={"main-content-container container-dark"}>
+          <div class={"main-content-container headline-description"}>
+            <h2>Part 1</h2>
+            <p class="text-xl text-light">Matching single data points</p>
+          </div>
+        </div>
+      </div>
 
+      <CaseStudyContent
+        color="grey-light"
+        section="Explore possible solutions"
+        content={[sd_block_1, sd_block_2, sd_block_3, sd_block_4]}
+      />
       <NextProject
         project="Facilitating Data Collection"
         button="View Project"

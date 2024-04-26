@@ -267,13 +267,22 @@ li {
   flex-direction: column;
   padding: 0px;
   gap: 32px;
+  &.headline-description {
+    gap: 8px !important;
+  }
 
   @media (min-width: $screen-s-min) {
     gap: 40px !important;
+    &.headline-description {
+      gap: 8px !important;
+    }
   }
 
   @media (min-width: $screen-l-min) {
     gap: 40px !important;
+    &.headline-description {
+      gap: 16px !important;
+    }
   }
   @media (min-width: $screen-xl-min) {
     width: 1200px !important;
@@ -281,7 +290,7 @@ li {
 }
 
 .content-blocks {
-  gap: 80px !important;
+  gap: 80px;
 
   @media (min-width: $screen-s-min) {
     gap: 120px !important;
