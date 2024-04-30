@@ -21,6 +21,8 @@ import InformationArchitecture from "../../assets/images/AImatching/AImatching_I
 import PoCDesign from "../../assets/images/AImatching/AImatching_PoCDesign.jpg";
 import DesignIterations from "../../assets/images/AImatching/AImatching_DesignIterations.jpg";
 import FeedbackIllustration from "../../assets/images/AImatching/AImatching_FeedbackIllustration.png";
+import DesignOutcome from "../../assets/images/AImatching/AImatching_designoutcome.png";
+import FeedbackUsageIllustration from "../../assets/images/AImatching/AImacthing_userusagefeedback.png";
 
 import iconMatching from "../../assets/icons/icon_matching.svg";
 import iconModelTraining from "../../assets/icons/icon_modeltraining.svg";
@@ -73,7 +75,7 @@ const AImatching = () => {
     }, 1500);
   }, []);
 
-  const roleText = ["Lead Researcher, Lead Designer"];
+  const roleText = ["Researcher, Designer (lead)"];
   const toolsText = ["Figma, Dovetail, Miro, DataDog"];
   const durationText = ["Jan 2024 - present"];
 
@@ -388,16 +390,12 @@ const AImatching = () => {
           <span class="text-l text-title">
             happily rate the tool's suggestions{" "}
           </span>
-          if it could be done <span class="text-l text-title">swiftly. </span>I
-          saw the opportunity to leverage this willingness to
-          <span class="text-l text-title">
-            {" "}
-            generate training data our model{" "}
-          </span>
-          with little effort for both sides. I brought this insight back to the
-          team and we decided to bring in a simple feedback functionality to
-          enable users to rate the suggestions. I added the common design
-          pattern for voting actions in the form of thumbs to the design,
+          if it could be done swiftly. I saw the opportunity to leverage this
+          willingness to generate training data for our model with little effort
+          for both sides. I brought this insight back to the team and we decided
+          to bring in a simple feedback functionality to enable users to rate
+          the suggestions. I added the common design pattern for voting actions
+          in the form of thumbs to the design,
           <span class="text-l text-title">
             {" "}
             enabling consultants to indicate good and bad matches.{" "}
@@ -412,6 +410,67 @@ const AImatching = () => {
           src={FeedbackIllustration}
           alt={
             "An illustration showing two individuals holding up big, blue thumb icons."
+          }
+        />
+      }
+      imageDescription={""}
+    />
+  );
+
+  const sd_block_5 = (
+    <ContentBlock
+      size={size}
+      headline={<h3>The final design</h3>}
+      alignment="vertical"
+      text={
+        <p class="text-l primaryMain">
+          I completed the responsive designs, conducted the dev handover, and
+          performed the final UI acceptance for the implementation. hared my
+          workspace with the frontend developer of my team.
+        </p>
+      }
+      content={
+        <img
+          class="main-content-container"
+          src={DesignOutcome}
+          alt={
+            "A mockup displaying the single search functionality of out AI tool. It demonstrates the integration of the tabs to navigate the single search and the multi matching, the search query component, and the results table."
+          }
+        />
+      }
+      imageDescription={""}
+    />
+  );
+
+  const sd_block_6 = (
+    <ContentBlock
+      size={size}
+      headline={<h3>User feedback</h3>}
+      alignment="horizontal"
+      text={
+        <p class="quote primaryMain">
+          "The tool gives me a
+          <span class="quote text-title text-primary"> good overview </span> of
+          suggestions. I immediately know which one to choose."
+          <br /> <br />
+          "With the tool, I can just do
+          <span class="quote text-title text-primary">
+            {" "}
+            one search to find all similar database entries,{" "}
+          </span>{" "}
+          something I cannot do in the database itself.""
+          <br /> <br />
+          "Searching the database with the new tool is so much
+          <span class="quote text-title text-primary"> quicker </span> - it is
+          really nice to work with."
+        </p>
+      }
+      content={
+        <img
+          class="img-two-columns"
+          src={FeedbackUsageIllustration}
+          alt={
+            "An illustration showing two individuals jumping happily, surrounded by small colorful symbols expressing happiness."
           }
         />
       }
@@ -452,6 +511,16 @@ const AImatching = () => {
         color="grey-light"
         section="Explore possible solutions"
         content={[sd_block_1, sd_block_2, sd_block_3, sd_block_4]}
+      />
+      <CaseStudyContent
+        color="grey-light"
+        section="Outcome"
+        content={[sd_block_5]}
+      />
+      <CaseStudyContent
+        color="grey-light"
+        section="Impact"
+        content={[sd_block_6]}
       />
       <NextProject
         project="Facilitating Data Collection"

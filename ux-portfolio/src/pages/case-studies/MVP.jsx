@@ -92,8 +92,8 @@ const MVP = () => {
     return windowSize;
   }
 
-  const roleText = ["Designer (team & solo)"];
-  const toolsText = ["Figma, Dovetail"];
+  const roleText = ["Researcher, Designer (team & solo)"];
+  const toolsText = ["Figma, Dovetail, Miro"];
   const durationText = ["October 2021 - December 2023", "(26 mo. total)"];
 
   const title = "Facilitating Data Collection";

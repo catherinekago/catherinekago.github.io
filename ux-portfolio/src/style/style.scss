@@ -190,6 +190,22 @@ li {
   font-weight: 700 !important;
 }
 
+.quote {
+  @extend %text;
+  font-style: italic;
+  font-size: 16px;
+  line-height: 175%;
+  color: $primaryMain;
+
+  @media (min-width: $screen-s-min) {
+    font-size: 18px !important;
+  }
+
+  @media (min-width: $screen-l-min) {
+    font-size: 20px !important;
+  }
+}
+
 .text-xxl {
   @extend %text;
   font-size: 20px;
@@ -272,14 +288,14 @@ li {
   }
 
   @media (min-width: $screen-s-min) {
-    gap: 40px !important;
+    gap: 56px !important;
     &.headline-description {
       gap: 8px !important;
     }
   }
 
   @media (min-width: $screen-l-min) {
-    gap: 40px !important;
+    gap: 80px !important;
     &.headline-description {
       gap: 16px !important;
     }

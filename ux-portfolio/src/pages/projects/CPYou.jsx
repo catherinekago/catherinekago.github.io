@@ -74,8 +74,8 @@ const CPYou = () => {
   }, []);
 
   const roleText = ["Researcher, Designer (team of 2)"];
-  const toolsText = ["Figma, Dovetail"];
-  const durationText = ["June 2021 - Dec 2021", "(6 mo. total)"];
+  const toolsText = ["Figma, Dovetail, Miro"];
+  const durationText = ["June 2020 - Dec 2021", "(19 mo. total)"];
 
   const title = "ClimatePartner You";
   const challenge =
