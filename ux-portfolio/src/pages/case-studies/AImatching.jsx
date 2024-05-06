@@ -3,7 +3,7 @@ import { useState, useEffect } from "react";
 import "./../../style/style.scss";
 import "./../../components/case-study-components/CarouselProject.scss";
 
-import CPYouHero from "../../assets/images/CPYou/you_hero.svg";
+import AIHero from "../../assets/images/AImatching/AImatching_hero.png";
 import LoadingScreen from "../LoadingScreen";
 import NextProject from "../../components/case-study-components/NextProject";
 
@@ -483,8 +483,8 @@ const AImatching = () => {
       {loading ? <LoadingScreen /> : null}
       {/* Hero */}
       <ProjectHero
-        image={CPYouHero}
-        imageAlt="A visualization showing multiple mockups of the mobile version of the product."
+        image={AIHero}
+        imageAlt="A visualization showing the mockup of the AI-based web tool."
       />
       <CaseStudyOverview
         title={title}

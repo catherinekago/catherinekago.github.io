@@ -18,7 +18,7 @@
         "featuredProjects": [
                                   {
                 "title": "It's AI match",
-                "slug": "AI-matching",
+                "slug": "AImatching",
                 "description": "Leveraging AI to identify the perfect match for complex data.",
                 "button": "View Project",
                 "link": "/AI-matching",
