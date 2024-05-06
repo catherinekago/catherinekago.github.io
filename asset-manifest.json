@@ -1,9 +1,8 @@
 {
   "files": {
     "main.css": "/static/css/main.f92ae442.css",
-    "main.js": "/static/js/main.038377fb.js",
+    "main.js": "/static/js/main.41a80a43.js",
     "static/js/787.2eb2047b.chunk.js": "/static/js/787.2eb2047b.chunk.js",
-    "static/media/Kathrin-Schnizer_CV_EN.pdf": "/static/media/Kathrin-Schnizer_CV_EN.78db13cf24088ca1aa3e.pdf",
     "static/media/portrait.svg": "/static/media/portrait.4e9fb1e87716a7cd6df29ec7514a3c26.svg",
     "static/media/mvp_discovery_personas.svg": "/static/media/mvp_discovery_personas.395183ac8f5fb866b2b34431fdf62679.svg",
     "static/media/surveye_hero.png": "/static/media/surveye_hero.d3312cee67504dff8404.png",
@@ -20,6 +19,7 @@
     "static/media/gaze-secondary-research.png": "/static/media/gaze-secondary-research.66811f025492760c6fe7.png",
     "static/media/AImatching_teaser.png": "/static/media/AImatching_teaser.22181f9dbbc670fad62e.png",
     "static/media/you_hero.svg": "/static/media/you_hero.5ca44e032b11afc55fd5bb5406fba774.svg",
+    "static/media/Kathrin-Schnizer_CV_EN.pdf": "/static/media/Kathrin-Schnizer_CV_EN.d3654a7ddbe05e10d345.pdf",
     "static/media/gaze_teaser.png": "/static/media/gaze_teaser.2280732f6487206dc9a9.png",
     "static/media/ds_design_documentation_brainstorming.jpg": "/static/media/ds_design_documentation_brainstorming.2521a1812288107580b5.jpg",
     "static/media/you_hero.png": "/static/media/you_hero.f934fcb82e0b0b629957.png",
@@ -123,11 +123,11 @@
     "static/media/expand_more.svg": "/static/media/expand_more.570f9cd38f61556380c79e1c3c452fff.svg",
     "static/media/close.svg": "/static/media/close.c76ad28c33323dfe86ec1e4bcf9c5b6c.svg",
     "main.f92ae442.css.map": "/static/css/main.f92ae442.css.map",
-    "main.038377fb.js.map": "/static/js/main.038377fb.js.map",
+    "main.41a80a43.js.map": "/static/js/main.41a80a43.js.map",
     "787.2eb2047b.chunk.js.map": "/static/js/787.2eb2047b.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.f92ae442.css",
-    "static/js/main.038377fb.js"
+    "static/js/main.41a80a43.js"
   ]
 }
